@@ -1,0 +1,41 @@
+/* Photographic direction: existing APADER images with contextual captions. */
+#image-terrain {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#image-terrain .photo-introduction { grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: end; margin-bottom: 40px; }
+#image-terrain .photo-introduction h2 { margin-top: 24px; color: var(--forest); font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; }
+#image-terrain .photo-introduction > p { max-width: 440px; padding: 0; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+
+#image-terrain .photo-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; align-items: start; }
+#image-terrain .photo-card { min-width: 0; margin: 0; }
+#image-terrain .photo-card img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: center; border-radius: 24px; }
+#image-terrain .photo-card-large img { object-position: 50% 42%; }
+#image-terrain .photo-card figcaption { padding-top: 24px; }
+#image-terrain .photo-card h3 { color: var(--forest); font: 400 28px/1.2 var(--font-display); letter-spacing: -.02em; }
+#image-terrain .photo-card figcaption > p { margin-top: 12px; color: var(--ink); font: 400 16px/1.65 var(--font-body); }
+#image-terrain .photo-card figcaption > .photo-use { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font: 400 14px/1.6 var(--font-body); }
+
+@media (max-width: 900px) {
+  #image-terrain .photo-introduction { grid-template-columns: 1fr; gap: 24px; }
+  #image-terrain .photo-introduction > p { justify-self: start; max-width: 620px; }
+  #image-terrain .photo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px 24px; }
+  #image-terrain .photo-card-large { grid-column: 1 / -1; }
+  #image-terrain .photo-card-large img { aspect-ratio: 16 / 10; }
+  #image-terrain .photo-card-large figcaption { max-width: 620px; }
+}
+
+@media (max-width: 640px) {
+  #image-terrain { padding-top: 56px; padding-bottom: 56px; }
+  #image-terrain .photo-introduction { margin-bottom: 32px; }
+  #image-terrain .photo-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #image-terrain .photo-grid { grid-template-columns: 1fr; gap: 36px; }
+  #image-terrain .photo-card-large { grid-column: auto; }
+  #image-terrain .photo-card-large img { aspect-ratio: 4 / 3; }
+  #image-terrain .photo-card figcaption { padding-top: 20px; }
+  #image-terrain .photo-card h3 { font-size: 24px; }
+}

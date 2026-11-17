@@ -1,0 +1,24 @@
+{
+  "page": "Nos partenaires",
+  "route": "/a-propos/nos-partenaires/",
+  "status": "Proposition de wireframe à valider",
+  "hero": "Modèle simple de Notre équipe : fil d’Ariane, surtitre, titre et introduction centrés sur fond clair.",
+  "sections": [
+    "introduction",
+    "annuaire",
+    "partenariat"
+  ],
+  "categories": {
+    "Techniques": 10,
+    "Financiers": 10,
+    "Institutionnels": 10
+  },
+  "directory": "Grille de cinq colonnes sur ordinateur, trois sur tablette et deux sur mobile ; filtres Tous/Techniques/Financiers/Institutionnels.",
+  "references": [
+    "Notre équipe : héros simple",
+    "Partenaires variante D : trois familles",
+    "Accueil : CTA photographique"
+  ],
+  "content": "Trente emplacements illustratifs, dix par catégorie, sans nom ni affiliation réels affirmés. Logos, noms, nature des appuis et coordonnées à confirmer avec APADER.",
+  "interaction": "Filtres et sélection dans l’URL, fiche partenaire en dialogue, anciens liens de catégories préservés ; bouton partenariat et accès aux appels à partenariat."
+}

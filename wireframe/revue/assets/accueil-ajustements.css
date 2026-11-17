@@ -1,0 +1,74 @@
+/* Compléments de l’accueil validé : statistiques documentées et récits sans vidéo obligatoire.
+   Couleurs limitées aux statistiques et au carrousel de #impact. */
+.page-wireframe #impact.impact-teachers {
+  --review-impact-ink:#24462e;
+  --review-impact-muted:#415b43;
+  --review-impact-line:#24462e38;
+}
+.page-wireframe #impact.impact-teachers .stats { background:#fffdf3; }
+.page-wireframe #impact.impact-teachers .stats-heading h2 { color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .results-link { color:var(--review-impact-ink); min-height:44px; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card { justify-content:flex-start; gap:18px; min-height:310px; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card.stat-card-1 { background:#fff8cc; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card.stat-card-2 { background:#e9f2bb; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card.stat-card-3 { background:#d8eaa5; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card.stat-card-4 { background:#bfe08b; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card p,
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card strong { color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .stat-evidence { width:100%; margin:0; padding-top:15px; border-top:1px solid var(--review-impact-line); font:400 12px/1.6 Sans,Arial,sans-serif; }
+.page-wireframe #impact.impact-teachers .stat-evidence > div { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:8px; margin:0 0 6px; }
+.page-wireframe #impact.impact-teachers .stat-evidence dt { margin:0; font-weight:500; color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .stat-evidence dd { margin:0; color:var(--review-impact-muted); overflow-wrap:anywhere; }
+.page-wireframe #impact.impact-teachers .stats-context { color:var(--review-impact-muted); box-shadow:none; }
+.page-wireframe #impact.impact-teachers .stats-context p { max-width:56ch; color:var(--review-impact-muted); font-size:17px; line-height:1.7; }
+.page-wireframe #impact.impact-teachers .impact-carousel { background:linear-gradient(125deg,#fff8d3 0%,#e9f3c2 46%,#cceba2 100%); color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .story-heading h2 { color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .carousel-stage { background:radial-gradient(ellipse at center,#fffef3 0%,#e3efb9 100%); }
+.page-wireframe #impact.impact-teachers .impact-story { background:#fffef2; color:var(--review-impact-ink); box-shadow:0 10px 28px #25472b18; }
+.page-wireframe #impact.impact-teachers .story-copy h3,
+.page-wireframe #impact.impact-teachers .story-words blockquote { color:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .story-byline { color:var(--review-impact-muted); }
+.page-wireframe #impact.impact-teachers .story-byline span { color:var(--review-impact-ink); background:#e8f1cc; }
+.page-wireframe #impact.impact-teachers .story-thumbnail { background:linear-gradient(to top right,transparent calc(50% - .5px),#50713c50 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#50713c50 50%,transparent calc(50% + .5px)),#dfedb5; }
+.page-wireframe #impact.impact-teachers .impact-story:nth-child(2) .story-thumbnail { background-color:#d1e8a2; }
+.page-wireframe #impact.impact-teachers .impact-story:nth-child(3) .story-thumbnail { background-color:#c1df8c; }
+.page-wireframe #impact.impact-teachers .impact-story:nth-child(4) .story-thumbnail { background-color:#eaf1be; }
+.page-wireframe #impact.impact-teachers .impact-story:nth-child(5) .story-thumbnail { background-color:#f9f2bf; }
+.page-wireframe #impact.impact-teachers .thumbnail-label { color:var(--review-impact-muted); }
+.page-wireframe #impact.impact-teachers .story-read-link { position:absolute; left:20px; right:20px; bottom:34px; min-height:48px; padding:12px 14px; display:flex; align-items:center; justify-content:center; gap:12px; border:1px solid var(--review-impact-ink); border-radius:7px; background:var(--review-impact-ink); color:#fffef2; text-align:center; font:500 15px/22px Sans,Arial,sans-serif; }
+.page-wireframe #impact.impact-teachers .story-read-link:hover { background:#355d3d; text-decoration:underline; text-underline-offset:4px; }
+.page-wireframe #impact.impact-teachers .peek .story-read-link { display:none; }
+.page-wireframe #impact.impact-teachers .story-dot { width:44px; height:44px; }
+.page-wireframe #impact.impact-teachers .story-pagination { gap:8px; }
+.page-wireframe #impact.impact-teachers .story-dot::before { background:#7b985d; }
+.page-wireframe #impact.impact-teachers .story-dot[aria-pressed="true"]::before { background:var(--review-impact-ink); }
+.page-wireframe #impact.impact-teachers .peek-target { min-width:44px; min-height:44px; }
+.page-wireframe #impact.impact-teachers a:focus-visible,
+.page-wireframe #impact.impact-teachers button:focus-visible,
+.page-wireframe #impact.impact-teachers .carousel-stage:focus-visible { outline:3px solid var(--review-impact-ink); outline-offset:4px; }
+@media(max-width:1049px) {
+ .page-wireframe #impact.impact-teachers .teachers-grid .stat-card { padding:28px 24px; min-height:310px; }
+ .page-wireframe #impact.impact-teachers .story-read-link { left:12px; right:12px; font-size:14px; }
+}
+@media(max-width:700px) {
+ .page-wireframe #impact.impact-teachers .teachers-grid .stat-card { padding:23px 18px; min-height:340px; gap:16px; }
+ .page-wireframe #impact.impact-teachers .stat-evidence { font-size:12px; padding-top:12px; }
+ .page-wireframe #impact.impact-teachers .stat-evidence > div { display:block; margin-bottom:10px; }
+ .page-wireframe #impact.impact-teachers .stat-evidence dd { margin-top:2px; }
+ .page-wireframe #impact.impact-teachers .stats-context p { font-size:15px; line-height:1.65; }
+ .page-wireframe #impact.impact-teachers .story-read-link { min-height:48px; bottom:22px; font-size:14px; }
+ .page-wireframe #impact.impact-teachers .impact-story.current { width:calc(100% - 104px); }
+ .page-wireframe #impact.impact-teachers .impact-story.near-left { left:22px; width:44px; }
+ .page-wireframe #impact.impact-teachers .impact-story.near-right { left:calc(100% - 22px); width:44px; }
+ .page-wireframe #impact.impact-teachers .story-copy { gap:18px; }
+ .page-wireframe #impact.impact-teachers .story-copy h3 { font-size:23px; }
+ .page-wireframe #impact.impact-teachers .story-words blockquote { font-size:24px; line-height:1.15; }
+}
+@media(max-width:359px) {
+ .page-wireframe #impact.impact-teachers .teachers-grid .stat-card { min-height:0; }
+ .page-wireframe #impact.impact-teachers .stat-evidence > div { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); }
+ .page-wireframe #impact.impact-teachers .stat-evidence dd { margin:0; }
+ .page-wireframe #impact.impact-teachers .impact-story.current { width:calc(100% - 104px); }
+ .page-wireframe #impact.impact-teachers .story-copy h3 { font-size:21px; }
+ .page-wireframe #impact.impact-teachers .story-words blockquote { font-size:22px; }
+}

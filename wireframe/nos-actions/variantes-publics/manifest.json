@@ -1,0 +1,28 @@
+{
+  "status": "À choisir",
+  "section": "Publics accompagnés",
+  "domain": "Agriculture durable et agroforesterie",
+  "options": {
+    "a": {
+      "title": "Trois profils, lecture directe",
+      "source_name": "Pangram · Plagiarism — Who it’s for",
+      "source_url": "https://www.pangram.com/solutions/plagiarism",
+      "reference": "P05-publics.png",
+      "description": "Une petite icône, un intitulé et un texte court pour chaque public accompagné.",
+      "note": "Reprise des trois cartes compactes. Les publics sont ceux de la proposition de page d’action ; les descriptions restent à renseigner. Les liens propres aux produits Pangram sont retirés."
+    },
+    "b": {
+      "title": "Trois publics illustrés",
+      "source_name": "Pangram · Developers — trois visuels",
+      "source_url": "https://www.pangram.com/use-cases/developers",
+      "reference": "S05-trois-visuels.png",
+      "description": "Trois grands visuels pour mettre les personnes au premier plan, avec leur présentation en dessous.",
+      "note": "Reprise de l’en-tête en deux colonnes, des grands visuels et des panneaux de texte. Les couleurs sont converties en gris et les images restent des emplacements de wireframe."
+    }
+  },
+  "fragments": {
+    "a": "<section class=\"puv-section puv-a\" aria-labelledby=\"puv-title\"><div class=\"puv-wrap\"><header class=\"puv-header\"><div><p class=\"puv-label\">Auprès des communautés</p><h2 class=\"puv-title\" id=\"puv-title\">Qui accompagnons-nous ?</h2></div><p class=\"puv-intro\">[Présentation des publics accompagnés et de leurs besoins dans ce domaine.]</p></header><div class=\"puv-compact-grid\"><article class=\"puv-card\"><span class=\"puv-icon\" aria-hidden=\"true\">◌</span><h3 class=\"puv-card-title\">Producteurs et productrices</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></article><article class=\"puv-card\"><span class=\"puv-icon\" aria-hidden=\"true\">◎</span><h3 class=\"puv-card-title\">Groupes et organisations agricoles</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></article><article class=\"puv-card\"><span class=\"puv-icon\" aria-hidden=\"true\">⌂</span><h3 class=\"puv-card-title\">Communautés rurales</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></article></div></div></section>",
+    "b": "<section class=\"puv-section puv-b\" aria-labelledby=\"puv-title\"><div class=\"puv-wrap\"><header class=\"puv-header\"><div><p class=\"puv-label\">Auprès des communautés</p><h2 class=\"puv-title\" id=\"puv-title\">Qui accompagnons-nous ?</h2></div><p class=\"puv-intro\">[Présentation des publics accompagnés et de leurs besoins dans ce domaine.]</p></header><div class=\"puv-photo-grid\"><article class=\"puv-persona\"><div class=\"puv-visual\" role=\"img\" aria-label=\"Visuel illustrant Producteurs et productrices, emplacement provisoire\"><span>[Visuel du public 01]</span></div><div class=\"puv-persona-copy\"><h3 class=\"puv-card-title\">Producteurs et productrices</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></div></article><article class=\"puv-persona\"><div class=\"puv-visual\" role=\"img\" aria-label=\"Visuel illustrant Groupes et organisations agricoles, emplacement provisoire\"><span>[Visuel du public 02]</span></div><div class=\"puv-persona-copy\"><h3 class=\"puv-card-title\">Groupes et organisations agricoles</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></div></article><article class=\"puv-persona\"><div class=\"puv-visual\" role=\"img\" aria-label=\"Visuel illustrant Communautés rurales, emplacement provisoire\"><span>[Visuel du public 03]</span></div><div class=\"puv-persona-copy\"><h3 class=\"puv-card-title\">Communautés rurales</h3><p class=\"puv-copy\">[Profil des personnes accompagnées, besoins identifiés et modalités de participation.]</p></div></article></div></div></section>"
+  },
+  "current_page_unchanged": true
+}

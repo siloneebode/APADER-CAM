@@ -1,0 +1,25 @@
+{
+  "status": "B retenue le 22 octobre 2026 ; A conservée comme alternative",
+  "selected": "b",
+  "selected_at": "2026-10-22",
+  "alternative": "a",
+  "current_page": "/opportunites/formations/",
+  "current_page_sha256": "08a9f5db783a80849f7f4235398d2193fcb6b10837a86029d579843ed6018df4",
+  "comparison": "/opportunites/formations/variantes/",
+  "variants": [
+    {
+      "id": "a",
+      "title": "Cartes visuelles",
+      "url": "/opportunites/formations/variantes/a.html",
+      "reference": "Carte Actualités A retenue sur l’accueil, adaptée aux formations"
+    },
+    {
+      "id": "b",
+      "title": "Blocs horizontaux avec affiche",
+      "url": "/opportunites/formations/variantes/b.html",
+      "reference": "Pinpoint Événements, adapté aux formations"
+    }
+  ],
+  "placeholders": true,
+  "registration_service_added": false
+}

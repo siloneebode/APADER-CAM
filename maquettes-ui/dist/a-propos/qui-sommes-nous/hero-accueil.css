@@ -1,0 +1,13 @@
+/* Composition de l’accueil, avec un seul visuel fixe. */
+#introduction.qi-home-hero{overflow:hidden}
+#introduction.qi-home-hero .hero-editorial{bottom:80px}
+#introduction.qi-home-hero .hero-actions{flex-direction:row;align-items:center;flex-wrap:wrap}
+#introduction.qi-home-hero .hero-actions .button{font-size:16px;font-weight:500;line-height:24px;gap:12px}
+#introduction.qi-home-hero .hero-actions .text-link{display:inline-flex;align-items:center;gap:12px;border:0;padding:0;line-height:25px}
+@media(max-width:1049px){
+  #introduction.qi-home-hero .hero-editorial{inset:auto}
+}
+@media(max-width:700px){
+  #introduction.qi-home-hero .hero-actions .button{font-size:14px}
+  #introduction.qi-home-hero .hero-actions .text-link{font-size:14px;min-height:44px}
+}

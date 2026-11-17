@@ -1,0 +1,287 @@
+/* APADER home: approved wireframe compositions, current moodboard colours.
+   Palette, type and motifs: Document_revision_wireframes_Moodboard_APADER,
+   section 5; moodboard-ux-ui-2026-10-30/dist/pangram-direction.css.
+   Scope deliberately excludes the shared header, footer and other pages. */
+.content-home {
+  --brand:#008840; --forest:#123e2b; --yellow:#f3ee54; --sage:#dde8d8;
+  --paper:#f7f7f0; --ink:#1c2921; --muted:#5e6c61; --line:#cad5c7;
+  --white:#fff;
+  --font-body:'IBM Plex Sans',Arial,sans-serif;
+  --font-display:'PP Eiko',Georgia,serif;
+}
+.content-home #contenu > section {
+  font-family:var(--font-body);
+  border-color:var(--line);
+}
+.content-home #contenu :is(#introduction,#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) :is(p,a,button,dt,dd) {
+  font-family:var(--font-body);
+}
+.content-home #contenu :is(#introduction,#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) :is(h1,h2,h3,h4,blockquote) {
+  font-family:var(--font-display);
+  font-weight:400;
+  font-style:normal;
+}
+.content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) h2 {
+  font-size:56px;
+  line-height:1.1;
+  letter-spacing:-.02em;
+}
+.content-home #contenu :is(#introduction,#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) :is(a,button,[tabindex]):focus-visible {
+  outline:3px solid var(--brand);
+  outline-offset:5px;
+}
+
+/* Rectangular moodboard labels, with the separate 4px square. */
+.content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) .pangram-kicker {
+  display:flex; align-items:flex-start; gap:0; width:fit-content;
+  border:0; border-radius:0; padding:0;
+  background:none; color:var(--forest);
+  font:400 14px/20px var(--font-body);
+  letter-spacing:0; text-transform:none;
+}
+.content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) .pangram-kicker::before {
+  content:''; position:static; flex:0 0 4px; width:4px; height:4px;
+  border:0; border-radius:0; background:var(--brand); opacity:1;
+}
+.content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) .pangram-kicker > span {
+  padding:4px 8px; border:0; border-radius:0;
+  background:var(--sage); color:var(--forest);
+  font:400 14px/20px var(--font-body);
+}
+.content-home #contenu .pangram-kicker > span::before { background:inherit; }
+.content-home #contenu :is(#presidente,#domaines) .pangram-kicker > span { background:var(--paper); }
+.content-home #contenu :is(#structures,#partenaires,#contact) .pangram-kicker > span { background:var(--yellow); }
+.content-home #contenu :is(#structures,#partenaires,#contact) .pangram-kicker::before { background:var(--paper); }
+
+/* Full-photograph hero remains the official home composition. */
+.content-home #contenu #introduction { background:var(--forest); color:var(--paper); }
+.content-home #contenu #introduction .hero-scene { background:var(--forest); }
+.content-home #contenu #introduction .hero-carousel-title { color:var(--paper); font-size:62px; line-height:1.1; }
+.content-home #contenu #introduction :is(.hero-eyebrow,.hero-description,.text-link,.hero-selector,.hero-step-caption,.hero-live,.revue-photo-credit) { color:var(--paper); }
+.content-home #contenu #introduction .hero-kicker {
+  --ease:cubic-bezier(.22,1,.36,1);
+  --kicker-background:var(--sage);
+  --kicker-color:var(--forest);
+  --kicker-mark:var(--brand);
+  margin:0 0 24px;
+  font:400 14px/20px var(--font-body);
+  letter-spacing:0;
+}
+.content-home #contenu #introduction .hero-kicker::before { background:var(--brand); opacity:1; }
+.content-home #contenu #introduction .hero-kicker > span { color:var(--forest); }
+.content-home #contenu #introduction .hero-kicker > span::before { background:var(--kicker-background); }
+.content-home #contenu #introduction .hero-veil {
+  background:linear-gradient(90deg,rgba(0,0,0,.56) 0%,rgba(0,0,0,.48) 42%,rgba(0,0,0,.04) 78%,transparent 100%),linear-gradient(0deg,rgba(0,0,0,.18),transparent 60%);
+}
+/* No pagination, counter, captions or progress rail below the hero. */
+.content-home #contenu #introduction .hero-scene-photo { transform:none; }
+.content-home #contenu #introduction .hero-playback {
+  position:absolute; z-index:5; right:28px; bottom:28px;
+  width:40px; height:40px; min-height:40px; opacity:.8;
+  background:transparent; border:1px solid #f7f7f066;
+}
+.content-home #contenu #introduction .hero-playback:hover,
+.content-home #contenu #introduction .hero-playback:focus-visible { opacity:1; }
+@media(max-width:700px) {
+  .content-home #contenu #introduction .hero-playback { right:20px; bottom:20px; }
+}
+
+/* Presentation and editorial card B. The unavailable message is explicit. */
+.content-home #contenu #presentation { background:var(--paper); color:var(--forest); scroll-margin-top:112px; }
+.content-home #contenu #presentation .about-body > p { color:var(--ink); }
+.content-home #contenu #presentation .about-stop { background:var(--brand); }
+.content-home #contenu #presentation .about-media { background:var(--sage); border-radius:24px; }
+.content-home #contenu #presentation .about-eyebrow {
+  --ease:cubic-bezier(.22,1,.36,1);
+  --kicker-background:var(--sage); --kicker-color:var(--forest); --kicker-mark:var(--brand);
+}
+.content-home #contenu #presentation .about-eyebrow::before { background:var(--brand); }
+.content-home #contenu #presentation .about-eyebrow > span { background:transparent; color:var(--forest); }
+.content-home #contenu #presentation .about-eyebrow > span::before { background:var(--kicker-background); }
+.content-home #contenu #presentation .about-grid { align-items:stretch; }
+.content-home #contenu #presentation .about-body { max-width:600px; margin-top:0; }
+.content-home #contenu #presentation .about-body p { font-size:16px; line-height:1.7; letter-spacing:0; }
+.content-home #contenu #presentation .about-body p + p { margin-top:16px; }
+.content-home #contenu #presentation .about-body > .about-link { margin-top:20px; }
+.content-home #contenu #presentation .about-media {
+  align-self:stretch; aspect-ratio:auto; height:auto; min-height:0;
+}
+.content-home #contenu #presentation .about-media img { filter:none; object-position:51% center; }
+@media(max-width:1023px) {
+  .content-home #contenu #presentation .about-grid { align-items:start; }
+  .content-home #contenu #presentation .about-media { aspect-ratio:4 / 3; }
+}
+.content-home #contenu #presidente { background:var(--sage); color:var(--forest); }
+.content-home #contenu #presidente .mot-editorial-heading { text-align:center; }
+.content-home #contenu #presidente h2 { color:var(--forest); }
+.content-home #contenu #presidente .mot-editorial-card { background:var(--paper); color:var(--forest); }
+.content-home #contenu #presidente .mot-editorial-intro { font:400 28px/1.3 var(--font-display); }
+.content-home #contenu #presidente .mot-demo-note { color:var(--muted); font-size:14px; }
+.content-home #contenu #presidente .mot-editorial-portrait {
+  background:var(--sage); border-color:var(--line); color:var(--forest);
+  font:400 26px/1 var(--font-display);
+}
+.content-home #contenu #presidente .mot-editorial-signature > span { color:var(--muted); }
+.content-home #contenu #presidente .mot-editorial-corner-start { background:var(--yellow); }
+.content-home #contenu #presidente .mot-editorial-corner-end { background:var(--sage); }
+.content-home #contenu #presidente .mot-editorial-open:disabled {
+  background:var(--sage); color:var(--muted); border:1px solid var(--line);
+  border-radius:8px; min-height:48px; font:500 16px/1.4 var(--font-body);
+  cursor:default;
+}
+
+/* The four cards use the official C markup and remain expanded at every size. */
+.content-home #contenu #domaines { background:var(--sage); color:var(--forest); }
+.content-home #contenu #domaines .revue-domain-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.content-home #contenu #domaines .revue-domain-card { background:var(--paper); border-color:var(--line); border-radius:12px; }
+.content-home #contenu #domaines .revue-domain-visual { background:var(--sage); }
+.content-home #contenu #domaines .revue-domain-number { color:var(--brand); font-family:var(--font-display); }
+.content-home #contenu #domaines h3 { font-size:28px; line-height:1.15; }
+.content-home #contenu #domaines .revue-domain-copy p { color:var(--ink); }
+
+/* The two structural feature rows retain their original split composition. */
+.content-home #contenu #structures { background:var(--forest); color:var(--paper); }
+.content-home #contenu #structures .editorial-card { border-radius:12px; }
+.content-home #contenu #structures .editorial-copy { background:var(--paper); color:var(--forest); }
+.content-home #contenu #structures .editorial-visual { background:var(--sage); color:var(--forest); }
+.content-home #contenu #structures .structure-index { color:var(--brand); font-family:var(--font-display); }
+.content-home #contenu #structures .full-name { color:var(--muted); opacity:1; }
+.content-home #contenu #structures .summary { color:var(--ink); }
+
+/* Projects: preserve the three-column carousel; replace only legacy colours. */
+.content-home #contenu #projets { background:var(--paper); color:var(--forest); }
+.content-home #contenu #projets .project-slide { background:var(--white); border-radius:12px; box-shadow:0 7px 20px #123e2b0d; }
+.content-home #contenu #projets :is(.slide-art,.project-visual) { background:var(--sage); }
+.content-home #contenu #projets :is(.fact-list,.project-category,.project-counter) { color:var(--muted); }
+.content-home #contenu #projets .project-number { font-family:var(--font-display); color:var(--brand); }
+.content-home #contenu #projets .project-summary { color:var(--ink); }
+.content-home #contenu #projets .project-beneficiaries { color:var(--muted); opacity:1; }
+.content-home #contenu #projets .arrow-controls button { background:var(--forest); color:var(--paper); width:44px; height:44px; }
+.content-home #contenu #projets .arrow-controls button:disabled { background:var(--sage); color:var(--muted); }
+.content-home #contenu #projets .project-dot { background:var(--line); }
+.content-home #contenu #projets .project-dot[aria-pressed=true] { background:var(--forest); }
+
+/* Key figures and documented stories retain the approved asymmetric corners. */
+.content-home #contenu #impact { background:var(--white); color:var(--forest); }
+.content-home #contenu #impact .stats { background:var(--white); }
+.content-home #contenu #impact :is(.stats-heading,.story-heading) h2 { color:var(--forest); }
+.content-home #contenu #impact .stat-card strong { font-family:var(--font-display); }
+.content-home #contenu #impact .stat-card-1 { background:var(--yellow); color:var(--forest); }
+.content-home #contenu #impact .stat-card-2 { background:var(--forest); color:var(--paper); }
+.content-home #contenu #impact .stat-card-3 { background:var(--sage); color:var(--forest); }
+.content-home #contenu #impact .stat-card-4 { background:var(--paper); color:var(--forest); }
+.content-home #contenu #impact .stat-card :is(strong,p,dt,dd,a) { color:inherit; }
+.content-home #contenu #impact .stat-evidence { font-family:var(--font-body); border-color:var(--line); }
+.content-home #contenu #impact .stats-context { color:var(--muted); box-shadow:none; }
+.content-home #contenu #impact .stats-context p { color:var(--muted); }
+.content-home #contenu #impact .impact-carousel { background:var(--sage); color:var(--forest); }
+.content-home #contenu #impact .carousel-stage { background:radial-gradient(ellipse at center,var(--paper),var(--sage)); }
+.content-home #contenu #impact .impact-story { background:var(--paper); color:var(--forest); box-shadow:0 10px 28px #123e2b0d; }
+.content-home #contenu #impact .story-copy h3 { color:var(--forest); font:500 28px/1.15 var(--font-body); }
+.content-home #contenu #impact .story-words :is(blockquote,.story-excerpt) { color:var(--forest); font-family:var(--font-display); }
+.content-home #contenu #impact .story-byline { color:var(--forest); }
+.content-home #contenu #impact .story-byline span { background:var(--sage); color:var(--forest); border-radius:0; }
+.content-home #contenu #impact .story-thumbnail { background:var(--sage); }
+.content-home #contenu #impact .story-dot::before { background:var(--line); }
+.content-home #contenu #impact .story-dot[aria-pressed=true]::before { background:var(--forest); }
+
+/* Publications and news: sober cards, no orange icons or category pills. */
+.content-home #contenu #ressources { background:var(--white); color:var(--forest); }
+.content-home #contenu #ressources .document-card { background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+.content-home #contenu #ressources .document-card:hover { background:var(--sage); border-bottom-right-radius:60px; }
+.content-home #contenu #ressources :is(.document-icon,.document-arrow),
+.content-home #contenu #ressources .document-card:hover .document-arrow { color:var(--brand); }
+.content-home #contenu #ressources :is(.document-category,.document-summary) { color:var(--muted); }
+.content-home #contenu #ressources h3 { font-size:28px; }
+.content-home #contenu #actualites { background:var(--paper); color:var(--forest); }
+.content-home #contenu #actualites .editorial-visual { background:var(--white); border-color:var(--line); border-radius:12px; }
+.content-home #contenu #actualites .editorial-category {
+  border:0; border-radius:0; padding:4px 8px;
+  background:var(--sage); color:var(--forest);
+  font:400 14px/20px var(--font-body); text-transform:none; letter-spacing:0;
+}
+.content-home #contenu #actualites .editorial-card h3 { font-size:28px; }
+.content-home #contenu #actualites :is(.editorial-date,.editorial-summary) { color:var(--muted); border-color:var(--line); }
+
+.content-home #contenu #opportunites { background:var(--sage); color:var(--forest); }
+.content-home #contenu #opportunites :is(.opportunity-intro,.opportunity-meta) { color:var(--muted); }
+.content-home #contenu #opportunites .opportunity-row { border-color:var(--line); }
+.content-home #contenu #opportunites .opportunity-read span { color:var(--brand); }
+.content-home #contenu #partenaires { background:var(--forest); color:var(--paper); }
+.content-home #contenu #partenaires .partner-intro { color:var(--sage); }
+.content-home #contenu #partenaires .partner-logo { border-color:#dde8d84d; color:var(--paper); }
+.content-home #contenu #partenaires .partner-logo img { border-radius:8px; }
+.content-home #contenu #contact { background:var(--paper); color:var(--forest); }
+.content-home #contenu #contact .contact-panel { background-color:var(--forest); color:var(--paper); border-radius:24px; }
+.content-home #contenu #contact .contact-panel::before { background:linear-gradient(90deg,#123e2bcc,#123e2b99); }
+.content-home #contenu #contact .contact-panel::after {
+  content:''; position:absolute; z-index:1; right:-100px; bottom:-150px;
+  width:420px; height:420px; pointer-events:none; opacity:.12;
+  background:url('/assets/patterns/halo.svg') center/contain no-repeat;
+}
+.content-home #contenu #contact .contact-intro { color:var(--paper); }
+
+/* Moodboard buttons: 48px, 16/500, 8px frame, 32px arrow tile. */
+.content-home #contenu #introduction .button,
+.content-home #contenu #structures .structure-link,
+.content-home #contenu #projets .project-button,
+.content-home #contenu #impact .story-read-link,
+.content-home #contenu #contact .contact-button {
+  display:inline-flex; align-items:center; justify-content:space-between;
+  gap:12px; min-height:48px; max-width:100%; padding:8px 8px 8px 16px;
+  border:0; border-radius:8px; background:var(--forest); color:var(--paper);
+  font:500 16px/1.4 var(--font-body); text-decoration:none; white-space:normal;
+  transition:background-color 200ms ease;
+}
+.content-home #contenu #introduction .button > span[aria-hidden],
+.content-home #contenu #structures .structure-link > span[aria-hidden],
+.content-home #contenu #projets .project-button > span[aria-hidden],
+.content-home #contenu #impact .story-read-link > span[aria-hidden],
+.content-home #contenu #contact .contact-button > span[aria-hidden] {
+  display:grid; place-items:center; flex:0 0 32px; width:32px; height:32px;
+  padding:0; border:0; border-radius:6px; background:var(--yellow); color:var(--forest);
+  font-size:0; line-height:1;
+}
+.content-home #contenu #introduction .button > span[aria-hidden]::before,
+.content-home #contenu #structures .structure-link > span[aria-hidden]::before,
+.content-home #contenu #projets .project-button > span[aria-hidden]::before,
+.content-home #contenu #impact .story-read-link > span[aria-hidden]::before,
+.content-home #contenu #contact .contact-button > span[aria-hidden]::before {
+  content:''; width:23px; height:23px; background:currentColor;
+  clip-path:polygon(8% 39%,61% 39%,42% 20%,57% 5%,100% 50%,57% 95%,42% 80%,61% 61%,8% 61%);
+  transition:transform 300ms ease;
+}
+.content-home #contenu #introduction .button:hover,
+.content-home #contenu #structures .structure-link:hover,
+.content-home #contenu #projets .project-button:hover,
+.content-home #contenu #impact .story-read-link:hover,
+.content-home #contenu #contact .contact-button:hover { background:var(--brand); color:var(--paper); text-decoration:none; }
+.content-home #contenu #introduction .button:hover > span[aria-hidden]::before,
+.content-home #contenu #structures .structure-link:hover > span[aria-hidden]::before,
+.content-home #contenu #projets .project-button:hover > span[aria-hidden]::before,
+.content-home #contenu #impact .story-read-link:hover > span[aria-hidden]::before,
+.content-home #contenu #contact .contact-button:hover > span[aria-hidden]::before { transform:rotate(-45deg); }
+.content-home #contenu #impact .peek .story-read-link { display:none; }
+.content-home #contenu :is(#presentation,#domaines,#projets,#impact,#ressources,#actualites,#opportunites) :is(.about-link,.revue-domain-link,.catalog-link,.results-link,.all-resources,.all-news,.editorial-read,.all-opportunities,.opportunity-read) {
+  color:var(--forest); min-height:44px; font-size:16px; font-weight:500;
+  text-decoration:underline; text-underline-offset:5px;
+}
+.content-home #contenu #partenaires .partner-link { color:var(--paper); min-height:44px; font-size:16px; font-weight:500; }
+.content-home #contenu :is(#introduction,#partenaires,#contact) :is(a,button):focus-visible { outline-color:var(--yellow); }
+
+@media(max-width:1049px) {
+  .content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) h2 { font-size:48px; }
+}
+@media(max-width:700px) {
+  .content-home #contenu #introduction .hero-carousel-title { font-size:44px; }
+  .content-home #contenu :is(#presentation,#presidente,#domaines,#structures,#projets,#impact,#ressources,#actualites,#opportunites,#partenaires,#contact) h2 { font-size:36px; }
+  .content-home #contenu #domaines .revue-domain-grid { grid-template-columns:minmax(0,1fr); }
+  .content-home #contenu :is(#domaines,#ressources,#actualites) h3 { font-size:24px; }
+  .content-home #contenu #presidente .mot-editorial-intro { font-size:24px; }
+  .content-home #contenu #impact .story-copy h3 { font-size:24px; }
+  .content-home #contenu #contact .contact-panel::after { width:270px; height:270px; right:-70px; bottom:-90px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu :is(a,button,span)::before { transition:none; }
+  .content-home #contenu :is(a,button) { transition:none; }
+}

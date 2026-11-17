@@ -1,0 +1,77 @@
+{
+  "note": "Photographies d’illustration provisoires, sans lien avec les projets ou les personnes de l’APADER.",
+  "images": [
+    {
+      "key": "agriculture",
+      "file": "agriculture.jpg",
+      "url": "https://images.unsplash.com/photo-1509099381441-ea3c0cf98b94?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/woman-planting-during-daytime-QYcSeY7vuZM",
+      "author": "Annie Spratt",
+      "description": "Une agricultrice travaille dans une parcelle cultivée.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Une agricultrice travaille dans une parcelle cultivée.",
+      "bytes": 225448
+    },
+    {
+      "key": "women",
+      "file": "women.jpg",
+      "url": "https://images.unsplash.com/photo-1509100194014-d49809396daa?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/woman-holding-green-grass-m0DUL38R49Y",
+      "author": "Annie Spratt",
+      "description": "Une agricultrice participe à un travail collectif dans un champ.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Une agricultrice participe à un travail collectif dans un champ.",
+      "bytes": 268904
+    },
+    {
+      "key": "youth",
+      "file": "youth.jpg",
+      "url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/woman-and-man-sitting-in-front-of-monitor-IgUR1iX0mqM",
+      "author": "NESA by Makers / Victor x Temilola",
+      "description": "Deux jeunes adultes travaillent ensemble sur un ordinateur.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Deux jeunes adultes travaillent ensemble sur un ordinateur.",
+      "bytes": 150444
+    },
+    {
+      "key": "community",
+      "file": "community.jpg",
+      "url": "https://images.unsplash.com/photo-1632215861513-130b66fe97f4?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/a-woman-standing-in-front-of-a-group-of-children-VC6MGt9ZoBA",
+      "author": "Emmanuel Ikwuegbu",
+      "description": "Une intervenante échange avec des élèves dans une salle de classe.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Une intervenante échange avec des élèves dans une salle de classe.",
+      "bytes": 156089
+    },
+    {
+      "key": "learning",
+      "file": "learning.jpg",
+      "url": "https://images.unsplash.com/photo-1783378996092-6b6d4962c270?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/students-in-matching-uniforms-posing-in-lagos-3zt8-lNAoBI",
+      "author": "Ben Iwara",
+      "description": "Des élèves en uniforme devant un bâtiment scolaire.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Des élèves en uniforme devant un bâtiment scolaire.",
+      "bytes": 464135
+    },
+    {
+      "key": "forest",
+      "file": "forest.jpg",
+      "url": "https://images.unsplash.com/photo-1646928234724-ddfac30993e6?fm=jpg&q=80&w=1200&fit=crop",
+      "page": "https://unsplash.com/photos/an-aerial-view-of-a-lush-green-forest-UtilSW8zuZk",
+      "author": "Geio Tischler",
+      "description": "Vue aérienne d’une forêt tropicale.",
+      "license": "Free to use under the Unsplash License",
+      "provisional": true,
+      "alt": "Vue aérienne d’une forêt tropicale.",
+      "bytes": 259719
+    }
+  ]
+}

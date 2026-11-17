@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <title>Pans — motif abstrait APADER</title>
+  <desc>Des fragments trapézoïdaux reprennent seulement les bords obliques convergents de l’entonnoir du logo.</desc>
+  <path d="M-90-58 860 121V212L-90 57Z" fill="#123E2B"/>
+  <path d="m-90 89 950 152v61L-90 222Z" fill="#DDE8D8"/>
+  <path d="m-90 442 950-146v74L-90 578Z" fill="#008840"/>
+  <path d="m-90 302 950-17v8L-90 330Z" fill="#F3EE54"/>
+</svg>

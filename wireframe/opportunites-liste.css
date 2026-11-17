@@ -1,0 +1,41 @@
+#opportunites.opportunities-list *{box-sizing:border-box}
+#opportunites.opportunities-list{margin:0;font:16px/1.5 Sans,Arial,sans-serif;color:#172723;background:#f7f5e9}
+#opportunites.opportunities-list h2,#opportunites.opportunities-list h3,#opportunites.opportunities-list p{margin:0}
+#opportunites.opportunities-list a{color:inherit;text-decoration:none;touch-action:manipulation}
+#opportunites.opportunities-list a:focus-visible{outline:3px solid #0049d1;outline-offset:5px}
+#opportunites.opportunities-list .container{width:100%;max-width:1440px;padding:0 36px;margin:auto}
+#opportunites.opportunities-list{padding:80px 0}
+#opportunites.opportunities-list .opportunity-heading{margin-bottom:44px}
+#opportunites.opportunities-list .opportunity-heading .pangram-kicker{margin-bottom:24px}
+#opportunites.opportunities-list .opportunity-heading h2{font:400 56px/1.1 Heading,Georgia,serif;letter-spacing:-1.12px;margin-bottom:24px;overflow-wrap:anywhere}
+#opportunites.opportunities-list .opportunity-intro{max-width:870px;font-size:16px;line-height:25px;color:#657061}
+#opportunites.opportunities-list .opportunity-heading{text-align:center}
+#opportunites.opportunities-list .pangram-kicker{margin-left:auto;margin-right:auto}
+#opportunites.opportunities-list .opportunity-intro{margin-left:auto;margin-right:auto}
+#opportunites.opportunities-list .opportunity-list{border-top:1px solid #c8cbbf}
+#opportunites.opportunities-list .opportunity-row{padding:32px 24px;display:flex;align-items:center;justify-content:space-between;gap:36px;border-bottom:1px solid #c8cbbf;min-width:0}
+#opportunites.opportunities-list .opportunity-row>div{min-width:0}
+#opportunites.opportunities-list .opportunity-row h3{font:400 32px/1.2 Heading,Georgia,serif;letter-spacing:-.6px;margin-bottom:26px;overflow-wrap:anywhere}
+#opportunites.opportunities-list .opportunity-meta{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:13px;line-height:21px;color:#586457}
+#opportunites.opportunities-list .opportunity-read{display:inline-flex;gap:20px;align-items:center;font-size:14px;line-height:22px;white-space:nowrap;flex:none}
+#opportunites.opportunities-list .opportunity-read span{font-size:24px;line-height:1;color:#c5806a}
+#opportunites.opportunities-list .opportunity-read:hover{text-decoration:underline;text-underline-offset:5px}
+#opportunites.opportunities-list .opportunity-footer{margin-top:36px;display:flex;justify-content:center}
+#opportunites.opportunities-list .all-opportunities{display:inline-flex;gap:16px;align-items:center;text-decoration:underline;text-underline-offset:5px;font-size:15px;line-height:24px}
+@media(max-width:1049px){#opportunites.opportunities-list{padding:64px 0}
+#opportunites.opportunities-list .opportunity-heading h2{font-size:48px}
+#opportunites.opportunities-list .opportunity-row{padding:28px 16px;gap:24px}
+#opportunites.opportunities-list .opportunity-row h3{font-size:29px}}
+@media(max-width:700px){#opportunites.opportunities-list .container{padding:0 20px}
+#opportunites.opportunities-list{padding:56px 0}
+#opportunites.opportunities-list .opportunity-heading{margin-bottom:30px}
+#opportunites.opportunities-list .opportunity-heading h2{font-size:clamp(36px,10vw,44px);letter-spacing:-.72px;margin-bottom:20px}
+#opportunites.opportunities-list .opportunity-heading .pangram-kicker{margin-bottom:20px}
+#opportunites.opportunities-list .opportunity-intro{font-size:14px;line-height:23px}
+#opportunites.opportunities-list .opportunity-row{padding:26px 0;display:block}
+#opportunites.opportunities-list .opportunity-row h3{font-size:30px;margin-bottom:18px}
+#opportunites.opportunities-list .opportunity-meta{font-size:12px;line-height:20px;gap:8px 20px}
+#opportunites.opportunities-list .opportunity-row .opportunity-read{margin-top:22px;justify-content:space-between;width:100%}
+#opportunites.opportunities-list .opportunity-footer{margin-top:30px}
+#opportunites.opportunities-list .all-opportunities{font-size:14px}}
+#opportunites.opportunities-list{height:auto;scroll-margin-top:96px}

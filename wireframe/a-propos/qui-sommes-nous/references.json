@@ -1,0 +1,56 @@
+{
+  "page": "Qui sommes-nous ?",
+  "status": "Première proposition à discuter",
+  "sections": [
+    {
+      "section": "01 · Héros",
+      "capture": "S02-hero.png",
+      "source": "Pangram · Teachers",
+      "url": "https://www.pangram.com/use-cases/teachers",
+      "title": "Héros en deux colonnes",
+      "usage": "Titre et présentation à gauche, grand visuel sur la moitié droite. Le module logiciel devient un emplacement photographique APADER ; les actions mènent aux sections de la page."
+    },
+    {
+      "section": "02 · Notre mission",
+      "capture": "P01-section-05.png",
+      "source": "Pangram · Accueil / About Pangram",
+      "url": "https://www.pangram.com/",
+      "title": "Présentation éditoriale et visuel",
+      "usage": "Étiquette, grand titre et texte à gauche, visuel rectangulaire arrondi à droite. La mission reste un texte provisoire ; aucun lecteur vidéo n’est ajouté ici."
+    },
+    {
+      "section": "03 · Notre vision",
+      "capture": "P08-demonstration.png",
+      "source": "Pangram · Google Docs",
+      "url": "https://www.pangram.com/solutions/google-docs",
+      "title": "Message et grand visuel encadré",
+      "usage": "Fond teinté traduit en gris, titre et texte associés à un grand cadre. Les colonnes sont inversées sur ordinateur pour alterner les compositions. Le texte passe en premier sur mobile."
+    },
+    {
+      "section": "04 · Nos valeurs",
+      "capture": "S04-enjeux.png",
+      "source": "Pangram · Content Moderation",
+      "url": "https://www.pangram.com/use-cases/trust-and-safety",
+      "title": "Colonnes ouvertes avec pictogrammes",
+      "usage": "Trois colonnes sans cartes lourdes. Les valeurs sont des emplacements nommés [Valeur 01], etc. Leur nombre est illustratif et sera ajusté aux valeurs réelles de l’APADER."
+    },
+    {
+      "section": "05 · Notre approche",
+      "capture": "P01-section-06.png",
+      "source": "Pangram · Accueil / How Pangram works",
+      "url": "https://www.pangram.com/",
+      "title": "Grand visuel et accordéons numérotés",
+      "usage": "Quatre emplacements illustrent la composition : ouvrir un principe change le visuel associé. Changement au clic, sans automatisme au défilement. Le nombre et le contenu des principes restent à confirmer."
+    },
+    {
+      "section": "06 · Notre positionnement",
+      "capture": "P03-orbite-viewport.png",
+      "source": "Pangram · Chrome Extension",
+      "url": "https://www.pangram.com/solutions/chrome-extension",
+      "title": "Grand visuel cadré et éléments périphériques",
+      "usage": "Fond sombre en niveaux de gris, visuel décentré à gauche, message à droite. Les pastilles représentent des spécificités provisoires. Composition statique ; aucune animation orbitale n’est revendiquée."
+    }
+  ],
+  "unchanged": "Accueil, menu et footer de référence conservés.",
+  "content_note": "Tous les textes entre crochets sont provisoires. Les nombres de valeurs, principes et spécificités sont illustratifs."
+}

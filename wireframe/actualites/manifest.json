@@ -1,0 +1,37 @@
+{
+  "status": "Première proposition à valider",
+  "hub": "index.html",
+  "collections": [
+    "actualites.html",
+    "evenements.html",
+    "communiques.html"
+  ],
+  "fiches_exemples": [
+    "actualite-exemple.html",
+    "evenement-exemple.html",
+    "communique-exemple.html"
+  ],
+  "modeles": "modeles.html",
+  "references": [
+    {
+      "title": "Actualités : le modèle validé sur l’accueil",
+      "url": "./../#actualites",
+      "capture": "apader-accueil-actualites-valide.png",
+      "adaptation": "La boucle reprend la variante A déjà retenue sur l’accueil : visuel arrondi, badge, titre serif, filet, date alignée à droite, résumé et lien avec flèche. Il s’agit du même composant décliné en carrousel et en grille. Le bloc à la une conserve sa composition dédiée."
+    },
+    {
+      "title": "Événements : la capture fournie",
+      "url": "https://www.pinpointhq.com/events",
+      "capture": "pinpoint-evenement-client.png",
+      "adaptation": "La grande boucle est reprise : métadonnées et présentation à gauche, affiche à droite. Le bouton ouvre ici la fiche événement ; aucun parcours d’inscription n’est créé dans le wireframe."
+    },
+    {
+      "title": "Communiqués : une adaptation d’annonces datées",
+      "url": "https://www.pinpointhq.com/product-releases",
+      "capture": "pinpoint-annonces-entete.png",
+      "adaptation": "Pinpoint n’a pas de collection séparée intitulée Communiqués. Son organisation d’annonces datées sert de référence ; le wireframe APADER propose une liste chronologique institutionnelle, avec référence et émetteur."
+    }
+  ],
+  "scope": "Wireframes seulement ; contenu provisoire.",
+  "preserved": "Accueil et Qui sommes-nous inchangés."
+}

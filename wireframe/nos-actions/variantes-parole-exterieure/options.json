@@ -1,0 +1,18 @@
+{
+  "a": {
+    "title": "Carte Pangram",
+    "source_name": "Pangram · Teachers",
+    "source_url": "https://www.pangram.com/use-cases/teachers",
+    "reference": "a-pangram-temoignage.png",
+    "description": "La carte Pangram retenue, avec un message plus développé en deux paragraphes et une hauteur qui s’adapte au texte.",
+    "note": "Variante A intégrée après les ressources sur les quatre pages d’action. La carte claire, les coins géométriques et la photo sont conservés. Le message long, le nom et la qualité restent provisoires ; la variante B est conservée."
+  },
+  "b": {
+    "title": "Citation Pinpoint",
+    "source_name": "Pinpoint · Accueil",
+    "source_url": "https://www.pinpointhq.com/",
+    "reference": "b-pinpoint-citation.png",
+    "description": "Une section anthracite, une grande citation serif blanche alignée à gauche, puis un emplacement photo rond et l’identité. La citation est directement posée sur le fond de section.",
+    "note": "Proposition pour la page d’action, après les ressources. Tous les contenus entre crochets restent à recueillir ; aucun témoignage réel ni soutien n’est attribué."
+  }
+}

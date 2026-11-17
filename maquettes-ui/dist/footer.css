@@ -1,0 +1,87 @@
+/* Composition « Angle ouvert » retenue dans le moodboard APADER. */
+#footer.apader-footer {
+  --pans-surface: #f7f7f0;
+  --pans-text: #123e2b;
+  --pans-muted: #405244;
+  --pans-line: #cad5c7;
+  scroll-margin-top: var(--apader-header-offset, 112px);
+}
+
+/* Les styles monochromes des anciens wireframes ne doivent pas recolorer le footer validé. */
+body.ui-collection #footer.apader-footer { background: var(--forest); color: var(--footer-muted); }
+body.ui-collection #footer.apader-footer .af-panel { background: var(--pans-surface); color: var(--footer-ink); }
+body.ui-collection #footer.apader-footer .af-group-summary,
+body.ui-collection #footer.apader-footer .af-brand { color: var(--footer-ink); }
+body.ui-collection #footer.apader-footer .af-contact-fields p,
+body.ui-collection #footer.apader-footer .af-legal li,
+body.ui-collection #footer.apader-footer .af-language { color: var(--footer-muted); }
+
+#footer.apader-footer .af-artwork {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  inset: 0 0 auto;
+  pointer-events: none;
+}
+
+#footer.apader-footer .af-artwork .pattern-art {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#footer.apader-footer[data-footer-treatment=ouvert] {
+  padding-top: 104px;
+}
+
+#footer.apader-footer[data-footer-treatment=ouvert] .af-artwork {
+  display: block;
+  height: 320px;
+}
+
+#footer.apader-footer[data-footer-treatment=ouvert] .af-artwork .pattern-art {
+  top: -85px;
+  right: -80px;
+  width: 60%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#footer.apader-footer[data-footer-treatment=ouvert] .af-brand {
+  margin-bottom: 100px;
+}
+
+/* Le motif intérieur reste au bord du panneau, sous les rubriques. */
+#footer.apader-footer[data-pattern=halo] .af-panel > .pattern-art {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 auto;
+  width: 28%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 28% center;
+  opacity: .24;
+  pointer-events: none;
+}
+
+.atelier-footer-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--forest);
+}
+
+@media (max-width: 640px) {
+  #footer.apader-footer[data-footer-treatment=ouvert] { padding-top: 64px; }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-artwork { height: 180px; }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-artwork .pattern-art {
+    top: -60px;
+    right: -80px;
+    width: 84%;
+    height: 230px;
+  }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-brand { margin-bottom: 62px; }
+  #footer.apader-footer[data-pattern=halo] .af-panel > .pattern-art { width: 30%; }
+}

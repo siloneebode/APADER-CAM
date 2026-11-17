@@ -1,0 +1,28 @@
+#contact-final,#contact-final *{box-sizing:border-box}
+#contact-final{margin:0;padding:64px 0;background:#f7f7f0;color:#1c2921;font:400 16px/1.5 Sans,Arial,sans-serif;scroll-margin-top:var(--sm-anchor-offset,150px)}
+#contact-final .qic-wrap{width:100%;max-width:1440px;padding:0 36px;margin:auto}
+#contact-final .qic-panel{position:relative;overflow:hidden;padding:64px 100px 70px;border-radius:24px;background:#dde8d8;color:#1c2921}
+#contact-final .qic-image{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(to top right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),linear-gradient(to bottom right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),#dde8d8}
+#contact-final .qic-image span{position:absolute;right:16px;bottom:12px;padding:7px 12px;max-width:90%;background:#dde8d8;color:#5e6c61;font:400 12px/1.5 Sans,Arial,sans-serif}
+#contact-final .qic-copy{position:relative;z-index:1;max-width:880px;margin:auto;text-align:center}
+#contact-final .qic-kicker{position:relative;display:table;padding:5px 10px;margin:0 auto 26px;background:#dde8d8;color:#5e6c61;font:400 12px/1.5 Sans,Arial,sans-serif}
+#contact-final .qic-kicker::before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#dde8d8}
+#contact-final .qic-copy h2{max-width:780px;margin:0 auto 28px;font:400 56px/1.12 Heading,Georgia,serif;letter-spacing:-1.12px;text-wrap:balance}
+#contact-final .qic-intro{max-width:650px;margin:auto;color:#1c2921;font:400 18px/28px Sans,Arial,sans-serif;text-wrap:balance}
+#contact-final .qic-button{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:58px;margin-top:32px;padding:10px 12px 10px 22px;border:1px solid #123e2b;border-radius:7px;background:#123e2b;color:#fff;font:600 16px/24px Sans,Arial,sans-serif;cursor:pointer;touch-action:manipulation}
+#contact-final .qic-button:hover{background:#123e2b}
+#contact-final .qic-arrow{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:7px;background:#f7f7f0;color:#1c2921;font:400 28px/1 Sans,Arial,sans-serif}
+#contact-final button:focus-visible{outline:3px solid #123e2b;outline-offset:5px}
+#contact-final .qic-dialog{width:min(660px,calc(100vw - 32px));max-width:none;max-height:88dvh;margin:auto;padding:28px;overflow:auto;border:1px solid #cad5c7;border-radius:18px;background:#ffffff;color:#1c2921;font:400 15px/1.6 Sans,Arial,sans-serif}
+#contact-final .qic-dialog::backdrop{background:#0009}
+#contact-final .qic-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid #cad5c7}
+#contact-final .qic-dialog-header p{margin:0;color:#5e6c61;font-size:12px}
+#contact-final .qic-dialog-header button{flex:none;width:44px;height:44px;border:1px solid #cad5c7;border-radius:50%;background:#fff;color:#1c2921;font:400 27px/1 Sans,Arial,sans-serif;cursor:pointer}
+#contact-final .qic-dialog h2{margin:0 0 22px;font:400 38px/1.12 Heading,Georgia,serif;letter-spacing:-.025em}
+#contact-final .qic-dialog>p{margin:0;color:#5e6c61;font-size:14px;line-height:1.65}
+#contact-final .qic-dialog dl{display:grid;gap:20px;margin:26px 0}
+#contact-final .qic-dialog dt{margin-bottom:7px;color:#5e6c61;font-size:11px}
+#contact-final .qic-dialog dd{margin:0;color:#1c2921;font-size:15px}
+#contact-final .qic-dialog .qic-dialog-note{padding-top:20px;border-top:1px solid #cad5c7;font-size:12px}
+@media(max-width:1049px){#contact-final{padding:56px 0}#contact-final .qic-panel{padding:56px 75px 62px}#contact-final .qic-copy h2{font-size:48px;letter-spacing:-.96px}#contact-final .qic-intro{font-size:16px;line-height:26px}}
+@media(max-width:700px){#contact-final{padding:40px 0}#contact-final .qic-wrap{padding:0 20px}#contact-final .qic-panel{padding:44px 24px 60px;border-radius:20px}#contact-final .qic-kicker{margin-bottom:24px}#contact-final .qic-copy h2{margin-bottom:24px;font-size:40px;line-height:1.12;letter-spacing:-.8px}#contact-final .qic-intro{font-size:15px;line-height:24px}#contact-final .qic-button{gap:10px;min-height:54px;margin-top:28px;padding-left:16px;font-size:15px}#contact-final .qic-arrow{width:32px;height:32px;font-size:25px}#contact-final .qic-dialog{padding:22px 19px}#contact-final .qic-dialog h2{font-size:32px}}

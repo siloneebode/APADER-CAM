@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <title>Filament — motif abstrait APADER</title>
+  <desc>Une ligne continue forme deux retours amples, inspirés de l’idée d’un filament lumineux.</desc>
+  <path d="M-80 388H480C550 388 592 349 592 290S550 192 480 192H252C206 192 176 163 176 120S206 48 252 48H880" stroke="#123E2B" stroke-width="20"/>
+  <path d="M252 48H365" stroke="#F3EE54" stroke-width="20"/>
+  <path d="M-80 388H105" stroke="#008840" stroke-width="20"/>
+</svg>

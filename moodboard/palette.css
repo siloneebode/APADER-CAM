@@ -1,0 +1,160 @@
+/* APADER palette: colour specimens, readable references and usage examples. */
+#palette {
+  padding-top: 56px;
+  scroll-margin-top: -16px;
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#palette .palette-introduction {
+  grid-template-columns: 1.1fr 1fr;
+  align-items: end;
+  gap: 48px;
+  margin-bottom: 40px;
+  padding: 48px;
+  border-radius: 12px;
+  background: var(--forest);
+  color: var(--paper);
+}
+
+#palette .palette-introduction h2 {
+  margin-top: 24px;
+  color: inherit;
+  font: 400 52px/1.12 var(--font-display);
+  letter-spacing: -.025em;
+}
+
+#palette .palette-introduction > p {
+  max-width: 440px;
+  padding: 0;
+  color: var(--sage);
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#palette .palette-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#palette .swatch {
+  --swatch-colour: var(--brand);
+  --swatch-symbol: #fff;
+  min-height: 0;
+  padding: 0 0 16px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 400 14px/1.5 var(--font-body);
+  transform: none;
+  box-shadow: none;
+}
+
+#palette .swatch-forest { --swatch-colour: var(--forest); }
+#palette .swatch-yellow { --swatch-colour: var(--yellow); --swatch-symbol: var(--forest); }
+#palette .swatch-sage { --swatch-colour: var(--sage); --swatch-symbol: var(--forest); }
+#palette .swatch-paper { --swatch-colour: var(--paper); --swatch-symbol: var(--forest); }
+#palette .swatch-ink { --swatch-colour: var(--ink); }
+
+#palette .swatch-colour {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 148px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--swatch-colour);
+  color: var(--swatch-symbol);
+}
+
+#palette .swatch-paper .swatch-colour { border-color: var(--line); }
+
+#palette .swatch-copy {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  transition: background-color 180ms ease;
+}
+
+#palette .swatch-copy svg { width: 16px; height: 16px; }
+#palette .swatch:hover .swatch-copy { background: #ffffff24; }
+#palette .swatch strong { margin: 0; color: var(--forest); font: 500 18px/1.3 var(--font-body); letter-spacing: 0; }
+#palette .swatch-code { margin-top: 5px; font: 400 14px/1.5 var(--font-body); letter-spacing: 0; }
+#palette .swatch-use { margin-top: 10px; color: var(--muted); font: 400 13px/1.5 var(--font-body); opacity: 1; }
+#palette .swatch:focus-visible { outline: 2px solid var(--brand); outline-offset: 5px; border-radius: 8px; }
+
+#palette .palette-notes {
+  align-items: center;
+  gap: 16px 32px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font: 400 14px/1.6 var(--font-body);
+}
+
+#palette .palette-notes a { color: var(--forest); text-underline-offset: 4px; }
+
+#palette .palette-usage-heading { margin: 56px 0 24px; }
+#palette .palette-usage-heading h3,
+#palette .palette-interface-heading h3 {
+  color: var(--forest);
+  font: 400 32px/1.2 var(--font-display);
+  letter-spacing: -.02em;
+}
+
+#palette .palette-usage-heading > p,
+#palette .palette-interface-heading > p { max-width: 690px; margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#palette .color-applications { gap: 16px; margin-top: 0; border-radius: 0; overflow: visible; }
+#palette .contrast-sample { min-height: 260px; padding: 28px; border-radius: 8px; }
+#palette .sample-light { border: 1px solid var(--line); }
+#palette .contrast-sample > .sample-label { font: 400 14px/1.5 var(--font-body); }
+#palette .contrast-sample h4 { max-width: 300px; margin: 28px 0; color: inherit; font: 400 32px/1.16 var(--font-display); letter-spacing: -.02em; }
+#palette .contrast-sample > span:last-child { opacity: 1; font: 400 13px/1.5 var(--font-body); }
+
+#palette .utility-colors { display: block; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+#palette .utility-colors > .palette-interface-heading { display: block; }
+#palette .utility-colors > div.palette-interface-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 16px; margin-top: 24px; }
+#palette .palette-interface-grid button { display: flex; align-items: flex-start; gap: 12px; min-width: 0; min-height: 64px; padding: 8px 0; border: 0; border-radius: 0; background: transparent; color: var(--ink); text-align: left; font: 400 14px/1.5 var(--font-body); }
+#palette .palette-interface-grid button i { display: block; flex: 0 0 32px; width: 32px; height: 32px; margin: 2px 0 0; border: 1px solid var(--line); border-radius: 50%; background: var(--color); }
+#palette .palette-interface-grid button span { min-width: 0; }
+#palette .palette-interface-grid button b { display: block; margin-top: 4px; color: var(--muted); font: 400 13px/1.5 var(--font-body); }
+#palette .palette-interface-grid button:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+
+@media (max-width: 1199px) {
+  #palette .palette-introduction { padding: 40px; gap: 32px; }
+  #palette .palette-introduction h2 { font-size: 46px; }
+  #palette .utility-colors > div.palette-interface-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+
+@media (max-width: 900px) {
+  #palette .palette-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+  #palette .palette-introduction { grid-template-columns: 1fr; }
+  #palette .palette-introduction > p { max-width: 600px; justify-self: start; }
+  #palette .contrast-sample { padding: 24px; }
+  #palette .contrast-sample h4 { font-size: 28px; }
+}
+
+@media (max-width: 640px) {
+  #palette .palette-introduction { margin-bottom: 32px; padding: 28px 24px; gap: 24px; border-radius: 10px; }
+  #palette .palette-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #palette .palette-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px 16px; }
+  #palette .swatch-colour { height: 128px; margin-bottom: 12px; }
+  #palette .swatch strong { font-size: 17px; }
+  #palette .palette-notes { align-items: flex-start; flex-direction: column; gap: 12px; font-size: 14px; }
+  #palette .palette-usage-heading { margin-top: 40px; }
+  #palette .palette-usage-heading h3,
+  #palette .palette-interface-heading h3 { font-size: 28px; }
+  #palette .color-applications { grid-template-columns: 1fr; }
+  #palette .contrast-sample { min-height: 240px; padding: 28px; }
+  #palette .contrast-sample h4 { max-width: 300px; font-size: 32px; }
+  #palette .utility-colors { margin-top: 40px; }
+  #palette .utility-colors > div.palette-interface-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 16px; }
+  #palette .palette-interface-grid button { gap: 10px; }
+}

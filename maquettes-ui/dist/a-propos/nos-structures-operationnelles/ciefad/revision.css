@@ -1,0 +1,13 @@
+.sm-page .sm-nav-shell{overflow:visible}.structure-page .sm-nav-shell{contain:none}
+.sm-testimonials-comparison{scroll-margin-top:var(--sm-anchor-offset,150px)}
+.sm-compare,.sm-compare *{box-sizing:border-box}
+/* Comparaison dans la page complète : carrousel de l’accueil ou cartes. */
+.sm-compare{margin:0;padding:28px max(36px,calc((100vw - 1344px)/2));display:flex;align-items:center;justify-content:space-between;gap:32px;background:#dde8d8;border-block:1px solid #cad5c7;color:#1c2921;font:400 14px/1.5 SMCISans,Arial,sans-serif}
+.sm-compare-label{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:7px;color:#5e6c61}
+.sm-compare strong{display:block;font-weight:500;font-size:20px}
+.sm-compare p{margin:7px 0 0;max-width:600px;color:#5e6c61;font-size:13px}
+.sm-compare a{display:inline-flex;align-items:center;justify-content:center;gap:22px;flex-shrink:0;min-height:58px;max-width:100%;padding:16px 22px;border:2px solid #123e2b;border-radius:6px;background:#123e2b;color:#fff;text-decoration:none;font-weight:500;line-height:1.35}
+.sm-compare a:hover{background:#123e2b}.sm-compare a:focus-visible{outline:3px solid #123e2b;outline-offset:5px}
+.sm-compare a span{font-size:24px;flex-shrink:0}
+@media(max-width:900px){.sm-compare{align-items:stretch;flex-direction:column;gap:20px;padding:26px 20px}.sm-compare a{align-self:flex-start}.sm-compare strong{font-size:19px}}
+@media(max-width:480px){.sm-compare a{width:100%;justify-content:space-between;font-size:13px}.sm-compare p{font-size:12px}}

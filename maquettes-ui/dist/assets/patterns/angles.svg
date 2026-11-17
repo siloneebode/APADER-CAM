@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <title>Angles du wireframe, palette APADER</title>
+  <path d="M0 0H190L0 260Z" fill="#DDE8D8"/>
+  <path d="M300 0H734L630 240Z" fill="#008840"/>
+  <path d="M734 0 800 118V240L742 190Z" fill="#F3EE54"/>
+  <path d="m695 365 105 29v86H485Z" fill="#DDE8D8"/>
+</svg>

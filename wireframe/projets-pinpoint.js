@@ -1,0 +1,22 @@
+(() => {
+ const root=document.querySelector('#projets.projects-pinpoint');
+ if(root){
+  const slides=[...root.querySelectorAll('.project-slide')];
+  const dots=[...root.querySelectorAll('.project-dot')];
+  const prev=root.querySelector('.project-nav-prev'),next=root.querySelector('.project-nav-next');
+  let index=0;
+  function select(value){
+   index=Math.max(0,Math.min(slides.length-1,value));
+   root.querySelector('.project-strip').style.setProperty('--project-index',index);
+   slides.forEach((slide,i)=>{slide.inert=i!==index;slide.setAttribute('aria-hidden',String(i!==index));});
+   dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===index)));
+   prev.disabled=index===0;next.disabled=index===slides.length-1;
+   root.querySelector('.project-counter').textContent=`Projet ${index+1} sur ${slides.length}`;
+  }
+  prev.addEventListener('click',()=>select(index-1));next.addEventListener('click',()=>select(index+1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>select(i)));
+  root.querySelector('.project-window').addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();select(index+(event.key==='ArrowRight'?1:-1));}});
+  select(0);
+ }
+ root?.querySelectorAll('[data-demo-link]').forEach(link=>link.addEventListener('click',event=>event.preventDefault()));
+})();

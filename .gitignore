@@ -1,0 +1,11 @@
+.DS_Store
+._*
+__MACOSX/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.zip
+*.tar.gz
+/maquettes-ui/dist/documents/

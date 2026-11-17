@@ -1,0 +1,22 @@
+#resultats,#resultats *{box-sizing:border-box}
+#resultats{padding:80px 0;background:#fff;color:#1c2921;font:400 16px/1.5 Sans,Arial,sans-serif;scroll-margin-top:var(--sm-anchor-offset,150px)}
+#resultats .qir-wrap{width:100%;max-width:1440px;padding:0 36px;margin:auto}
+#resultats .qir-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:44px}
+#resultats .qir-kicker{position:relative;display:table;padding:5px 10px;margin:0 0 24px;background:#dde8d8;color:#5e6c61;font:400 12px/1.5 Sans,Arial,sans-serif}
+#resultats .qir-kicker::before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#dde8d8}
+#resultats .qir-heading h2{margin:0;font:400 56px/1.1 Heading,Georgia,serif;letter-spacing:-1.12px}
+#resultats .qir-link{display:inline-flex;align-items:center;gap:12px;margin-bottom:5px;color:inherit;font:400 15px/23px Sans,Arial,sans-serif;text-decoration:underline;text-underline-offset:5px;touch-action:manipulation}
+#resultats .qir-link:focus-visible{outline:3px solid #123e2b;outline-offset:5px}
+#resultats .qir-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#resultats .qir-card{min-width:0;min-height:225px;padding:32px 36px;border-radius:8px;display:flex;flex-direction:column;justify-content:center;gap:22px;background:#dde8d8;color:#1c2921}
+#resultats .qir-card strong{font:400 clamp(42px,4.4vw,64px)/1.05 Heading,Georgia,serif;letter-spacing:-1px;overflow-wrap:anywhere}
+#resultats .qir-card p{margin:0;font:400 16px/24px Sans,Arial,sans-serif}
+#resultats .qir-card-1{border-bottom-left-radius:60px}
+#resultats .qir-card-2{background:#dde8d8}
+#resultats .qir-card-3{background:#f7f7f0;border-top-right-radius:60px}
+#resultats .qir-card-4{background:#dde8d8}
+#resultats .qir-context{grid-column:span 2;padding:32px 36px;display:flex;align-items:center;border-radius:8px;color:#1c2921}
+#resultats .qir-context p{margin:0;font:400 18px/28px Sans,Arial,sans-serif}
+@media(max-width:1049px){#resultats{padding:64px 0}#resultats .qir-heading h2{font-size:48px}#resultats .qir-card{padding:28px 24px;min-height:200px}#resultats .qir-card strong{font-size:46px}#resultats .qir-card p{font-size:14px;line-height:22px}}
+@media(max-width:700px){#resultats{padding:56px 0}#resultats .qir-wrap{padding:0 20px}#resultats .qir-heading{display:block;margin-bottom:30px}#resultats .qir-kicker{margin-bottom:20px}#resultats .qir-heading h2{font-size:clamp(36px,10vw,44px)}#resultats .qir-link{margin-top:24px;font-size:14px}#resultats .qir-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#resultats .qir-card{padding:24px 20px;min-height:170px;gap:18px}#resultats .qir-card strong{font-size:clamp(32px,7vw,43px);letter-spacing:-.6px}#resultats .qir-card-1{border-bottom-left-radius:40px}#resultats .qir-card-3{border-top-right-radius:40px;grid-column:1;grid-row:2}#resultats .qir-card-4{grid-column:2;grid-row:2}#resultats .qir-context{grid-column:span 2;grid-row:3;padding:20px 0}#resultats .qir-context p{font-size:15px;line-height:23px}}
+@media(max-width:359px){#resultats .qir-grid{grid-template-columns:1fr}#resultats .qir-card{min-height:155px}#resultats .qir-card strong{font-size:44px}#resultats .qir-card-3,#resultats .qir-card-4,#resultats .qir-context{grid-column:auto;grid-row:auto}#resultats .qir-context{order:5}}

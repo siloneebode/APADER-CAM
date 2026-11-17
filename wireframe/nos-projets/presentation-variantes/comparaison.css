@@ -1,0 +1,60 @@
+/* Comparaison de présentation dans deux fiches complètes ; les autres sections restent communes. */
+.project-presentation-page #presentation .project-presentation-switch{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 48px;padding:24px 28px;border:1px solid #c8d4bf;border-radius:7px;background:#eef2e6;color:var(--forest,#173f34)}
+.project-presentation-page #presentation .project-presentation-switch>div{min-width:0;max-width:730px}
+.project-presentation-page #presentation .project-presentation-label{margin:0 0 7px;color:var(--forest,#173f34);font:500 13px/1.5 Sans,Arial,sans-serif;letter-spacing:.025em}
+.project-presentation-page #presentation .project-presentation-description{margin:0;color:#61735d;font:400 13px/1.7 Sans,Arial,sans-serif}
+.project-presentation-page #presentation .project-presentation-other{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;gap:12px;min-height:50px;max-width:100%;padding:13px 21px;border:1px solid var(--forest,#173f34);border-radius:4px;background:var(--forest,#173f34);color:#fffdf3;font:500 13px/1.6 Sans,Arial,sans-serif;text-align:center;text-decoration:none;overflow-wrap:anywhere;transition:background .18s ease,border-color .18s ease}
+.project-presentation-page #presentation .project-presentation-other:hover{background:var(--deep,#0e2e26);border-color:var(--deep,#0e2e26)}
+.project-presentation-page #presentation .project-presentation-other:focus-visible{outline:3px solid var(--terra,#ce7148);outline-offset:5px}
+.project-presentation-page .presentation-b .presentation-editorial{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr);gap:76px;align-items:start;margin-bottom:47px}
+.project-presentation-page .presentation-b .presentation-editorial>*{min-width:0}
+.project-presentation-page .presentation-b .presentation-positioning-block{padding-left:34px;border-left:1px solid #d4ddc8}
+.project-presentation-page .presentation-b .presentation-editorial h3{font:400 33px/1.16 Heading,Georgia,serif;letter-spacing:-.025em;color:var(--forest,#173f34);margin:0 0 22px}
+.project-presentation-page .presentation-b .presentation-editorial p{font:400 17px/1.85 Sans,Arial,sans-serif;color:var(--muted,#5f7067);margin:0 0 22px;max-width:63ch;overflow-wrap:anywhere}
+.project-presentation-page .presentation-b .presentation-editorial p:last-child{margin-bottom:0}
+.project-presentation-page .presentation-b .objective-ribbon{background:var(--forest,#173f34);border:1px solid var(--forest,#173f34);border-radius:7px;padding:38px 42px 40px;margin:0 0 48px;color:#fff8e8}
+.project-presentation-page .presentation-b .objective-ribbon .eyebrow{font:500 11px/1.6 Sans,Arial,sans-serif;color:#e6c17f;letter-spacing:.13em;margin:0 0 17px}
+.project-presentation-page .presentation-b .objective-ribbon h3{font:400 clamp(27px,2.7vw,36px)/1.24 Heading,Georgia,serif;letter-spacing:-.025em;color:#fff9e9;max-width:1020px;margin:0;text-wrap:pretty;overflow-wrap:anywhere}
+.project-presentation-page .presentation-b .specific-objectives>h3{font:400 34px/1.15 Heading,Georgia,serif;letter-spacing:-.025em;color:var(--forest,#173f34);margin:0 0 29px}
+.project-presentation-page .presentation-b .specific-objectives ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;list-style:none;margin:0;padding:0}
+.project-presentation-page .presentation-b .specific-objectives li{min-width:0;border-top:1px solid #b9c8ab;padding:24px 0 0;margin:0}
+.project-presentation-page .presentation-b .specific-objectives li::marker{content:''}
+.project-presentation-page .presentation-b .objective-number{display:block;font:400 39px/1.1 Heading,Georgia,serif;letter-spacing:-.03em;color:#b17b2d;margin-bottom:18px}
+.project-presentation-page .presentation-b .specific-objectives li p{font:400 16px/1.85 Sans,Arial,sans-serif;color:#5c705a;margin:0;overflow-wrap:anywhere}
+@media(max-width:1049px){
+ .project-presentation-page #presentation .project-presentation-switch{gap:20px;padding:22px 24px}
+ .project-presentation-page .presentation-b .presentation-editorial{gap:42px}
+ .project-presentation-page .presentation-b .presentation-positioning-block{padding-left:29px}
+ .project-presentation-page .presentation-b .specific-objectives ol{gap:27px}
+}
+@media(max-width:850px){
+ .project-presentation-page #presentation .project-presentation-switch{flex-wrap:wrap;margin-bottom:38px}
+ .project-presentation-page .presentation-b .presentation-editorial{grid-template-columns:minmax(0,1fr);gap:30px;margin-bottom:34px}
+ .project-presentation-page .presentation-b .presentation-positioning-block{padding-left:0;border-left:0;padding-top:26px;border-top:1px solid #d8e0cd}
+ .project-presentation-page .presentation-b .presentation-editorial p{max-width:75ch}
+ .project-presentation-page .presentation-b .specific-objectives ol{grid-template-columns:minmax(0,1fr);gap:26px}
+ .project-presentation-page .presentation-b .specific-objectives li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:22px;padding-top:24px}
+ .project-presentation-page .presentation-b .objective-number{font-size:35px;margin-bottom:0}
+}
+@media(max-width:700px){
+ .project-presentation-page #presentation .project-presentation-switch{flex-direction:column;align-items:stretch;gap:19px;padding:22px 20px;margin-bottom:32px}
+ .project-presentation-page #presentation .project-presentation-label{font-size:12px}
+ .project-presentation-page #presentation .project-presentation-description{font-size:12px;line-height:1.75}
+ .project-presentation-page #presentation .project-presentation-other{width:100%;min-height:48px;font-size:12px;padding:13px 15px}
+ .project-presentation-page .presentation-b .presentation-editorial h3{font-size:30px;margin-bottom:18px}
+ .project-presentation-page .presentation-b .presentation-editorial p{font-size:16px;line-height:1.85;margin-bottom:20px}
+ .project-presentation-page .presentation-b .presentation-editorial p:last-child{margin-bottom:0}
+ .project-presentation-page .presentation-b .objective-ribbon{padding:27px 25px 30px;margin-bottom:34px;border-radius:5px}
+ .project-presentation-page .presentation-b .objective-ribbon .eyebrow{font-size:10px;margin-bottom:16px}
+ .project-presentation-page .presentation-b .objective-ribbon h3{font-size:27px;line-height:1.3}
+ .project-presentation-page .presentation-b .specific-objectives>h3{font-size:30px;line-height:1.17;margin-bottom:24px}
+ .project-presentation-page .presentation-b .specific-objectives ol{gap:24px}
+ .project-presentation-page .presentation-b .specific-objectives li{grid-template-columns:43px minmax(0,1fr);gap:17px;padding-top:22px}
+ .project-presentation-page .presentation-b .objective-number{font-size:32px}
+ .project-presentation-page .presentation-b .specific-objectives li p{font-size:15px;line-height:1.85}
+}
+@media(max-width:359px){
+ .project-presentation-page .presentation-b .objective-ribbon{padding-right:22px;padding-left:22px}
+ .project-presentation-page .presentation-b .objective-ribbon h3{font-size:25px}
+}
+@media(prefers-reduced-motion:reduce){.project-presentation-page #presentation .project-presentation-other{transition:none}}

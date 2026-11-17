@@ -1,0 +1,49 @@
+{
+  "page": "Modèle CIEFAD",
+  "status": "Proposition C retenue par le client",
+  "centre_variants": {
+    "a": {
+      "title": "Grand portrait des lieux et présentation éditoriale",
+      "composition": "Photo verticale à gauche, présentation développée à droite, trois repères publics/accompagnement/moyens"
+    },
+    "b": {
+      "title": "Une visite panoramique du centre",
+      "composition": "Grand titre, grande photographie, puis récit en deux colonnes"
+    },
+    "c": {
+      "title": "Le centre en un regard",
+      "composition": "Mosaïque éditoriale avec carte de présentation, photo, publics/objectifs et quatre activités"
+    }
+  },
+  "sections": {
+    "fondateur": {
+      "file": "fondateur.html",
+      "id": "origine-centre",
+      "purpose": "Mot de la présidente sur les besoins initiaux, la naissance du centre, ses objectifs et son évolution ; texte à recueillir et à valider",
+      "composition": "Modèle du mot utilisé dans Nos actions : variante A, carte claire inclinée, message en deux paragraphes, portrait rond dans la signature",
+      "css": "/nos-actions/parole-a.css",
+      "title": "L’histoire du CIEFAD, une ambition partagée."
+    },
+    "identite": {
+      "file": "identite.html",
+      "id": "identite-centre",
+      "purpose": "Mission, vision et valeurs en trois lignes numérotées"
+    }
+  },
+  "identity_reference": {
+    "source": "Capture fournie par le client le 26 octobre 2026",
+    "caption": "Pinpoint Careers — How we hire / Four stages, and what each one actually covers",
+    "treatment": "Composition observée dans la capture : grand titre sur fond sombre, lignes numérotées, intitulés à gauche et paragraphes développés à droite ; transposée en niveaux de gris. Aucune vérification d’animation ou de page en direct revendiquée."
+  },
+  "known_facts": [
+    "CIEFAD à Feutap",
+    "Formations en agriculture durable",
+    "Agroécologie et agroforesterie",
+    "Banque de semences",
+    "Expérimentation",
+    "Ferme d’Application et de Production"
+  ],
+  "placeholders": "Toutes les autres informations, dates, noms, valeurs et paroles restent entre crochets. Aucun auteur ni récit réel de fondation inventé.",
+  "styling": "components.css ; préfixes smc-, smo-, smi- ; fontes Pangram et IBM Plex locales",
+  "selected": "c"
+}

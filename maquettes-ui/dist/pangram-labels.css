@@ -1,0 +1,196 @@
+/* The section label already used in the APADER wireframes. */
+.pangram-kicker {
+  --kicker-fill-duration: calc(600ms * var(--speed));
+  --kicker-background: var(--sage);
+  --kicker-color: var(--forest);
+  --kicker-mark: var(--brand);
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  font: 400 14px/20px var(--font-body);
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+}
+
+.pangram-kicker::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  flex: 0 0 4px;
+  background: var(--kicker-mark);
+}
+
+.pangram-kicker > span {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-width: 0;
+  padding: 4px 8px;
+  border-radius: 0;
+  color: var(--kicker-color);
+}
+
+.pangram-kicker > span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--kicker-background);
+  transform-origin: right center;
+}
+
+.pangram-kicker--forest {
+  --kicker-background: var(--forest);
+  --kicker-color: var(--paper);
+  --kicker-mark: var(--yellow);
+}
+
+.pangram-kicker--yellow {
+  --kicker-background: var(--yellow);
+  --kicker-color: var(--forest);
+  --kicker-mark: var(--brand);
+}
+
+.pangram-kicker--ivory {
+  --kicker-background: var(--paper);
+  --kicker-color: var(--forest);
+  --kicker-mark: var(--yellow);
+}
+
+.pangram-kicker--apader {
+  --kicker-background: var(--sage);
+  --kicker-color: var(--forest);
+  --kicker-mark: var(--brand);
+}
+
+.pangram-kicker--dark {
+  --kicker-background: var(--yellow);
+  --kicker-color: var(--forest);
+  --kicker-mark: var(--paper);
+}
+
+.closing-section > .pangram-kicker {
+  margin: 0 auto;
+  font: 400 14px/20px var(--font-body);
+}
+
+.preview-hero-content > .pangram-kicker {
+  margin: 0;
+  width: fit-content;
+  max-width: 100%;
+  font: 400 14px/20px var(--font-body);
+}
+
+.kicker-showcase {
+  padding: 28px;
+  margin-bottom: 36px;
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.kicker-showcase-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.kicker-showcase-heading h3 {
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.kicker-showcase-heading p {
+  max-width: 620px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.kicker-showcase .quiet-button {
+  min-height: 44px;
+  flex-shrink: 0;
+  padding: 8px 0;
+}
+
+.kicker-examples {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  padding: 28px 0;
+}
+
+.kicker-example-caption {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.kicker-example-display { display: flex; align-items: center; min-height: 64px; padding: 12px; }
+.kicker-example-display--forest { background: var(--forest); }
+
+.kicker-showcase-note {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.kicker-showcase-note > p { max-width: 410px; }
+
+/* APADER entrance: fill from the right, then reveal the upper-left square. */
+.pangram-kicker.is-kicker-entering::before,
+.motion-examples.is-playing .animated-kicker::before {
+  animation: kicker-mark-in calc(120ms * var(--speed)) ease-out var(--kicker-fill-duration) both;
+}
+
+.pangram-kicker.is-kicker-entering > span::before,
+.motion-examples.is-playing .animated-kicker > span::before {
+  animation: kicker-panel-in var(--kicker-fill-duration) var(--ease) both;
+}
+
+@keyframes kicker-mark-in {
+  from { opacity: 0; transform: scale(.2); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes kicker-panel-in {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+html[data-motion=off] .pangram-kicker::before,
+html[data-motion=off] .pangram-kicker > span::before {
+  animation: none !important;
+  opacity: 1;
+  transform: none;
+  clip-path: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-motion=on]) .pangram-kicker::before,
+  html:not([data-motion=on]) .pangram-kicker > span::before {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .kicker-showcase { padding: 24px; }
+  .kicker-showcase-heading { flex-direction: column; gap: 10px; }
+  .kicker-showcase-heading h3 { font-size: 24px; }
+  .kicker-examples { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px 14px; }
+  .kicker-example-caption { margin-bottom: 12px; }
+  .kicker-showcase-note { flex-direction: column; gap: 8px; }
+}

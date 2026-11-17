@@ -1,0 +1,16 @@
+{
+  "page": "Politique de cookies",
+  "route": "/politique-de-cookies/",
+  "status": "Modèle de wireframe, contenu à renseigner et valider",
+  "template": "pages-legales",
+  "config": "politique-de-cookies.json",
+  "sections": [
+    "comprendre-les-cookies",
+    "leur-utilisation",
+    "categories-de-cookies",
+    "vos-preferences",
+    "durees",
+    "contact"
+  ],
+  "scope": "Modèle légal partagé par les mentions légales, la confidentialité, les cookies et les conditions générales d’utilisation."
+}

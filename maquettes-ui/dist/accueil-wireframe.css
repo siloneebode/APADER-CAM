@@ -1,0 +1,127 @@
+/* Présentation wireframe complète. Compositions et comportements conservés. */
+body.content-integrated { --wf-ink:#1c2921; --wf-secondary:#1c2921; --wf-image:#5e6c61; }
+.content-integrated .pangram-kicker::before { background:#123e2b; }
+.content-integrated .pangram-kicker > span,
+.content-integrated .pangram-kicker--pink > span { background:#dde8d8; color:#1c2921; }
+.content-integrated :focus-visible { outline-color:#123e2b !important; }
+.content-integrated .wf-image {
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  overflow:hidden; color:#5e6c61;
+  background:
+    linear-gradient(to top right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),
+    linear-gradient(to bottom right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),#dde8d8;
+  font:400 14px/1.5 Sans,Arial,sans-serif; text-align:center;
+}
+.content-integrated .wf-image > span { position:relative; max-width:90%; padding:7px 12px; background:#dde8d8; }
+.content-integrated #presentation .about-media,
+.content-integrated #domaines .panel-photo { position:relative; }
+
+.content-integrated #presidente.president-letter {
+  --letter-green:#f7f7f0; --letter-yellow:#5e6c61; --letter-cream:#fff;
+  color:#1c2921;
+}
+.content-integrated #presidente.president-letter h2,
+.content-integrated #presidente.president-letter h2 > span,
+.content-integrated #presidente.president-letter .letter-open { color:#1c2921; }
+.content-integrated #presidente.president-letter .letter-chevron { background:#123e2b; }
+.content-integrated #presidente.president-letter .letter-preview,
+.content-integrated #presidente.president-letter .letter-dialog { color:#1c2921; box-shadow:0 8px 30px #00000012; border:1px solid #cad5c7; }
+.content-integrated #presidente.president-letter .letter-lines i { background:#dde8d8; }
+.content-integrated #presidente.president-letter .letter-dialog::backdrop { background:#0008; }
+.content-integrated #presidente.president-letter .letter-full h3,
+.content-integrated #presidente.president-letter .letter-close { color:#1c2921; }
+.content-integrated #presidente.president-letter .letter-close { border-color:#cad5c7; }
+.content-integrated #presidente.president-letter .letter-close:hover { background:#f7f7f0; }
+.content-integrated #presidente.president-letter .letter-signature-photo {
+  border-color:#cad5c7; color:#5e6c61;
+  background:linear-gradient(to top right,transparent calc(50% - .5px),#dde8d8 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#dde8d8 50%,transparent calc(50% + .5px)),#dde8d8;
+}
+.content-integrated #presidente.president-letter .letter-signature-photo > span { background:#dde8d8; }
+
+.content-integrated #domaines.actions-panneaux { background:#f7f7f0; color:#1c2921; }
+.content-integrated #domaines.actions-panneaux .action-panel,
+.content-integrated #domaines.actions-panneaux .panel-rail { background:#ffffff; color:#1c2921; }
+.content-integrated #domaines.actions-panneaux .action-panel.is-active { background:transparent; }
+.content-integrated #domaines.actions-panneaux .rail-symbol,
+.content-integrated #domaines.actions-panneaux .rail-number,
+.content-integrated #domaines.actions-panneaux .panel-number { color:#5e6c61; }
+.content-integrated #domaines.actions-panneaux .panel-photo { background:#dde8d8; }
+.content-integrated #domaines.actions-panneaux .panel-next { background:#123e2b; color:#fff; }
+.content-integrated #domaines.actions-panneaux .panel-next span { background:#f7f7f0; color:#1c2921; }
+.content-integrated #domaines.actions-panneaux .paper-art { background:#dde8d8; }
+.content-integrated #domaines.actions-panneaux .paper-art::after { background:#dde8d8; }
+
+.content-integrated #structures.structures-editorial { background:#f7f7f0; color:#1c2921; }
+.content-integrated #structures.structures-editorial .editorial-copy { background:#fff; }
+.content-integrated #structures.structures-editorial .structure-index { color:#5e6c61; }
+.content-integrated #structures.structures-editorial .editorial-visual { background:#dde8d8; color:#5e6c61; }
+.content-integrated #structures.structures-editorial .editorial-visual .visual-placeholder { background:#dde8d8; border-color:#cad5c7; }
+.content-integrated #structures.structures-editorial .editorial-copy .structure-link { background:#dde8d8; color:#1c2921; }
+
+.content-integrated #projets.projects-pinpoint { background:#f7f7f0; color:#1c2921; }
+.content-integrated #projets.projects-pinpoint .project-slide { background:#fff; }
+.content-integrated #projets.projects-pinpoint .fact-list,
+.content-integrated #projets.projects-pinpoint .project-category,
+.content-integrated #projets.projects-pinpoint .project-counter { color:#5e6c61; }
+.content-integrated #projets.projects-pinpoint .project-button,
+.content-integrated #projets.projects-pinpoint .arrow-controls button { background:#123e2b; color:#fff; }
+.content-integrated #projets.projects-pinpoint .arrow-controls button:disabled { background:#dde8d8; }
+.content-integrated #projets.projects-pinpoint .project-dot { background:#dde8d8; }
+.content-integrated #projets.projects-pinpoint .project-dot[aria-pressed=true] { background:#123e2b; }
+.content-integrated #projets.projects-pinpoint .slide-art,
+.content-integrated #projets.projects-pinpoint .slide-art .project-visual { background:#dde8d8; color:#5e6c61; }
+
+.content-integrated #impact.impact-teachers { color:#1c2921; }
+.content-integrated #impact.impact-teachers .teachers-grid .stat-card { background:#dde8d8; color:#1c2921; }
+.content-integrated #impact.impact-teachers .teachers-grid .stat-card-2 { background:#dde8d8; }
+.content-integrated #impact.impact-teachers .teachers-grid .stat-card-3 { background:#f7f7f0; }
+.content-integrated #impact.impact-teachers .teachers-grid .stat-card-4 { background:#dde8d8; }
+.content-integrated #impact.impact-teachers .teachers-grid .stat-card-1 p,
+.content-integrated #impact.impact-teachers .stats-context { color:#1c2921; }
+
+.content-integrated #ressources.resources-cards { color:#1c2921; }
+.content-integrated #ressources.resources-cards .document-card { background:#f7f7f0; }
+.content-integrated #ressources.resources-cards .document-card:hover { background:#f7f7f0; }
+.content-integrated #ressources.resources-cards .document-icon,
+.content-integrated #ressources.resources-cards .document-arrow,
+.content-integrated #ressources.resources-cards .document-card:hover .document-arrow { color:#1c2921; }
+.content-integrated #ressources.resources-cards .document-category,
+.content-integrated #ressources.resources-cards .document-summary { color:#5e6c61; }
+
+.content-integrated #actualites.news-pangram { background:#ffffff; color:#1c2921; }
+.content-integrated #actualites.news-pangram .editorial-visual { background:#dde8d8; color:#5e6c61; border-color:#cad5c7; }
+.content-integrated #actualites.news-pangram .editorial-date { border-color:#cad5c7; color:#5e6c61; }
+.content-integrated #actualites.news-pangram .editorial-summary { color:#1c2921; }
+.content-integrated #actualites.news-pangram .editorial-category { border-color:#123e2b; }
+.content-integrated #opportunites.opportunities-list { background:#f7f7f0; color:#1c2921; }
+.content-integrated #opportunites.opportunities-list .opportunity-list { border-color:#cad5c7; }
+.content-integrated #opportunites.opportunities-list .opportunity-intro,
+.content-integrated #opportunites.opportunities-list .opportunity-meta { color:#1c2921; }
+.content-integrated #opportunites.opportunities-list .opportunity-read span { color:#1c2921; }
+
+.content-integrated #partenaires.partners-centered { background:#dde8d8; color:#1c2921; }
+.content-integrated #partenaires.partners-centered .partner-intro { color:#1c2921; }
+.content-integrated #partenaires.partners-centered .partner-logo {
+  color:#5e6c61; border-color:#cad5c7;
+  background:linear-gradient(to top right,transparent calc(50% - .4px),#dde8d8 50%,transparent calc(50% + .4px)),linear-gradient(to bottom right,transparent calc(50% - .4px),#dde8d8 50%,transparent calc(50% + .4px)),#dde8d8;
+}
+.content-integrated #partenaires.partners-centered .partner-logo span { background:#dde8d8; padding:4px 8px; }
+
+.content-integrated #contact.contact-photo-background { background:#f7f7f0; color:#1c2921; }
+.content-integrated #contact.contact-photo-background .contact-panel { background:#dde8d8; color:#1c2921; }
+.content-integrated #contact.contact-photo-background .contact-panel::before { background:none; }
+.content-integrated #contact.contact-photo-background .wf-image > span { position:absolute; right:16px; bottom:12px; font-size:12px; }
+.content-integrated #contact.contact-photo-background .contact-copy { text-shadow:none; }
+.content-integrated #contact.contact-photo-background .contact-intro { color:#1c2921; }
+.content-integrated #contact.contact-photo-background .contact-button { background:#123e2b; color:#fff; }
+.content-integrated #contact.contact-photo-background .contact-arrow { background:#f7f7f0; color:#1c2921; }
+
+.content-integrated #footer.apader-footer { background:#dde8d8; color:#1c2921; }
+.content-integrated #footer.apader-footer .af-shape-blue { background:#dde8d8; }
+.content-integrated #footer.apader-footer .af-shape-yellow { background:#f7f7f0; }
+.content-integrated #footer.apader-footer .af-panel { background:#fff; }
+.content-integrated #footer.apader-footer .af-group-summary,
+.content-integrated #footer.apader-footer .af-brand { color:#1c2921; }
+.content-integrated #footer.apader-footer .af-contact-fields p,
+.content-integrated #footer.apader-footer .af-legal li,
+.content-integrated #footer.apader-footer .af-language { color:#5e6c61; }

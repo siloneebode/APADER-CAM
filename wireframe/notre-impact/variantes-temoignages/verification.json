@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-26",
+  "beneficiaires_A": {
+    "integrated": true,
+    "portraits": 5,
+    "dialog": "Profil 02 ouvert et fermé",
+    "mobile_overflow": 0,
+    "dialog_width_mobile": 352,
+    "B_retained": true
+  },
+  "temoignages": {
+    "models": [
+      "A grande citation",
+      "B trois regards croisés"
+    ],
+    "desktop": "1280x900 vérifié visuellement",
+    "mobile": "390x844",
+    "a_overflow": 0,
+    "b_overflow": 0,
+    "b_mobile": "Trois cartes de 350 px empilées, sans inclinaison"
+  },
+  "selection_temoignages": null
+}

@@ -1,0 +1,16 @@
+{
+  "page": "Conditions générales d’utilisation",
+  "route": "/conditions-generales-d-utilisation/",
+  "status": "Modèle de wireframe, contenu à renseigner et valider",
+  "template": "pages-legales",
+  "config": "conditions-generales-d-utilisation.json",
+  "sections": [
+    "objet",
+    "acces-au-site",
+    "utilisation-du-site",
+    "contenus",
+    "liens",
+    "contact"
+  ],
+  "scope": "Modèle légal partagé par les mentions légales, la confidentialité, les cookies et les conditions générales d’utilisation."
+}

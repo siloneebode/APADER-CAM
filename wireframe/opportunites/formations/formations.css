@@ -1,0 +1,5 @@
+.training-blocks{display:grid;gap:32px}
+.training-blocks .ec-event{border:1px solid #ccc;box-shadow:none}
+.training-blocks .ec-event-type{display:inline-flex;gap:14px;flex-wrap:wrap;align-items:center}
+.training-blocks .ec-event-type .opportunity-status{font-size:11px;text-transform:none;letter-spacing:0}
+@media(max-width:700px){.training-blocks{gap:26px}}

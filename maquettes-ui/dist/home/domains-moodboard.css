@@ -1,0 +1,111 @@
+/* Home domains only: use the established APADER moodboard components.
+   Shared buttons.css supplies transitions, active state and reduced motion. */
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary {
+  --button-background:transparent;
+  --button-color:var(--forest);
+  --button-tile:var(--forest);
+  --button-arrow:var(--yellow);
+  justify-content:center;
+  gap:12px;
+  min-height:48px;
+  padding:8px 8px 8px 16px;
+  border:0;
+  border-radius:8px;
+  background:var(--button-background);
+  color:var(--button-color);
+  box-shadow:inset 0 0 0 1px var(--forest);
+  font-size:16px;
+  font-weight:500;
+  line-height:1.4;
+  text-decoration:none;
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary .button-icon {
+  width:32px;
+  height:32px;
+  flex:0 0 32px;
+  padding:0;
+  border-radius:6px;
+  background:var(--forest);
+  color:var(--yellow);
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary .button-label {
+  padding:0;
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary .button-icon svg {
+  width:23px;
+  height:23px;
+  fill:currentColor;
+  stroke:none;
+  transform:rotate(0deg);
+  transform-origin:center;
+  transition:transform 300ms var(--button-ease);
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary:hover {
+  background:var(--sage);
+  color:var(--forest);
+  text-decoration:none;
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary:hover .button-icon svg {
+  transform:rotate(45deg);
+}
+
+.content-home #contenu #domaines a.revue-domain-link.button.button-secondary:focus-visible {
+  outline:2px solid var(--forest);
+  outline-offset:4px;
+  border-radius:8px;
+}
+
+/* Keep the label fill on its pseudo-element so the shared reveal can play. */
+.content-home #contenu #domaines .pangram-kicker.pangram-kicker--apader {
+  --ease:cubic-bezier(.22,1,.36,1);
+  --kicker-background:var(--sage);
+  --kicker-color:var(--forest);
+  --kicker-mark:var(--brand);
+}
+
+.content-home #contenu #domaines .pangram-kicker.pangram-kicker--apader::before {
+  background:var(--kicker-mark);
+}
+
+.content-home #contenu #domaines .pangram-kicker.pangram-kicker--apader > span {
+  background:transparent;
+  color:var(--kicker-color);
+}
+
+.content-home #contenu #domaines .pangram-kicker.pangram-kicker--apader > span::before {
+  background:var(--kicker-background);
+}
+
+.content-home #contenu #domaines .revue-domain-copy > p {
+  font-size:16px;
+  line-height:1.65;
+}
+
+/* Cards stay visible without JavaScript. Apply the reveal only on entry. */
+.content-home #contenu #domaines .revue-domain-card.is-domain-entering {
+  animation:apader-domains-card-in 700ms cubic-bezier(.22,1,.36,1) var(--domain-entry-delay,0ms) both;
+}
+
+.content-home #contenu #domaines .revue-domain-card.is-domain-entering:focus-within {
+  animation:none;
+  opacity:1;
+  transform:none;
+}
+
+@keyframes apader-domains-card-in {
+  from { opacity:0; transform:translateY(18px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .content-home #contenu #domaines .revue-domain-card.is-domain-entering {
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+}

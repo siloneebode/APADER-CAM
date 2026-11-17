@@ -1,0 +1,88 @@
+/* APADER typography: two families, clear roles and readable specimens. */
+#typographies {
+  padding-block: 80px;
+  border: 0;
+  background: var(--sage);
+  color: var(--ink);
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#typographies .type-introduction { grid-template-columns: 1.1fr 1fr; align-items: end; gap: 48px; margin-bottom: 40px; }
+#typographies .type-introduction h2 { color: var(--forest); font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; margin-top: 24px; }
+#typographies .type-introduction > p { max-width: 440px; padding: 0; color: var(--forest); font: 400 16px/1.65 var(--font-body); }
+
+#typographies .font-duo { gap: 24px; }
+#typographies .font-specimen { padding: 32px; border-radius: 12px; }
+#typographies .font-functional { background: var(--paper); }
+#typographies .specimen-meta { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; font: 400 14px/1.5 var(--font-body); letter-spacing: 0; }
+#typographies .font-name { margin-top: 24px; color: inherit; font: 400 36px/1.2 var(--font-display); letter-spacing: -.02em; }
+#typographies .font-functional .font-name { font: 500 32px/1.2 var(--font-body); letter-spacing: -.015em; }
+#typographies .font-letters { margin: 20px 0 0; padding: 0; font: 400 104px/1.15 var(--font-display); letter-spacing: -.025em; }
+#typographies .font-functional .font-letters { font-family: var(--font-body); }
+#typographies .font-character-set { margin-top: 10px; font: 400 20px/1.6 var(--font-display); letter-spacing: .015em; overflow-wrap: anywhere; }
+#typographies .font-functional .font-character-set { font-family: var(--font-body); }
+#typographies .font-foot { display: block; padding-top: 20px; margin-top: 24px; }
+#typographies .font-foot p { max-width: 380px; margin: 0; font: 400 14px/1.6 var(--font-body); color: inherit; }
+
+#typographies .type-comparison { margin-top: 48px; padding: 32px; border: 1px solid #b7ceaf; border-radius: 12px; background: var(--paper); }
+#typographies .type-comparison-controls { align-items: center; gap: 24px; }
+#typographies .type-comparison-controls h3 { margin: 0; color: var(--forest); font: 400 30px/1.2 var(--font-display); letter-spacing: -.02em; }
+#typographies .type-comparison-controls p { max-width: 590px; margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#typographies .segmented { flex-shrink: 0; }
+#typographies .segmented button { min-height: 44px; padding: 10px 18px; font: 400 14px/20px var(--font-body); }
+#typographies .type-live,
+#typographies .type-live[data-style=contemporary] { min-height: 116px; margin: 32px 0 24px; color: var(--forest); font: 400 48px/1.2 var(--font-display); letter-spacing: -.02em; }
+#typographies .type-live[data-style=contemporary] { font-family: var(--font-body); }
+#typographies .type-live-caption { margin: 0; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font: 400 14px/1.6 var(--font-body); }
+
+#typographies .type-scale { grid-template-columns: 1fr 2fr; gap: 64px; margin-top: 56px; }
+#typographies .type-scale-title h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#typographies .type-scale-title p { max-width: 280px; margin-top: 16px; color: var(--forest); font: 400 16px/1.65 var(--font-body); }
+#typographies .type-scale-examples > div { padding: 24px 0; border-color: #b7ceaf; }
+#typographies .type-scale-examples > div:first-child { padding-top: 0; }
+#typographies .type-scale-examples > div > span { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 16px; color: var(--forest); font: 400 14px/1.5 var(--font-body); letter-spacing: 0; }
+#typographies .type-scale-examples b { font: 400 13px/1.5 var(--font-body); color: inherit; white-space: nowrap; }
+#typographies .type-scale-examples p { margin: 0; color: var(--forest); }
+#typographies .type-scale-examples .scale-h1 { font: 400 62px/1.1 var(--font-display); letter-spacing: -.02em; }
+#typographies .type-scale-examples .scale-h2 { font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; }
+#typographies .type-scale-examples .scale-h3 { font: 400 28px/1.2 var(--font-display); letter-spacing: -.02em; }
+#typographies .scale-intro { font: 400 20px/1.55 var(--font-body); }
+#typographies .scale-body { max-width: 600px; font: 400 16px/1.7 var(--font-body); }
+#typographies .scale-label { font: 400 14px/1.5 var(--font-body); letter-spacing: 0; }
+
+@media (max-width: 1100px) {
+  #typographies .type-comparison-controls { flex-direction: column; align-items: flex-start; }
+  #typographies .type-scale { grid-template-columns: 1fr 2fr; gap: 40px; }
+}
+
+@media (max-width: 900px) {
+  #typographies .type-introduction { grid-template-columns: 1fr; gap: 24px; }
+  #typographies .type-introduction > p { max-width: 620px; justify-self: start; }
+  #typographies .font-specimen { padding: 28px; }
+  #typographies .font-letters { font-size: 88px; }
+  #typographies .type-scale { grid-template-columns: 1fr; gap: 32px; }
+  #typographies .type-scale-title p { max-width: 620px; }
+}
+
+@media (max-width: 760px) {
+  #typographies { padding-block: 56px; }
+  #typographies .type-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #typographies .font-duo { grid-template-columns: 1fr; gap: 20px; }
+  #typographies .font-specimen { padding: 24px; }
+  #typographies .font-name { font-size: 32px; }
+  #typographies .font-functional .font-name { font-size: 30px; }
+  #typographies .font-letters { font-size: 76px; }
+  #typographies .font-character-set { font-size: 18px; }
+  #typographies .type-comparison { margin-top: 32px; padding: 24px; }
+  #typographies .type-comparison-controls h3 { font-size: 28px; }
+  #typographies .segmented { max-width: 100%; }
+  #typographies .segmented button { padding-inline: 14px; }
+  #typographies .type-live,
+  #typographies .type-live[data-style=contemporary] { min-height: 0; font-size: 32px; line-height: 1.25; }
+  #typographies .type-scale { margin-top: 40px; }
+  #typographies .type-scale-title h3 { font-size: 28px; }
+  #typographies .type-scale-examples .scale-h1 { font-size: 44px; }
+  #typographies .type-scale-examples .scale-h2 { font-size: 36px; }
+  #typographies .type-scale-examples .scale-h3 { font-size: 24px; }
+  #typographies .scale-intro { font-size: 18px; }
+}

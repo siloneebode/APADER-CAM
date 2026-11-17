@@ -1,0 +1,1007 @@
+{
+  "status": "Revue interactive à choisir avec APADER",
+  "sections_are_independent": true,
+  "choice_storage": "URL consultable et partageable ; aucune validation automatique",
+  "exclusions": [
+    "Pages légales",
+    "Listes, catalogues et recherches de collections"
+  ],
+  "pages": [
+    {
+      "page": "Accueil",
+      "path": "/",
+      "sections": [
+        {
+          "id": "introduction",
+          "key": "vue-hero",
+          "label": "Premier écran",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "presidente",
+          "key": "vue-mot",
+          "label": "Mot de la coordonnatrice",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "domaines",
+          "key": "vue-domaines",
+          "label": "Domaines d’action",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "projets",
+          "key": "vue-projets",
+          "label": "Projets",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Qui sommes-nous ?",
+      "path": "/a-propos/qui-sommes-nous/",
+      "existing": true,
+      "sections": [
+        {
+          "label": "Mission",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "label": "Vision",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "label": "Valeurs",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "label": "Approche",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "label": "Positionnement",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Notre histoire",
+      "path": "/a-propos/notre-histoire/",
+      "sections": [
+        {
+          "id": "chronologie",
+          "key": "vue-histoire-chronologie",
+          "label": "Les grandes étapes",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Notre équipe",
+      "path": "/a-propos/equipe/",
+      "sections": [
+        {
+          "id": "equipe-membres",
+          "key": "vue-equipe-membres",
+          "label": "Les membres de l’équipe",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Nos structures opérationnelles",
+      "path": "/a-propos/nos-structures-operationnelles/",
+      "sections": [
+        {
+          "id": "structures-presentation",
+          "key": "vue-structures-presentation",
+          "label": "Présentation des deux structures",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "CIEFAD",
+      "path": "/a-propos/nos-structures-operationnelles/ciefad/",
+      "sections": [
+        {
+          "id": "presentation-centre",
+          "key": "vue-centre-presentation",
+          "label": "Présentation du centre",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "origine-centre",
+          "key": "vue-centre-origine",
+          "label": "Le mot de la coordonnatrice",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "identite-centre",
+          "key": "vue-centre-identite",
+          "label": "Mission, vision et valeurs",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Espace Jeunes du Ndé",
+      "path": "/a-propos/nos-structures-operationnelles/espace-jeunes-du-nde/",
+      "sections": [
+        {
+          "id": "presentation-centre",
+          "key": "vue-centre-presentation",
+          "label": "Présentation du centre",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "origine-centre",
+          "key": "vue-centre-origine",
+          "label": "Le mot de la coordonnatrice",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "identite-centre",
+          "key": "vue-centre-identite",
+          "label": "Mission, vision et valeurs",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Contact",
+      "path": "/contact/",
+      "sections": [
+        {
+          "id": "contact-message",
+          "key": "vue-contact-message",
+          "label": "Coordonnées et formulaire",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Nos actions",
+      "path": "/nos-actions/",
+      "sections": [
+        {
+          "id": "actions-introduction",
+          "key": "vue-actions-actions-introduction",
+          "label": "Introduction",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "domaines-actions",
+          "key": "vue-actions-domaines-actions",
+          "label": "Les quatre domaines",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Agriculture durable et agroforesterie",
+      "path": "/nos-actions/agriculture-durable-et-agroforesterie/",
+      "sections": [
+        {
+          "id": "enjeux",
+          "key": "vue-actions-enjeux",
+          "label": "Enjeux et objectif",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "interventions",
+          "key": "vue-actions-interventions",
+          "label": "Axes d’intervention",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "publics",
+          "key": "vue-actions-publics",
+          "label": "Publics accompagnés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "projets",
+          "key": "vue-actions-projets",
+          "label": "Projets du domaine",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "ressources",
+          "key": "vue-actions-ressources",
+          "label": "Ressources associées",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "parole-exterieure",
+          "key": "vue-actions-parole-exterieure",
+          "label": "Parole extérieure",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Autonomisation des femmes",
+      "path": "/nos-actions/autonomisation-des-femmes/",
+      "sections": [
+        {
+          "id": "enjeux",
+          "key": "vue-actions-enjeux",
+          "label": "Enjeux et objectif",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "interventions",
+          "key": "vue-actions-interventions",
+          "label": "Axes d’intervention",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "publics",
+          "key": "vue-actions-publics",
+          "label": "Publics accompagnés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "projets",
+          "key": "vue-actions-projets",
+          "label": "Projets du domaine",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "ressources",
+          "key": "vue-actions-ressources",
+          "label": "Ressources associées",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "parole-exterieure",
+          "key": "vue-actions-parole-exterieure",
+          "label": "Parole extérieure",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Jeunesse, leadership et citoyenneté",
+      "path": "/nos-actions/jeunesse-leadership-et-citoyennete/",
+      "sections": [
+        {
+          "id": "enjeux",
+          "key": "vue-actions-enjeux",
+          "label": "Enjeux et objectif",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "interventions",
+          "key": "vue-actions-interventions",
+          "label": "Axes d’intervention",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "publics",
+          "key": "vue-actions-publics",
+          "label": "Publics accompagnés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "projets",
+          "key": "vue-actions-projets",
+          "label": "Projets du domaine",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "ressources",
+          "key": "vue-actions-ressources",
+          "label": "Ressources associées",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "parole-exterieure",
+          "key": "vue-actions-parole-exterieure",
+          "label": "Parole extérieure",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Paix, cohésion sociale et gouvernance",
+      "path": "/nos-actions/paix-cohesion-sociale-et-gouvernance/",
+      "sections": [
+        {
+          "id": "enjeux",
+          "key": "vue-actions-enjeux",
+          "label": "Enjeux et objectif",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "interventions",
+          "key": "vue-actions-interventions",
+          "label": "Axes d’intervention",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "publics",
+          "key": "vue-actions-publics",
+          "label": "Publics accompagnés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "projets",
+          "key": "vue-actions-projets",
+          "label": "Projets du domaine",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "ressources",
+          "key": "vue-actions-ressources",
+          "label": "Ressources associées",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "parole-exterieure",
+          "key": "vue-actions-parole-exterieure",
+          "label": "Parole extérieure",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Notre impact",
+      "path": "/notre-impact/",
+      "sections": [
+        {
+          "id": "chiffres-cles",
+          "key": "vue-impact-chiffres",
+          "label": "Chiffres clés, résultats et réalisations",
+          "models": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "beneficiaires",
+          "key": "vue-impact-beneficiaires",
+          "label": "Les bénéficiaires",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "temoignages",
+          "key": "vue-impact-temoignages",
+          "label": "Une parole extérieure",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche projet",
+      "path": "/nos-projets/projet-exemple.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche projet · Activités A",
+      "path": "/nos-projets/variantes-detail/a.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche projet · Activités B",
+      "path": "/nos-projets/variantes-detail/b.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche projet · Activités C",
+      "path": "/nos-projets/variantes-detail/c.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Aperçu habillé · présentation A",
+      "path": "/nos-projets/apercu-habille/",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Aperçu habillé · activités A",
+      "path": "/nos-projets/apercu-habille/a.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Aperçu habillé · activités B",
+      "path": "/nos-projets/apercu-habille/b.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Aperçu habillé · activités C",
+      "path": "/nos-projets/apercu-habille/c.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Aperçu habillé · présentation B",
+      "path": "/nos-projets/apercu-habille/presentation-b.html",
+      "sections": [
+        {
+          "id": "presentation",
+          "key": "vue-projet-presentation",
+          "label": "Comprendre le projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "territoire",
+          "key": "vue-projet-territoire",
+          "label": "Territoire et communautés",
+          "models": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "resultats",
+          "key": "vue-projet-resultats",
+          "label": "Résultats du projet",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche activité",
+      "path": "/nos-projets/activite-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-activite",
+          "key": "vue-activite-lecture",
+          "label": "Déroulement de l’activité",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche document",
+      "path": "/ressources/document-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-ressource",
+          "key": "vue-ressource-lecture",
+          "label": "Présentation et téléchargement",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Histoire de réussite",
+      "path": "/nos-projets/histoires-de-reussite/recit-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-recit",
+          "key": "vue-recit-lecture",
+          "label": "Le récit de changement",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Actualité",
+      "path": "/actualites/actualite-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-actualite",
+          "key": "vue-actualite-lecture",
+          "label": "Lecture de la publication",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Communiqué",
+      "path": "/actualites/communique-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-communique",
+          "key": "vue-communique-lecture",
+          "label": "Lecture du communiqué",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Événement",
+      "path": "/actualites/evenement-exemple.html",
+      "sections": [
+        {
+          "id": "lecture-evenement",
+          "key": "vue-evenement-lecture",
+          "label": "Présentation et programme",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche opportunité",
+      "path": "/opportunites/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche formation",
+      "path": "/opportunites/formations/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche appel à candidatures",
+      "path": "/opportunites/appels-a-candidatures/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche recrutement",
+      "path": "/opportunites/recrutements/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche stage ou volontariat",
+      "path": "/opportunites/stages-et-volontariat/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fiche appel à partenariat",
+      "path": "/opportunites/appels-a-partenariat/fiche-exemple.html",
+      "sections": [
+        {
+          "id": "opportunite-detail",
+          "key": "vue-opportunite-detail",
+          "label": "Contenu et modalités",
+          "models": [
+            "a",
+            "b"
+          ]
+        }
+      ]
+    }
+  ]
+}

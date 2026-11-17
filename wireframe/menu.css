@@ -1,0 +1,45 @@
+
+/* Menu uniquement : composition du panneau Pangram, adaptée aux liens APADER. */
+.site-header{height:auto;display:block;padding:0 20px;gap:0;overflow:visible}.header-row{height:72px;display:flex;align-items:center;gap:20px}.brand-image{flex:0 0 96px;line-height:0}.brand-image img{display:block;width:96px;height:40px}.site-header .primary-nav{display:flex;justify-content:center;gap:0;flex:1;min-width:0;white-space:nowrap;font-size:14px;line-height:20px}.nav-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;background:transparent;color:#222;padding:14px 7px;font:400 14px/20px Sans,Arial,sans-serif;white-space:nowrap;border-radius:8px;cursor:pointer}.nav-trigger:hover,.nav-trigger[aria-expanded=true]{background:#f4f4f4}.nav-chevron{fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;flex:none}.nav-trigger[aria-expanded=true] .nav-chevron{transform:rotate(180deg)}.header-actions{display:flex;align-items:center;gap:18px;flex:none}.header-language{display:inline-flex;align-items:center;gap:6px;font-size:14px;line-height:20px}.header-cta{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 15px;background:#353535;color:white;border-radius:7px;font:500 14px/20px Sans,Arial,sans-serif;white-space:nowrap}.header-cta:hover{text-decoration:none;background:#222}.mega-panel[hidden]{display:none}.mega-panel{padding:28px 8px 32px;background:#fff;border-radius:0 0 8px 8px}.site-header.has-open-menu{box-shadow:0 4px 14px #00000012}.mega-layout{display:grid;grid-template-columns:minmax(0,2.7fr) minmax(0,1fr);gap:40px}.mega-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;min-height:440px}.mega-card{position:relative;display:block;min-width:0;min-height:214px;overflow:hidden;border-radius:8px;background:#ddd;color:#222}.mega-card:hover{text-decoration:none;outline:2px solid #888;outline-offset:-2px}.tile-1{background:#aaa;color:#171717}.tile-2{background:#e6e6e6}.tile-3{background:#c9c9c9}.mega-visual{position:absolute;left:18px;top:26px;bottom:26px;width:40%;display:flex;align-items:center;justify-content:center;border:1px solid #0002;background:linear-gradient(to top right,transparent calc(50% - .5px),#0002 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#0002 50%,transparent calc(50% + .5px));border-radius:6px;color:#555}.mega-visual>span{font:12px/18px Sans,Arial,sans-serif;background:inherit;padding:4px}.mega-card-copy{position:absolute;left:53%;right:16px;bottom:16px}.mega-card-copy strong{display:block;font:600 18px/1.15 Sans,Arial,sans-serif;margin-bottom:7px}.mega-card-copy>span{display:block;font:400 12px/1.35 Sans,Arial,sans-serif;opacity:.8}.cards-6 .mega-card{min-height:146px}.cards-6 .mega-card-copy{left:48%;right:12px;bottom:14px}.cards-6 .mega-card-copy strong{font-size:17px}.cards-6 .mega-visual{width:35%;top:20px;bottom:20px}.cards-2{grid-template-rows:1fr}.cards-2 .mega-card-copy{bottom:26px}.mega-sidebar{padding:0 8px 0 0;font:400 14px/20px Sans,Arial,sans-serif}.mega-side-group+.mega-side-group{margin-top:26px}.mega-side-label{color:#858585;font:400 14px/20px Sans,Arial,sans-serif;margin-bottom:8px}.mega-side-link,.mega-overview{display:block;padding:8px 0;font:400 14px/20px Sans,Arial,sans-serif}.mega-overview{font-weight:500}.mega-overview span{margin-left:8px}.menu-focus-note{display:none}
+@media(max-width:1199px){.site-header{left:24px;right:24px;padding:0 16px}.header-row{gap:12px}.brand-image{flex-basis:80px}.brand-image img{width:80px;height:36px}.nav-trigger{font-size:13px;gap:5px;padding:14px 5px}.header-actions{gap:12px}.header-cta{font-size:13px;padding:0 12px}.header-language{font-size:13px;gap:4px}.nav-chevron{width:9px;height:6px}.mega-layout{gap:28px}.mega-card-copy strong{font-size:17px}.mega-card-copy>span{font-size:11px}}
+.mobile-menu-toggle{display:none}.nav-trigger:focus-visible,.header-cta:focus-visible,.mobile-menu-toggle:focus-visible,.mega-panel a:focus-visible{outline:2px solid #333;outline-offset:3px}
+.partner-menu-group .mega-side-label{margin-bottom:12px}.partner-menu-cards{display:grid;gap:12px}.partner-menu-card{display:grid;grid-template-columns:44px minmax(0,1fr) 12px;gap:12px;align-items:center;min-height:106px;padding:16px 12px;background:#f0f0f0;border:1px solid #dedede;border-radius:8px}.partner-menu-card:nth-child(2){background:#e3e3e3}.partner-menu-card:hover{text-decoration:none;outline:2px solid #888;outline-offset:-2px}.partner-menu-card strong{font:500 14px/1.25 Sans,Arial,sans-serif}.partner-menu-visual{width:44px;height:54px;border:1px solid #bdbdbd;border-radius:4px;background:linear-gradient(to top right,transparent calc(50% - .5px),#bdbdbd 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#bdbdbd 50%,transparent calc(50% + .5px)),#ddd}.partner-menu-arrow{font:16px/1 Sans,Arial,sans-serif;align-self:start;color:#555}
+/* Sous 1050 px : navigation repliable, panneaux dans le flux de leur rubrique. */
+@media(max-width:1049px){
+ .site-header{top:12px;left:24px;right:24px;padding:0 16px}
+ .site-header.is-mobile-open{position:fixed}
+ .header-row{height:auto;min-height:68px;flex-wrap:wrap;gap:0 12px}
+ .header-row>.brand-image,.header-row>.header-actions,.header-row>.mobile-menu-toggle{margin-top:12px;margin-bottom:12px}
+ .header-actions{margin-left:auto}.header-cta{height:44px}
+ .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border:1px solid #ddd;border-radius:7px;background:#fff;color:#222;padding:10px;cursor:pointer}
+ .mobile-menu-toggle svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
+ .menu-close-icon{display:none}.mobile-menu-toggle[aria-expanded=true] .menu-open-icon{display:none}.mobile-menu-toggle[aria-expanded=true] .menu-close-icon{display:block}
+ .site-header .primary-nav{display:none;order:4;flex:1 1 100%;max-height:calc(100svh - 104px);overflow-y:auto;overscroll-behavior:contain;white-space:normal;padding:4px 4px 12px;margin-bottom:12px;scrollbar-gutter:stable}
+ .site-header.is-mobile-open .primary-nav{display:block}
+ .nav-trigger{display:flex;width:100%;min-height:50px;justify-content:space-between;padding:14px 10px;font-size:16px;border-radius:5px;text-align:left;white-space:normal}
+ .nav-trigger .nav-chevron{width:11px;height:7px}
+ .mega-panel{padding:12px 0 24px;border-bottom:1px solid #ddd;border-radius:0;margin-bottom:6px}
+ .mega-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+ .mega-cards{min-height:0;gap:10px}.mega-card,.cards-6 .mega-card{min-height:126px}
+ .mega-card-copy,.cards-6 .mega-card-copy,.cards-2 .mega-card-copy{display:block;position:static;padding:18px}
+ .mega-card-copy strong,.cards-6 .mega-card-copy strong{font-size:16px;line-height:1.25}
+ .mega-card-copy>span{font-size:13px;line-height:1.4}.mega-visual{display:none}
+ .mega-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:0 4px}
+ .mega-side-group+.mega-side-group{margin-top:0}.mega-side-link,.mega-overview{min-height:44px;padding:12px 0}
+ .partner-menu-card{min-height:88px;padding:12px}.mega-side-label{margin:0 0 8px}
+}
+@media(max-width:700px){
+ .site-header{left:16px;right:16px;padding:0 12px}
+ .header-row{min-height:64px;gap:0 8px}.brand-image{flex-basis:64px}.brand-image img{width:64px;height:32px}
+ .header-row>.brand-image,.header-row>.header-actions,.header-row>.mobile-menu-toggle{margin-top:10px;margin-bottom:10px}
+ .header-actions{gap:10px}.header-cta{padding:0 12px}.header-language{gap:4px}
+ .mega-cards,.mega-sidebar{grid-template-columns:minmax(0,1fr)}
+ .mega-card,.cards-6 .mega-card{min-height:104px}.mega-card-copy,.cards-6 .mega-card-copy,.cards-2 .mega-card-copy{padding:16px}
+ .partner-menu-card{grid-template-columns:36px minmax(0,1fr) 12px;gap:12px;min-height:78px}.partner-menu-visual{width:36px;height:44px}
+}
+
+/* Notre impact : accès direct, sans sous-menu. */
+.nav-direct-link{display:inline-flex;align-items:center;justify-content:center;border:0;background:transparent;color:#222;padding:14px 7px;font:400 14px/20px Sans,Arial,sans-serif;white-space:nowrap;border-radius:8px;text-decoration:none}
+.nav-direct-link:hover{background:#f4f4f4;text-decoration:none}.nav-direct-link:focus-visible{outline:2px solid #333;outline-offset:3px}
+@media(max-width:1199px){.nav-direct-link{font-size:13px;padding:14px 5px}}
+@media(max-width:1049px){.nav-direct-link{display:flex;width:100%;min-height:50px;justify-content:flex-start;padding:14px 10px;font-size:16px;border-radius:5px;white-space:normal;text-align:left}}

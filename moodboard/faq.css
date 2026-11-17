@@ -1,0 +1,45 @@
+/* Numbered FAQ, adapted to APADER's typefaces and colours. */
+#faq-apader {
+  margin-top: 48px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--white);
+}
+#faq-apader .faq-heading { margin-bottom: 28px; }
+#faq-apader .faq-heading h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#faq-apader .faq-heading p { max-width: 720px; margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#faq-apader .faq-list { display: grid; gap: 12px; }
+#faq-apader .faq-item { padding: 20px; border: 0; border-radius: 20px; background: var(--paper); color: var(--forest); }
+#faq-apader .faq-item summary { display: grid; grid-template-columns: auto minmax(0,1fr) 32px; align-items: center; gap: 16px; min-height: 32px; padding: 0; list-style: none; cursor: pointer; }
+#faq-apader .faq-item summary::-webkit-details-marker { display: none; }
+#faq-apader .faq-item summary::marker { content: ""; }
+#faq-apader .faq-number { color: var(--brand); font: 400 22px/1.3 var(--font-display); font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
+#faq-apader .faq-question { color: var(--forest); font: 400 24px/1.3 var(--font-display); letter-spacing: -.025em; }
+#faq-apader .faq-toggle { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--muted); transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease; }
+#faq-apader .faq-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; transition: transform 250ms var(--ease); }
+#faq-apader .faq-item[open] .faq-toggle { border-color: var(--brand); background: var(--brand); color: var(--white); }
+#faq-apader .faq-item[open] .faq-toggle svg { transform: rotate(45deg); }
+#faq-apader .faq-item summary:hover .faq-toggle { border-color: var(--brand); color: var(--brand); }
+#faq-apader .faq-item[open] summary:hover .faq-toggle { border-color: var(--forest); background: var(--forest); color: var(--white); }
+#faq-apader .faq-item summary:focus-visible { outline: 2px solid var(--brand); outline-offset: 6px; border-radius: 8px; }
+#faq-apader .faq-answer { padding-top: 24px; }
+#faq-apader .faq-answer p { margin: 0; color: var(--ink); font: 400 16px/1.65 var(--font-body); }
+
+@media (max-width: 640px) {
+  #faq-apader {
+    margin-top: 36px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  #faq-apader .faq-heading h3 { font-size: 28px; }
+  #faq-apader .faq-item { padding: 20px; }
+  #faq-apader .faq-item summary { gap: 12px; align-items: start; }
+  #faq-apader .faq-number { padding-top: 3px; font-size: 18px; }
+  #faq-apader .faq-question { padding-top: 2px; font-size: 22px; line-height: 1.25; }
+  #faq-apader .faq-answer { padding-top: 20px; }
+}
+
+@media (max-width: 359px) {
+  #faq-apader .faq-item { padding: 16px; }
+}

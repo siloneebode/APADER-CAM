@@ -1,0 +1,15 @@
+{
+  "page": "Nos structures opérationnelles",
+  "route": "/a-propos/nos-structures-operationnelles/",
+  "status": "Première proposition de wireframe",
+  "main_sections": ["Héros", "Deux grandes cartes de structures"],
+  "structure_count": 2,
+  "structures": [
+    {"name": "CIEFAD", "full_name": "Centre Intercommunautaire d’Éducation et de Formation en Agriculture Durable", "location": "Feutap", "href": "/a-propos/nos-structures-operationnelles/ciefad/"},
+    {"name": "Espace Jeunes du Ndé", "href": "/a-propos/nos-structures-operationnelles/espace-jeunes-du-nde/"}
+  ],
+  "design": "Deux grandes cartes de même hauteur côte à côte sur ordinateur, image généreuse au-dessus du contenu et lien vers chaque structure ; empilement sur téléphone.",
+  "content_source": "Arborescence et descriptions transmises par l’équipe APADER dans la conversation.",
+  "content_note": "Les photos et compléments de présentation restent provisoires. Aucune date, statistique ou identité n’est inventée.",
+  "excluded": ["FAQ", "CTA supplémentaire", "Chiffres clés", "Section de formations détaillées", "Liste de membres"]
+}

@@ -1,0 +1,132 @@
+html.activity-preview{scroll-behavior:auto}
+/* APADER / Fiche projet — trois boucles d’activités à comparer. */
+.projects-page .activity-loop{min-width:0;max-width:100%;overflow-wrap:break-word}
+.projects-page .activity-loop [hidden]{display:none!important}
+.projects-page .activity-card-grid,.projects-page .activity-related-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px 26px}
+.projects-page .activity-card-grid>*,.projects-page .activity-related-list>*{min-width:0}
+.projects-page .activity-card-grid .editorial-card,.projects-page .activity-related-list .editorial-card{display:flex;flex-direction:column;align-items:flex-start}
+.projects-page .activity-card-grid .editorial-visual,.projects-page .activity-related-list .editorial-visual{flex:none}
+.projects-page .activity-card-grid .editorial-date,.projects-page .activity-related-list .editorial-date{width:100%}
+.projects-page .activity-card-grid .editorial-read,.projects-page .activity-related-list .editorial-read{margin-top:auto}
+.projects-page .activity-block-list{display:grid;gap:28px}
+.projects-page .activity-block-list .ec-event-compact{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);height:auto}
+.projects-page .activity-block-list .ec-compact-copy{padding:32px 36px}
+.projects-page .activity-block-list .ec-compact-title{font-size:33px;margin:23px 0 18px}
+.projects-page .activity-block-list .ec-compact-poster{min-height:300px}
+.projects-page .activity-block-list .ec-compact-excerpt{max-width:620px}
+.projects-page .activity-block-list .ec-compact-link{padding-top:26px}
+.projects-page .activity-editorial-list{display:grid;border-top:1px solid #cad5c7}
+.projects-page .activity-editorial-row{display:grid;grid-template-columns:100px minmax(0,1fr) 160px;gap:28px;align-items:start;padding:30px 0;border-bottom:1px solid #cad5c7}
+.projects-page .activity-editorial-row>*{min-width:0}
+.projects-page .activity-row-date{font:400 13px/1.7 Sans,Arial,sans-serif;color:#5e6c61;padding-top:5px}
+.projects-page .activity-row-date strong{display:block;color:#1c2921;font:400 31px/1.2 Heading,Georgia,serif;margin-bottom:5px}
+.projects-page .activity-row-copy{min-width:0}
+.projects-page .activity-row-copy>.status,.projects-page .activity-row-copy .activity-status{display:inline-flex;align-items:center;border:1px solid #cad5c7;border-radius:20px;padding:4px 9px;font:400 11px/1.5 Sans,Arial,sans-serif;color:#5e6c61;background:#f7f7f0;margin:0 0 16px}
+.projects-page .activity-editorial-row h3{font:400 34px/1.15 Heading,Georgia,serif;letter-spacing:-.025em;margin:0 0 16px;overflow-wrap:break-word}
+.projects-page .activity-row-summary,.projects-page .activity-row-copy>p:not(.status):not(.activity-status){font:400 15px/1.7 Sans,Arial,sans-serif;color:#5e6c61;margin:0 0 18px;max-width:780px}
+.projects-page .activity-row-copy .editorial-read{font-size:13px;line-height:1.6}
+.projects-page .activity-row-visual.wf-visual{width:100%;aspect-ratio:1.2;min-height:0;border:1px solid #cad5c7;border-radius:5px;background-color:#dde8d8}
+.projects-page .activity-row-visual.wf-visual>span{max-width:90%;padding:6px;background:#dde8d8;font-size:11px}
+.projects-page .activity-loop-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font:400 12px/1.6 Sans,Arial,sans-serif;color:#5e6c61;margin:0 0 24px}
+.projects-page .activity-loop-footer{display:flex;align-items:center;justify-content:space-between;gap:18px 28px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid #cad5c7}
+.projects-page .activity-loop-footer>a{font:400 14px/1.6 Sans,Arial,sans-serif;text-decoration:underline;text-underline-offset:5px;display:inline-flex;gap:16px;align-items:center}
+.projects-page .activity-loop-footer>p,.projects-page .activity-loop-footer>small{max-width:540px;font:400 12px/1.7 Sans,Arial,sans-serif;color:#5e6c61;margin:0}
+.projects-page .activity-variant-note{display:flex;align-items:center;justify-content:space-between;gap:18px 28px;padding:18px max(28px,calc((100vw - 1180px)/2));background:#f7f7f0;border-bottom:1px solid #cad5c7;color:#5e6c61;font:400 12px/1.65 Sans,Arial,sans-serif}
+.projects-page .activity-variant-note>p{margin:0;max-width:720px;min-width:0}
+.projects-page .activity-variant-note strong{font-weight:500;color:#1c2921}
+.projects-page .activity-version-links{display:flex;flex-wrap:wrap;gap:8px;flex:none}
+.projects-page .activity-version-links a{display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:38px;padding:7px 11px;border:1px solid #cad5c7;color:#5e6c61;background:#ffffff;font:400 12px/1.4 Sans,Arial,sans-serif}
+.projects-page .activity-version-links a.active,.projects-page .activity-version-links a[aria-current]{background:#123e2b;border-color:#123e2b;color:#fff}
+.projects-page .activity-version-links a:hover{border-color:#123e2b}
+.projects-page .activity-compare-intro .lead{max-width:820px}
+.projects-page .activity-shortcuts{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
+.projects-page .activity-shortcuts a{display:inline-flex;align-items:center;gap:10px;padding:10px 17px;border:1px solid #cad5c7;border-radius:24px;font:400 13px/1.5 Sans,Arial,sans-serif;background:#fff;color:#1c2921}
+.projects-page .activity-shortcuts a:hover{background:#dde8d8;border-color:#123e2b}
+.projects-page .activity-choice{padding:76px 0;border-bottom:1px solid #cad5c7;scroll-margin-top:32px}
+.projects-page .activity-choice:nth-of-type(even){background:#f7f7f0}
+.projects-page .activity-choice-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px 36px;margin-bottom:34px}
+.projects-page .activity-choice-head>div{min-width:0;max-width:820px}
+.projects-page .activity-choice-head .eyebrow{margin:0 0 19px}
+.projects-page .activity-choice-head h2{font:400 50px/1.1 Heading,Georgia,serif;letter-spacing:-.03em;margin:0 0 21px}
+.projects-page .activity-choice-head>a{flex:none;display:inline-flex;gap:13px;align-items:center;margin-top:8px;padding-bottom:6px;border-bottom:1px solid #cad5c7;font:400 13px/1.6 Sans,Arial,sans-serif;color:#1c2921}
+.projects-page .activity-choice-description{font:400 16px/1.75 Sans,Arial,sans-serif;color:#5e6c61;max-width:800px;margin:0}
+.projects-page .activity-project-context{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;padding:22px 25px;border:1px solid #cad5c7;background:#f7f7f0;margin:0 0 34px}
+.projects-page .activity-project-context>div{min-width:0}
+.projects-page .activity-project-context p{font:400 13px/1.7 Sans,Arial,sans-serif;color:#5e6c61;margin:6px 0 0}
+.projects-page .activity-project-context a{display:inline-flex;gap:12px;align-items:center;text-decoration:underline;text-underline-offset:4px;font:400 14px/1.6 Sans,Arial,sans-serif;color:#1c2921}
+.projects-page .activity-project-context>.text-link{flex:none}
+.projects-page .activity-detail-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr);gap:54px;align-items:start}
+.projects-page .activity-detail-layout>*{min-width:0}
+.projects-page .activity-detail-copy h2{font:400 42px/1.15 Heading,Georgia,serif;letter-spacing:-.025em;margin:0 0 25px}
+.projects-page .activity-detail-copy p{font:400 17px/1.8 Sans,Arial,sans-serif;color:#5e6c61;margin:0 0 24px;max-width:780px}
+.projects-page .activity-detail-copy .wire-lines{max-width:100%;margin:26px 0}
+.projects-page .activity-detail-photo.wf-visual{aspect-ratio:1.7;min-height:300px;width:100%;border:1px solid #cad5c7;border-radius:5px;margin:30px 0}
+.projects-page .activity-detail-info{padding:28px;background:#f7f7f0;border:1px solid #cad5c7;border-radius:6px}
+.projects-page .activity-detail-info h2,.projects-page .activity-detail-info h3{font:400 30px/1.2 Heading,Georgia,serif;letter-spacing:-.025em;margin:0 0 24px}
+.projects-page .activity-detail-info dl{margin:0 0 26px}
+.projects-page .activity-detail-info dl>div{padding:16px 0;border-bottom:1px solid #cad5c7}
+.projects-page .activity-detail-info dl>div:first-child{padding-top:0}
+.projects-page .activity-detail-info dt{font:400 11px/1.6 Sans,Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;color:#5e6c61;margin:0 0 7px}
+.projects-page .activity-detail-info dd{font:400 14px/1.65 Sans,Arial,sans-serif;color:#1c2921;margin:0}
+.projects-page .activity-detail-info .button{display:flex;width:100%;white-space:normal;text-align:center;justify-content:center;font-size:13px;gap:12px}
+.projects-page .activity-loop a:focus-visible,.projects-page .activity-version-links a:focus-visible,.projects-page .activity-shortcuts a:focus-visible,.projects-page .activity-choice-head>a:focus-visible{outline:2px solid #123e2b;outline-offset:5px}
+@media(max-width:1049px){
+ .projects-page .activity-card-grid,.projects-page .activity-related-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 22px}
+ .projects-page .activity-choice-head h2{font-size:44px}
+ .projects-page .activity-choice-head{gap:24px}
+ .projects-page .activity-editorial-row{grid-template-columns:82px minmax(0,1fr) 145px;gap:23px}
+ .projects-page .activity-editorial-row h3{font-size:31px}
+ .projects-page .activity-block-list .ec-compact-copy{padding:28px}
+ .projects-page .activity-block-list .ec-compact-title{font-size:30px}
+ .projects-page .activity-detail-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:30px}
+ .projects-page .activity-detail-copy h2{font-size:37px}
+ .projects-page .activity-detail-info{padding:25px}
+ .projects-page .activity-variant-note{padding-right:28px;padding-left:28px}
+}
+@media(max-width:700px){
+ .projects-page .activity-card-grid,.projects-page .activity-related-list{grid-template-columns:minmax(0,1fr);gap:34px}
+ .projects-page .activity-choice{padding:52px 0}
+ .projects-page .activity-choice-head{display:block;margin-bottom:28px}
+ .projects-page .activity-choice-head h2{font-size:38px;line-height:1.12;margin-bottom:18px}
+ .projects-page .activity-choice-head>a{margin-top:22px}
+ .projects-page .activity-choice-head .eyebrow{margin-bottom:17px}
+ .projects-page .activity-choice-description{font-size:15px;line-height:1.75}
+ .projects-page .activity-shortcuts{gap:9px;margin-top:25px}
+ .projects-page .activity-shortcuts a{padding:9px 14px;font-size:12px}
+ .projects-page .activity-variant-note{align-items:flex-start;flex-direction:column;padding:18px 20px;gap:13px}
+ .projects-page .activity-version-links{gap:8px}
+ .projects-page .activity-loop-meta{font-size:11px;margin-bottom:20px}
+ .projects-page .activity-loop-footer{display:block;margin-top:28px;padding-top:22px}
+ .projects-page .activity-loop-footer>p,.projects-page .activity-loop-footer>small{display:block;margin-top:17px}
+ .projects-page .activity-block-list{gap:25px}
+ .projects-page .activity-block-list .ec-event-compact{grid-template-columns:minmax(0,1fr)}
+ .projects-page .activity-block-list .ec-compact-copy{padding:25px}
+ .projects-page .activity-block-list .ec-compact-title{font-size:29px;margin:20px 0 17px}
+ .projects-page .activity-block-list .ec-compact-poster{grid-row:1;min-height:0;aspect-ratio:1.7;border-left:0;border-bottom:1px solid #cad5c7}
+ .projects-page .activity-editorial-row{grid-template-columns:minmax(0,1fr);gap:17px;padding:26px 0 29px}
+ .projects-page .activity-row-visual.wf-visual{grid-row:1;aspect-ratio:1.7;border-radius:5px}
+ .projects-page .activity-row-date{grid-row:2;padding:0;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:12px}
+ .projects-page .activity-row-date strong{display:inline;font:400 13px/1.7 Sans,Arial,sans-serif;margin:0}
+ .projects-page .activity-row-copy{grid-row:3}
+ .projects-page .activity-editorial-row h3{font-size:32px;line-height:1.15;margin-bottom:17px}
+ .projects-page .activity-row-copy>.status,.projects-page .activity-row-copy .activity-status{margin-bottom:16px}
+ .projects-page .activity-row-summary,.projects-page .activity-row-copy>p:not(.status):not(.activity-status){font-size:15px;margin-bottom:17px}
+ .projects-page .activity-project-context{display:block;padding:22px;margin-bottom:28px}
+ .projects-page .activity-project-context>.text-link{margin-top:18px}
+ .projects-page .activity-detail-layout{grid-template-columns:minmax(0,1fr);gap:30px}
+ .projects-page .activity-detail-copy h2{font-size:35px;margin-bottom:22px}
+ .projects-page .activity-detail-copy p{font-size:16px;line-height:1.8}
+ .projects-page .activity-detail-photo.wf-visual{min-height:0;aspect-ratio:1.7;margin:26px 0}
+ .projects-page .activity-detail-info{padding:26px}
+ .projects-page .activity-detail-info h2,.projects-page .activity-detail-info h3{font-size:29px}
+}
+@media(max-width:359px){
+ .projects-page .activity-choice-head h2{font-size:34px}
+ .projects-page .activity-block-list .ec-compact-copy{padding:21px}
+ .projects-page .activity-block-list .ec-compact-title{font-size:26px}
+ .projects-page .activity-editorial-row h3{font-size:29px}
+ .projects-page .activity-detail-copy h2{font-size:32px}
+ .projects-page .activity-detail-info{padding:22px}
+}
+
+.projects-page .activity-variant-note{margin-bottom:34px}

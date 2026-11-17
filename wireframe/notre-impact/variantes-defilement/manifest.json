@@ -1,0 +1,36 @@
+{
+  "page": "Notre impact",
+  "status": "B retenu pour Notre impact ; A conservé pour une autre page",
+  "selected": "B",
+  "retained_alternative": {
+    "model": "A",
+    "purpose": "Réutilisation sur une autre page",
+    "url": "/notre-impact/variantes-defilement/a.html"
+  },
+  "options": {
+    "a": {
+      "status": "Conservé pour une autre page",
+      "title": "Image fixe, contenu défilant",
+      "summary": "Le texte défile à droite. Le visuel reste à gauche et change lorsque l’on arrive au domaine suivant.",
+      "mobile": "Sur téléphone, chaque visuel accompagne son domaine dans la page."
+    },
+    "b": {
+      "status": "Retenu pour Notre impact",
+      "title": "Carrousel piloté par le défilement",
+      "summary": "En faisant défiler vers le bas, la section reste à l’écran et les cartes avancent horizontalement. La page continue après la dernière carte.",
+      "mobile": "Le défilement vertical pilote aussi les cartes lorsque la hauteur le permet. Sinon, elles se parcourent horizontalement, sans couper le contenu."
+    }
+  },
+  "source": "Descriptions du client : image fixe et texte vertical, puis carrousel épinglé au scroll vertical",
+  "main_page_keeps_current_selection_until_choice": false,
+  "selection_confirmed_by_client": true,
+  "page_plan": [
+    "Héros B",
+    "Chiffres clés incluant résultats et territoires",
+    "Bénéficiaires avec présentation individuelle",
+    "Témoignages éventuels",
+    "FAQ",
+    "CTA"
+  ],
+  "beneficiaries_below_are_transition_placeholders": true
+}

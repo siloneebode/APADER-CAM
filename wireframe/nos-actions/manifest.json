@@ -1,0 +1,48 @@
+{
+  "status": "Wireframe finalisé — composition commune aux quatre domaines",
+  "pages": [
+    "/nos-actions/",
+    "/nos-actions/agriculture-durable-et-agroforesterie/",
+    "/nos-actions/autonomisation-des-femmes/",
+    "/nos-actions/jeunesse-leadership-et-citoyennete/",
+    "/nos-actions/paix-cohesion-sociale-et-gouvernance/"
+  ],
+  "sections": [
+    "Héros, chiffres provisoires et bande de logos défilants",
+    "Enjeux et objectif — variante B retenue",
+    "Axes d’intervention — accordéon",
+    "Publics accompagnés — variante A retenue",
+    "Projets associés — carrousel A retenu",
+    "Ressources associées — variante B retenue",
+    "Parole extérieure — variante A, message développé",
+    "Autres actions",
+    "FAQ — accordéon avant le call to action",
+    "Agir avec nous"
+  ],
+  "references": [
+    "Accueil Pangram — héros observé le 23 octobre 2026",
+    "Pangram API — deux cartes parallèles (enjeux et objectif, variante B)",
+    "Accueil Pangram — accordéon initial : image à gauche, liste à droite, changement du visuel au clic",
+    "Pangram Plagiarism — Who it’s for : trois cartes compactes (publics, variante A)",
+    "Pangram Research Papers — grandes fiches textuelles (ressources, variante B)",
+    "Pangram Teachers — carte de témoignage unique (parole extérieure, variante A)",
+    "F06 / catalogue",
+    "F10 / appel à l’action",
+    "Pangram Feed Scanner — FAQ en deux colonnes, questions numérotées en cartes arrondies"
+  ],
+  "approved_sections": {
+    "enjeux_et_objectif": "B",
+    "axes": "Accordéon",
+    "publics": "A",
+    "projets": "A — image élargie, bord gauche circulaire",
+    "ressources": "B",
+    "parole_exterieure": "A — message développé"
+  },
+  "retained_alternatives": {
+    "publics_B": "/nos-actions/variantes-publics/#b",
+    "projets_B": "/nos-actions/variantes-projets/#b",
+    "ressources_A": "/nos-actions/variantes-ressources/#a",
+    "parole_exterieure_B": "/nos-actions/variantes-parole-exterieure/#b"
+  },
+  "scope": "FAQ ajoutée juste avant Agir avec nous sur les quatre pages, questions et réponses provisoires. État initial conservé. Après défilement, menu fixe et onglets raccordés juste en dessous, fond gris distinct et contours arrondis ; ancres décalées. Contenus des sections conservés."
+}

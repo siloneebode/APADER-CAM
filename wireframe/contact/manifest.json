@@ -1,0 +1,15 @@
+{
+  "page": "Nous contacter",
+  "route": "/contact/",
+  "status": "Proposition de wireframe à valider",
+  "hero": "Héros simple centré, modèle Notre équipe",
+  "sections": [
+    "introduction",
+    "contact-message",
+    "reseaux",
+    "visite"
+  ],
+  "form": "Quatre champs requis ; validation native et confirmation de démonstration. Aucun message transmis, aucun stockage.",
+  "content": "Adresse, téléphone, e-mail, horaires et comptes sociaux officiels à fournir ; aucun contact réel inventé.",
+  "locations": "Renvois vers les pages existantes du CIEFAD et de l’EJN et leur vue d’ensemble. La page distincte de localisation est abandonnée à la demande du client ; ces accès restent dans Nous contacter."
+}

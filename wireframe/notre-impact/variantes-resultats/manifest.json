@@ -1,0 +1,32 @@
+{
+  "page": "Notre impact",
+  "section": "Résultats et réalisations",
+  "status": "Deux variantes à choisir",
+  "approved_before": [
+    "Héros B (provisoire)",
+    "Chiffres clés A"
+  ],
+  "options": {
+    "a": {
+      "title": "Deux cas concrets en parallèle",
+      "source_name": "Pangram · API — Cas d’usage",
+      "source_url": "https://www.pangram.com/solutions/api",
+      "reference": "pangram-api-cas.png",
+      "description": "Deux grandes cartes, chacune avec un pictogramme, un titre de réalisation et une courte présentation du résultat obtenu.",
+      "note": "Reprise de la section « How teams use Pangram at scale » : titre et introduction en deux colonnes, puis deux cartes arrondies en parallèle. Les cas d’usage sont remplacés par des réalisations APADER ; les textes restent provisoires."
+    },
+    "b": {
+      "title": "Trois réalisations en images",
+      "source_name": "Pangram · Image Detector — Cartes visuelles",
+      "source_url": "https://www.pangram.com/image-detector",
+      "reference": "pangram-image-cartes.png",
+      "description": "Trois grandes cartes photographiques, une carte centrale inclinée, avec le titre et le résultat présenté sur le visuel.",
+      "note": "Adaptation des trois cartes de la section « How Pangram detects AI images » : fond quadrillé, photos de grande taille, numérotation et carte centrale inclinée. Les visuels techniques deviennent des photos de réalisations ; les découpes en pixels sont retirées pour le wireframe."
+    }
+  },
+  "fragments": {
+    "a": "<section class=\"ir-section ir-a\" aria-labelledby=\"ir-title-a\"><div class=\"ir-wrap\"><p class=\"ir-label\">Résultats et réalisations</p><header class=\"ir-heading\"><h2 class=\"ir-title\" id=\"ir-title-a\">Des résultats concrets,<br> auprès des communautés.</h2><p class=\"ir-intro\">[Présenter les réalisations concrètes et les changements observés grâce aux interventions de l’APADER.]</p></header><div class=\"ir-cases\"><article class=\"ir-case\"><div class=\"ir-case-top\"><span class=\"ir-icon\" aria-hidden=\"true\">◌</span><span class=\"ir-open\" aria-hidden=\"true\">↗</span></div><h3>[Titre de la réalisation 01]</h3><p>[Courte présentation de la réalisation : ce qui a été mis en place et le changement observé sur le terrain.]</p></article><article class=\"ir-case\"><div class=\"ir-case-top\"><span class=\"ir-icon\" aria-hidden=\"true\">⌂</span><span class=\"ir-open\" aria-hidden=\"true\">↗</span></div><h3>[Titre de la réalisation 02]</h3><p>[Courte présentation de la réalisation : ce qui a été mis en place et le changement observé sur le terrain.]</p></article></div><p class=\"ir-footnote\">[Période, localisation et éléments permettant d’étayer chaque résultat à renseigner avec APADER.]</p></div></section>",
+    "b": "<section class=\"ir-section ir-b\" aria-labelledby=\"ir-title-b\"><div class=\"ir-wrap\"><p class=\"ir-label\">Résultats et réalisations</p><h2 class=\"ir-title\" id=\"ir-title-b\">Des résultats concrets,<br> auprès des communautés.</h2><p class=\"ir-intro\">[Présenter les réalisations concrètes et les changements observés grâce aux interventions de l’APADER.]</p><div class=\"ir-gallery\"><article class=\"ir-photo-card\"><div class=\"ir-photo\" role=\"img\" aria-label=\"Emplacement de la photo de la réalisation 01\"><span>[Photo de la réalisation 01]</span></div><div class=\"ir-photo-copy\"><span class=\"ir-photo-number\">001</span><h3>[Titre de la réalisation 01]</h3><p>[Courte présentation de la réalisation : ce qui a été mis en place et le changement observé sur le terrain.]</p></div></article><article class=\"ir-photo-card\"><div class=\"ir-photo\" role=\"img\" aria-label=\"Emplacement de la photo de la réalisation 02\"><span>[Photo de la réalisation 02]</span></div><div class=\"ir-photo-copy\"><span class=\"ir-photo-number\">002</span><h3>[Titre de la réalisation 02]</h3><p>[Courte présentation de la réalisation : ce qui a été mis en place et le changement observé sur le terrain.]</p></div></article><article class=\"ir-photo-card\"><div class=\"ir-photo\" role=\"img\" aria-label=\"Emplacement de la photo de la réalisation 03\"><span>[Photo de la réalisation 03]</span></div><div class=\"ir-photo-copy\"><span class=\"ir-photo-number\">003</span><h3>[Titre de la réalisation 03]</h3><p>[Courte présentation de la réalisation : ce qui a été mis en place et le changement observé sur le terrain.]</p></div></article></div><p class=\"ir-footnote\">[Période, localisation et éléments permettant d’étayer chaque résultat à renseigner avec APADER.]</p></div></section>"
+  },
+  "main_page_unchanged_beyond_approved_sections": true
+}

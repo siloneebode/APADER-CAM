@@ -1,0 +1,18 @@
+/* Étiquettes relevées sur Pangram : carré 4 px et libellé 14/20 px. */
+.pangram-kicker {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  font: 400 14px/20px Sans, Arial, sans-serif;
+}
+.pangram-kicker::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  flex: none;
+  background: #ff6106;
+}
+.pangram-kicker > span { padding: 4px 8px; background: #aad8f9; color: #0049d1; }
+.pangram-kicker--pink > span { background: #ffbcfc; color: #ad05a6; }

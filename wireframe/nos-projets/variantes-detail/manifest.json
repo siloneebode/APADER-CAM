@@ -1,0 +1,32 @@
+{
+  "status": "Trois variantes à choisir, fiche principale conservée",
+  "scope": "Section Activités de la fiche projet uniquement",
+  "relationship": "Une activité appartient à un projet ; la boucle mène à sa fiche de lecture",
+  "comparison": "/nos-projets/variantes-detail/",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A · Cartes Actualités",
+      "preview": "/nos-projets/variantes-detail/a.html?n=02#activites",
+      "reference": "Les cartes Actualités déjà retenues sur l’accueil, adaptées aux activités de chaque projet."
+    },
+    {
+      "id": "b",
+      "title": "B · Blocs horizontaux",
+      "preview": "/nos-projets/variantes-detail/b.html?n=02#activites",
+      "reference": "Une présentation plus développée avec le texte et les repères à gauche, le visuel à droite."
+    },
+    {
+      "id": "c",
+      "title": "C · Liste éditoriale",
+      "preview": "/nos-projets/variantes-detail/c.html?n=02#activites",
+      "reference": "Une liste datée avec aperçu visuel, pour parcourir rapidement les activités du projet."
+    }
+  ],
+  "activity_detail": "/nos-projets/activite-exemple.html?n=02&activite=01",
+  "activities_collection": "/nos-projets/activites/?n=02",
+  "hero": "Héros avec image featured en fond conservé",
+  "placeholders": true,
+  "protected_sha256": "dce8d4d03dab0470cb8810c45f57e6c6908ea7de9083c2462cc1e25e3cb614bc",
+  "project_media_location": "Galerie globale retirée ; médias rattachés aux pages des activités."
+}

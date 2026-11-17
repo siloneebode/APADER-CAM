@@ -1,0 +1,4 @@
+/* Supplied media fitted to the existing editorial frames. */
+.content-integrated .editorial-source-logo img { object-fit:contain; padding:24px; background:#fff; }
+.editorial-source { margin-top:32px; font-size:14px; line-height:1.7; color:var(--muted,#5e6c61); }
+.editorial-source a { text-decoration:underline; text-underline-offset:3px; }

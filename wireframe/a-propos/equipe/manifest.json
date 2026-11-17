@@ -1,0 +1,14 @@
+{
+  "page": "Notre équipe",
+  "route": "/a-propos/equipe/",
+  "status": "Première proposition de wireframe",
+  "sections": ["Héros", "Liste des membres"],
+  "profile_count": 6,
+  "profile_count_is_illustrative": true,
+  "layout": "Héros centré, liste de portraits sur trois colonnes, deux sur tablette et une sur téléphone.",
+  "direction": "Typographie Pangram sauvegardée, étiquettes à petit carré et présentation en niveaux de gris.",
+  "content_note": "Tous les noms, fonctions, présentations et portraits sont provisoires. Aucun membre réel ni rôle institutionnel n’est affirmé.",
+  "interaction": "Page statique ; aucune action vers une fiche inexistante.",
+  "excluded": ["FAQ", "CTA", "Filtres", "Fiches de membres"],
+  "files": ["fragment.html", "equipe.css"]
+}

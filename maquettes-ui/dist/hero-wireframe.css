@@ -1,0 +1,67 @@
+/* Révision du héros uniquement : cinq visuels provisoires. */
+#introduction.hero-wireframe { background: #dde8d8; color: #1c2921; }
+#introduction.hero-wireframe .hero-scene-wire {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),
+    linear-gradient(to bottom right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),
+    var(--wire-background,#dde8d8);
+}
+#introduction.hero-wireframe .hero-image-label {
+  position: absolute; top: 43%; right: 10%;
+  display: flex; flex-direction: column; gap: 12px; align-items: center;
+  padding: 18px 24px; background: var(--wire-background,#dde8d8); color: #5e6c61;
+  font: 400 32px/1.2 Sans,Arial,sans-serif;
+}
+#introduction.hero-wireframe .hero-image-label small { font-size: 13px; line-height: 20px; }
+#introduction.hero-wireframe .hero-veil {
+  background: linear-gradient(90deg,rgba(247,247,240,0.902) 0%,rgba(247,247,240,0.6784) 43%,rgba(247,247,240,0) 73%);
+}
+#introduction.hero-wireframe .hero-carousel-title { color: #1c2921; }
+#introduction.hero-wireframe .hero-description { color: #1c2921; }
+#introduction.hero-wireframe .hero-actions .button { background: #123e2b; color: #fff; border: 1px solid #123e2b; }
+#introduction.hero-wireframe .hero-actions .text-link { color: #1c2921; }
+#introduction.hero-wireframe .hero-selectors { grid-template-columns: repeat(5,minmax(0,1fr)); gap: 18px; }
+#introduction.hero-wireframe .hero-selector { color: #1c2921; }
+#introduction.hero-wireframe .hero-step-track { background: #dde8d8; }
+#introduction.hero-wireframe .hero-step-progress { background: #123e2b; }
+#introduction.hero-wireframe .hero-step-content { opacity: .6; }
+#introduction.hero-wireframe .hero-selector[aria-pressed=true] .hero-step-content,
+#introduction.hero-wireframe .hero-selector:hover .hero-step-content { opacity: 1; }
+#introduction.hero-wireframe .hero-step-placeholder {
+  display: block; width: 52px; height: 38px; flex: none;
+  border: 1px solid #cad5c7; border-radius: 3px;
+  background:
+    linear-gradient(to top right,transparent calc(50% - .5px),#dde8d8 50%,transparent calc(50% + .5px)),
+    linear-gradient(to bottom right,transparent calc(50% - .5px),#dde8d8 50%,transparent calc(50% + .5px)),var(--wire-background,#dde8d8);
+}
+#introduction.hero-wireframe .hero-selector[aria-controls="hero-scene-1"] { --wire-background: #dde8d8; }
+#introduction.hero-wireframe .hero-selector[aria-controls="hero-scene-2"] { --wire-background: #dde8d8; }
+#introduction.hero-wireframe .hero-selector[aria-controls="hero-scene-3"] { --wire-background: #dde8d8; }
+#introduction.hero-wireframe .hero-selector[aria-controls="hero-scene-4"] { --wire-background: #dde8d8; }
+#introduction.hero-wireframe .hero-selector[aria-controls="hero-scene-5"] { --wire-background: #f3ee54; }
+#introduction.hero-wireframe .hero-counter-total { color: #5e6c61; }
+#introduction.hero-wireframe .hero-control { color: #1c2921; border-color: #cad5c7; background: #ffffff66; backdrop-filter: none; }
+#introduction.hero-wireframe .hero-control:hover { background: #fff; border-color: #123e2b; }
+#introduction.hero-wireframe .hero-control:focus-visible,
+#introduction.hero-wireframe .hero-selector:focus-visible,
+#introduction.hero-wireframe .hero-actions a:focus-visible { outline-color: #123e2b; }
+@media(max-width:1199px) {
+  #introduction.hero-wireframe .hero-selectors { gap: 12px; }
+  #introduction.hero-wireframe .hero-step-content { gap: 8px; }
+  #introduction.hero-wireframe .hero-step-placeholder { width: 40px; height: 32px; }
+}
+@media(max-width:1049px) {
+  #introduction.hero-wireframe .hero-step-placeholder { display: none; }
+  #introduction.hero-wireframe .hero-image-label { top: 100px; right: 28px; padding: 6px 10px; font-size: 13px; }
+  #introduction.hero-wireframe .hero-image-label small { display: none; }
+}
+@media(max-width:700px) {
+  #introduction.hero-wireframe .hero-image-label { top: 100px; right: 20px; font-size: 12px; }
+  #introduction.hero-wireframe .hero-editorial { padding-top: 44px; }
+  #introduction.hero-wireframe .hero-selectors { gap: 12px; }
+  #introduction.hero-wireframe .hero-selector { min-height: 48px; }
+  #introduction.hero-wireframe .hero-step-number { display: block; font-size: 13px; line-height: 20px; opacity: 1; }
+  #introduction.hero-wireframe .hero-step-caption > span:last-child { display: none; }
+  #introduction.hero-wireframe .hero-step-content { justify-content: center; }
+}

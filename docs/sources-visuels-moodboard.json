@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-30",
+  "logo": {
+    "file": "logo-apader.jpg",
+    "dimensions": [
+      441,
+      441
+    ],
+    "format": "JPEG",
+    "source_page": "https://www.facebook.com/Apader237/",
+    "unmodified": true,
+    "sha256": "631c0162c814c6568b20232c81ef99b78058ecca2ba7cdd7526cb18b8c8d35e0"
+  },
+  "images": [
+    {
+      "file": "apader-ciefad-communaute.jpg",
+      "dimensions": [
+        2560,
+        1920
+      ],
+      "subject": "Visite au CIEFAD - GADD",
+      "description": "Photo de groupe devant le CIEFAD, publiée dans le compte rendu de la visite des producteurs du ProCVBio2 à APADER à Feutap, le 2 juin 2023. Utilisée provisoirement pour comparer les deux héros et situer le CIEFAD.",
+      "source_page": "https://www.ong-gadd.org/agriculture-biologique-les-producteur%E2%88%99ices-du-procvbio2-visitent-ceux-dapader/",
+      "source_image": "https://i0.wp.com/www.ong-gadd.org/wp-content/uploads/2023/06/a-comppre-scaled.jpg?fit=2560%2C1920&ssl=1",
+      "credit": "Source : ONG GADD, article du 10 juin 2023. Crédit photographique individuel non indiqué dans la page consultée.",
+      "usage": "Référence photographique de moodboard ; choix et diffusion finale à confirmer avec APADER.",
+      "sha256": "f4e9ee95898f729f0ccb3fd17d19c1821af303879dae2147d0bc172bb0f41506"
+    },
+    {
+      "file": "apader-femmes-atelier.jpg",
+      "dimensions": [
+        850,
+        567
+      ],
+      "subject": "Atelier de communication non violente",
+      "description": "Vue d’un atelier associée à l’article APADER sur les femmes artisanes de paix et les jeunes leaders. Sert de photographie de composition pour la présentation et les domaines ; le sujet exact de chaque utilisation finale reste à confirmer.",
+      "source_page": "https://peaceworkafrica.net/apader-capacite-les-femmes-artisanes-et-les-jeunes-leaders-au-maintien-de-la-paix/",
+      "source_image": "https://peaceworkafrica.net/wp-content/uploads/2023/07/c-users-nadine-desktop-collaborateurs-programme-2-1.jpeg",
+      "credit": "Source : Peace Work Africa, article signé Marie Christelle Otto, 17 juillet 2023. Crédit photographique individuel non établi.",
+      "usage": "Référence photographique de moodboard ; choix et diffusion finale à confirmer avec APADER.",
+      "sha256": "f291966f61fa4355613d3bc57a7cf9576f8305a2e9676e4ba54ba04d9759ba91"
+    },
+    {
+      "file": "apader-jeunes-atelier.jpg",
+      "dimensions": [
+        639,
+        426
+      ],
+      "subject": "Groupe de jeunes - atelier APADER",
+      "description": "Photographie de groupe publiée dans le même article sur les formations APADER. Illustration provisoire de la jeunesse ; elle n’est pas présentée comme une photographie des locaux de l’EJN.",
+      "source_page": "https://peaceworkafrica.net/apader-capacite-les-femmes-artisanes-et-les-jeunes-leaders-au-maintien-de-la-paix/",
+      "source_image": "https://peaceworkafrica.net/wp-content/uploads/2023/07/c-users-nadine-desktop-collaborateurs-programme-2.jpeg",
+      "credit": "Source : Peace Work Africa, article signé Marie Christelle Otto, 17 juillet 2023. Crédit photographique individuel non établi.",
+      "usage": "Référence photographique de moodboard ; choix et diffusion finale à confirmer avec APADER.",
+      "sha256": "3f514f5bd96fa7cb6d1c999a356e705ed1cd381a46eb79bd6faeff2907f284db"
+    }
+  ],
+  "color_analysis": {
+    "green": {
+      "median_rgb": [
+        5,
+        136,
+        63
+      ],
+      "median_hex": "#05883F",
+      "sample_pixels": 29185,
+      "quantized_dominants": [
+        {
+          "rgb": [
+            0,
+            136,
+            64
+          ],
+          "hex": "#008840",
+          "count": 5565
+        },
+        {
+          "rgb": [
+            0,
+            144,
+            64
+          ],
+          "hex": "#009040",
+          "count": 2463
+        },
+        {
+          "rgb": [
+            8,
+            136,
+            64
+          ],
+          "hex": "#088840",
+          "count": 2206
+        },
+        {
+          "rgb": [
+            0,
+            136,
+            56
+          ],
+          "hex": "#008838",
+          "count": 2110
+        }
+      ]
+    },
+    "yellow": {
+      "median_rgb": [
+        253,
+        253,
+        12
+      ],
+      "median_hex": "#FDFD0C",
+      "sample_pixels": 1452,
+      "quantized_dominants": [
+        {
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "hex": "#FFFF00",
+          "count": 300
+        },
+        {
+          "rgb": [
+            255,
+            255,
+            8
+          ],
+          "hex": "#FFFF08",
+          "count": 248
+        },
+        {
+          "rgb": [
+            255,
+            255,
+            16
+          ],
+          "hex": "#FFFF10",
+          "count": 137
+        },
+        {
+          "rgb": [
+            248,
+            255,
+            16
+          ],
+          "hex": "#F8FF10",
+          "count": 67
+        }
+      ]
+    },
+    "note": "Estimations depuis un JPG 441 × 441 pixels ; couleurs non assimilées à une charte officielle."
+  },
+  "limits": [
+    "Aucune vue de champ ou parcelle agricole identifiée parmi les trois photos vérifiées.",
+    "La vue CIEFAD peut illustrer la structure et la visite des producteurs, pas une pratique agricole en action.",
+    "La photo de jeunes est une activité APADER et ne prouve pas les locaux de l’EJN.",
+    "Le PNG apader-atelier-communication.png est un montage de deux photos ; il n’est pas retenu comme photo autonome."
+  ]
+}

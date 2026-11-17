@@ -1,0 +1,69 @@
+{
+  "page": "Espace Jeunes du Ndé — EJN",
+  "url": "/a-propos/nos-structures-operationnelles/espace-jeunes-du-nde/",
+  "status": "Proposition adaptée du modèle CIEFAD pour revue APADER",
+  "model": "Dernière version CIEFAD 57 : présentation C, mot A Nos actions, scroll horizontal corrigé, carrousel de l’accueil et carte/contact fusionnés",
+  "known_facts": [
+    "Espace dédié aux jeunes",
+    "Citoyenneté et leadership",
+    "Centre multimédia",
+    "Bibliothèque",
+    "Formations informatiques, bureautiques et linguistiques"
+  ],
+  "fact_source": "APADER/arborescence-validee-apader.md, rubrique 2.4",
+  "sections": [
+    "Héros et chiffres provisoires",
+    "Partenaires",
+    "L’espace en un regard",
+    "Mot de la présidente sur l’histoire de l’EJN",
+    "Mission, vision et valeurs",
+    "Du savoir à la pratique : Découvrir, Apprendre, S’engager, Partager",
+    "Formations",
+    "Activités et équipements",
+    "Actualités de l’EJN",
+    "Galerie continue",
+    "Témoignages — carrousel de l’accueil",
+    "Ressources",
+    "FAQ",
+    "Carte et contact réunis"
+  ],
+  "illustrative_counts": {
+    "formations": 3,
+    "actualites": 3,
+    "photos": 5,
+    "videos_galerie": 1,
+    "temoignages": 3,
+    "ressources": 3
+  },
+  "testimonials": {
+    "shown": "Carrousel de l’accueil",
+    "alternative": "Cartes",
+    "alternative_url": "./temoignages-cartes.html#temoignages-centre",
+    "comparison": "Deux pages complètes reliées par un bouton visible"
+  },
+  "location": {
+    "exact_position_confirmed": false,
+    "display": "Carte indicative du Ndé au Cameroun",
+    "note": "Adresse et emplacement exact de l’EJN à fournir par APADER ; aucune présence précise à Bangangté n’est affirmée",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Espace%20Jeunes%20du%20Nd%C3%A9%20Bangangt%C3%A9%20Cameroun"
+  },
+  "provisional": [
+    "Photos, portraits, noms et logos",
+    "Texte signé de la présidente",
+    "Mission, vision et valeurs officielles",
+    "Chiffres et périodes",
+    "Programme, calendrier, publics et conditions des formations",
+    "Actualités, témoignages et ressources",
+    "Adresse, horaires et coordonnées"
+  ],
+  "interactions": [
+    "Header fixe et onglets raccordés",
+    "Parcours des quatre cartes lié au scroll vertical et adapté aux fenêtres basses",
+    "Accordéons d’activités et visuel associé",
+    "Galerie continue avec pause et popups",
+    "Carrousel de l’accueil avec pastilles, clavier et popup vidéo",
+    "FAQ en accordéon",
+    "Carte et popup de contact"
+  ],
+  "scope": "Seules les deux pages et les actifs EJN sont écrits ; CIEFAD et les pages communes ne sont pas modifiés"
+}

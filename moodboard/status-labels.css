@@ -1,0 +1,60 @@
+/* Passive metadata: readable text and meaningful symbols, without pill shapes. */
+.status-lab { scroll-margin-top: 24px; }
+
+.project-meta-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 36px;
+  margin-bottom: 28px;
+}
+
+.metadata-caption {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font: 400 12px/1.4 var(--font-body);
+}
+
+.project-status-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.project-status,
+.activity-type,
+.form-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--forest);
+  font: 500 13px/20px var(--font-body);
+}
+
+.project-status--complete,
+.activity-type { color: var(--ink); }
+
+.project-status svg,
+.form-state svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.form-state-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 12px;
+}
+
+.form-state { font-size: 12px; font-weight: 400; }
+.form-state--warning { color: var(--warning); }
+
+@media (max-width: 640px) {
+  .project-meta-demo { gap: 24px 32px; margin-bottom: 24px; }
+}

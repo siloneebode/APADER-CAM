@@ -1,0 +1,71 @@
+/* Shared UI from the APADER moodboard and revision notes, §3 and §5. */
+body.content-integrated {
+  --brand:#008840; --forest:#123e2b; --yellow:#f3ee54;
+  --sage:#dde8d8; --paper:#f7f7f0; --ink:#1c2921;
+  --muted:#5e6c61; --line:#cad5c7; --white:#fff;
+  --font-body:'IBM Plex Sans',Arial,sans-serif;
+  --font-display:'PP Eiko',Georgia,serif;
+  --speed:1;
+  font-family:var(--font-body); background:var(--paper); color:var(--ink);
+}
+body.content-integrated .ui-symbols { position:absolute; width:0; height:0; overflow:hidden; pointer-events:none; }
+body.content-integrated main * { font-family:inherit !important; }
+body.content-integrated main :is(h1,h2,h3,h4,blockquote) {
+  font-family:var(--font-display) !important; font-weight:400;
+}
+body.content-integrated main :is(.action-hero-stats dd,.ih-stats dd,.stat-card strong,.revue-domain-number,.structure-index,.project-number) {
+  font-family:var(--font-display) !important;
+}
+body.content-integrated :is(button,input,select,textarea) { font-family:var(--font-body); }
+body.content-integrated main .button {
+  display:inline-flex; align-items:center; justify-content:space-between;
+  min-height:48px !important; border-radius:8px !important;
+  padding:8px 8px 8px 16px !important; gap:12px;
+  font:500 15px/1.4 var(--font-body); text-decoration:none;
+}
+body.content-integrated main .button-primary { background:var(--forest); color:var(--paper); border:0; }
+body.content-integrated main .button-primary:hover { background:var(--brand); color:var(--paper); }
+body.content-integrated main .button-secondary { color:var(--forest); background:transparent; border:1px solid var(--forest); }
+body.content-integrated main .button-secondary:hover { background:var(--sage); }
+body.content-integrated main .button .button-icon {
+  display:grid; place-items:center; width:32px; height:32px;
+  flex:0 0 32px; background:var(--yellow); color:var(--forest);
+  border-radius:6px;
+}
+body.content-integrated main .button-secondary .button-icon { background:var(--forest); color:var(--yellow); }
+body.content-integrated main .button .button-icon svg {
+  width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+body.content-integrated main .button:hover .button-icon svg { transform:rotate(45deg); }
+body.content-integrated .ih-b { background:var(--forest); color:var(--paper); }
+body.content-integrated .ih-b::before {
+  inset:0 0 0 auto; width:60%; height:100%; border:0; transform:none;
+  clip-path:none; background:url('/assets/patterns/halo.svg') right center/cover no-repeat;
+  opacity:.12; pointer-events:none;
+}
+body.content-integrated .ih-b::after { display:none; }
+body.content-integrated .ih-b .ih-lead, body.content-integrated .ih-b .ih-source { color:var(--sage); }
+body.content-integrated .ih-b .button-primary { background:var(--yellow); color:var(--forest); }
+body.content-integrated .ih-b .button-primary .button-icon { background:var(--forest); color:var(--yellow); }
+body.content-integrated .ih-b .button-secondary { color:var(--paper); border-color:var(--paper); }
+body.content-integrated .ih-b .button-secondary .button-icon { background:var(--sage); color:var(--forest); }
+body.content-integrated .ih-b .button-secondary:hover { color:var(--forest); }
+body.content-integrated main :is(.apader-kicker,.pangram-kicker) { font-family:var(--font-body); text-transform:none; letter-spacing:0; }
+body.content-integrated #footer.apader-footer .af-group-summary { color:var(--forest); }
+body.content-integrated #apader-header .mega-panel .tile-0 { background:var(--forest); color:var(--paper); }
+body.content-integrated #apader-header .mega-panel .tile-1 { background:var(--yellow); color:var(--forest); }
+body.content-integrated #apader-header .mega-panel .tile-2 {
+  background:var(--sage); color:var(--forest); --menu-motif:url('/assets/patterns/halo.svg');
+}
+body.content-integrated #apader-header .mega-panel .tile-3 { background:var(--paper); color:var(--forest); }
+body.content-integrated #apader-header .mega-panel .tile-4 { background:var(--sage); color:var(--forest); }
+body.content-integrated #apader-header .mega-panel .tile-5 { background:var(--paper); color:var(--forest); }
+body.content-integrated #apader-header #mega-panel-0 .tile-3 { color:var(--paper); }
+body.content-integrated :focus-visible { outline:2px solid var(--brand); outline-offset:4px; }
+body.content-integrated .ih-b :focus-visible { outline-color:var(--yellow); }
+@media(prefers-reduced-motion:reduce) {
+  body.content-integrated *,body.content-integrated *::before,body.content-integrated *::after {
+    scroll-behavior:auto !important; animation:none !important; transition:none !important;
+  }
+}

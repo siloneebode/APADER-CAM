@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <title>Faisceaux — motif abstrait APADER</title>
+  <desc>Deux grands plans s’ouvrent depuis une origine hors cadre, avec une ligne de lumière qui souligne leur direction.</desc>
+  <path d="M-150 580 320-80H620Z" fill="#123E2B"/>
+  <path d="M-150 580 880 110V310Z" fill="#DDE8D8"/>
+  <path d="M-150 580 880 30" fill="none" stroke="#F3EE54" stroke-width="5"/>
+</svg>

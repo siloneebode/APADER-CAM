@@ -1,0 +1,56 @@
+@font-face{font-family:Heading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Sans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.np-page{margin:0;color:#1c2921;background:#fff;font:400 17px/1.6 Sans,Arial,sans-serif}
+.np-page h1,.np-page h2,.np-page h3,.np-page p,.np-page figure{margin:0}
+.np-page a{color:inherit;text-decoration:none}
+.np-page a:focus-visible,.np-page button:focus-visible{outline:3px solid #123e2b;outline-offset:5px}
+:where(.np-page) .site-header{position:absolute;z-index:100;top:8px;left:36px;right:36px;max-width:1368px;margin-inline:auto;background:#fff;border-radius:9px;box-shadow:0 3px 12px #00000009}
+.np-page .site-header .header-cta{color:#fff}
+.np-simple-hero,.np-simple-hero *{box-sizing:border-box}
+.np-simple-hero{padding:142px 0 70px;background:#f7f7f0;color:#1c2921;text-align:center;border-bottom:1px solid #cad5c7;font:400 16px/1.6 Sans,Arial,sans-serif}
+.np-simple-wrap{width:100%;max-width:1368px;margin-inline:auto;padding-inline:48px}
+.np-simple-inner{max-width:1080px}
+.np-simple-breadcrumb{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:38px;font-size:12px;line-height:1.5;color:#5e6c61}
+.np-simple-breadcrumb a{display:inline-flex;align-items:center;min-height:32px;color:inherit;text-decoration:none}
+.np-simple-breadcrumb a:hover{text-decoration:underline;text-underline-offset:4px}
+.np-simple-breadcrumb [aria-current]{color:#1c2921}
+.np-simple-kicker{display:table;position:relative;font-size:12px;line-height:1.5;color:#5e6c61}
+.np-simple-kicker::before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#dde8d8}
+.np-simple-kicker span{display:block;padding:5px 10px;background:#dde8d8}
+.np-simple-hero .np-simple-kicker{margin:0 auto 24px}
+.np-simple-hero h1{font:400 clamp(54px,7.4vw,98px)/1.02 Heading,Georgia,serif;letter-spacing:-.045em;text-wrap:balance}
+.np-simple-hero .np-simple-introduction{max-width:710px;margin:28px auto 0;color:#5e6c61;font-size:17px;line-height:1.65;text-wrap:balance}
+.np-family{padding:88px 0 96px;background:#fff;scroll-margin-top:var(--sm-anchor-offset,150px)}
+.np-family.np-family-muted{background:#f7f7f0}
+.np-wrap{width:100%;max-width:1440px;margin-inline:auto;padding-inline:48px}
+.np-family-layout{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.65fr);gap:64px;align-items:start}
+.np-family-header{padding-top:4px}
+.np-page .np-family-kicker{display:table;position:relative;margin:0 0 26px;padding:5px 10px;background:#dde8d8;color:#5e6c61;font:400 12px/1.5 Sans,Arial,sans-serif}
+.np-family-kicker::before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#dde8d8}
+.np-page .np-family-header h2{margin:0;font:400 clamp(36px,3.8vw,54px)/1.06 Heading,Georgia,serif;letter-spacing:-.025em;text-wrap:balance}
+.np-page .np-family-intro{max-width:390px;margin:26px 0 0;color:#5e6c61;font:400 15px/1.65 Sans,Arial,sans-serif}
+.np-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0;padding:0;list-style:none}
+.np-partner-grid>li{min-width:0}
+.np-partner-card{height:100%;min-width:0;padding:24px;border:1px solid #cad5c7;border-radius:8px;background:#fff}
+.np-partner-logo{display:grid;place-items:center;min-height:130px;padding:18px;border:1px solid #cad5c7;border-radius:6px;background:linear-gradient(to top right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),linear-gradient(to bottom right,transparent calc(50% - .6px),#dde8d8 50%,transparent calc(50% + .6px)),#f7f7f0;text-align:center}
+.np-partner-logo span{max-width:100%;padding:5px 9px;background:#f7f7f0;color:#5e6c61;font:400 12px/1.5 Sans,Arial,sans-serif}
+.np-page .np-partner-card h3{margin:25px 0 0;font:400 28px/1.14 Heading,Georgia,serif;letter-spacing:-.02em;overflow-wrap:anywhere}
+.np-partner-card dl{display:grid;gap:16px;margin:21px 0 0;padding-top:19px;border-top:1px solid #cad5c7}
+.np-partner-card dt{margin:0 0 5px;color:#5e6c61;font:400 10px/1.5 Sans,Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.np-partner-card dd{margin:0;color:#5e6c61;font:400 13px/1.6 Sans,Arial,sans-serif}
+body.np-page #footer.apader-footer{background:#dde8d8;color:#1c2921}
+body.np-page #footer.apader-footer .af-shape-blue{background:#dde8d8}
+body.np-page #footer.apader-footer .af-shape-yellow{background:#f7f7f0}
+body.np-page #footer.apader-footer .af-panel{background:#fff}
+body.np-page #footer.apader-footer .af-group-summary,body.np-page #footer.apader-footer .af-brand{color:#1c2921}
+body.np-page #footer.apader-footer .af-contact-fields p,body.np-page #footer.apader-footer .af-legal li,body.np-page #footer.apader-footer .af-language{color:#5e6c61}
+@media(max-width:1049px){.np-page .site-header{top:12px;left:24px;right:24px}.np-wrap{padding-inline:28px}.np-family{padding:68px 0 74px}.np-family-layout{grid-template-columns:1fr;gap:34px}.np-family-header{max-width:760px}.np-page .np-family-header h2{font-size:48px}.np-page .np-family-intro{max-width:660px;margin-top:20px}}
+@media(max-width:700px){.np-page .site-header{left:16px;right:16px}}
+@media(max-width:620px){.np-wrap{padding-inline:20px}.np-family{padding:52px 0 58px}.np-family-layout{gap:28px}.np-partner-grid{grid-template-columns:1fr;gap:20px}.np-page .np-family-header h2{font-size:42px}.np-page .np-family-intro{font-size:14px}.np-partner-card{padding:24px}.np-page .np-partner-card h3{font-size:30px}}
+@media(max-width:1050px){.np-simple-wrap{padding-inline:28px}.np-simple-hero{padding-top:130px}}
+@media(max-width:800px){.np-simple-hero{padding-bottom:58px}.np-simple-hero .np-simple-introduction{font-size:16px}}
+@media(max-width:600px){.np-simple-wrap{padding-inline:20px}.np-simple-hero{padding:118px 0 48px}.np-simple-breadcrumb{margin-bottom:28px;gap:9px;font-size:11px}.np-simple-hero .np-simple-kicker{margin-bottom:22px}.np-simple-hero h1{font-size:56px}.np-simple-hero .np-simple-introduction{font-size:15px;line-height:1.6;margin-top:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

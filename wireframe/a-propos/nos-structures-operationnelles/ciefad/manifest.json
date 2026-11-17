@@ -1,0 +1,139 @@
+{
+  "page": "Modèle de page d’une structure opérationnelle",
+  "example": "CIEFAD",
+  "url": "/a-propos/nos-structures-operationnelles/ciefad/",
+  "status": "Révision client : présentation C retenue, deux modèles de témoignages à comparer",
+  "sections": [
+    "Héros et chiffres clés",
+    "Partenaires",
+    "Présentation du centre — C",
+    "Mot de la présidente et histoire du centre — modèle Nos actions",
+    "Mission, vision et valeurs",
+    "Parcours du savoir à la pratique",
+    "Formations",
+    "Activités et équipements",
+    "Actualités du centre",
+    "Galerie photos et vidéo",
+    "Témoignages — deux modèles dans la page complète",
+    "Ressources",
+    "Questions fréquentes",
+    "Carte de localisation et contact réunis"
+  ],
+  "known_apader_facts": [
+    "CIEFAD à Feutap",
+    "Formations en agriculture durable",
+    "Agroécologie et agroforesterie",
+    "Banque de semences",
+    "Expérimentation",
+    "Ferme d’Application et de Production"
+  ],
+  "provisional": [
+    "Photos",
+    "Formations précises et calendrier",
+    "Noms et coordonnées",
+    "Horaires",
+    "Actualités",
+    "Ressources",
+    "Carte d’accès",
+    "Chiffres clés et leurs sources",
+    "Logos partenaires",
+    "Mot de la présidente sur l’histoire du centre",
+    "Mission, vision et valeurs",
+    "Parcours proposé",
+    "Témoignages",
+    "Réponses à la FAQ",
+    "Localisation exacte du centre sur la carte"
+  ],
+  "interactions": [
+    "Sommaire ancré et raccordé au header fixe, actif au défilement",
+    "Accordéons d’activités avec visuel associé",
+    "Parcours horizontal piloté par le scroll si la hauteur le permet, défilement manuel et flèches sinon",
+    "Galerie continue sur ordinateur avec pause, défilement manuel sur mobile ou en mouvement réduit",
+    "Aperçu de la galerie en popup",
+    "Carrousel de témoignages de l’accueil : cartes latérales, pastilles, clavier et popup vidéo ; bouton vers la version en cartes",
+    "FAQ en accordéon",
+    "Aperçu de contact en popup",
+    "Grande carte Google Maps et lien de recherche de la localisation"
+  ],
+  "counts_are_illustrative": {
+    "formations": 2,
+    "actualites": 3,
+    "photos": 5,
+    "videos": 1,
+    "ressources": 3,
+    "temoignages": 3,
+    "chiffres_cles": 3
+  },
+  "design": "Wireframe en niveaux de gris, typographie et compositions cohérentes avec la banque de sections sauvegardée ; boucles à rapprocher des modèles déjà validés par le parent.",
+  "reused_loops": {
+    "formations": "B déjà retenu dans Opportunités",
+    "actualites": "Carte A de l’accueil",
+    "ressources": "B déjà retenu dans Nos actions"
+  },
+  "EJN": "Fiche détaillée à adapter après validation de ce modèle",
+  "faq": true,
+  "hero": "Composition de Nos actions avec bande de logos et chiffres provisoires",
+  "navigation": "Header fixe au scroll et onglets raccordés, état initial conservé",
+  "centre": {
+    "selected": "C",
+    "shown_in_assembly": "C",
+    "alternatives": "./variantes-centre/#c"
+  },
+  "additions": [
+    "Mot de la présidente sur l’histoire du centre",
+    "Mission, vision et valeurs selon la capture fournie",
+    "Parcours proposé en carrousel piloté par le scroll vertical",
+    "Galerie à défilement continu avec pause",
+    "Témoignages du centre",
+    "FAQ avant le CTA",
+    "Carte de localisation et contact réunis"
+  ],
+  "previous_version": "Version 56 conservée dans l’historique du Site",
+  "presidente": "Le mot de la présidente porte l’histoire du centre, les besoins initiaux, la création et les objectifs du projet. Texte à recueillir et à valider.",
+  "testimonials": {
+    "shown_in_assembly": "Carrousel de l’accueil — carte centrale et aperçus latéraux",
+    "alternative": "Cartes, modèle précédent",
+    "alternative_url": "./temoignages-cartes.html#temoignages-centre",
+    "comparison": "Deux pages complètes reliées par un bouton très visible au-dessus des témoignages",
+    "selected": "accueil",
+    "source": "Accueil #impact #recits-impact ; impact-teachers.css et impact-teachers.js",
+    "interaction": "Cartes latérales, pastilles, clavier et aperçu vidéo en popup"
+  },
+  "parcours_card_width": {
+    "before": "min(78vw,1080px)",
+    "after": "min(52vw,720px)",
+    "reduction": "Un tiers sur ordinateur ; largeur lisible conservée sur mobile"
+  },
+  "presidente_model": {
+    "source": "Nos actions — Parole extérieure, variante A retenue",
+    "css": "/nos-actions/parole-a.css",
+    "composition": "Carte blanche légèrement inclinée, message développé en deux paragraphes et petit portrait dans la signature",
+    "content": "Histoire du CIEFAD : besoins initiaux, création, objectifs, évolution et perspectives ; texte signé à recueillir et valider",
+    "title": "L’histoire du CIEFAD, une ambition partagée."
+  },
+  "parcours_scroll": {
+    "behavior": "Défilement horizontal des cartes lié au scroll vertical de la page, dans les deux sens",
+    "pinned": "Cartes et progression uniquement ; le titre et l’introduction défilent normalement avant les cartes",
+    "short_windows": "Densité compacte selon la hauteur disponible sous le menu fixe, sans modifier la largeur des cartes",
+    "fallback": "Défilement manuel en mouvement réduit ou quand la fenêtre est trop basse pour lire les cartes",
+    "verified_viewports": [
+      "1150 × 728",
+      "1280 × 720",
+      "1440 × 700",
+      "1024 × 600",
+      "390 × 667"
+    ]
+  },
+  "localisation": {
+    "placement": "Un seul bloc de localisation et de contact après la FAQ ; CTA séparé retiré",
+    "anchor": "#localisation-centre",
+    "provider": "Google Maps",
+    "area": "Feutap, Bangangté, Cameroun",
+    "exact_position_confirmed": false,
+    "note": "La carte montre la zone de Feutap ; le point exact du centre reste à confirmer par APADER",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=CIEFAD%20Feutap%20Bangangt%C3%A9%20Cameroun",
+    "previous_contact_section_removed": true,
+    "standalone_cta_removed": true,
+    "contact_anchor": "#contact-centre sur la carte fusionnée, avec bouton Échanger avec le centre et coordonnées en popup"
+  }
+}

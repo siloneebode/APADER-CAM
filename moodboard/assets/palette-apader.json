@@ -1,0 +1,29 @@
+{
+  "title": "APADER — Palette proposée pour le portail",
+  "date": "2026-10-30",
+  "status": "Proposition à discuter, sans validation enregistrée",
+  "main": {
+    "brand": {"name": "Vert APADER", "hex": "#008840", "role": "Identité et accents"},
+    "forest": {"name": "Forêt", "hex": "#123E2B", "role": "Titres, boutons et fonds forts"},
+    "light": {"name": "Lumière", "hex": "#F3EE54", "role": "Accent et appel à l’action"},
+    "sage": {"name": "Sauge", "hex": "#DDE8D8", "role": "Fonds secondaires et survol secondaire"},
+    "paper": {"name": "Ivoire", "hex": "#F7F7F0", "role": "Fond principal"},
+    "ink": {"name": "Encre", "hex": "#1C2921", "role": "Textes"}
+  },
+  "interface": {
+    "muted": "#5E6C61",
+    "border": "#CAD5C7",
+    "surface": "#FFFFFF",
+    "sectionBackground": "#EDF1E8",
+    "primaryHover": "#008840",
+    "accentHover": "#FFF981",
+    "successText": "#123E2B",
+    "successBackground": "#E4F0E2",
+    "errorText": "#A3392A",
+    "warningText": "#71580D",
+    "warningBackground": "#FFF0C6",
+    "focus": "#008840"
+  },
+  "fonts": {"headings": "Fraunces", "body": "Manrope", "license": "SIL Open Font License 1.1"},
+  "note": "Le vert et le jaune sont inspirés du JPG du logo. Les valeurs proposées ne constituent pas une charte officielle."
+}

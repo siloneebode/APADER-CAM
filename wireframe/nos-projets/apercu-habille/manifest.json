@@ -1,0 +1,18 @@
+{
+  "status": "Proposition visuelle exploratoire à valider",
+  "scope": "Habillage uniquement, structure et trois variantes d’activités conservées",
+  "palette": {
+    "vert": "#173f34",
+    "ivoire": "#faf8f2",
+    "ocre": "#e6b867"
+  },
+  "photos": "Illustrations réutilisées du dossier de composition APADER ; ne documentent pas le projet illustratif",
+  "source_manifest": "compositions/accueil-v1/assets/manifest.json",
+  "home": "/nos-projets/apercu-habille/",
+  "variants": {
+    "a": "/nos-projets/apercu-habille/a.html?n=02#activites",
+    "b": "/nos-projets/apercu-habille/b.html?n=02#activites",
+    "c": "/nos-projets/apercu-habille/c.html?n=02#activites"
+  },
+  "wireframes_preserved": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "Reprise de la présentation de la fiche projet, propositions A/B à revoir",
+  "scope": "Section Du contexte aux objectifs uniquement dans deux fiches complètes",
+  "a": "/nos-projets/apercu-habille/?n=02#presentation",
+  "b": "/nos-projets/apercu-habille/presentation-b.html?n=02#presentation",
+  "comparison": "Bouton visible à la section, aller et retour avec conservation du numéro de projet",
+  "preserved": "Héros validé et toutes les autres sections identiques entre A et B ; fiche canonique préservée",
+  "content": "Contenus illustratifs déjà présents, identiques dans les deux compositions",
+  "canonical_sha256": "dce8d4d03dab0470cb8810c45f57e6c6908ea7de9083c2462cc1e25e3cb614bc"
+}

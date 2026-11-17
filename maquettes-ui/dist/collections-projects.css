@@ -1,0 +1,56 @@
+.ui-collection.projects-page main .project-search { gap: 16px; padding-bottom: 24px; }
+.ui-collection.projects-page main .project-search label { color: var(--muted); font: 400 13px/1.5 var(--font-body); }
+.ui-collection.projects-page main .project-search input[type=search] { font: 400 16px/1.5 var(--font-body); border-color: var(--line); border-radius: 8px; }
+.ui-collection.projects-page main .project-filters { gap: 16px; }
+.ui-collection.projects-page main .project-filter-actions { border-color: var(--line); margin-bottom: 28px; }
+.ui-collection.projects-page main .project-list { gap: 24px; }
+.ui-collection.projects-page main .project-entry { grid-template-columns: minmax(160px, .65fr) minmax(0, 1.45fr) minmax(0, 1fr); min-height: 310px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); color: var(--ink); transition: border-color .2s ease; }
+.ui-collection.projects-page main .project-entry:hover { border-color: var(--brand); }
+.ui-collection.projects-page main .catalog-facts { padding: 28px 24px; background: var(--paper); border-right: 1px solid var(--line); }
+.ui-collection.projects-page main .project-number { margin-bottom: 20px; color: var(--muted); font: 400 13px/1.5 var(--font-body); }
+.ui-collection.projects-page main .project-status { gap: 7px; border: 0; border-radius: 0; padding: 0; background: transparent; color: var(--forest); font: 500 13px/1.5 var(--font-body); }
+.ui-collection.projects-page main .project-status::before { content: ''; width: 16px; height: 16px; flex: 0 0 16px; background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4a8 8 0 1 1-8 8M12 8v4l3 2'/%3E%3C/svg%3E") center / contain no-repeat; }
+.ui-collection.projects-page main [data-statut=realise] .project-status { color: var(--ink); }
+.ui-collection.projects-page main [data-statut=realise] .project-status::before { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 4 4L19 6'/%3E%3C/svg%3E"); }
+.ui-collection.projects-page main .catalog-facts dt { margin-top: 12px; color: var(--muted); font: 400 12px/1.5 var(--font-body); letter-spacing: 0; text-transform: none; }
+.ui-collection.projects-page main .catalog-facts dd { color: var(--forest); font: 400 14px/1.6 var(--font-body); }
+.ui-collection.projects-page main .catalog-copy { padding: 28px; }
+.ui-collection.projects-page main .project-domain { margin-bottom: 20px; color: var(--brand); font: 500 12px/1.5 var(--font-body); letter-spacing: 0; text-transform: none; }
+.ui-collection.projects-page main .catalog-copy h2 { margin-bottom: 18px; color: var(--forest); font: 400 clamp(28px, 2.5vw, 36px)/1.18 var(--font-display); }
+.ui-collection.projects-page main .catalog-summary { margin-bottom: 24px; color: var(--muted); font: 400 15px/1.7 var(--font-body); }
+.ui-collection.projects-page main .project-read { gap: 8px; min-height: 44px; margin-top: auto; padding-bottom: 0; border: 0; color: var(--forest); font: 500 14px/1.5 var(--font-body); }
+.ui-collection.projects-page main .catalog-visual.wf-visual { min-height: 310px; background: var(--sage); border-color: var(--line); }
+.ui-collection.projects-page main .catalog-visual.wf-visual > span { background: transparent; }
+.ui-collection.projects-page main .success-card { border-color: var(--line); border-radius: 12px; overflow: hidden; background: var(--white); }
+.ui-collection.projects-page main .success-copy h2 { color: var(--forest); font: 400 30px/1.23 var(--font-display); }
+.ui-collection.projects-page main .success-copy :is(blockquote,.success-excerpt) { color: var(--muted); font: 400 23px/1.35 var(--font-display); }
+.ui-collection.projects-page main .success-visual.wf-visual { border-bottom-color: var(--line); }
+
+/* Les cartes d’activités utilisent les mêmes repères éditoriaux que les actualités. */
+.ui-collection.projects-page:not(.ui-detail) main .editorial-card { color: var(--ink); font: 400 16px/1.6 var(--font-body); }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-visual { border: 1px solid var(--line); border-radius: 24px; background: var(--sage); color: var(--muted); }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-category { margin: 22px 0 14px; padding: 0; border: 0; border-radius: 0; color: var(--brand); font: 500 13px/1.5 var(--font-body); letter-spacing: 0; text-transform: none; }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-card h3 { min-height: 0; margin-bottom: 18px; color: var(--forest); font: 400 30px/1.23 var(--font-display); overflow-wrap: break-word; }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-date { justify-content: flex-start; flex-wrap: wrap; gap: 6px 14px; padding-top: 14px; margin-bottom: 14px; border-color: var(--line); color: var(--muted); font: 400 13px/1.5 var(--font-body); }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-summary { margin-bottom: 20px; color: var(--muted); font: 400 16px/1.65 var(--font-body); overflow-wrap: break-word; }
+.ui-collection.projects-page:not(.ui-detail) main .editorial-read { min-height: 44px; color: var(--forest); font: 500 14px/1.4 var(--font-body); }
+@media (max-width: 1000px) {
+  .ui-collection.projects-page main .project-entry { grid-template-columns: minmax(145px, .65fr) minmax(0, 1.6fr); }
+  .ui-collection.projects-page main .catalog-visual.wf-visual { grid-column: 1 / -1; height: 240px; min-height: 240px; }
+}
+@media (max-width: 600px) {
+  .ui-collection.projects-page main .project-search { align-items: stretch; flex-direction: column; }
+  .ui-collection.projects-page main .project-search .button { align-self: flex-start; }
+  .ui-collection.projects-page main .project-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 10px; }
+  .ui-collection.projects-page main .project-entry { display: flex; flex-direction: column; }
+  .ui-collection.projects-page main .catalog-facts { border-right: 0; border-bottom: 1px solid var(--line); padding: 22px; }
+  .ui-collection.projects-page main .catalog-facts dl { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin-top: 16px; }
+  .ui-collection.projects-page main .catalog-facts dt { margin: 0; }
+  .ui-collection.projects-page main .catalog-facts dd { grid-row: 2; }
+  .ui-collection.projects-page main .project-number { margin-bottom: 10px; }
+  .ui-collection.projects-page main .catalog-copy { padding: 24px 22px; }
+  .ui-collection.projects-page main .catalog-visual.wf-visual { height: 200px; min-height: 200px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-collection.projects-page main .project-entry { transition: none; }
+}

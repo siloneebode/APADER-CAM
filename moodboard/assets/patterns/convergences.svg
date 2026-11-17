@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <title>Convergences — motif abstrait APADER</title>
+  <desc>Des diagonales et des plans effilés décalés reprennent les directions du cône, sans dessiner un objet.</desc>
+  <path d="M-80-42 800 178v32L-80 39Z" fill="#DDE8D8"/>
+  <path d="M334 480 800 276v59L459 480Z" fill="#008840"/>
+  <path d="M-36 480 800 256v10L12 480Z" fill="#F3EE54"/>
+  <g stroke="#123E2B" stroke-width="2">
+    <path d="M-80-92 880 173M-80-32 880 191M-80 36 880 209M-80 110 880 227"/>
+    <path d="M-80 563 880 275M-80 492 880 257M-80 415 880 239"/>
+  </g>
+  <path d="M-80 183 880 246" stroke="#008840" stroke-width="3"/>
+</svg>

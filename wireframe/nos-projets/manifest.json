@@ -1,0 +1,49 @@
+{
+  "status": "Première proposition pour revue",
+  "hub": "/nos-projets/",
+  "views": {
+    "all": "/nos-projets/",
+    "ongoing": "/nos-projets/?statut=en-cours",
+    "completed": "/nos-projets/?statut=realise"
+  },
+  "project_detail": "/nos-projets/projet-exemple.html?n=01",
+  "stories": "/nos-projets/histoires-de-reussite/",
+  "story_detail": "/nos-projets/histoires-de-reussite/recit-exemple.html?n=01",
+  "catalogue_reference": "Modèle A Pinpoint retenu sur l’accueil ; visuel sur toute la zone droite",
+  "filters": [
+    "Domaine",
+    "Zone d’intervention",
+    "Année",
+    "Statut"
+  ],
+  "project_detail_fields": [
+    "Contexte",
+    "Objectif général",
+    "Objectifs spécifiques",
+    "Date de début",
+    "Date de fin",
+    "Zone d’intervention",
+    "Bénéficiaires",
+    "Activités",
+    "Partenaires",
+    "Résultats",
+    "Chiffres clés",
+    "Documents associés"
+  ],
+  "hero": "Image mise en avant du projet en fond sur toute la surface du héros",
+  "ergonomics": [
+    "Repères essentiels sous le héros",
+    "Sommaire ancré fixe",
+    "Activités dépliables",
+    "Objectifs distincts des résultats",
+    "Liens vers ressources et récits"
+  ],
+  "placeholders": true,
+  "generated_pages": [
+    "index.html",
+    "projet-exemple.html",
+    "histoires-de-reussite/index.html",
+    "histoires-de-reussite/recit-exemple.html"
+  ],
+  "project_media_location": "Photos et vidéos rattachées aux pages des activités ; galerie globale retirée de la fiche projet."
+}

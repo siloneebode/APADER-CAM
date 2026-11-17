@@ -1,0 +1,81 @@
+/* Motion presentation. Existing effects, durations and controls are retained. */
+#mouvement {
+  padding-block: 80px;
+  background: var(--sage);
+  color: var(--ink);
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#mouvement .motion-introduction { grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: end; margin-bottom: 48px; }
+#mouvement .motion-introduction h2 { margin-top: 24px; color: var(--forest); font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; }
+#mouvement .motion-introduction > p { max-width: 440px; padding: 0; color: var(--forest); font: 400 16px/1.65 var(--font-body); }
+
+#mouvement .motion-controls { align-items: end; gap: 32px; padding-top: 32px; margin-bottom: 28px; border-color: var(--line); }
+#mouvement .motion-controls > .motion-controls-heading { display: block; min-width: 0; }
+#mouvement .motion-controls h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#mouvement .motion-controls-heading p { max-width: 600px; margin-top: 12px; color: var(--forest); font: 400 16px/1.65 var(--font-body); }
+#mouvement .motion-controls > .motion-playback { display: flex; flex-shrink: 0; align-items: center; gap: 12px; }
+#mouvement .motion-playback label { color: var(--forest); font: 400 14px/1.5 var(--font-body); }
+#mouvement .motion-playback select { min-width: 124px; min-height: 44px; max-width: none; padding: 10px 32px 10px 12px; border: 1px solid var(--forest); border-radius: 8px; background: var(--paper); color: var(--forest); font: 400 16px/1.4 var(--font-body); }
+#mouvement .motion-playback .quiet-button { min-height: 44px; margin: 0; gap: 8px; color: var(--forest); font: 400 14px/20px var(--font-body); }
+#mouvement .motion-playback .quiet-button svg { width: 16px; height: 16px; }
+#mouvement .motion-playback select:focus-visible,
+#mouvement .motion-playback .quiet-button:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+
+#mouvement .motion-examples { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+#mouvement .motion-examples > article { display: flex; flex-direction: column; min-width: 0; padding: 28px; border-radius: 12px; background: var(--paper); overflow: hidden; }
+#mouvement .motion-examples .micro-label { color: var(--muted); font: 500 14px/1.5 var(--font-body); letter-spacing: 0; }
+#mouvement .motion-stage { display: flex; align-items: center; min-width: 0; height: 160px; padding-block: 20px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+#mouvement .animated-subtitle { color: var(--forest); font: 400 24px/1.4 var(--font-body); letter-spacing: -.025em; }
+#mouvement .animated-heading { color: var(--forest); font: 400 32px/1.15 var(--font-display); letter-spacing: -.02em; }
+#mouvement .animated-heading > span:last-child { color: inherit; font-style: normal; }
+#mouvement .motion-examples h3 { margin: 0 0 12px; color: var(--forest); font: 400 28px/1.2 var(--font-display); letter-spacing: -.02em; }
+#mouvement .motion-examples > article > p { min-height: 0; margin: 0 0 24px; color: var(--ink); font: 400 16px/1.65 var(--font-body); }
+#mouvement .motion-examples .spec-note { margin-top: auto; color: var(--muted); font: 400 13px/1.6 var(--font-body); letter-spacing: 0; }
+#mouvement .motion-timing-note { margin-top: 20px; color: var(--forest); font: 400 14px/1.6 var(--font-body); }
+
+#mouvement .motion-principle { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); }
+#mouvement .motion-principle > div { max-width: 680px; }
+#mouvement .motion-principle h3 { color: var(--forest); font: 400 28px/1.2 var(--font-display); letter-spacing: -.02em; }
+#mouvement .motion-principle p { margin-top: 12px; color: var(--forest); font: 400 16px/1.65 var(--font-body); }
+#mouvement .motion-principle > .text-link { flex-shrink: 0; min-height: 44px; margin: 0; color: var(--forest); font: 400 14px/1.5 var(--font-body); }
+#mouvement .motion-principle > .text-link:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+
+@media (max-width: 1100px) {
+  #mouvement .motion-examples { gap: 16px; }
+  #mouvement .motion-examples > article { padding: 24px; }
+}
+
+@media (max-width: 900px) {
+  #mouvement .motion-introduction { grid-template-columns: 1fr; gap: 24px; }
+  #mouvement .motion-introduction > p { justify-self: start; max-width: 620px; }
+  #mouvement .motion-controls { align-items: start; flex-direction: column; gap: 24px; }
+  #mouvement .motion-examples { grid-template-columns: 1fr; gap: 24px; }
+  #mouvement .motion-examples > article { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; padding: 28px; }
+  #mouvement .motion-examples .micro-label { grid-column: 1; grid-row: 1; }
+  #mouvement .motion-stage { grid-column: 1; grid-row: 2 / 5; height: 160px; margin: 0; border: 0; }
+  #mouvement .motion-examples h3 { grid-column: 2; grid-row: 1; }
+  #mouvement .motion-examples > article > p { grid-column: 2; grid-row: 2; }
+  #mouvement .motion-examples .spec-note { grid-column: 2; grid-row: 3; }
+  #mouvement .motion-principle { align-items: start; flex-direction: column; gap: 20px; }
+}
+
+@media (max-width: 640px) {
+  #mouvement { padding-block: 56px; }
+  #mouvement .motion-introduction { margin-bottom: 36px; }
+  #mouvement .motion-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #mouvement .motion-controls { padding-top: 28px; }
+  #mouvement .motion-controls h3 { font-size: 28px; }
+  #mouvement .motion-controls > .motion-controls-heading { width: 100%; }
+  #mouvement .motion-controls > .motion-playback { width: 100%; flex-wrap: wrap; gap: 12px; }
+  #mouvement .motion-playback .quiet-button { margin-left: auto; }
+  #mouvement .motion-playback select { min-width: 116px; }
+  #mouvement .motion-examples > article { display: flex; padding: 24px; }
+  #mouvement .motion-stage { height: 144px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+  #mouvement .animated-subtitle { font-size: 22px; }
+  #mouvement .animated-heading { font-size: 30px; }
+  #mouvement .motion-examples h3,
+  #mouvement .motion-principle h3 { font-size: 24px; }
+  #mouvement .motion-examples .spec-note { margin-top: 0; }
+  #mouvement .motion-principle { margin-top: 32px; padding-top: 28px; }
+}

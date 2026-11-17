@@ -1,0 +1,353 @@
+/* Fiches et articles associés aux collections APADER. */
+body.ui-collection.ui-detail main { color: var(--forest); }
+body.ui-collection.ui-detail main :is(h1, h2, h3, blockquote) {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main h1 {
+  font-size: clamp(42px, 5.4vw, 72px);
+  line-height: 1.12;
+  max-width: 1050px;
+}
+body.ui-collection.ui-detail main h2 { font-size: clamp(30px, 3.1vw, 44px); line-height: 1.18; }
+body.ui-collection.ui-detail main h3 { font-size: clamp(25px, 2.5vw, 33px); line-height: 1.22; }
+body.ui-collection.ui-detail main :is(p, li, dd) { color: var(--muted); }
+body.ui-collection.ui-detail main :is(.meta, dl, dt, dd, .result-label, .story-byline) {
+  font-family: var(--font-body);
+}
+body.ui-collection.ui-detail main .article-intro {
+  padding: 170px 0 54px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+body.ui-collection.ui-detail main .article-intro h1 { margin: 22px 0 28px; }
+body.ui-collection.ui-detail main .article-intro .lead {
+  max-width: 780px;
+  margin-bottom: 28px;
+  color: var(--muted);
+  font: 400 20px/1.65 var(--font-body);
+}
+body.ui-collection.ui-detail main :is(.article-back, .project-back, .resource-back) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-bottom: 22px;
+  color: var(--forest);
+  font: 400 14px/1.5 var(--font-body);
+}
+body.ui-collection.ui-detail main :is(.article-back, .project-back, .resource-back):hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+body.ui-collection.ui-detail main :is(.article-body, .success-body) {
+  max-width: 850px;
+  margin-inline: auto;
+  padding: 64px 28px 80px;
+}
+body.ui-collection.ui-detail main :is(.article-body, .success-body, .activity-detail-copy, .resource-description, .opportunity-article) p {
+  font-size: 17px;
+  line-height: 1.85;
+}
+body.ui-collection.ui-detail main :is(.article-body, .success-body) h2 { margin: 42px 0 22px; }
+body.ui-collection.ui-detail main :is(.article-body, .success-body) p { margin-bottom: 24px; }
+body.ui-collection.ui-detail main .wire-lines { margin-block: 22px 36px; opacity: .55; }
+body.ui-collection.ui-detail main .wire-lines i { background: var(--line); }
+body.ui-collection.ui-detail main :is(.wf-visual, .ec-poster) {
+  border-color: var(--line);
+  border-radius: 20px;
+  color: var(--muted);
+}
+body.ui-collection.ui-detail main :is(.activity-detail-photo, .article-body > .wf-visual) {
+  width: 100%;
+  min-height: 260px;
+  aspect-ratio: 1.7;
+  margin-bottom: 40px;
+}
+body.ui-collection.ui-detail main :is(.document-slot, .objective-panel) {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--sage);
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main .document-slot p { color: var(--muted); }
+body.ui-collection.ui-detail main .document-mark { border-color: var(--forest); }
+
+/* Le contexte, les repères et le parcours d’une fiche projet. */
+body.ui-collection.ui-detail main .project-hero {
+  min-height: 660px;
+  padding: 154px 0 66px;
+  background: var(--paper);
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main .project-featured-media::after {
+  background: linear-gradient(90deg, #f7f7f0f5, #f7f7f0e8 38%, #f7f7f052 76%, #f7f7f000);
+}
+body.ui-collection.ui-detail main .project-featured-label {
+  background: #f7f7f0e8;
+  color: var(--muted);
+  border-radius: 6px;
+  font-family: var(--font-body);
+}
+body.ui-collection.ui-detail main .project-hero-content { min-height: 350px; }
+body.ui-collection.ui-detail main .project-hero-copy > p:not(.eyebrow) { color: var(--muted); }
+body.ui-collection.ui-detail main .project-hero-actions { align-items: center; gap: 18px 26px; }
+body.ui-collection.ui-detail main .project-facts-section { background: var(--sage); }
+body.ui-collection.ui-detail main .project-facts-grid { padding-block: 30px; }
+body.ui-collection.ui-detail main .project-facts-grid > div { border-color: #cad5c7; }
+body.ui-collection.ui-detail main .project-facts-grid dt {
+  color: var(--muted);
+  font: 400 13px/1.5 var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+}
+body.ui-collection.ui-detail main .project-facts-grid dd { color: var(--forest); font-size: 16px; }
+body.ui-collection.ui-detail main .project-jump {
+  top: calc(var(--apader-header-offset, 112px) - 16px);
+  border-color: var(--line);
+  background: #f7f7f0fa;
+}
+body.ui-collection.ui-detail.project-nav-docked main .project-jump {
+  border-color: var(--line);
+  border-radius: 0 0 10px 10px;
+  background: var(--paper);
+}
+body.ui-collection.ui-detail main .project-jump-links a {
+  min-height: 52px;
+  padding-block: 16px 13px;
+  color: var(--muted);
+  font: 400 14px/1.5 var(--font-body);
+}
+body.ui-collection.ui-detail main .project-jump-links a[aria-current],
+body.ui-collection.ui-detail main .project-jump-links a:hover { color: var(--forest); border-color: var(--brand); }
+body.ui-collection.ui-detail main .project-section { padding-block: 72px; }
+body.ui-collection.ui-detail main .project-section.soft { background: var(--sage); }
+body.ui-collection.ui-detail main .project-section-heading { margin-bottom: 34px; }
+body.ui-collection.ui-detail main .project-section-heading p:not(.eyebrow) { color: var(--muted); }
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-visual {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--sage);
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-visual > span { background: transparent; }
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) :is(h3, .editorial-category, .editorial-date, .editorial-summary, .editorial-read) { margin-inline: 24px; }
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-category {
+  margin-top: 24px;
+  color: var(--brand);
+  font: 400 13px/1.5 var(--font-body);
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) h3 { margin-block: 14px 18px; font-size: 28px; }
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-date {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 6px 14px;
+  color: var(--muted);
+  font: 400 13px/1.5 var(--font-body);
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-summary {
+  margin-block: 18px 24px;
+  color: var(--muted);
+  font: 400 15px/1.7 var(--font-body);
+}
+body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) .editorial-read {
+  min-height: 44px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  color: var(--forest);
+  font-family: var(--font-body);
+}
+body.ui-collection.ui-detail main .project-overview { gap: 52px; }
+body.ui-collection.ui-detail main .project-context h3 { margin: 30px 0 18px; }
+body.ui-collection.ui-detail main .project-context h3:first-child { margin-top: 0; }
+body.ui-collection.ui-detail main :is(.project-context, .territory-card, .objective-panel) :is(p, li) {
+  color: var(--muted);
+  font: 400 16px/1.8 var(--font-body);
+}
+body.ui-collection.ui-detail main .objective-panel h3 { margin: 28px 0 18px; }
+body.ui-collection.ui-detail main .objective-panel h3:first-child { margin-top: 0; }
+body.ui-collection.ui-detail main .territory-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  padding: 32px;
+}
+body.ui-collection.ui-detail main .zone-visual { min-height: 260px; }
+body.ui-collection.ui-detail main .result-tile,
+body.ui-collection.ui-detail main .result-tile:nth-child(n) {
+  min-height: 190px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--sage);
+}
+body.ui-collection.ui-detail main .result-value { color: var(--forest); font-family: var(--font-display); }
+body.ui-collection.ui-detail main :is(.result-label, .result-notes, .results-text) { color: var(--muted); }
+body.ui-collection.ui-detail main .project-partner {
+  padding: 28px;
+  border-color: var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+body.ui-collection.ui-detail main .partner-logo { border-color: var(--line); background: var(--paper); color: var(--muted); }
+body.ui-collection.ui-detail main .project-document-link {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main .project-document-link:hover { background: var(--sage); }
+body.ui-collection.ui-detail main .project-document-link p { color: var(--muted); }
+body.ui-collection.ui-detail main .project-story-callout {
+  padding: 36px;
+  border-color: var(--line);
+  border-radius: 24px;
+  background: var(--sage);
+}
+body.ui-collection.ui-detail main .story-copy blockquote { margin-inline: 0; }
+body.ui-collection.ui-detail main .story-byline { color: var(--muted); }
+body.ui-collection.ui-detail main .success-hero.wrap .wf-visual { border-radius: 24px; }
+body.ui-collection.ui-detail main .success-blockquote {
+  padding: 32px;
+  margin-inline: 0;
+  border-left: 3px solid var(--brand);
+  border-radius: 0 20px 20px 0;
+  background: var(--sage);
+}
+
+/* Articles, ressources et informations pratiques. */
+body.ui-collection.ui-detail main :is(.activity-detail-layout, .opportunity-detail, .resource-detail-layout, .event-detail) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(270px, 330px);
+  align-items: start;
+  gap: 56px;
+}
+body.ui-collection.ui-detail main :is(.activity-detail-layout, .opportunity-detail, .resource-detail-layout, .event-detail) > * { min-width: 0; }
+body.ui-collection.ui-detail main .opportunity-detail { padding-block: 64px 80px; }
+body.ui-collection.ui-detail main .event-detail { padding-block: 64px 80px; }
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) {
+  position: sticky;
+  top: var(--apader-header-offset, 112px);
+  align-self: start;
+  order: initial;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--sage);
+}
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) h2 {
+  margin: 0 0 24px;
+  font-size: 30px;
+}
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) dl { margin: 0; }
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) dt {
+  margin: 22px 0 6px;
+  color: var(--muted);
+  font: 400 13px/1.5 var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+}
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) dd {
+  margin: 0;
+  color: var(--forest);
+  font: 400 15px/1.6 var(--font-body);
+  overflow-wrap: break-word;
+}
+body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info) .button { width: 100%; margin-top: 28px; }
+body.ui-collection.ui-detail main :is(.activity-detail-copy, .resource-description, .opportunity-article) h2 { margin-bottom: 22px; }
+body.ui-collection.ui-detail main :is(.activity-detail-copy, .opportunity-article) section + section { margin-top: 44px; }
+body.ui-collection.ui-detail main .opportunity-article section { scroll-margin-top: var(--apader-header-offset, 112px); }
+body.ui-collection.ui-detail main .document-preview {
+  max-width: 440px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  box-shadow: 0 12px 36px #123e2b0b;
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main .document-preview strong { font: 400 36px/1.2 var(--font-display); }
+body.ui-collection.ui-detail main :is(.preview-label, .preview-brand, .resource-file-placeholder) { color: var(--muted); }
+body.ui-collection.ui-detail main .resource-document-info button:disabled {
+  background: #dde8d8;
+  border-color: #dde8d8;
+  color: #123e2b;
+  opacity: 1;
+  cursor: not-allowed;
+}
+body.ui-collection.ui-detail main .media-label { background: var(--paper); color: var(--muted); font-family: var(--font-body); }
+body.ui-collection.ui-detail main .play-icon {
+  border-color: var(--line);
+  background: var(--forest);
+  color: var(--paper);
+  font-family: var(--font-body);
+}
+body.ui-collection.ui-detail main .project-dialog {
+  border-color: var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  color: var(--forest);
+}
+body.ui-collection.ui-detail main .project-dialog::backdrop { background: #123e2bb3; }
+body.ui-collection.ui-detail main .dialog-header button { background: #fff; border-color: var(--line); color: var(--forest); }
+
+@media (max-width: 1000px) {
+  body.ui-collection.ui-detail main :is(.activity-detail-layout, .opportunity-detail, .resource-detail-layout, .event-detail) {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 290px);
+    gap: 30px;
+  }
+  body.ui-collection.ui-detail main .project-overview { gap: 32px; }
+  body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.ui-collection.ui-detail main .project-facts-grid dd { font-size: 14px; }
+}
+@media (max-width: 760px) {
+  body.ui-collection.ui-detail main .article-intro { padding: 140px 0 38px; }
+  body.ui-collection.ui-detail main .article-intro .lead { font-size: 18px; }
+  body.ui-collection.ui-detail main .project-hero { min-height: 0; padding: 132px 0 52px; }
+  body.ui-collection.ui-detail main .project-hero-content { min-height: 0; }
+  body.ui-collection.ui-detail main .project-featured-media::after { background: #f7f7f0e8; }
+  body.ui-collection.ui-detail main .project-featured-label { display: none; }
+  body.ui-collection.ui-detail main .project-section { padding-block: 52px; }
+  body.ui-collection.ui-detail main :is(.project-overview, .territory-grid, .project-documents, .project-partners) { grid-template-columns: minmax(0, 1fr); }
+  body.ui-collection.ui-detail main :is(.activity-card-grid, .activity-related-list) { grid-template-columns: minmax(0, 1fr); }
+  body.ui-collection.ui-detail main :is(.activity-detail-layout, .opportunity-detail, .resource-detail-layout, .event-detail) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+  body.ui-collection.ui-detail main :is(.activity-detail-info, .opportunity-info, .resource-document-info, .info-panel) { position: static; padding: 25px; }
+  body.ui-collection.ui-detail main :is(.opportunity-detail, .event-detail) { padding-block: 44px 56px; }
+  body.ui-collection.ui-detail main :is(.article-body, .success-body) { padding: 44px 24px 56px; }
+  body.ui-collection.ui-detail main :is(.article-body, .success-body, .activity-detail-copy, .resource-description, .opportunity-article) p { font-size: 16px; line-height: 1.8; }
+  body.ui-collection.ui-detail main :is(.territory-card, .objective-panel, .document-slot, .project-story-callout) { padding: 25px; }
+  body.ui-collection.ui-detail main .success-blockquote { padding: 25px; font-size: 27px; }
+  body.ui-collection.ui-detail main .project-jump-links { gap: 22px; }
+  body.ui-collection.ui-detail main .project-jump-links a { font-size: 13px; }
+  body.ui-collection.ui-detail main :is(.activity-detail-photo, .article-body > .wf-visual) { min-height: 190px; }
+}
+@media (max-width: 420px) {
+  body.ui-collection.ui-detail main h1 { font-size: 38px; }
+  body.ui-collection.ui-detail main .project-facts-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  body.ui-collection.ui-detail main .project-facts-grid > div { border: 0; padding: 0; }
+  body.ui-collection.ui-detail main .result-tile { min-height: 155px; }
+  body.ui-collection.ui-detail main .document-preview { padding: 26px; }
+}

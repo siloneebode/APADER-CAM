@@ -1,0 +1,259 @@
+/* The four retained motifs, each with its own contextual carousel. */
+#motifs { padding-block: 80px; background: var(--white); color: var(--ink); font: 400 16px/1.65 var(--font-body); }
+#motifs .motifs-introduction { grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: end; margin-bottom: 40px; }
+#motifs .motifs-introduction h2 { margin-top: 24px; color: var(--forest); font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; }
+#motifs .motifs-introduction > p { max-width: 440px; padding: 0; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+
+#motifs .motif-index { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; padding-block: 24px; border-block: 1px solid var(--line); }
+#motifs .motif-index a { display: flex; align-items: center; gap: 16px; min-width: 0; min-height: 64px; color: var(--forest); font: 400 16px/1.5 var(--font-body); }
+#motifs .motif-index img { flex: 0 0 80px; width: 80px; height: 48px; object-fit: contain; background: var(--paper); }
+#motifs .motif-index a:hover span { text-decoration: underline; text-underline-offset: 5px; }
+#motifs .motif-index a:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+#motifs .motifs-gallery-heading { padding-top: 48px; }
+#motifs .motifs-gallery-heading h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#motifs .motifs-gallery-heading p { max-width: 740px; margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+
+#motifs .motif-carousel { padding-top: 40px; margin-top: 48px; border-top: 1px solid var(--line); min-width: 0; }
+#motifs .motif-carousel-heading { display: flex; align-items: start; justify-content: space-between; gap: 32px; margin-bottom: 24px; }
+#motifs .motif-heading-copy { max-width: 700px; }
+#motifs .motif-carousel-heading h3 { color: var(--forest); font: 400 36px/1.2 var(--font-display); letter-spacing: -.02em; }
+#motifs .motif-carousel-heading p { margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#motifs .motif-download { display: inline-flex; flex-shrink: 0; align-items: center; gap: 8px; min-height: 44px; color: var(--forest); font: 400 14px/1.5 var(--font-body); text-decoration: underline; text-underline-offset: 4px; }
+#motifs .motif-download svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+#motifs .motif-download:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+
+#motifs .motif-carousel-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 20px; }
+#motifs .motif-context-choices { display: flex; gap: 24px; min-width: 0; overflow-x: auto; scrollbar-width: thin; }
+#motifs .motif-context-choices button { flex-shrink: 0; min-height: 44px; padding: 10px 0; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; color: var(--muted); font: 400 14px/1.5 var(--font-body); cursor: pointer; white-space: nowrap; }
+#motifs .motif-context-choices button[aria-pressed=true] { color: var(--forest); border-bottom-color: var(--brand); }
+#motifs .motif-context-choices button:hover { color: var(--forest); }
+#motifs .motif-context-choices button:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; }
+#motifs .motif-arrows { display: flex; flex-shrink: 0; gap: 8px; }
+#motifs .motif-arrows .icon-button { width: 44px; height: 44px; }
+#motifs .motif-arrows .icon-button > svg.reverse { rotate: none; transform: rotate(180deg); }
+#motifs .motif-arrows .icon-button:hover:not(:disabled) > svg.reverse { transform: translateX(-2px) rotate(180deg); }
+#motifs .motif-track { display: grid; grid-auto-flow: column; grid-auto-columns: 100%; gap: 24px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; border: 1px solid var(--line); border-radius: 24px; scrollbar-width: none; }
+#motifs .motif-track::-webkit-scrollbar { display: none; }
+#motifs .motif-track:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+#motifs .motif-slide { min-width: 0; align-self: start; scroll-snap-align: start; scroll-snap-stop: always; }
+#motifs .motif-counter { min-height: 24px; margin-top: 16px; color: var(--muted); font: 400 14px/1.6 var(--font-body); }
+
+#motifs .motif-scenario { display: grid; grid-template-columns: 3fr 2fr; min-height: 460px; height: auto; background: var(--paper); color: var(--forest); overflow: hidden; }
+#motifs .motif-scenario-copy { position: relative; z-index: 1; padding: 40px; }
+#motifs .motif-scenario .pangram-kicker { margin-bottom: 24px; }
+#motifs .motif-scenario blockquote { margin: 0; color: var(--forest); font: 400 36px/1.25 var(--font-display); letter-spacing: -.02em; }
+#motifs .motif-scenario blockquote p { margin: 0; }
+#motifs .motif-quote-credit { margin: 24px 0; color: var(--forest); font: 500 14px/1.6 var(--font-body); }
+#motifs .motif-quote-credit span { display: block; margin-top: 4px; color: var(--muted); font: 400 13px/1.6 var(--font-body); }
+#motifs .motif-scenario .button { max-width: 100%; font-family: var(--font-body); }
+#motifs .motif-scenario-graphic { position: relative; min-width: 0; overflow: hidden; }
+#motifs .motif-scenario-art { display: block; width: 100%; height: 100%; object-fit: cover; }
+#motifs .motif-scenario--quote .motif-scenario-graphic { background: var(--paper); }
+#motifs .motif-scenario--quote[data-fixed-motif=angles] { display: block; position: relative; isolation: isolate; }
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-copy { width: 76%; margin: auto; padding-block: 48px; }
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-graphic { position: absolute; z-index: 0; inset: 0; }
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-art { object-fit: fill; }
+#motifs .motif-scenario[data-fixed-motif=halo] .motif-scenario-art { object-position: 48% center; }
+#motifs .motif-scenario[data-fixed-motif=faisceaux] .motif-scenario-art { object-position: 24% center; }
+#motifs .motif-scenario[data-fixed-motif=filament] .motif-scenario-art { object-fit: contain; }
+
+#motifs .motif-scenario--cta .motif-scenario-copy { display: flex; flex-direction: column; align-items: start; justify-content: center; background: var(--forest); color: var(--paper); }
+#motifs .motif-scenario--cta h4 { max-width: 460px; color: var(--paper); font: 400 40px/1.15 var(--font-display); letter-spacing: -.025em; }
+#motifs .motif-scenario--cta .motif-scenario-copy > p:not(.pangram-kicker) { max-width: 440px; margin: 20px 0 28px; color: var(--sage); font: 400 16px/1.65 var(--font-body); }
+#motifs .motif-scenario--cta .motif-scenario-graphic { background: var(--yellow); }
+#motifs .motif-scenario--cta .button:focus-visible { outline-color: var(--paper); }
+
+#motifs .motif-scenario--footer { display: flex; flex-direction: column; padding: 32px 40px; background: var(--paper); }
+#motifs .motif-mini-footer-top { display: flex; position: relative; align-items: center; gap: 24px; min-height: 100px; padding-right: 36%; }
+#motifs .motif-mini-logo { display: block; flex: 0 0 76px; width: 76px; height: 76px; object-fit: contain; }
+#motifs .motif-mini-footer-top > p { position: relative; z-index: 1; font: 400 22px/1.25 var(--font-display); letter-spacing: -.02em; }
+#motifs .motif-mini-footer-art { position: absolute; top: -32px; right: -40px; width: 36%; height: 144px; overflow: hidden; }
+#motifs .motif-mini-footer-art .motif-scenario-art { object-fit: cover; }
+#motifs [data-fixed-motif=angles] .motif-mini-footer-art { width: 100%; height: 152px; pointer-events: none; }
+#motifs [data-fixed-motif=angles] .motif-mini-footer-art .motif-scenario-art { object-fit: fill; }
+#motifs [data-fixed-motif=filament] .motif-mini-footer-art { width: 40%; }
+#motifs [data-fixed-motif=filament] .motif-mini-footer-art .motif-scenario-art { object-fit: contain; }
+#motifs .motif-mini-footer-links { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin: 24px 0 32px; }
+#motifs .motif-mini-footer-links h4 { margin-bottom: 12px; color: var(--forest); font: 500 14px/1.5 var(--font-body); }
+#motifs .motif-mini-footer-links ul { display: grid; gap: 6px; list-style: none; padding: 0; margin: 0; }
+#motifs .motif-mini-footer-links a { display: inline-flex; align-items: center; min-height: 32px; color: var(--muted); font: 400 16px/1.5 var(--font-body); text-decoration: none; }
+#motifs .motif-mini-footer-links a:hover { color: var(--forest); text-decoration: underline; text-underline-offset: 4px; }
+#motifs .motif-mini-footer-links a:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+#motifs .motif-mini-footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; margin-top: auto; border-top: 1px solid var(--line); }
+#motifs .motif-mini-footer-bottom > p { color: var(--muted); font: 400 13px/1.6 var(--font-body); }
+
+@media (max-width: 1100px) {
+  #motifs .motif-index { gap: 16px; }
+  #motifs .motif-index a { gap: 12px; }
+  #motifs .motif-index img { flex-basis: 64px; width: 64px; height: 48px; }
+  #motifs .motif-scenario-copy { padding: 32px; }
+}
+@media (max-width: 900px) {
+  #motifs .motifs-introduction { grid-template-columns: 1fr; gap: 24px; }
+  #motifs .motifs-introduction > p { justify-self: start; max-width: 620px; }
+  #motifs .motif-index { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #motifs .motif-carousel-heading { flex-direction: column; gap: 12px; }
+  #motifs .motif-carousel-toolbar { flex-wrap: wrap; gap: 16px; }
+  #motifs .motif-scenario { grid-template-columns: 2fr 1fr; }
+  #motifs .motif-scenario blockquote { font-size: 32px; }
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-copy { width: 90%; }
+  #motifs .motif-scenario--cta h4 { font-size: 36px; }
+  #motifs .motif-scenario--footer { padding: 28px; }
+  #motifs .motif-mini-footer-top { padding-right: 25%; gap: 16px; }
+  #motifs .motif-mini-footer-top > p { font-size: 20px; }
+  #motifs .motif-mini-footer-art { right: -28px; top: -28px; width: 30%; }
+  #motifs .motif-mini-footer-links { gap: 16px; }
+}
+@media (max-width: 640px) {
+  #motifs { padding-block: 56px; }
+  #motifs .motifs-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #motifs .motifs-introduction { margin-bottom: 32px; }
+  #motifs .motif-index { gap: 16px 12px; }
+  #motifs .motif-index a { gap: 8px; font-size: 14px; }
+  #motifs .motif-index img { flex-basis: 40px; width: 40px; height: 36px; }
+  #motifs .motifs-gallery-heading { padding-top: 36px; }
+  #motifs .motifs-gallery-heading h3 { font-size: 28px; }
+  #motifs .motif-carousel { padding-top: 28px; margin-top: 36px; }
+  #motifs .motif-carousel-heading h3 { font-size: 32px; }
+  #motifs .motif-carousel-toolbar { display: grid; grid-template-columns: minmax(0,1fr) auto; }
+  #motifs .motif-context-choices { grid-column: 1 / -1; gap: 20px; }
+  #motifs .motif-arrows { grid-column: 2; }
+  #motifs .motif-track { border-radius: 24px; }
+  #motifs .motif-scenario { display: flex; flex-direction: column; min-height: 0; }
+  #motifs .motif-scenario-copy { padding: 24px; }
+  #motifs .motif-scenario .pangram-kicker { margin-bottom: 20px; }
+  #motifs .motif-scenario blockquote { font-size: 28px; }
+  #motifs .motif-scenario-graphic { order: -1; height: 148px; flex: 0 0 148px; }
+  #motifs .motif-scenario-art { object-fit: cover; }
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] { display: flex; }
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-copy { width: 100%; padding: 32px 24px; }
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-graphic { position: absolute; inset: 0; height: 100%; }
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-art { object-fit: fill; }
+  #motifs .motif-scenario--cta h4 { font-size: 32px; }
+  #motifs .motif-scenario--cta .motif-scenario-copy > p:not(.pangram-kicker) { margin-top: 16px; }
+  #motifs .motif-scenario--footer { padding: 24px; }
+  #motifs .motif-mini-footer-top { display: block; padding: 140px 0 0; }
+  #motifs .motif-mini-logo { margin-bottom: 20px; }
+  #motifs .motif-mini-footer-art { top: -24px; right: -24px; width: calc(100% + 48px); height: 136px; }
+  #motifs [data-fixed-motif=angles] .motif-mini-footer-art,
+  #motifs [data-fixed-motif=filament] .motif-mini-footer-art { width: calc(100% + 48px); height: 136px; }
+  #motifs .motif-mini-footer-links { grid-template-columns: 1fr; gap: 24px; margin-block: 28px; }
+  #motifs .motif-mini-footer-links a { min-height: 44px; }
+  #motifs .motif-mini-footer-bottom { flex-direction: column; align-items: start; gap: 16px; }
+}
+
+/* Mises en situation construites à partir des sections du wireframe. */
+#motifs .motif-scenario--quote,
+#motifs .motif-scenario--quote[data-fixed-motif=angles] { display: block; padding: 48px 32px 56px; background: var(--sage); }
+#motifs .wire-quote-heading { text-align: center; margin-bottom: 40px; }
+#motifs .wire-quote-heading .pangram-kicker { margin: 0 auto 20px; }
+#motifs .wire-quote-heading h4 { color: var(--forest); font: 400 40px/1.12 var(--font-display); letter-spacing: -.025em; }
+#motifs .wire-quote-card { position: relative; isolation: isolate; overflow: hidden; max-width: 790px; margin: 0 auto; border-radius: 7px 7px 7px 68px; background: var(--white); transform: rotate(1.6deg); }
+#motifs .wire-quote-card .motif-scenario-copy,
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-copy { width: 100%; margin: 0; padding: 42px 56px 48px; text-align: center; transform: rotate(-1.6deg); }
+#motifs .wire-quote-card .motif-scenario-graphic,
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-graphic { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; background: transparent; opacity: .19; }
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-graphic { opacity: 1; }
+#motifs .wire-quote-card .motif-scenario-art { object-fit: contain; object-position: right center; }
+#motifs .wire-quote-mark { display: block; height: 46px; color: var(--muted); font: 400 70px/1 var(--font-display); }
+#motifs .wire-quote-card blockquote { margin: 16px 0 0; font-size: 29px; }
+#motifs .wire-demo-note { margin-top: 12px; color: var(--muted); font: 400 13px/1.5 var(--font-body); }
+#motifs .wire-identity { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 26px 0; text-align: left; }
+#motifs .wire-portrait { display: grid; place-items: center; flex: 0 0 64px; width: 64px; height: 64px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); color: var(--muted); font: 400 11px/1 var(--font-body); }
+#motifs .wire-identity .motif-quote-credit { margin: 0; }
+#motifs .motif-scenario--cta { display: block; position: relative; isolation: isolate; padding: 64px 40px 70px; background: var(--forest); text-align: center; }
+#motifs .wire-contact-photo { position: absolute; z-index: -3; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#motifs .motif-scenario--cta::before { content: ''; position: absolute; z-index: -2; inset: 0; background: rgba(18,62,43,.88); }
+#motifs .motif-scenario--cta .motif-scenario-graphic { position: absolute; z-index: -1; inset: 0 0 0 auto; width: 42%; height: 100%; opacity: .35; background: transparent; }
+#motifs .motif-scenario--cta .motif-scenario-copy { display: block; max-width: 780px; margin: auto; padding: 0; background: transparent; }
+#motifs .motif-scenario--cta .pangram-kicker { margin: 0 auto 26px; }
+#motifs .motif-scenario--cta h4 { max-width: 100%; font-size: 48px; }
+#motifs .motif-scenario--cta .motif-scenario-copy > p:not(.pangram-kicker) { max-width: 650px; margin: 24px auto 32px; }
+@media (max-width: 640px) {
+  #motifs .motif-scenario--quote,
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] { padding: 36px 20px 42px; }
+  #motifs .wire-quote-heading { margin-bottom: 28px; }
+  #motifs .wire-quote-heading h4 { font-size: 32px; }
+  #motifs .wire-quote-card { border-bottom-left-radius: 46px; transform: none; }
+  #motifs .wire-quote-card .motif-scenario-copy,
+  #motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-copy { padding: 32px 24px 36px; transform: none; }
+  #motifs .wire-quote-card blockquote { font-size: 24px; }
+  #motifs .wire-identity { flex-wrap: wrap; }
+  #motifs .motif-scenario--cta { padding: 48px 24px 54px; }
+  #motifs .motif-scenario--cta .motif-scenario-graphic { width: 60%; height: 100%; }
+  #motifs .motif-scenario--cta h4 { font-size: 36px; }
+}
+
+/* Halo habille toute la surface du pied de page, sous les contenus. */
+#motifs .motif-scenario--footer[data-fixed-motif=halo] { position: relative; isolation: isolate; }
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-top { position: static; }
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-art { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; opacity: .14; pointer-events: none; }
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-art .motif-scenario-art { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#footer.apader-footer[data-pattern=halo] .af-panel > .pattern-art { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: .14; z-index: -1; pointer-events: none; }
+
+/* Des cadrages propres à chaque motif, au bord des sections du wireframe. */
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-graphic {
+  background: url('assets/patterns/angles-mot-contraste.svg') center / 100% 100% no-repeat;
+  opacity: 1;
+}
+#motifs .motif-scenario--quote[data-fixed-motif=angles] .motif-scenario-art { visibility: hidden; }
+
+/* Halo : un arc de fond sur le bord droit, laissant la lecture dégagée. */
+#motifs .motif-scenario--quote[data-fixed-motif=halo] .motif-scenario-graphic,
+#motifs .motif-scenario--cta[data-fixed-motif=halo] .motif-scenario-graphic {
+  inset: 0 0 0 auto; width: 28%; height: 100%; opacity: .24; background: transparent;
+}
+#motifs .motif-scenario--quote[data-fixed-motif=halo] .motif-scenario-art,
+#motifs .motif-scenario--cta[data-fixed-motif=halo] .motif-scenario-art { object-fit: cover; object-position: 28% center; }
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-art {
+  inset: 0 0 0 auto; width: 28%; height: 100%; opacity: .24;
+}
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-art .motif-scenario-art { object-fit: cover; object-position: 28% center; }
+#motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-links a { color: var(--forest); }
+#footer.apader-footer[data-pattern=halo] .af-panel > .pattern-art {
+  inset: 0 0 0 auto; width: 28%; height: 100%; opacity: .24; object-fit: cover; object-position: 28% center;
+}
+
+/* Faisceaux : une ouverture depuis l’angle supérieur droit. */
+#motifs .motif-scenario--quote[data-fixed-motif=faisceaux] .motif-scenario-graphic,
+#motifs .motif-scenario--cta[data-fixed-motif=faisceaux] .motif-scenario-graphic {
+  inset: 0 0 auto auto; width: 30%; height: 46%; opacity: .22; background: transparent;
+}
+#motifs .motif-scenario--quote[data-fixed-motif=faisceaux] .motif-scenario-art,
+#motifs .motif-scenario--cta[data-fixed-motif=faisceaux] .motif-scenario-art { object-fit: cover; object-position: 25% 45%; }
+#motifs .motif-scenario--footer[data-fixed-motif=faisceaux],
+#motifs .motif-scenario--footer[data-fixed-motif=filament] { position: relative; isolation: isolate; }
+#motifs .motif-scenario--footer[data-fixed-motif=faisceaux] .motif-mini-footer-top,
+#motifs .motif-scenario--footer[data-fixed-motif=filament] .motif-mini-footer-top { position: static; }
+#motifs .motif-scenario--footer[data-fixed-motif=faisceaux] .motif-mini-footer-art {
+  position: absolute; z-index: -1; inset: 0 0 auto auto; width: 30%; height: 46%; opacity: .22; pointer-events: none;
+}
+#motifs .motif-scenario--footer[data-fixed-motif=faisceaux] .motif-mini-footer-art .motif-scenario-art { object-fit: cover; object-position: 25% 45%; }
+#footer.apader-footer[data-pattern=faisceaux][data-footer-treatment=compact] .af-panel > .pattern-art {
+  inset: 0 0 auto auto; width: 30%; height: 46%; opacity: .22; object-fit: cover; object-position: 25% 45%;
+}
+
+/* Filament : un tracé horizontal au bas de la composition. */
+#motifs .motif-scenario--quote[data-fixed-motif=filament] .motif-scenario-graphic,
+#motifs .motif-scenario--cta[data-fixed-motif=filament] .motif-scenario-graphic {
+  inset: auto 0 0 auto; width: 30%; height: 28%; opacity: .32; background: transparent;
+}
+#motifs .motif-scenario--quote[data-fixed-motif=filament] .motif-scenario-art,
+#motifs .motif-scenario--cta[data-fixed-motif=filament] .motif-scenario-art { object-fit: contain; object-position: right bottom; }
+#motifs .motif-scenario--footer[data-fixed-motif=filament] .motif-mini-footer-art {
+  position: absolute; z-index: -1; inset: auto 0 0 auto; width: 30%; height: 28%; opacity: .32; pointer-events: none;
+}
+#motifs .motif-scenario--footer[data-fixed-motif=filament] .motif-mini-footer-art .motif-scenario-art { object-fit: contain; object-position: right bottom; }
+#footer.apader-footer[data-pattern=filament][data-footer-treatment=compact] .af-panel > .pattern-art {
+  inset: auto 0 0 auto; width: 30%; height: 28%; opacity: .32; object-fit: contain; object-position: right bottom;
+}
+
+@media (max-width: 640px) {
+  #motifs .motif-scenario--quote[data-fixed-motif=halo] .motif-scenario-graphic,
+  #motifs .motif-scenario--cta[data-fixed-motif=halo] .motif-scenario-graphic,
+  #motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-art,
+  #footer.apader-footer[data-pattern=halo] .af-panel > .pattern-art { width: 30%; }
+  #motifs .motif-scenario--footer[data-fixed-motif=halo] .motif-mini-footer-top,
+  #motifs .motif-scenario--footer[data-fixed-motif=faisceaux] .motif-mini-footer-top,
+  #motifs .motif-scenario--footer[data-fixed-motif=filament] .motif-mini-footer-top { padding-top: 0; }
+}

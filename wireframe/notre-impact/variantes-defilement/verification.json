@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-26",
+  "viewports": [
+    "1280x900",
+    "390x844"
+  ],
+  "a": {
+    "image_fixe_top_desktop": 28,
+    "image_active_02": "Autonomisation des femmes",
+    "image_active_04": true,
+    "mobile": "Images empilées dans chaque bloc",
+    "debordement_mobile": 0
+  },
+  "b": {
+    "mode_desktop": "vertical",
+    "mode_mobile": "vertical",
+    "defilement_horizontal": true,
+    "fin_carrousel": "04 / 04 et progression 100 %",
+    "sortie_section": "pinTop -656 lorsque bénéficiaires top 0",
+    "debordement_mobile": 0,
+    "compteur": "carte avec la plus grande largeur visible"
+  },
+  "navigation": {
+    "impact_lien_direct": true,
+    "chevron": false,
+    "mobile_vers_impact": true,
+    "autres_menus": "Ressources ouvre mega-panel-4 ; six boutons et six panneaux"
+  },
+  "portee": "Deux propositions interactives, choix à valider avant intégration ; bénéficiaires sous forme de repère de transition."
+}

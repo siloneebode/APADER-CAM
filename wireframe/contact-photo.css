@@ -1,0 +1,36 @@
+#contact.contact-photo-background,#contact.contact-photo-background *{box-sizing:border-box}
+#contact.contact-photo-background{margin:0;font:16px/1.5 Sans,Arial,sans-serif;color:#172723;background:#f3f3f3}
+#contact.contact-photo-background h2,#contact.contact-photo-background p{margin:0}
+#contact.contact-photo-background a{color:inherit;text-decoration:none;touch-action:manipulation}
+#contact.contact-photo-background a:focus-visible{outline:3px solid #0049d1;outline-offset:5px}
+#contact.contact-photo-background .container{width:100%;max-width:1440px;padding:0 36px;margin:auto}
+#contact.contact-photo-background{padding:64px 0}
+#contact.contact-photo-background .contact-panel{position:relative;overflow:hidden}
+#contact.contact-photo-background .contact-copy{position:relative;z-index:1;text-align:center;max-width:900px;margin:auto}
+#contact.contact-photo-background .contact-copy .pangram-kicker{margin-left:auto;margin-right:auto;margin-bottom:26px}
+#contact.contact-photo-background .contact-copy h2{font:400 56px/1.12 Heading,Georgia,serif;letter-spacing:-1.12px;max-width:780px;margin:0 auto 28px;text-wrap:balance}
+#contact.contact-photo-background .contact-intro{font-size:18px;line-height:28px;max-width:650px;margin:auto;text-wrap:balance}
+#contact.contact-photo-background .contact-button{display:inline-flex;align-items:center;justify-content:center;gap:14px;margin-top:32px;padding:10px 12px 10px 22px;min-height:58px;border-radius:7px;font:600 16px/24px Sans,Arial,sans-serif;background:#ff6600;color:#fff}
+#contact.contact-photo-background .contact-panel{border-radius:24px;background:#225235;color:#fffdf1;padding:64px 100px 70px}
+#contact.contact-photo-background .contact-copy{max-width:880px}
+#contact.contact-photo-background .contact-intro{color:#f0f4e9}
+#contact.contact-photo-background .contact-arrow{display:flex;align-items:center;justify-content:center;background:#1b5035;color:#edbdff;width:36px;height:36px;border-radius:7px;font-size:28px;line-height:1}
+@media(max-width:1049px){#contact.contact-photo-background{padding:56px 0}
+#contact.contact-photo-background .contact-panel{padding:56px 75px 62px}
+#contact.contact-photo-background .contact-copy h2{font-size:48px;letter-spacing:-.96px}
+#contact.contact-photo-background .contact-intro{font-size:16px;line-height:26px}}
+@media(max-width:700px){#contact.contact-photo-background .container{padding:0 20px}
+#contact.contact-photo-background{padding:40px 0}
+#contact.contact-photo-background .contact-panel{padding:44px 24px 60px;border-radius:20px}
+#contact.contact-photo-background .contact-copy .pangram-kicker{margin-bottom:24px}
+#contact.contact-photo-background .contact-copy h2{font-size:40px;letter-spacing:-.8px;margin-bottom:24px;line-height:1.12}
+#contact.contact-photo-background .contact-intro{font-size:15px;line-height:24px}
+#contact.contact-photo-background .contact-button{font-size:15px;margin-top:28px;gap:10px;padding-left:16px;min-height:54px}
+#contact.contact-photo-background .contact-arrow{width:32px;height:32px;font-size:25px}}
+#contact.contact-photo-background .contact-panel{background-image:none;background-size:cover;background-position:center 54%}
+#contact.contact-photo-background .contact-panel::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,20,14,.1),transparent 45%);pointer-events:none}
+#contact.contact-photo-background .contact-copy{text-shadow:0 1px 4px #0004}
+#contact.contact-photo-background .contact-button,#contact.contact-photo-background .pangram-kicker{text-shadow:none}
+@media(max-width:1049px){#contact.contact-photo-background .contact-panel{background-position:center 52%}}
+@media(max-width:700px){#contact.contact-photo-background .contact-panel{background-position:55% center}}
+#contact.contact-photo-background{height:auto;border:0;scroll-margin-top:96px}

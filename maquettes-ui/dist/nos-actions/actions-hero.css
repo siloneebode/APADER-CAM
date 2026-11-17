@@ -1,0 +1,103 @@
+/* Step 1: the existing Actions hero, dressed with the APADER moodboard. */
+.ui-actions { --white: #fff; --ease: cubic-bezier(.22, 1, .36, 1); }
+.ui-actions .ui-symbols { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+.ui-actions .action-hero { background: var(--paper); color: var(--forest); }
+.ui-actions .action-hero .breadcrumb { color: var(--muted); }
+.ui-actions .action-hero h1 { font-family: var(--font-display); font-weight: 400; }
+.ui-actions .action-hero .action-lead { color: var(--muted); }
+
+.ui-actions .action-hero .apader-kicker {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 24px;
+  padding: 0;
+  font: 400 14px/20px var(--font-body);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.ui-actions .action-hero .apader-kicker::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  flex: 0 0 4px;
+  background: var(--brand);
+  animation: action-kicker-mark-in 120ms ease-out 600ms both;
+}
+.ui-actions .action-hero .apader-kicker > span {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-width: 0;
+  padding: 4px 8px;
+  color: var(--forest);
+}
+.ui-actions .action-hero .apader-kicker > span::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--sage);
+  transform-origin: right center;
+  animation: action-kicker-panel-in 600ms var(--ease) both;
+}
+.ui-actions .action-hero .button {
+  min-height: var(--button-height);
+  gap: 12px;
+  padding: 8px 8px 8px 16px;
+  border: 0;
+  border-radius: var(--button-radius);
+  font: 500 16px/1.4 var(--font-body);
+}
+.ui-actions .action-hero .text-link {
+  min-height: 48px;
+  color: var(--forest);
+  font-size: 16px;
+  font-weight: 400;
+  gap: 14px;
+}
+.ui-actions .action-hero .text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.ui-actions .action-hero .editorial-arrow {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 180ms ease;
+}
+.ui-actions .action-hero .text-link:hover .editorial-arrow { transform: translateX(2px); }
+.ui-actions .action-hero .action-hero-visual {
+  overflow: hidden;
+  background: var(--sage);
+  border-bottom-left-radius: 40px;
+}
+.ui-actions .action-hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: 53% center; }
+.ui-actions .action-hero-stats > div { border-color: var(--line); }
+.ui-actions .action-hero-stats dd { font-family: var(--font-display); color: var(--forest); }
+.ui-actions .action-hero-stats dt { color: var(--muted); }
+.ui-actions .action-hero-stat-source { font-size: 11px; line-height: 1.6; color: var(--muted); }
+
+@keyframes action-kicker-mark-in {
+  from { opacity: 0; transform: scale(.2); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes action-kicker-panel-in {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (max-width: 1023px) {
+  .ui-actions .action-hero h1 { font-size: 44px; line-height: 1.1; letter-spacing: -.88px; }
+  .ui-actions .action-hero-visual img { object-position: center; }
+}
+@media (max-width: 359px) {
+  .ui-actions .action-hero h1 { font-size: 39px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-actions .action-hero .editorial-arrow { transition: none; }
+}

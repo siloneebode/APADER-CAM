@@ -1,0 +1,13 @@
+/* Fit supplied media inside the approved home frames. */
+.content-home #partenaires .partner-logo img,
+.content-home #actualites .editorial-visual img { object-fit:contain; padding:20px; background:#fff; }
+.content-home .wf-image { position:absolute; inset:0; width:100%; height:100%; }
+.content-home #presentation .about-media,
+.content-home #domaines .panel-photo { position:relative; }
+.content-home #contact .contact-panel::before { z-index:1; background:linear-gradient(90deg,rgba(18,62,43,0.7216),rgba(18,62,43,0.4588)); }
+.content-home #contact .contact-copy { z-index:2; }
+.content-home .stat-evidence a { text-decoration:underline; text-underline-offset:3px; }
+@media(max-width:700px) {
+  .content-home #impact.impact-teachers .impact-story.current { height:auto; min-height:590px; }
+  .content-home #impact.impact-teachers .impact-story.current .story-copy { flex:none; }
+}

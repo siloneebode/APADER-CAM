@@ -1,0 +1,43 @@
+/* Cartes de la page d’accueil, avec le motif placé dans leur zone visuelle. */
+#motifs .motif-scenario--projects,
+#motifs .motif-scenario--structures { display: block; min-height: 0; padding: 40px; background: var(--paper); }
+#motifs .wire-card-heading { margin-bottom: 28px; }
+#motifs .wire-card-heading .pangram-kicker { margin-bottom: 20px; }
+#motifs .wire-card-heading > h4 { color: var(--forest); font: 400 40px/1.12 var(--font-display); letter-spacing: -.025em; }
+#motifs .wire-project-card { display: grid; grid-template-columns: 22% 43% 35%; min-height: 390px; overflow: hidden; border-radius: 8px; background: var(--white); }
+#motifs .wire-project-facts, #motifs .wire-project-story { padding: 24px; min-width: 0; }
+#motifs .wire-project-facts { display: flex; flex-direction: column; align-items: start; gap: 12px; font: 400 14px/1.5 var(--font-body); color: var(--muted); }
+#motifs .wire-project-facts strong { margin-bottom: 8px; color: var(--forest); font: 400 22px/1.2 var(--font-display); }
+#motifs .wire-project-facts .button { margin-top: auto; font-size: 13px; }
+#motifs .wire-project-story > p { margin-bottom: 18px; color: var(--muted); font: 400 15px/1.6 var(--font-body); }
+#motifs .wire-project-story h4 { margin: 28px 0 20px; color: var(--forest); font: 400 34px/1.1 var(--font-display); }
+#motifs .wire-project-visual, #motifs .wire-structure-visual { position: relative; isolation: isolate; overflow: hidden; min-width: 0; background: var(--sage); }
+#motifs .wire-card-pattern { position: absolute; z-index: -1; inset: 0 0 0 auto; width: 62%; height: 100%; opacity: .48; }
+#motifs .wire-card-pattern img { width: 100%; height: 100%; object-fit: contain; object-position: right center; }
+#motifs .wire-visual-placeholder { display: grid; place-items: center; position: relative; min-height: 180px; height: 100%; padding: 20px; color: var(--forest); text-align: center; font: 400 14px/1.5 var(--font-body); }
+#motifs .wire-visual-placeholder::before, #motifs .wire-visual-placeholder::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top right,transparent calc(50% - .5px),currentColor 50%,transparent calc(50% + .5px)); opacity: .18; pointer-events: none; }
+#motifs .wire-visual-placeholder::after { transform: scaleX(-1); }
+#motifs .motif-scenario--structures { background: var(--forest); }
+#motifs .motif-scenario--structures .wire-card-heading > h4 { color: var(--paper); }
+#motifs .wire-structure-list { display: grid; gap: 24px; }
+#motifs .wire-structure-card { display: grid; grid-template-columns: 1fr 1fr; min-height: 330px; overflow: hidden; border-radius: 8px; }
+#motifs .wire-structure-copy { display: flex; flex-direction: column; align-items: start; padding: 28px; background: #255840; color: var(--paper); }
+#motifs .wire-structure-copy > span { margin-bottom: 18px; font: 400 20px/1.2 var(--font-display); }
+#motifs .wire-structure-copy h4 { margin-bottom: 18px; font: 400 36px/1.1 var(--font-display); }
+#motifs .wire-structure-copy p { margin-bottom: 16px; font: 400 15px/1.6 var(--font-body); }
+#motifs .wire-structure-copy a { margin-top: auto; padding: 8px 12px; background: var(--yellow); color: var(--forest); border-radius: 4px; font: 500 14px/1.5 var(--font-body); }
+#motifs .wire-structure-visual { padding: 24px; }
+#motifs .wire-structure-visual .wire-visual-placeholder { border: 1px solid var(--line); border-radius: 8px; }
+@media(max-width: 700px) {
+  #motifs .motif-scenario--projects, #motifs .motif-scenario--structures { padding: 24px; }
+  #motifs .wire-card-heading > h4 { font-size: 32px; }
+  #motifs .wire-project-card { grid-template-columns: 1fr; }
+  #motifs .wire-project-visual { grid-row: 1; height: 200px; }
+  #motifs .wire-project-story { grid-row: 2; }
+  #motifs .wire-project-facts { grid-row: 3; padding-top: 0; }
+  #motifs .wire-project-facts .button { margin-top: 12px; }
+  #motifs .wire-structure-card { grid-template-columns: 1fr; }
+  #motifs .wire-structure-copy { padding: 24px; }
+  #motifs .wire-structure-copy h4 { font-size: 30px; }
+  #motifs .wire-structure-visual { min-height: 220px; }
+}

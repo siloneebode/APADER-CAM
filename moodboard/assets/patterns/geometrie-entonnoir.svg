@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <title>Les deux obliques de l’entonnoir</title>
+  <path d="M-80 70 880 220V260L-80 410Z" fill="#DDE8D8"/>
+  <path d="M-80 70 880 220M-80 410 880 260" stroke="#123E2B" stroke-width="6"/>
+</svg>

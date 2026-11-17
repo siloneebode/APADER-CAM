@@ -1,0 +1,33 @@
+/* Home only. Elements remain visible until a one-time entrance is triggered. */
+body.content-home #contenu .home-motion-entering,
+body.content-home :is(#apader-header,#footer).home-motion-entering {
+  animation:apader-home-rise-in 700ms cubic-bezier(.22,1,.36,1) var(--home-motion-delay,0ms) both;
+}
+
+/* Preserve the transforms used by interactive and positioned components. */
+body.content-home #contenu .home-motion-entering.home-motion-fade,
+body.content-home :is(#apader-header,#footer).home-motion-entering.home-motion-fade {
+  animation-name:apader-home-fade-in;
+}
+
+body.content-home #contenu .home-motion-entering:focus-within,
+body.content-home :is(#apader-header,#footer).home-motion-entering:focus-within {
+  animation:none;
+}
+
+@keyframes apader-home-rise-in {
+  from { opacity:0; transform:translateY(18px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+@keyframes apader-home-fade-in {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  body.content-home #contenu .home-motion-entering,
+  body.content-home :is(#apader-header,#footer).home-motion-entering {
+    animation:none !important;
+  }
+}

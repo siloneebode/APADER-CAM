@@ -1,0 +1,42 @@
+.nc-contact,.nc-contact *{box-sizing:border-box}
+.nc-contact{margin:0;padding:96px 0;background:#fafaf8;color:#292929;font:400 16px/1.6 Sans,Arial,sans-serif;scroll-margin-top:var(--sm-anchor-offset,150px)}
+.nc-contact .nc-contact-wrap{width:100%;max-width:1440px;margin:auto;padding:0 48px}
+.nc-contact .nc-contact-grid{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);align-items:start;gap:88px}
+.nc-contact .nc-coordinates{scroll-margin-top:var(--sm-anchor-offset,150px)}
+.nc-contact .nc-contact-kicker{display:table;position:relative;margin:0 0 26px;padding:5px 10px;background:#e5e5df;color:#62625d;font-size:12px;line-height:1.5}
+.nc-contact .nc-contact-kicker::before{content:"";position:absolute;top:0;left:-4px;width:4px;height:4px;background:#85857a}
+.nc-contact .nc-coordinates h2{max-width:480px;margin:0 0 24px;font:400 clamp(38px,3.8vw,54px)/1.1 Heading,Georgia,serif;letter-spacing:-.025em;text-wrap:balance}
+.nc-contact .nc-contact-intro{max-width:430px;margin:0;color:#666;font-size:17px;line-height:1.65}
+.nc-contact .nc-contact-details{margin:38px 0 0}
+.nc-contact .nc-contact-details>div{padding:20px 0;border-top:1px solid #d7d7d1}
+.nc-contact .nc-contact-details dt{margin:0 0 7px;color:#777;font-size:12px;line-height:1.5}
+.nc-contact .nc-contact-details dd{margin:0;color:#555;font-size:15px;line-height:1.6;overflow-wrap:anywhere}
+.nc-contact .nc-form-card{min-width:0;padding:38px;border:1px solid #d5d5ce;border-radius:18px;background:#fff}
+.nc-contact .nc-form-card h2{margin:0 0 16px;font:400 33px/1.15 Heading,Georgia,serif;letter-spacing:-.025em;text-wrap:balance}
+.nc-contact .nc-demo-note{margin:0 0 14px;padding:12px 14px;border-left:3px solid #99998f;border-radius:0 4px 4px 0;background:#f2f2ed;color:#595954;font-size:13px;line-height:1.6}
+.nc-contact .nc-required-note{margin:0 0 24px;color:#777;font-size:12px;line-height:1.6}
+.nc-contact .nc-field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.nc-contact .nc-field{min-width:0;margin-bottom:20px}
+.nc-contact .nc-field label{display:block;margin-bottom:9px;color:#444;font-size:13px;font-weight:500;line-height:1.5}
+.nc-contact .nc-field label>span{margin-left:2px;color:#777}
+.nc-contact .nc-field input,.nc-contact .nc-field select,.nc-contact .nc-field textarea{display:block;width:100%;min-height:48px;margin:0;padding:12px 14px;border:1px solid #c8c8c1;border-radius:6px;background:#fafaf7;color:#333;font:400 14px/1.5 Sans,Arial,sans-serif;transition:border-color .15s,background-color .15s}
+.nc-contact .nc-field select{padding-right:30px;cursor:pointer}
+.nc-contact .nc-field textarea{min-height:166px;resize:vertical}
+.nc-contact .nc-field input::placeholder,.nc-contact .nc-field textarea::placeholder{color:#8a8a81;opacity:1}
+.nc-contact .nc-field select:has(option[value=""]:checked){color:#8a8a81}
+.nc-contact .nc-field input:focus,.nc-contact .nc-field select:focus,.nc-contact .nc-field textarea:focus{border-color:#555;background:#fff;outline:2px solid #777;outline-offset:2px}
+.nc-contact .nc-privacy-note{margin:0 0 24px;color:#888;font-size:11px;line-height:1.7}
+.nc-contact .nc-submit{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:56px;padding:9px 10px 9px 20px;border:1px solid #333;border-radius:7px;background:#333;color:#fff;font:500 15px/1.5 Sans,Arial,sans-serif;cursor:pointer;touch-action:manipulation}
+.nc-contact .nc-submit-arrow{display:grid;place-items:center;flex:none;width:35px;height:35px;border-radius:5px;background:#eee;color:#333;font:400 26px/1 Sans,Arial,sans-serif}
+.nc-contact .nc-submit:hover{background:#111;border-color:#111}
+.nc-contact .nc-submit:focus-visible{outline:3px solid #666;outline-offset:5px}
+.nc-contact .nc-submit:disabled{opacity:.5;cursor:not-allowed}
+.nc-contact .nc-form-status{margin:22px 0 0;padding:14px 16px;border:1px solid #bdbdb2;border-radius:6px;background:#f1f1eb;color:#444;font-size:14px;line-height:1.6}
+.nc-contact .nc-form-status[hidden]{display:none}
+.nc-contact .nc-form-status:focus{outline:2px solid #777;outline-offset:3px}
+.nc-contact .nc-noscript-note{margin:20px 0 0;color:#666;font-size:13px;line-height:1.6}
+.nc-contact .nc-sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:1100px){.nc-contact{padding:72px 0}.nc-contact .nc-contact-grid{gap:44px}.nc-contact .nc-form-card{padding:30px}.nc-contact .nc-field-row{grid-template-columns:1fr;gap:0}.nc-contact .nc-form-card h2{font-size:30px}}
+@media(max-width:800px){.nc-contact{padding:56px 0}.nc-contact .nc-contact-wrap{padding:0 24px}.nc-contact .nc-contact-grid{grid-template-columns:1fr;gap:42px}.nc-contact .nc-coordinates h2{max-width:520px;font-size:42px}.nc-contact .nc-contact-intro{max-width:550px;font-size:16px}.nc-contact .nc-contact-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;margin-top:30px}.nc-contact .nc-field-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:520px){.nc-contact .nc-contact-wrap{padding:0 20px}.nc-contact .nc-contact-kicker{margin-bottom:22px}.nc-contact .nc-coordinates h2{font-size:36px}.nc-contact .nc-contact-details{grid-template-columns:1fr;gap:0}.nc-contact .nc-contact-details>div{padding:17px 0}.nc-contact .nc-form-card{padding:26px 20px;border-radius:14px}.nc-contact .nc-form-card h2{font-size:29px}.nc-contact .nc-field-row{grid-template-columns:1fr;gap:0}.nc-contact .nc-submit{width:100%;justify-content:space-between}.nc-contact .nc-demo-note{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.nc-contact .nc-field input,.nc-contact .nc-field select,.nc-contact .nc-field textarea{transition:none}}

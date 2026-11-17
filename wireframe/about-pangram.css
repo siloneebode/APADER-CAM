@@ -1,0 +1,92 @@
+/* Proposition À propos : grille 7/5 et hiérarchie du vrai bloc About Pangram. */
+#presentation.about-pangram {
+  height: auto;
+  padding: 100px 0;
+  background: #fff;
+}
+.about-pangram .about-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+.about-pangram .about-copy {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  min-width: 0;
+}
+.about-pangram .about-eyebrow {
+  margin: 0;
+}
+.about-pangram .about-title {
+  margin: 0;
+  font: 400 56px/1.1 Heading, Georgia, serif;
+  letter-spacing: -1.12px;
+}
+.about-pangram .about-stop {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  border-radius: 2px;
+  background: #666;
+}
+.about-pangram .about-body {
+  max-width: 480px;
+  margin-top: 24px;
+}
+.about-pangram .about-body p {
+  margin: 0;
+  color: #292929;
+  font: 400 16px/26px Sans, Arial, sans-serif;
+  letter-spacing: -.2px;
+}
+.about-pangram .about-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 7px;
+  color: #444;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  white-space: nowrap;
+}
+.about-pangram .about-link:hover { color: #111; }
+.about-pangram .about-media {
+  grid-column: span 5;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e6e6e6;
+}
+.about-pangram .about-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  filter: grayscale(1);
+}
+@media (min-width: 1440px) {
+  .about-pangram .about-title { font-size: 64px; letter-spacing: -1.28px; }
+}
+@media (max-width: 1023px) {
+  #presentation.about-pangram { padding: 72px 0; }
+  .about-pangram .about-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .about-pangram .about-copy, .about-pangram .about-media { grid-column: auto; }
+  .about-pangram .about-body { max-width: 600px; margin-top: 0; }
+  .about-pangram .about-media { max-width: 100%; }
+}
+@media (max-width: 700px) {
+  #presentation.about-pangram { padding: 56px 0; }
+  .about-pangram .about-grid { padding: 0 20px; gap: 28px; }
+  .about-pangram .about-copy { gap: 20px; }
+  .about-pangram .about-title { font-size: clamp(38px, 10.5vw, 48px); letter-spacing: -.8px; }
+  .about-pangram .about-stop { width: 6px; height: 6px; }
+}

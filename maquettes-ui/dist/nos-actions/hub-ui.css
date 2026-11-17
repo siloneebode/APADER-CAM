@@ -1,0 +1,194 @@
+/* The general actions page only; preserve its original text-only composition. */
+body.actions-hub-ui #contenu .action-hub-intro h1 {
+  color:var(--forest);
+  font:400 62px/1.1 var(--font-display);
+  letter-spacing:-.02em;
+}
+
+body.actions-hub-ui #contenu .action-hub-intro > .wrap > p:not(.eyebrow):not(.pangram-kicker) {
+  color:var(--ink);
+  font-size:20px;
+  line-height:1.55;
+}
+
+body.actions-hub-ui #contenu .action-hub-grid { gap:24px; }
+
+body.actions-hub-ui #contenu .action-hub-grid .action-domain-card {
+  padding:32px;
+  border:1px solid var(--line);
+  border-radius:5px 5px 50px 5px;
+  text-decoration:none;
+}
+
+body.actions-hub-ui #contenu .action-domain-card .axis-number { color:var(--brand); }
+
+body.actions-hub-ui #contenu .action-domain-card .action-domain-title {
+  max-width:520px;
+  margin:0 0 16px;
+  color:var(--forest);
+  font:400 28px/1.2 var(--font-display);
+  letter-spacing:-.02em;
+}
+
+body.actions-hub-ui #contenu .action-domain-card > p {
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.7;
+}
+
+/* The whole card is the link; this secondary control is a visual span. */
+body.actions-hub-ui #contenu .action-domain-card > .button.button-secondary {
+  --button-background:transparent;
+  --button-color:var(--forest);
+  --button-tile:var(--forest);
+  --button-arrow:var(--yellow);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-height:48px;
+  margin-top:auto;
+  padding:8px 8px 8px 16px;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+  color:var(--forest);
+  box-shadow:inset 0 0 0 1px var(--forest);
+  font:500 16px/1.4 var(--font-body);
+  text-decoration:none;
+}
+
+body.actions-hub-ui #contenu .action-domain-card .button-label,
+body.actions-hub-ui #contenu .action-domain-card .button-icon { padding:0; }
+
+body.actions-hub-ui #contenu .action-domain-card .button-icon {
+  display:grid;
+  place-items:center;
+  width:32px;
+  height:32px;
+  flex:0 0 32px;
+  border-radius:6px;
+  background:var(--forest);
+  color:var(--yellow);
+}
+
+body.actions-hub-ui #contenu .action-domain-card .button-icon svg {
+  width:23px;
+  height:23px;
+  fill:currentColor;
+  stroke:none;
+  transform:rotate(0deg);
+  transform-origin:center;
+  transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+
+body.actions-hub-ui #contenu .action-domain-card:is(:hover,:focus-visible) > .button.button-secondary {
+  background:var(--sage);
+  color:var(--forest);
+  text-decoration:none;
+}
+
+body.actions-hub-ui #contenu .action-domain-card:is(:hover,:focus-visible) .button-icon svg {
+  transform:rotate(45deg);
+}
+
+body.actions-hub-ui #contenu .action-domain-card:active > .button.button-secondary {
+  transform:translateY(1px);
+}
+
+body.actions-hub-ui #contenu .action-domain-card:focus-visible {
+  outline:2px solid var(--forest);
+  outline-offset:4px;
+}
+
+/* Exact APADER label: the animated fill is behind a transparent text span. */
+body.actions-hub-ui #contenu .action-hub-intro .pangram-kicker.pangram-kicker--apader {
+  --ease:cubic-bezier(.22,1,.36,1);
+  --kicker-fill-duration:calc(600ms * var(--speed,1));
+  --kicker-background:var(--sage);
+  --kicker-color:var(--forest);
+  --kicker-mark:var(--brand);
+  display:flex;
+  position:relative;
+  align-items:flex-start;
+  gap:0;
+  width:fit-content;
+  max-width:100%;
+  margin:0 0 24px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:none;
+  color:var(--forest);
+  font:400 14px/20px var(--font-body);
+  letter-spacing:0;
+  text-transform:none;
+  text-align:left;
+}
+
+body.actions-hub-ui #contenu .action-hub-intro .pangram-kicker.pangram-kicker--apader::before {
+  content:'';
+  position:static;
+  width:4px;
+  height:4px;
+  flex:0 0 4px;
+  border:0;
+  border-radius:0;
+  background:var(--kicker-mark);
+}
+
+body.actions-hub-ui #contenu .action-hub-intro .pangram-kicker.pangram-kicker--apader > span {
+  position:relative;
+  isolation:isolate;
+  display:block;
+  min-width:0;
+  padding:4px 8px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:var(--kicker-color);
+}
+
+body.actions-hub-ui #contenu .action-hub-intro .pangram-kicker.pangram-kicker--apader > span::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:var(--kicker-background);
+  transform-origin:right center;
+}
+
+body.actions-hub-ui #contenu .pangram-kicker.is-kicker-entering::before {
+  animation:kicker-mark-in calc(120ms * var(--speed,1)) ease-out var(--kicker-fill-duration) both;
+}
+
+body.actions-hub-ui #contenu .pangram-kicker.is-kicker-entering > span::before {
+  animation:kicker-panel-in var(--kicker-fill-duration) var(--ease) both;
+}
+
+/* No hidden initial state: JavaScript applies this only at viewport entry. */
+body.actions-hub-ui #contenu .actions-hub-entering {
+  animation:apader-actions-hub-in 700ms cubic-bezier(.22,1,.36,1) var(--actions-hub-delay,0ms) both;
+}
+
+body.actions-hub-ui #contenu .actions-hub-entering:focus-within { animation:none; }
+
+@keyframes apader-actions-hub-in {
+  from { opacity:0; transform:translateY(18px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+@media (max-width:700px) {
+  body.actions-hub-ui #contenu .action-hub-intro h1 { font-size:44px; }
+  body.actions-hub-ui #contenu .action-hub-intro > .wrap > p:not(.eyebrow):not(.pangram-kicker) { font-size:18px; }
+  body.actions-hub-ui #contenu .action-hub-grid .action-domain-card { padding:24px; }
+  body.actions-hub-ui #contenu .action-domain-card .action-domain-title { font-size:24px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  body.actions-hub-ui #contenu .actions-hub-entering,
+  body.actions-hub-ui #contenu .pangram-kicker::before,
+  body.actions-hub-ui #contenu .pangram-kicker > span::before { animation:none !important; }
+  body.actions-hub-ui #contenu .action-domain-card .button,
+  body.actions-hub-ui #contenu .action-domain-card .button-icon svg { transition:none !important; }
+}

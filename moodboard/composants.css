@@ -1,0 +1,93 @@
+/* APADER component presentation. The established button styles remain in buttons.css. */
+#composants {
+  padding-block: 80px;
+  background: var(--forest);
+  color: var(--paper);
+  font: 400 16px/1.65 var(--font-body);
+}
+
+#composants .components-introduction { grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: end; margin-bottom: 40px; }
+#composants .components-introduction h2 { margin-top: 24px; color: var(--paper); font: 400 56px/1.1 var(--font-display); letter-spacing: -.025em; }
+#composants .components-introduction > p { max-width: 440px; padding: 0; color: var(--sage); font: 400 16px/1.65 var(--font-body); }
+
+#composants .kicker-showcase { padding: 32px; margin-bottom: 48px; border-radius: 12px; background: var(--paper); color: var(--ink); }
+#composants .kicker-showcase-heading { gap: 24px; }
+#composants .kicker-showcase-heading h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#composants .kicker-showcase-heading p { margin-top: 12px; max-width: 650px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#composants .quiet-button { min-height: 44px; flex-shrink: 0; color: var(--forest); font: 400 14px/20px var(--font-body); }
+#composants .quiet-button:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+#composants .kicker-examples { gap: 24px; padding: 28px 0; }
+#composants .kicker-example-caption { margin-bottom: 12px; color: var(--muted); font: 400 14px/1.5 var(--font-body); }
+#composants .kicker-example-display { min-height: 84px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; }
+#composants .kicker-example-display--forest { border-color: var(--forest); }
+#composants .kicker-showcase-note { gap: 24px; padding-top: 20px; }
+#composants .kicker-showcase-note > p { max-width: 600px; font: 400 13px/1.6 var(--font-body); }
+
+#composants .component-toolbar { align-items: end; gap: 24px; margin-bottom: 24px; }
+#composants .component-toolbar h3 { color: var(--paper); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#composants .component-toolbar p { max-width: 680px; margin-top: 12px; color: var(--sage); font: 400 16px/1.65 var(--font-body); }
+#composants .component-toolbar .quiet-button { color: var(--paper); }
+#composants .component-toolbar .quiet-button:focus-visible { outline-color: var(--yellow); }
+
+#composants .button-showcase { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+#composants .button-showcase > article { display: flex; flex-direction: column; min-width: 0; padding: 28px; border-radius: 12px; background: var(--paper); color: var(--ink); }
+#composants .component-role { margin: 0; color: var(--forest); font: 500 16px/1.5 var(--font-body); letter-spacing: 0; }
+#composants .button-stage { min-height: 120px; padding-block: 16px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+#composants .button-showcase p { min-height: 0; margin: 0; font: 400 16px/1.65 var(--font-body); color: var(--ink); }
+#composants .button-showcase .component-behaviour { margin-top: 12px; color: var(--muted); font: 400 14px/1.6 var(--font-body); }
+#composants .button-showcase .spec-note { padding-top: 20px; margin-top: auto; color: var(--muted); font: 400 13px/1.6 var(--font-body); letter-spacing: 0; }
+
+#composants .button-states { padding: 32px; margin-top: 32px; gap: 28px; border-radius: 12px; }
+#composants .button-states-heading { grid-column: 1 / -1; }
+#composants .button-states-heading h3 { color: var(--forest); font: 400 32px/1.2 var(--font-display); letter-spacing: -.02em; }
+#composants .button-states-heading p { max-width: 760px; margin-top: 12px; color: var(--muted); font: 400 16px/1.65 var(--font-body); }
+#composants .button-state { gap: 16px; }
+#composants .button-state > span { color: var(--forest); font: 500 14px/1.5 var(--font-body); }
+#composants .button-state > small { max-width: 230px; color: var(--muted); font: 400 14px/1.6 var(--font-body); }
+#composants .button-reference { margin-top: 20px; color: var(--sage); font: 400 14px/1.6 var(--font-body); }
+
+@media (max-width: 1100px) {
+  #composants .kicker-showcase-heading { flex-direction: column; gap: 16px; }
+  #composants .kicker-examples { gap: 16px; }
+  #composants .button-showcase { gap: 16px; }
+  #composants .button-showcase > article { padding: 24px; }
+}
+
+@media (max-width: 900px) {
+  #composants .components-introduction { grid-template-columns: 1fr; gap: 24px; }
+  #composants .components-introduction > p { max-width: 620px; justify-self: start; }
+  #composants .kicker-examples { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #composants .component-toolbar { align-items: start; flex-direction: column; gap: 16px; }
+  #composants .button-showcase { grid-template-columns: 1fr; }
+  #composants .button-showcase > article { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  #composants .component-role { grid-area: 1 / 1; }
+  #composants .button-stage { grid-area: 2 / 1 / 5 / 2; margin: 0; border: 0; }
+  #composants .component-description { grid-area: 1 / 2 / 3 / 3; }
+  #composants .component-behaviour { grid-area: 3 / 2; }
+  #composants .button-showcase .spec-note { grid-area: 4 / 2; }
+  #composants .button-states { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+
+@media (max-width: 640px) {
+  #composants { padding-block: 56px; }
+  #composants .components-introduction h2 { margin-top: 20px; font-size: 36px; }
+  #composants .kicker-showcase { padding: 24px; margin-bottom: 36px; }
+  #composants .kicker-showcase-heading h3,
+  #composants .component-toolbar h3,
+  #composants .button-states-heading h3 { font-size: 28px; }
+  #composants .kicker-examples { gap: 20px 12px; }
+  #composants .kicker-example-display { padding: 12px 8px; }
+  #composants .kicker-showcase-note { flex-direction: column; gap: 8px; }
+  #composants .button-showcase > article { display: flex; padding: 24px; }
+  #composants .button-stage { margin-bottom: 20px; border-bottom: 1px solid var(--line); }
+  #composants .button-showcase .spec-note { margin-top: 0; }
+  #composants .button-states { padding: 24px; gap: 28px; }
+}
+
+@media (max-width: 480px) {
+  #composants .button-states { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 359px) {
+  #composants .kicker-examples { grid-template-columns: 1fr; }
+}

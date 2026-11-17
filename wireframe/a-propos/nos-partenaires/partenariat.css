@@ -1,0 +1,35 @@
+#partenariat,#partenariat *{box-sizing:border-box}
+#partenariat{margin:0;padding:64px 0;background:#f5f5f5;color:#222;font:400 16px/1.5 Sans,Arial,sans-serif;scroll-margin-top:var(--sm-anchor-offset,150px)}
+#partenariat .np-cta-wrap{width:100%;max-width:1440px;padding:0 36px;margin:auto}
+#partenariat .np-cta-panel{position:relative;overflow:hidden;padding:64px 100px 70px;border-radius:24px;background:#dedede;color:#222}
+#partenariat .np-cta-image{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(to top right,transparent calc(50% - .6px),#b9b9b9 50%,transparent calc(50% + .6px)),linear-gradient(to bottom right,transparent calc(50% - .6px),#b9b9b9 50%,transparent calc(50% + .6px)),#dedede}
+#partenariat .np-cta-image span{position:absolute;right:16px;bottom:12px;padding:7px 12px;max-width:90%;background:#dedede;color:#666;font:400 12px/1.5 Sans,Arial,sans-serif}
+#partenariat .np-cta-copy{position:relative;z-index:1;max-width:880px;margin:auto;text-align:center}
+#partenariat .np-cta-kicker{position:relative;display:table;padding:5px 10px;margin:0 auto 26px;background:#dddEd7;color:#65655c;font:400 12px/1.5 Sans,Arial,sans-serif}
+#partenariat .np-cta-kicker::before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#85857a}
+#partenariat .np-cta-copy h2{max-width:780px;margin:0 auto 28px;font:400 56px/1.12 Heading,Georgia,serif;letter-spacing:-1.12px;text-wrap:balance}
+#partenariat .np-cta-intro{max-width:650px;margin:auto;color:#444;font:400 18px/28px Sans,Arial,sans-serif;text-wrap:balance}
+#partenariat .np-cta-button{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:58px;margin-top:32px;padding:10px 12px 10px 22px;border:1px solid #333;border-radius:7px;background:#333;color:#fff;font:600 16px/24px Sans,Arial,sans-serif;cursor:pointer;touch-action:manipulation}
+#partenariat .np-cta-button:hover{background:#111}
+#partenariat .np-cta-arrow{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:7px;background:#eee;color:#333;font:400 28px/1 Sans,Arial,sans-serif}
+#partenariat button:focus-visible{outline:3px solid #555;outline-offset:5px}
+#partenariat .np-cta-dialog{width:min(660px,calc(100vw - 32px));max-width:none;max-height:88dvh;margin:auto;padding:28px;overflow:auto;border:1px solid #aaa;border-radius:18px;background:#fafaf6;color:#333;font:400 15px/1.6 Sans,Arial,sans-serif}
+#partenariat .np-cta-dialog::backdrop{background:#0009}
+#partenariat .np-cta-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid #ccc}
+#partenariat .np-cta-dialog-header p{margin:0;color:#888;font-size:12px}
+#partenariat .np-cta-dialog-header button{flex:none;width:44px;height:44px;border:1px solid #aaa;border-radius:50%;background:#fff;color:#333;font:400 27px/1 Sans,Arial,sans-serif;cursor:pointer}
+#partenariat .np-cta-dialog h2{margin:0 0 22px;font:400 38px/1.12 Heading,Georgia,serif;letter-spacing:-.025em}
+#partenariat .np-cta-dialog>p{margin:0;color:#777;font-size:14px;line-height:1.65}
+#partenariat .np-cta-dialog dl{display:grid;gap:20px;margin:26px 0}
+#partenariat .np-cta-dialog dt{margin-bottom:7px;color:#888;font-size:11px}
+#partenariat .np-cta-dialog dd{margin:0;color:#555;font-size:15px}
+#partenariat .np-cta-dialog .np-cta-dialog-note{padding-top:20px;border-top:1px solid #ccc;font-size:12px}
+@media(max-width:1049px){#partenariat{padding:56px 0}#partenariat .np-cta-panel{padding:56px 75px 62px}#partenariat .np-cta-copy h2{font-size:48px;letter-spacing:-.96px}#partenariat .np-cta-intro{font-size:16px;line-height:26px}}
+@media(max-width:700px){#partenariat{padding:40px 0}#partenariat .np-cta-wrap{padding:0 20px}#partenariat .np-cta-panel{padding:44px 24px 60px;border-radius:20px}#partenariat .np-cta-kicker{margin-bottom:24px}#partenariat .np-cta-copy h2{margin-bottom:24px;font-size:40px;line-height:1.12;letter-spacing:-.8px}#partenariat .np-cta-intro{font-size:15px;line-height:24px}#partenariat .np-cta-button{gap:10px;min-height:54px;margin-top:28px;padding-left:16px;font-size:15px}#partenariat .np-cta-arrow{width:32px;height:32px;font-size:25px}#partenariat .np-cta-dialog{padding:22px 19px}#partenariat .np-cta-dialog h2{font-size:32px}}
+
+#partenariat .np-cta-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px 28px;margin-top:32px}
+#partenariat .np-cta-actions .np-cta-button{margin-top:0}
+#partenariat .np-cta-secondary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:44px;border-bottom:1px solid #666;color:#333;font:500 14px/1.5 Sans,Arial,sans-serif;text-decoration:none;touch-action:manipulation}
+#partenariat .np-cta-secondary:hover{text-decoration:none;border-bottom-color:#111;color:#111}
+#partenariat .np-cta-secondary:focus-visible{outline:3px solid #555;outline-offset:5px}
+@media(max-width:700px){#partenariat .np-cta-actions{flex-direction:column;gap:16px;margin-top:28px}#partenariat .np-cta-actions .np-cta-button{width:100%;margin-top:0}#partenariat .np-cta-secondary{font-size:13px;max-width:100%;text-align:center}}

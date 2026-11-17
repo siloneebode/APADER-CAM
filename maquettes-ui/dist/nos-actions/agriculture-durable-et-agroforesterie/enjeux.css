@@ -1,0 +1,59 @@
+#enjeux.agriculture-enjeux {
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  padding-block: clamp(56px, 6vw, 88px);
+  background: var(--sage);
+  color: var(--ink);
+}
+
+.agriculture-enjeux h2 {
+  max-width: 30ch;
+  margin: 24px 0 0;
+  color: var(--forest);
+  font: 400 56px/1.1 var(--font-display);
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.agriculture-enjeux .enjeux-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(48px, 7vw, 104px);
+  margin-top: clamp(40px, 4vw, 60px);
+}
+
+.agriculture-enjeux .enjeux-columns > div { max-width: 54ch; }
+
+.agriculture-enjeux h3 {
+  margin: 0 0 16px;
+  color: var(--forest);
+  font: 400 28px/1.2 var(--font-display);
+  letter-spacing: -.02em;
+}
+
+.agriculture-enjeux .enjeux-columns :is(p, li) {
+  margin: 0;
+  font: 400 16px/1.7 var(--font-body);
+}
+
+.agriculture-enjeux .enjeux-columns p + p,
+.agriculture-enjeux ul { margin: 12px 0 0; }
+.agriculture-enjeux ul { padding-inline-start: 1.1em; list-style: disc; }
+.agriculture-enjeux li + li { margin-top: 4px; }
+.agriculture-enjeux li::marker { color: var(--forest); }
+
+@media (max-width: 760px) {
+  #enjeux.agriculture-enjeux { padding-block: 44px; }
+  .agriculture-enjeux h2 { font-size: 36px; margin-top: 20px; }
+  .agriculture-enjeux .enjeux-columns { grid-template-columns: 1fr; gap: 32px; margin-top: 32px; }
+  .agriculture-enjeux h3 { margin-bottom: 12px; font-size: 24px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .agriculture-enjeux .enjeux-entering {
+    animation: agriculture-enjeux-in 700ms var(--ease) both;
+  }
+}
+@keyframes agriculture-enjeux-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}

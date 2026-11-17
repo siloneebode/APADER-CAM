@@ -1,0 +1,53 @@
+{
+  "status": "Première proposition pour revue",
+  "hub": "/ressources/",
+  "categories": [
+    {
+      "title": "Rapports annuels",
+      "url": "/ressources/rapports-annuels/"
+    },
+    {
+      "title": "Rapports de projets",
+      "url": "/ressources/rapports-de-projets/"
+    },
+    {
+      "title": "Publications et études",
+      "url": "/ressources/publications-et-etudes/"
+    },
+    {
+      "title": "Manuels et guides techniques",
+      "url": "/ressources/manuels-et-guides-techniques/"
+    },
+    {
+      "title": "Supports de formation",
+      "url": "/ressources/supports-de-formation/"
+    },
+    {
+      "title": "Documents institutionnels",
+      "url": "/ressources/documents-institutionnels/"
+    }
+  ],
+  "download_centre": "/ressources/centre-de-telechargement/",
+  "document_template": "/ressources/document-exemple.html",
+  "loop": "Cartes Ressources A validées sur l’accueil, inspirées de Pangram",
+  "filters": [
+    "Recherche",
+    "Type de document",
+    "Domaine",
+    "Année",
+    "Projet"
+  ],
+  "placeholders": true,
+  "real_downloads": false,
+  "generated_pages": [
+    "index.html",
+    "rapports-annuels/index.html",
+    "rapports-de-projets/index.html",
+    "publications-et-etudes/index.html",
+    "manuels-et-guides-techniques/index.html",
+    "supports-de-formation/index.html",
+    "documents-institutionnels/index.html",
+    "centre-de-telechargement/index.html",
+    "document-exemple.html"
+  ]
+}

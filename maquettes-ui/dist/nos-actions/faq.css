@@ -1,0 +1,26 @@
+/* Pangram FAQ composition, retained in the gray APADER wireframe palette. */
+@font-face{font-family:AFQNumber;src:url('/assets/imbue-latin.woff2') format('woff2');font-display:swap}
+.afq-section{background:#dde8d8;padding:90px 0 96px}
+.afq-wrap{max-width:1440px;padding:0 36px;margin:auto;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.35fr);gap:72px;align-items:start}
+.afq-intro{padding-top:24px}
+.afq-intro h2{font:400 clamp(44px,5.2vw,72px)/1.04 Heading,Georgia,serif;letter-spacing:-.035em;margin:26px 0 28px}
+.afq-intro>p:not(.eyebrow){max-width:360px;font-size:17px;line-height:1.65;color:#1c2921;margin:0 0 30px}
+.afq-intro .button{border-radius:9px;gap:20px}
+.afq-list{display:grid;gap:14px;min-width:0}
+.afq-item{background:#ffffff;border-radius:24px;overflow:hidden}
+.afq-item summary{display:flex;align-items:center;gap:9px;padding:25px 22px;list-style:none;cursor:pointer;min-height:84px;box-sizing:border-box}
+.afq-item summary::-webkit-details-marker{display:none}
+.afq-item summary::marker{content:''}
+.afq-item summary:focus-visible{outline:2px solid #123e2b;outline-offset:-5px;border-radius:24px}
+.afq-number{align-self:flex-start;font:400 27px/1.2 AFQNumber,Georgia,serif;color:#5e6c61;padding-top:1px;flex:none}
+.afq-question{font:400 clamp(24px,2.3vw,32px)/1.12 Heading,Georgia,serif;letter-spacing:-.025em;min-width:0;flex:1}
+.afq-toggle{width:32px;height:32px;border:1px solid #cad5c7;border-radius:50%;position:relative;flex:none;margin-left:10px;transition:background .2s,transform .2s}
+.afq-toggle:before,.afq-toggle:after{content:'';position:absolute;width:12px;height:1px;background:#dde8d8;top:15px;left:9px}
+.afq-toggle:after{transform:rotate(90deg)}
+.afq-item[open] .afq-toggle{background:#123e2b;border-color:#123e2b;transform:rotate(45deg)}
+.afq-item[open] .afq-toggle:before,.afq-item[open] .afq-toggle:after{background:#fff}
+.afq-answer{padding:0 22px 26px}
+.afq-answer p{margin:0;font-size:16px;line-height:1.65;color:#5e6c61;max-width:750px}
+@media(max-width:1049px){.afq-wrap{padding:0 24px;gap:32px;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}.afq-item summary{padding:22px 18px}.afq-answer{padding:0 18px 24px}.afq-question{font-size:25px}.afq-number{font-size:25px}}
+@media(max-width:700px){.afq-section{padding:56px 0 60px}.afq-wrap{display:block;padding:0 20px}.afq-intro{padding:0;margin-bottom:32px}.afq-intro h2{font-size:46px;line-height:1.04;margin:20px 0}.afq-intro h2 br{display:none}.afq-intro>p:not(.eyebrow){font-size:16px;max-width:390px;margin-bottom:24px}.afq-list{gap:12px}.afq-item{border-radius:20px}.afq-item summary{padding:22px 16px;gap:8px;min-height:82px}.afq-question{font-size:25px;line-height:1.12}.afq-number{font-size:24px}.afq-toggle{width:28px;height:28px;margin-left:2px}.afq-toggle:before,.afq-toggle:after{top:13px;left:7px}.afq-answer{padding:0 16px 23px}.afq-answer p{font-size:15px;line-height:1.65}}
+@media(prefers-reduced-motion:reduce){.afq-toggle{transition:none}}

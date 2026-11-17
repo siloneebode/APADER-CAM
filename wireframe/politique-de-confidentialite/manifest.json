@@ -1,0 +1,16 @@
+{
+  "page": "Politique de confidentialité",
+  "route": "/politique-de-confidentialite/",
+  "status": "Modèle de wireframe, contenu à renseigner et valider",
+  "template": "pages-legales",
+  "config": "politique-de-confidentialite.json",
+  "sections": [
+    "donnees-concernees",
+    "utilisation-des-donnees",
+    "conservation-et-destinataires",
+    "securite-des-donnees",
+    "vos-demandes",
+    "contact"
+  ],
+  "scope": "Modèle légal partagé par les mentions légales, la confidentialité, les cookies et les conditions générales d’utilisation."
+}

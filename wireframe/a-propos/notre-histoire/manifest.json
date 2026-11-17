@@ -1,0 +1,28 @@
+{
+  "page": "Notre histoire",
+  "route": "/a-propos/notre-histoire/",
+  "status": "Première proposition de wireframe",
+  "sections": [
+    "Héros éditorial et photographie d’archive",
+    "Chronologie illustrée en cinq chapitres"
+  ],
+  "chapters": [
+    "Origines",
+    "Premières actions",
+    "Développement",
+    "Transmission",
+    "Aujourd’hui"
+  ],
+  "chapter_note": "Les chapitres sont une proposition de structure narrative. Les dates, intitulés et descriptions entre crochets seront remplacés par l’histoire validée par APADER. Aucun événement ou chiffre n’est présenté comme établi.",
+  "visual_direction": "Compositions éditoriales, titres serif et étiquettes de la bibliothèque Pangram et Pinpoint ; adaptation en niveaux de gris.",
+  "interaction": "Index de chronologie fixe sur ordinateur, liens d’ancre et repérage de l’étape active au défilement naturel ; aucun défilement imposé.",
+  "responsive": "Index statique en boutons compacts au-dessus de la chronologie sur mobile ; images et textes empilés.",
+  "assets": "Emplacements photographiques d’archives, sans recherche de vraies images ni dates.",
+  "shared_navigation": "Menu et pied de page ajoutés par le générateur commun.",
+  "hero": {
+    "source": "Héros B de Notre impact",
+    "source_url": "/notre-impact/",
+    "scope": "Uniquement Notre histoire ; Équipe et Structures conservent leurs héros initiaux",
+    "original_saved": "hero-initial.html"
+  }
+}

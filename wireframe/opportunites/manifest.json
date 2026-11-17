@@ -1,0 +1,59 @@
+{
+  "status": "Formations B retenue le 22 octobre 2026 ; autres collections conservées",
+  "hub": "/opportunites/",
+  "categories": [
+    {
+      "title": "Formations",
+      "path": "/opportunites/formations/",
+      "detail": "/opportunites/formations/fiche-exemple.html",
+      "loop": "B - Blocs avec affiche"
+    },
+    {
+      "title": "Appels à candidatures",
+      "path": "/opportunites/appels-a-candidatures/",
+      "detail": "/opportunites/appels-a-candidatures/fiche-exemple.html",
+      "loop": "A - Liste Pinpoint Careers"
+    },
+    {
+      "title": "Recrutements",
+      "path": "/opportunites/recrutements/",
+      "detail": "/opportunites/recrutements/fiche-exemple.html",
+      "loop": "A - Liste Pinpoint Careers"
+    },
+    {
+      "title": "Stages et volontariat",
+      "path": "/opportunites/stages-et-volontariat/",
+      "detail": "/opportunites/stages-et-volontariat/fiche-exemple.html",
+      "loop": "A - Liste Pinpoint Careers"
+    },
+    {
+      "title": "Appels à partenariat",
+      "path": "/opportunites/appels-a-partenariat/",
+      "detail": "/opportunites/appels-a-partenariat/fiche-exemple.html",
+      "loop": "A - Liste Pinpoint Careers"
+    }
+  ],
+  "loop": "Catalogue général : liste A ; Formations : B - Blocs avec affiche",
+  "formation_alternative": "/opportunites/formations/variantes/a.html",
+  "filters_proposed": [
+    "Catégorie (catalogue général)",
+    "Statut"
+  ],
+  "placeholders": true,
+  "generated_pages": [
+    "index.html",
+    "formations/index.html",
+    "formations/fiche-exemple.html",
+    "appels-a-candidatures/index.html",
+    "appels-a-candidatures/fiche-exemple.html",
+    "recrutements/index.html",
+    "recrutements/fiche-exemple.html",
+    "stages-et-volontariat/index.html",
+    "stages-et-volontariat/fiche-exemple.html",
+    "appels-a-partenariat/index.html",
+    "appels-a-partenariat/fiche-exemple.html",
+    "fiche-exemple.html",
+    "modeles.html"
+  ],
+  "no_submission_service": true
+}

@@ -1,0 +1,73 @@
+#domaines.actions-panneaux *{box-sizing:border-box}
+#domaines.actions-panneaux{margin:0;color:#172723;background:#fff;font:16px/1.5 Sans,Arial,sans-serif}
+#domaines.actions-panneaux h2,#domaines.actions-panneaux h3,#domaines.actions-panneaux h4,#domaines.actions-panneaux p{margin:0}
+#domaines.actions-panneaux button,#domaines.actions-panneaux a{-webkit-tap-highlight-color:transparent}
+#domaines.actions-panneaux button{font:inherit;cursor:pointer}
+#domaines.actions-panneaux a{color:inherit;text-decoration:none}
+#domaines.actions-panneaux a:focus-visible,#domaines.actions-panneaux button:focus-visible{outline:3px solid #0049d1;outline-offset:4px}
+#domaines.actions-panneaux img{display:block;width:100%;height:100%;object-fit:cover}
+#domaines.actions-panneaux .container{max-width:1440px;margin:auto;padding:0 36px}
+#domaines.actions-panneaux .section-heading{display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin-bottom:44px}
+#domaines.actions-panneaux .section-heading h2{font:400 56px/1.1 Heading,Georgia,serif;letter-spacing:-1.12px}
+#domaines.actions-panneaux .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#domaines.actions-panneaux [hidden]{display:none!important}
+#domaines.actions-panneaux{padding:80px 0;background:#ffea93}
+#domaines.actions-panneaux .horizontal-panels{display:flex;gap:3px;min-height:600px}
+#domaines.actions-panneaux .action-panel{display:flex;min-width:0;flex:0 0 56px;overflow:hidden;border-radius:4px;background:#fffef3;transition:flex-grow .55s cubic-bezier(.2,.7,.2,1)}
+#domaines.actions-panneaux .action-panel.is-active{flex:1 1 0;background:transparent}
+#domaines.actions-panneaux .rail-heading{flex:0 0 56px;align-self:stretch;font-weight:400}
+#domaines.actions-panneaux .panel-rail{position:relative;display:flex;align-items:center;width:56px;height:100%;min-height:600px;padding:14px 8px;border:0;background:#fffef3;color:#172723;gap:14px;flex-direction:column;text-align:left}
+#domaines.actions-panneaux .panel-rail:hover{background:#fff}
+#domaines.actions-panneaux .rail-symbol{font-size:22px;color:#d77f17;line-height:1}
+#domaines.actions-panneaux .rail-title{writing-mode:vertical-rl;max-height:490px;font-size:15px;letter-spacing:.15px;line-height:1.2}
+#domaines.actions-panneaux .rail-number{margin-top:auto;font:400 24px/1 Numbers,Georgia,serif;color:#ad6c18}
+#domaines.actions-panneaux .panel-body{display:grid;grid-template-columns:34% 66%;flex:1;min-width:0;overflow:hidden}
+#domaines.actions-panneaux .panel-photo{min-width:0;overflow:hidden;border-radius:0 0 50px 0;background:#d6dfc9}
+#domaines.actions-panneaux .panel-photo img{object-position:center}
+#domaines.actions-panneaux .panel-paper{position:relative;min-width:0;padding:46px 42px 36px;border-radius:60px 0 0 0;background:#fff;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+#domaines.actions-panneaux .panel-number{font:400 24px/1 Numbers,Georgia,serif;color:#ae6e1c;margin-bottom:22px}
+#domaines.actions-panneaux .panel-paper h4{font:400 clamp(28px,3.3vw,43px)/1.05 Heading,Georgia,serif;letter-spacing:-.7px;position:relative;z-index:1}
+#domaines.actions-panneaux .panel-paper p{font-size:15px;line-height:23px;margin-top:22px;position:relative;z-index:1}
+#domaines.actions-panneaux .domain-link{font-size:14px;margin-top:22px;text-underline-offset:4px;position:relative;z-index:1}
+#domaines.actions-panneaux .domain-link:hover{text-decoration:underline}
+#domaines.actions-panneaux .domain-link span{margin-left:8px}
+#domaines.actions-panneaux .panel-next{display:flex;gap:14px;align-items:center;position:relative;z-index:1;margin-top:auto;padding:10px 10px 10px 15px;border:0;border-radius:4px;background:#3b604b;color:#fff;font-size:14px;min-height:46px}
+#domaines.actions-panneaux .panel-next span{background:#eeb5f4;color:#173f2b;display:grid;place-items:center;width:26px;height:26px;border-radius:3px}
+#domaines.actions-panneaux .paper-art{position:absolute;bottom:0;right:0;width:80px;height:180px;background:#aad8f9;clip-path:polygon(100% 0,100% 100%,0 86%,65% 72%,0 58%);opacity:.9}
+#domaines.actions-panneaux .paper-art:after{content:'';position:absolute;inset:60% 0 0;background:#d38400;clip-path:polygon(0 0,100% 26%,0 100%)}
+@media(max-width:1049px){#domaines.actions-panneaux{padding:64px 0}
+#domaines.actions-panneaux .section-heading h2{font-size:48px}
+#domaines.actions-panneaux .horizontal-panels{min-height:610px}
+#domaines.actions-panneaux .panel-rail{min-height:610px}
+#domaines.actions-panneaux .action-panel{flex-basis:48px}
+#domaines.actions-panneaux .rail-heading,#domaines.actions-panneaux .panel-rail{width:48px;flex-basis:48px}
+#domaines.actions-panneaux .rail-title{font-size:14px}
+#domaines.actions-panneaux .panel-body{grid-template-columns:29% 71%}
+#domaines.actions-panneaux .panel-paper{padding:36px 26px 30px}
+#domaines.actions-panneaux .panel-paper h4{font-size:35px}
+#domaines.actions-panneaux .panel-paper p{font-size:14px;line-height:22px}
+#domaines.actions-panneaux .paper-art{width:50px}}
+@media(max-width:700px){#domaines.actions-panneaux .container{padding:0 20px}
+#domaines.actions-panneaux{padding:56px 0}
+#domaines.actions-panneaux .section-heading{gap:20px;margin-bottom:28px}
+#domaines.actions-panneaux .section-heading h2{font-size:clamp(36px,10vw,44px);letter-spacing:-.72px}
+#domaines.actions-panneaux .horizontal-panels{display:flex;flex-direction:column;min-height:0;gap:8px}
+#domaines.actions-panneaux .action-panel,#domaines.actions-panneaux .action-panel.is-active{display:block;flex:none;background:#fffef3;border-radius:6px;overflow:visible}
+#domaines.actions-panneaux .rail-heading{width:100%}
+#domaines.actions-panneaux .panel-rail{width:100%;height:auto;min-height:84px;padding:17px 16px;flex-direction:row;align-items:flex-start;gap:10px;border-radius:6px}
+#domaines.actions-panneaux .rail-symbol{font-size:19px;flex:none}
+#domaines.actions-panneaux .rail-title{writing-mode:horizontal-tb;font:400 23px/1.12 Heading,Georgia,serif;letter-spacing:-.3px;max-height:none;flex:1}
+#domaines.actions-panneaux .rail-number{margin:0 0 0 auto;font-size:23px;flex:none}
+#domaines.actions-panneaux .action-panel.is-active .panel-rail{background:#fff}
+#domaines.actions-panneaux .panel-body{display:block;overflow:hidden;border-radius:0 0 6px 6px}
+#domaines.actions-panneaux .panel-photo{height:220px;border-radius:0}
+#domaines.actions-panneaux .panel-paper{border-radius:0;padding:25px 24px 28px;min-height:280px}
+#domaines.actions-panneaux .panel-paper h4{display:none}
+#domaines.actions-panneaux .panel-number{display:none}
+#domaines.actions-panneaux .panel-paper p{margin-top:0;font-size:15px;line-height:23px}
+#domaines.actions-panneaux .panel-next{margin-top:30px}
+#domaines.actions-panneaux .paper-art{height:120px}}
+@media(prefers-reduced-motion:reduce){#domaines.actions-panneaux .action-panel{transition:none}}
+#domaines.actions-panneaux{height:auto;scroll-margin-top:96px}
+#domaines.actions-panneaux h2{margin:0}
+#domaines.actions-panneaux .rail-heading{font:400 16px/1.5 Sans,Arial,sans-serif}

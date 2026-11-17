@@ -1,0 +1,114 @@
+/* Official wireframe A: envelope geometry retained; APADER moodboard palette/type. */
+.content-home #contenu #presidente.president-letter{--letter-green:var(--forest);--letter-yellow:var(--yellow);--letter-cream:var(--paper);position:relative;isolation:isolate;min-height:800px;height:auto;padding:0;overflow:hidden;background:var(--letter-green);color:var(--letter-cream);font:400 18px/1.55 var(--font-body);text-align:center;scroll-margin-top:96px}
+.content-home #contenu #presidente.president-letter *,.content-home #contenu #presidente.president-letter *::before,.content-home #contenu #presidente.president-letter *::after{box-sizing:border-box}
+.content-home #contenu #presidente.president-letter .letter-intro{position:relative;z-index:3;width:min(100% - 64px,1050px);margin:0 auto;padding-top:74px}
+.content-home #contenu #presidente.president-letter .letter-kicker{margin:0 auto 24px;font-family:var(--font-body)}
+.content-home #contenu #presidente.president-letter h2{margin:0;color:var(--letter-cream);font:400 clamp(56px,5.5vw,82px)/1.05 var(--font-display);letter-spacing:-.035em}
+.content-home #contenu #presidente.president-letter h2>span{display:block;margin-top:8px;color:var(--letter-yellow)}
+.content-home #contenu #presidente.president-letter .letter-open{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;margin:24px 0 0;padding:8px 10px;border:0;background:transparent;color:var(--letter-cream);font:400 17px/1.4 var(--font-body);cursor:pointer}
+.content-home #contenu #presidente.president-letter .letter-chevron{display:inline-block;width:15px;height:18px;background:var(--yellow);clip-path:polygon(0 0,50% 30%,100% 0,50% 100%)}
+.content-home #contenu #presidente.president-letter .letter-open:hover .letter-chevron{transform:translateY(3px)}
+.content-home #contenu #presidente.president-letter .letter-preview{position:relative;z-index:1;display:block;width:min(550px,calc(100% - 80px));min-height:440px;margin:40px auto -138px;padding:32px 34px 52px;border:0;border-radius:24px 24px 0 0;background:var(--letter-cream);color:var(--ink);box-shadow:0 12px 80px #082b1824;text-align:left;cursor:pointer;transition:transform .25s ease}
+.content-home #contenu #presidente.president-letter .letter-preview:hover{transform:translateY(-7px)}
+.content-home #contenu #presidente.president-letter .letter-preview-title{display:block;margin:0 0 18px;font:400 25px/1.2 var(--font-display);letter-spacing:-.025em}
+.content-home #contenu #presidente.president-letter .letter-placeholder{display:block;font:400 16px/1.6 var(--font-body)}
+.content-home #contenu #presidente.president-letter .letter-lines{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.content-home #contenu #presidente.president-letter .letter-lines i{display:block;width:100%;height:6px;border-radius:2px;background:var(--sage)}
+.content-home #contenu #presidente.president-letter .letter-lines i:nth-child(3n){width:91%}
+.content-home #contenu #presidente.president-letter .letter-lines i:last-child{width:66%}
+.content-home #contenu #presidente.president-letter .letter-preview-signature{display:flex;align-items:center;gap:12px;margin-top:26px;font:400 20px/1.4 var(--font-display)}
+.content-home #contenu #presidente.president-letter .letter-preview-signature small{display:block;margin-top:4px;font:400 14px/1.4 var(--font-body)}
+.content-home #contenu #presidente.president-letter .letter-envelope{position:absolute;z-index:2;inset:53% 0 0;pointer-events:none}
+.content-home #contenu #presidente.president-letter .letter-wing{position:absolute;inset:0;background:var(--letter-yellow)}
+.content-home #contenu #presidente.president-letter .letter-wing-left{clip-path:polygon(0 0,64% 100%,0 100%)}
+.content-home #contenu #presidente.president-letter .letter-wing-right{clip-path:polygon(100% 0,36% 100%,100% 100%)}
+.content-home #contenu #presidente.president-letter .letter-open:focus-visible,.content-home #contenu #presidente.president-letter .letter-preview:focus-visible{outline:3px solid var(--yellow);outline-offset:6px}
+.content-home #contenu #presidente.president-letter .letter-dialog{position:fixed;inset:0;width:min(860px,calc(100vw - 64px));max-width:none;max-height:min(90dvh,920px);margin:auto;padding:0;overflow:auto;border:0;border-radius:24px;background:var(--letter-cream);color:var(--ink);box-shadow:0 28px 100px #041d1555;text-align:left;overscroll-behavior:contain}
+.content-home #contenu #presidente.president-letter .letter-dialog::backdrop{background:#123e2b99}
+.content-home #contenu #presidente.president-letter .letter-dialog[open]{animation:president-letter-reveal .28s ease-out}
+.content-home #contenu #presidente.president-letter .letter-dialog-toolbar{position:sticky;top:0;z-index:1;display:flex;justify-content:flex-end;margin:0;padding:20px 24px;background:var(--letter-cream)}
+.content-home #contenu #presidente.president-letter .letter-close{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:44px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:400 15px/1 var(--font-body);cursor:pointer}
+.content-home #contenu #presidente.president-letter .letter-close>span:last-child{font:400 25px/1 Arial,sans-serif}
+.content-home #contenu #presidente.president-letter .letter-close:hover{background:var(--sage)}
+.content-home #contenu #presidente.president-letter .letter-close:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.content-home #contenu #presidente.president-letter .letter-full{padding:18px 72px 68px;font:400 19px/1.65 var(--font-body)}
+.content-home #contenu #presidente.president-letter .letter-full h3{margin:0 0 28px;color:var(--ink);font:400 38px/1.15 var(--font-display);letter-spacing:-.03em}
+.content-home #contenu #presidente.president-letter .letter-full p{margin:0}
+.content-home #contenu #presidente.president-letter .letter-lines-full{gap:15px;margin:30px 0}
+.content-home #contenu #presidente.president-letter .letter-lines-full i{height:7px}
+.content-home #contenu #presidente.president-letter .letter-signature{display:flex;align-items:center;gap:16px;margin-top:48px!important;font:400 27px/1.3 var(--font-display)}
+.content-home #contenu #presidente.president-letter .letter-signature-text{min-width:0;font:inherit}
+.content-home #contenu #presidente.president-letter .letter-signature-role{display:block;margin-top:8px;font:400 16px/1.5 var(--font-body)}
+.content-home #contenu #presidente.president-letter .letter-signature-photo{display:flex;align-items:center;justify-content:center;flex:none;width:64px;height:64px;border:1px solid #bdc5b9;border-radius:9px;background:linear-gradient(to top right,transparent calc(50% - .5px),#c7cdbf 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#c7cdbf 50%,transparent calc(50% + .5px)),#e8ebdf;color:#6a7565;font:400 11px/1.2 var(--font-body)}
+.content-home #contenu #presidente.president-letter .letter-signature-photo>span{background:#e8ebdf;padding:3px}
+.content-home #contenu #presidente.president-letter .letter-preview-signature .letter-signature-photo{width:48px;height:48px;border-radius:7px;font-size:10px}
+@keyframes president-letter-reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1049px){
+  .content-home #contenu #presidente.president-letter{min-height:750px}
+  .content-home #contenu #presidente.president-letter .letter-intro{padding-top:66px}
+  .content-home #contenu #presidente.president-letter h2{font-size:64px}
+  .content-home #contenu #presidente.president-letter .letter-preview{width:min(500px,calc(100% - 80px));margin-top:35px}
+  .content-home #contenu #presidente.president-letter .letter-envelope{top:54%}
+  .content-home #contenu #presidente.president-letter .letter-dialog{width:calc(100vw - 48px)}
+  .content-home #contenu #presidente.president-letter .letter-full{padding:18px 48px 54px}
+}
+@media(max-width:600px){
+  .content-home #contenu #presidente.president-letter{min-height:690px;scroll-margin-top:80px}
+  .content-home #contenu #presidente.president-letter .letter-intro{width:calc(100% - 32px);padding-top:52px}
+  .content-home #contenu #presidente.president-letter .letter-kicker{margin-bottom:24px}
+  .content-home #contenu #presidente.president-letter h2{font-size:48px;line-height:1.08}
+  .content-home #contenu #presidente.president-letter h2>span{margin-top:5px}
+  .content-home #contenu #presidente.president-letter .letter-open{margin-top:22px;font-size:16px}
+  .content-home #contenu #presidente.president-letter .letter-preview{width:calc(100% - 56px);min-height:390px;margin-top:30px;padding:27px 24px 45px;border-radius:20px 20px 0 0}
+  .content-home #contenu #presidente.president-letter .letter-preview-title{font-size:23px;line-height:1.25}
+  .content-home #contenu #presidente.president-letter .letter-placeholder{font-size:15px}
+  .content-home #contenu #presidente.president-letter .letter-lines{gap:10px}
+  .content-home #contenu #presidente.president-letter .letter-envelope{top:56%}
+  .content-home #contenu #presidente.president-letter .letter-wing-left{clip-path:polygon(0 0,68% 100%,0 100%)}
+  .content-home #contenu #presidente.president-letter .letter-wing-right{clip-path:polygon(100% 0,32% 100%,100% 100%)}
+  .content-home #contenu #presidente.president-letter .letter-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 32px);border-radius:20px}
+  .content-home #contenu #presidente.president-letter .letter-dialog-toolbar{padding:14px 16px}
+  .content-home #contenu #presidente.president-letter .letter-full{padding:18px 26px 38px;font-size:16px}
+  .content-home #contenu #presidente.president-letter .letter-full h3{font-size:30px;margin-bottom:24px}
+  .content-home #contenu #presidente.president-letter .letter-signature{font-size:24px;gap:12px;margin-top:36px!important}
+  .content-home #contenu #presidente.president-letter .letter-signature-role{font-size:14px}
+  .content-home #contenu #presidente.president-letter .letter-signature-photo{width:52px;height:52px}
+  .content-home #contenu #presidente.president-letter .letter-preview-signature .letter-signature-photo{width:44px;height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  .content-home #contenu #presidente.president-letter .letter-preview{transition:none}
+  .content-home #contenu #presidente.president-letter .letter-preview:hover{transform:none}
+  .content-home #contenu #presidente.president-letter .letter-open:hover .letter-chevron{transform:none}
+  .content-home #contenu #presidente.president-letter .letter-dialog[open]{animation:none}
+}
+
+.content-home #contenu #presidente.president-letter{border:0}
+/* Exact moodboard cartouche; its background belongs to the animated pseudo-element. */
+.content-home #contenu #presidente.president-letter .letter-kicker {
+  --ease:cubic-bezier(.22,1,.36,1);
+  --kicker-background:var(--sage); --kicker-color:var(--forest); --kicker-mark:var(--brand);
+}
+.content-home #contenu #presidente.president-letter .letter-kicker::before { background:var(--brand); }
+.content-home #contenu #presidente.president-letter .letter-kicker > span { background:transparent; color:var(--forest); }
+.content-home #contenu #presidente.president-letter .letter-kicker > span::before { background:var(--kicker-background); }
+.content-home #contenu #presidente.president-letter :is(.letter-preview,.letter-dialog) { border:0; }
+.content-home #contenu #presidente.president-letter .letter-preview-title,
+.content-home #contenu #presidente.president-letter .letter-signature-text { font-family:var(--font-display) !important; }
+.content-home #contenu #presidente.president-letter .letter-signature-role { font-family:var(--font-body) !important; }
+.content-home #contenu #presidente.president-letter .mot-demo-note { display:block; margin:12px 0 0; color:var(--muted); font:400 13px/1.5 var(--font-body); }
+.content-home #contenu #presidente.president-letter .mot-demo-note--full { margin:0 0 22px; }
+.content-home #contenu #presidente.president-letter .letter-signature-photo {
+  border:0; border-radius:50%; background:var(--sage); color:var(--forest); font:400 22px/1 var(--font-display) !important;
+}
+.content-home #contenu #presidente.president-letter .letter-preview-signature .letter-signature-photo { border-radius:50%; font-size:18px !important; }
+.content-home #contenu #presidente.president-letter .letter-preview-signature .letter-signature-role { margin-top:4px; font-size:14px; }
+.content-home #contenu #presidente.president-letter .letter-preview { display:flex; flex-direction:column; justify-content:flex-start; align-items:stretch; }
+.content-home #contenu #presidente.president-letter .letter-preview-signature { justify-content:center; margin-top:22px; }
+.content-home #contenu #presidente.president-letter .letter-preview .mot-demo-note { text-align:center; }
+.content-home #contenu #presidente.president-letter .letter-full .mot-demo-note--full { margin-bottom:22px; }
+@media(max-width:600px) {
+  /* Anchor the fold below the identity as the excerpt wraps on narrow screens. */
+  .content-home #contenu #presidente.president-letter { padding-bottom:72px; }
+  .content-home #contenu #presidente.president-letter .letter-preview { margin-bottom:0; }
+  .content-home #contenu #presidente.president-letter .letter-envelope { top:auto; height:180px; }
+}

@@ -1,0 +1,36 @@
+{
+  "page": "Notre impact",
+  "section": "Héros uniquement",
+  "status": "Deux variantes à choisir",
+  "options": {
+    "a": {
+      "title": "Le terrain et les résultats",
+      "source_name": "Pangram · Law Firms",
+      "source_url": "https://www.pangram.com/use-cases/law-firms",
+      "reference": "pangram-law-firms-hero.png",
+      "description": "Une composition en deux moitiés : message et trois indicateurs à gauche, grand visuel et carte de récit à droite.",
+      "note": "Structure reprise du héros Pangram : colonne éditoriale, deux boutons, trois indicateurs et grand panneau superposé au visuel. Le formulaire de détection devient un récit de changement illustré ; les couleurs sont converties en gris."
+    },
+    "b": {
+      "title": "Un message central, une vue d’ensemble",
+      "source_name": "Pinpoint · Héros de l’accueil",
+      "source_url": "https://www.pinpointhq.com/",
+      "reference": "pinpoint-hero.png",
+      "description": "Un titre centré sur un fond large, les deux boutons côte à côte, puis une bande d’accès aux six rubriques de la page.",
+      "note": "Composition reprise du héros Pinpoint : titre, description et boutons centrés, grandes formes sur le fond et barre thématique inférieure. Les notes commerciales sont remplacées par les indicateurs provisoires de l’APADER."
+    }
+  },
+  "integrated_into_main_page": false,
+  "next_sections": [
+    "Chiffres clés",
+    "Résultats et réalisations",
+    "Bénéficiaires et communautés",
+    "Zones d’intervention",
+    "Témoignages et changements",
+    "Carte des interventions"
+  ],
+  "fragments": {
+    "a": "<section class=\"ih-hero ih-a\" aria-labelledby=\"ih-title-a\"><div class=\"ih-inner\"><div class=\"ih-copy\"><p class=\"ih-kicker\">Notre impact</p><h1 id=\"ih-title-a\">Des actions. Des résultats.<br> Des vies qui changent.</h1><p class=\"ih-lead\">[Présentation synthétique des résultats obtenus par l’APADER auprès des communautés et dans ses zones d’intervention.]</p><div class=\"ih-buttons\"><button class=\"ih-button\" type=\"button\">Découvrir nos résultats <span aria-hidden=\"true\">↗</span></button><button class=\"ih-button secondary\" type=\"button\">Nos zones d’intervention <span aria-hidden=\"true\">→</span></button></div><dl class=\"ih-stats\"><div><dt>Personnes accompagnées</dt><dd>[Nombre]</dd></div><div><dt>Projets menés</dt><dd>[Nombre]</dd></div><div><dt>Zones couvertes</dt><dd>[Nombre]</dd></div></dl><p class=\"ih-source\">[Période de référence et sources des données à renseigner]</p></div></div><div class=\"ih-stage\"><span class=\"ih-background-label\">[Visuel du terrain en fond]</span><div class=\"ih-story\"><p class=\"ih-story-label\">Une histoire de changement</p><div class=\"ih-story-visual\" role=\"img\" aria-label=\"Emplacement de la photographie d’un récit de changement\"><span>[Photo des personnes accompagnées]</span></div><h2>[Titre du récit mis en avant]</h2><p>[Un court aperçu du changement vécu par une personne ou une communauté.]</p></div></div></section>",
+    "b": "<section class=\"ih-hero ih-b\" aria-labelledby=\"ih-title-b\"><div class=\"ih-inner\"><div class=\"ih-copy\"><p class=\"ih-kicker\">Notre impact</p><h1 id=\"ih-title-b\">Des actions. Des résultats.<br> Des vies qui changent.</h1><p class=\"ih-lead\">[Présentation synthétique des résultats obtenus par l’APADER auprès des communautés et dans ses zones d’intervention.]</p><div class=\"ih-buttons\"><button class=\"ih-button\" type=\"button\">Découvrir nos résultats <span aria-hidden=\"true\">↗</span></button><button class=\"ih-button secondary\" type=\"button\">Nos zones d’intervention <span aria-hidden=\"true\">→</span></button></div><dl class=\"ih-stats\"><div><dt>Personnes accompagnées</dt><dd>[Nombre]</dd></div><div><dt>Projets menés</dt><dd>[Nombre]</dd></div><div><dt>Zones couvertes</dt><dd>[Nombre]</dd></div></dl><p class=\"ih-source\">[Période de référence et sources des données à renseigner]</p></div><div class=\"ih-access\" aria-label=\"Rubriques prévues de la page\"><span><i aria-hidden=\"true\">01</i>Chiffres clés</span><span><i aria-hidden=\"true\">02</i>Résultats et réalisations</span><span><i aria-hidden=\"true\">03</i>Bénéficiaires</span><span><i aria-hidden=\"true\">04</i>Zones d’intervention</span><span><i aria-hidden=\"true\">05</i>Témoignages</span><span><i aria-hidden=\"true\">06</i>Carte des interventions</span></div></div></section>"
+  }
+}

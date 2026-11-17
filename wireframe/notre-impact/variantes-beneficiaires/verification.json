@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-26",
+  "desktop": "1280x900",
+  "mobile": "390x844",
+  "a": {
+    "profiles": 5,
+    "next_control": "Bénéficiaire 2 sur 5",
+    "inactive_cards_inert": 4,
+    "individual_presentation": "Ouverture profil 02 puis fermeture testées",
+    "mobile_overflow": 0,
+    "mobile_card_height": 660,
+    "mobile_card_scroll_height": 660,
+    "mobile_button_bottom_relative": 634
+  },
+  "b": {
+    "profiles": 5,
+    "columns_desktop": 3,
+    "columns_mobile": 1,
+    "individual_presentation": "Ouverture profil 03 puis fermeture testées",
+    "mobile_overflow": 0
+  },
+  "main_impact_page": "Aucune nouvelle sélection intégrée"
+}

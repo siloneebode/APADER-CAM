@@ -1,0 +1,101 @@
+/* Carte portrait/message Pangram PG-03, élargie pour le mot institutionnel. */
+#presidente.presidente-pangram {
+  height: auto;
+  padding: 80px 0;
+  background: #fff;
+}
+.presidente-pangram .president-section-title {
+  margin: 0 0 40px;
+  font: 400 48px/1.12 Heading, Georgia, serif;
+  letter-spacing: -.96px;
+}
+.presidente-pangram .president-kicker { margin: 0 0 24px; }
+.presidente-pangram .president-card {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
+  gap: 48px;
+  padding: 24px;
+  background: #f5f5f5;
+  border-radius: 0 48px 0 0;
+}
+.presidente-pangram .president-identity {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1;
+  justify-self: center;
+  margin: 0;
+  background: #ddd;
+}
+.presidente-pangram .president-photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(to top right,transparent calc(50% - .5px),#bbb 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#bbb 50%,transparent calc(50% + .5px)),#e5e5e5;
+  color: #666;
+  text-align: center;
+  font: 400 15px/24px Sans, Arial, sans-serif;
+}
+.presidente-pangram .president-photo-placeholder span { padding: 4px 8px; background: #e5e5e5; }
+.presidente-pangram .president-name-band {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 38px;
+  padding: 9px 12px;
+  background: #d3d3d3;
+  color: #333;
+  text-align: center;
+  font: 400 14px/20px Sans, Arial, sans-serif;
+}
+.presidente-pangram .president-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  min-height: 360px;
+  padding: 0 24px 0 0;
+}
+.presidente-pangram .president-quote-icon { width: 32px; height: 32px; flex: none; color: #444; }
+.presidente-pangram .president-letter { flex: 1; margin: 0; }
+.presidente-pangram .president-letter p {
+  margin: 0;
+  font: 400 20px/32px Sans, Arial, sans-serif;
+  color: #333;
+}
+.presidente-pangram .president-wire-lines {
+  display: grid;
+  gap: 19px;
+  margin-top: 24px;
+}
+.presidente-pangram .president-wire-lines i { display: block; height: 4px; background: #d0d0d0; }
+.presidente-pangram .president-wire-lines i:last-child { width: 68%; }
+.presidente-pangram .president-role {
+  margin: 0;
+  font: 400 14px/22px Sans, Arial, sans-serif;
+  color: #777;
+}
+@media(max-width:1023px) {
+  #presidente.presidente-pangram { padding: 64px 0; }
+  .presidente-pangram .president-section-title { font-size: 44px; margin-bottom: 32px; }
+  .presidente-pangram .president-card { gap: 32px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
+  .presidente-pangram .president-copy { padding-right: 0; min-height: 340px; }
+  .presidente-pangram .president-letter p { font-size: 18px; line-height: 29px; }
+}
+@media(max-width:700px) {
+  #presidente.presidente-pangram { padding: 56px 0; }
+  .presidente-pangram .container { padding: 0 20px; }
+  .presidente-pangram .president-section-title { font-size: clamp(34px, 9.5vw, 42px); line-height: 1.1; margin-bottom: 28px; letter-spacing: -.68px; }
+  .presidente-pangram .president-card { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 24px 20px; border-top-right-radius: 32px; }
+  .presidente-pangram .president-identity { max-width: 200px; }
+  .presidente-pangram .president-photo-placeholder { font-size: 13px; line-height: 21px; padding: 12px; }
+  .presidente-pangram .president-name-band { font-size: 13px; padding: 8px; }
+  .presidente-pangram .president-copy { min-height: 300px; gap: 18px; }
+  .presidente-pangram .president-letter p { font-size: 17px; line-height: 27px; }
+  .presidente-pangram .president-wire-lines { gap: 17px; margin-top: 20px; }
+}

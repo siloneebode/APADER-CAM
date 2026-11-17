@@ -1,0 +1,54 @@
+@font-face{font-family:EOHeading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:EOSans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
+.eo-section,.eo-section *,.eo-section *:before,.eo-section *:after{box-sizing:border-box}
+.eo-section{margin:0;padding:76px 0 84px;background:#f7f7f0;color:#1c2921;font:400 17px/1.65 EOSans,Arial,sans-serif;scroll-margin-top:24px}
+.eo-section p,.eo-section h2,.eo-section h3,.eo-section ul{margin:0}
+.eo-section a{color:inherit;text-underline-offset:4px}
+.eo-section a:focus-visible{outline:3px solid #123e2b;outline-offset:5px}
+.eo-wrap{width:100%;max-width:1360px;padding:0 36px;margin:0 auto}
+.eo-label{position:relative;display:table;width:fit-content;padding:5px 9px;background:#dde8d8;color:#5e6c61;font-size:12px;line-height:1.5;font-weight:400;letter-spacing:.01em;margin-bottom:24px!important}
+.eo-label:before{content:'';position:absolute;left:-4px;top:0;width:4px;height:4px;background:#dde8d8}
+.eo-title{font:400 clamp(42px,4.7vw,65px)/1.06 EOHeading,Georgia,serif;letter-spacing:-.035em;overflow-wrap:break-word}
+.eo-copy{font-size:17px;line-height:1.72;color:#5e6c61;overflow-wrap:break-word}
+.eo-a-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.eo-context{min-width:0;padding:12px 0 8px}
+.eo-context .eo-title{margin-bottom:28px;max-width:650px}
+.eo-context .eo-copy{max-width:600px}
+.eo-placeholder{font-size:12px;line-height:1.65;color:#5e6c61;margin-top:26px!important;max-width:590px}
+.eo-objective{min-width:0;background:#dde8d8;border:1px solid #cad5c7;border-radius:20px 20px 80px 20px;padding:38px 40px 42px}
+.eo-objective .eo-label{background:#f7f7f0;margin-bottom:23px!important}
+.eo-objective-title{font:400 clamp(32px,3.2vw,43px)/1.12 EOHeading,Georgia,serif;letter-spacing:-.025em;margin-bottom:21px!important;overflow-wrap:break-word}
+.eo-objective .eo-copy{font-size:16px;color:#5e6c61}
+.eo-checks{display:grid;gap:18px;list-style:none;padding:0;margin-top:29px!important}
+.eo-checks li{display:flex;align-items:flex-start;gap:12px;font-size:15px;line-height:1.6;color:#1c2921;min-width:0}
+.eo-checks li>span{display:grid;place-items:center;flex:0 0 24px;width:24px;height:24px;margin-top:1px;background:#f7f7f0;border:1px solid #cad5c7;border-radius:50%;font-size:13px;line-height:1}
+.eo-checks li>div{min-width:0;padding-top:1px}
+.eo-checks strong{font-weight:500}
+.eo-checks p{margin-top:3px;color:#5e6c61;font-size:14px}
+.eo-b{background:#dde8d8}
+.eo-b>.eo-wrap>.eo-title{max-width:1060px;margin-bottom:28px}
+.eo-b>.eo-wrap>.eo-copy{max-width:810px;margin-bottom:32px}
+.eo-b-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:43px}
+.eo-card{min-width:0;display:flex;flex-direction:column;background:#dde8d8;border:1px solid #cad5c7;border-radius:20px;padding:34px 36px 38px}
+.eo-card:last-child{border-bottom-right-radius:80px}
+.eo-card-top{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:32px}
+.eo-number{font:400 24px/1 EOHeading,Georgia,serif;color:#5e6c61;font-variant-numeric:tabular-nums}
+.eo-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#dde8d8;border:1px solid #cad5c7;color:#1c2921;font-size:21px;line-height:1;flex:none}
+.eo-icon svg{width:22px;height:22px;display:block;stroke:currentColor}
+.eo-card-title{font:400 37px/1.12 EOHeading,Georgia,serif;letter-spacing:-.025em;margin-bottom:17px!important;overflow-wrap:break-word}
+.eo-card>.eo-copy{font-size:16px;line-height:1.7;color:#5e6c61;max-width:570px}
+.eo-rule{height:1px;background:#dde8d8;margin-top:30px;margin-bottom:22px;width:100%}
+.eo-card-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;margin-top:auto}
+.eo-card-details>div{min-width:0}
+.eo-card-details strong{display:block;font-size:11px;line-height:1.4;text-transform:uppercase;letter-spacing:.08em;color:#5e6c61;font-weight:500;margin-bottom:7px}
+.eo-card-details span{display:block;color:#1c2921;font-size:14px;line-height:1.65;overflow-wrap:break-word}
+@media(max-width:1049px){
+ .eo-section{padding:64px 0 70px}.eo-wrap{padding:0 28px}.eo-a-layout{gap:34px}.eo-title{font-size:49px}.eo-context{padding-top:8px}.eo-objective{padding:30px 28px 35px;border-bottom-right-radius:66px}.eo-objective-title{font-size:35px}.eo-copy{font-size:16px}.eo-checks{gap:16px}.eo-checks li{font-size:14px}
+ .eo-b-cards{gap:20px;margin-top:35px}.eo-card{padding:29px 27px 34px}.eo-card-title{font-size:33px}.eo-card-top{margin-bottom:28px}.eo-card-details{gap:18px}.eo-card-details span{font-size:13px}
+}
+@media(max-width:700px){
+ .eo-section{padding:47px 0 52px}.eo-wrap{padding:0 20px}.eo-label{font-size:11px;margin-bottom:21px!important}.eo-title{font-size:clamp(38px,10.2vw,49px);line-height:1.08}.eo-copy{font-size:16px;line-height:1.75}.eo-a-layout{grid-template-columns:1fr;gap:31px}.eo-context{padding:0}.eo-context .eo-title{margin-bottom:23px}.eo-placeholder{margin-top:21px!important;font-size:11px}.eo-objective{padding:29px 26px 35px;border-radius:15px 15px 57px 15px}.eo-objective-title{font-size:33px;margin-bottom:18px!important}.eo-objective .eo-copy{font-size:15px}.eo-checks{gap:17px;margin-top:25px!important}.eo-checks li{font-size:14px}.eo-checks li>span{flex-basis:23px;width:23px;height:23px}.eo-checks p{font-size:13px}
+ .eo-b>.eo-wrap>.eo-title{margin-bottom:22px}.eo-b>.eo-wrap>.eo-copy{margin-bottom:27px}.eo-b-cards{grid-template-columns:1fr;gap:22px;margin-top:30px}.eo-card{padding:27px 26px 33px;border-radius:15px}.eo-card:last-child{border-bottom-right-radius:57px}.eo-card-top{margin-bottom:28px}.eo-number{font-size:23px}.eo-icon{width:42px;height:42px;border-radius:11px}.eo-card-title{font-size:34px;margin-bottom:17px!important}.eo-card>.eo-copy{font-size:15px}.eo-rule{margin-top:26px;margin-bottom:22px}.eo-card-details{gap:20px}.eo-card-details strong{font-size:10px}.eo-card-details span{font-size:13px}
+}
+@media(max-width:359px){.eo-wrap{padding:0 18px}.eo-title{font-size:36px}.eo-objective,.eo-card{padding-left:23px;padding-right:23px}.eo-objective-title,.eo-card-title{font-size:31px}.eo-card-details{grid-template-columns:1fr;gap:18px}}
+@media(prefers-reduced-motion:reduce){.eo-section,.eo-section *{scroll-behavior:auto;animation:none!important;transition:none!important}}

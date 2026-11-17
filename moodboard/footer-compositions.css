@@ -1,0 +1,74 @@
+.pattern-section-title { margin: 42px 0 22px; font: 400 30px/1.2 var(--font-display); }
+.pattern-new-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.pattern-new-grid .pattern-option-name { display: block; }
+.pattern-new-grid .pattern-option-state { display: block; margin-top: 8px; }
+.pattern-archives { margin-top: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.pattern-archives > summary { padding: 18px 0; cursor: pointer; font: 400 14px/1.5 var(--font-body); color: var(--forest); }
+.pattern-archives .pattern-grid { padding: 8px 0 28px; }
+.footer-treatment-lab { margin: 36px 0 24px; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.footer-treatment-lab h4 { font: 400 28px/1.2 var(--font-display); margin-bottom: 12px; }
+.footer-treatment-lab p { max-width: 680px; color: var(--muted); font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+.footer-treatment-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.footer-treatment-buttons button { min-height: 44px; border: 1px solid var(--line); border-radius: 6px; padding: 10px 16px; background: #fff; color: var(--forest); font: 400 14px/20px var(--font-body); cursor: pointer; }
+.footer-treatment-buttons button[aria-pressed=true] { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+.footer-treatment-buttons button:focus-visible,
+.footer-review-controls select:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+.footer-review-controls { padding-top: 32px; padding-bottom: 28px; border-top: 1px solid var(--line); background: #fff; }
+.footer-review-top { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 24px; margin-bottom: 22px; }
+.footer-review-top h2 { font: 400 32px/1.2 var(--font-display); }
+.footer-review-top p { margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.footer-review-controls label { display: block; margin-bottom: 8px; font-size: 12px; color: var(--muted); }
+.footer-review-controls select { min-height: 44px; min-width: 210px; padding: 10px 34px 10px 12px; border: 1px solid var(--line); border-radius: 6px; color: var(--forest); background: #fff; font: 400 14px/20px var(--font-body); }
+.footer-review-controls .footer-colour-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; }
+.footer-colour-buttons > span { color: var(--muted); font-size: 12px; margin-right: 8px; }
+.footer-colour-buttons button { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--forest); font: 400 13px/20px var(--font-body); cursor: pointer; }
+.footer-colour-buttons button[aria-pressed=true] { background: var(--forest); color: var(--paper); border-color: var(--forest); }
+#footer.apader-footer .af-artwork { display: none; position: absolute; z-index: 2; inset: 0 0 auto; pointer-events: none; }
+#footer.apader-footer .af-artwork .pattern-art { display: block; z-index: 0; }
+#footer.apader-footer[data-footer-treatment=compact] .af-artwork { display: none; }
+#footer.apader-footer:not([data-footer-treatment=compact]) .af-panel > .pattern-art { display: none; }
+/* Open corner: the artwork belongs to the outer frame, beyond the panel. */
+#footer.apader-footer[data-footer-treatment=ouvert] { padding-top: 104px; }
+#footer.apader-footer[data-footer-treatment=ouvert] .af-artwork { display: block; height: 320px; }
+#footer.apader-footer[data-footer-treatment=ouvert] .af-artwork .pattern-art {
+  top: -80px; right: -140px; width: 76%; height: 400px;
+  object-fit: cover; object-position: center;
+  clip-path: polygon(28% 0,100% 0,100% 100%,68% 91%);
+}
+#footer.apader-footer[data-footer-treatment=ouvert] .af-brand { margin-bottom: 100px; }
+#footer.apader-footer[data-footer-treatment=ouvert][data-pattern=halo] .af-artwork .pattern-art,
+#footer.apader-footer[data-footer-treatment=ouvert][data-pattern=filament] .af-artwork .pattern-art {
+  clip-path: none; width: 60%; right: -80px; top: -85px; height: 360px;
+}
+#footer.apader-footer[data-footer-treatment=ouvert][data-pattern=angles] .af-artwork .pattern-art {
+  clip-path: none; width: 100%; height: 290px; top: -10px; right: 0; object-fit: fill;
+}
+/* Frieze: a continuous band, cropped by the page edges rather than a tile. */
+#footer.apader-footer[data-footer-treatment=frise] { padding-top: 232px; }
+#footer.apader-footer[data-footer-treatment=frise] .af-artwork { display: block; height: 220px; background: var(--pans-surface,var(--paper)); overflow: hidden; }
+#footer.apader-footer[data-footer-treatment=frise] .af-artwork .pattern-art {
+  top: -30px; right: -5%; width: 110%; height: 280px; object-fit: cover; object-position: center;
+}
+#footer.apader-footer[data-footer-treatment=frise] .af-brand { margin-bottom: 64px; }
+@media(max-width: 900px) { .pattern-new-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width: 640px) {
+  .pattern-new-grid { grid-template-columns: 1fr; }
+  .pattern-new-grid .pattern-option-name { display: flex; }
+  .pattern-new-grid .pattern-option-state { margin: 0; }
+  .pattern-section-title { font-size: 26px; margin-top: 32px; }
+  .footer-review-top h2 { font-size: 28px; }
+  .footer-review-controls select { width: 100%; min-width: 0; }
+  .footer-review-top > div { width: 100%; }
+  .footer-treatment-buttons { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .footer-treatment-buttons button { text-align: left; }
+  #footer.apader-footer[data-footer-treatment=ouvert] { padding-top: 64px; }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-artwork { height: 180px; }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-artwork .pattern-art { top: -65px; right: -100px; width: 100%; height: 245px; clip-path: polygon(30% 0,100% 0,100% 100%,76% 90%); }
+  #footer.apader-footer[data-footer-treatment=ouvert][data-pattern=halo] .af-artwork .pattern-art,
+  #footer.apader-footer[data-footer-treatment=ouvert][data-pattern=filament] .af-artwork .pattern-art { width: 84%; right: -80px; top: -60px; height: 230px; clip-path: none; }
+  #footer.apader-footer[data-footer-treatment=ouvert][data-pattern=angles] .af-artwork .pattern-art { width: 100%; height: 170px; top: -5px; right: 0; clip-path: none; }
+  #footer.apader-footer[data-footer-treatment=ouvert] .af-brand { margin-bottom: 62px; }
+  #footer.apader-footer[data-footer-treatment=frise] { padding-top: 166px; }
+  #footer.apader-footer[data-footer-treatment=frise] .af-artwork { height: 154px; }
+  #footer.apader-footer[data-footer-treatment=frise] .af-artwork .pattern-art { width: 140%; right: -20%; height: 200px; top: -20px; }
+}

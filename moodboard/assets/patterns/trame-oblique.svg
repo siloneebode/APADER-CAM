@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <title>Trame oblique — motif abstrait APADER</title>
+  <desc>Deux pans obliques ouverts se répètent et s’alternent pour former un tissage, sans silhouette de porte-voix.</desc>
+  <defs>
+    <g id="pans" stroke="#123E2B" stroke-width="1.5" stroke-linecap="square">
+      <path d="m0 0 88 17M0 48l88-17"/>
+    </g>
+    <pattern id="weave" width="208" height="144" patternUnits="userSpaceOnUse">
+      <g opacity=".28">
+        <use href="#pans" x="8" y="12"/>
+        <use href="#pans" transform="translate(200 60) rotate(180)"/>
+        <use href="#pans" transform="translate(96 132) rotate(180)"/>
+        <use href="#pans" x="112" y="84"/>
+      </g>
+      <path d="m8 72 88 17M112 72l88-17" stroke="#008840" stroke-width="1.5" opacity=".2"/>
+    </pattern>
+  </defs>
+  <path d="M0 0H800V480H0Z" fill="url(#weave)"/>
+</svg>

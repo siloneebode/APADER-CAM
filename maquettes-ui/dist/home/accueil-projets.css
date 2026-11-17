@@ -1,0 +1,57 @@
+/* Homepage review: card layout and shared metadata stay within the projects section. */
+.revue-home-projets .revue-visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+#projets.revue-home-projets .revue-project-facts{margin:0;padding:0;display:grid;gap:14px;font-size:14px;line-height:21px;color:#123e2b}
+#projets.revue-home-projets .revue-project-facts>div{min-width:0}
+#projets.revue-home-projets .revue-project-facts dt{margin:0 0 2px;font-size:12px;line-height:18px;color:#f7f7f0}
+#projets.revue-home-projets .revue-project-facts dd{margin:0;overflow-wrap:anywhere}
+#projets.revue-home-projets--a{height:auto;margin:0;padding:80px 0;scroll-margin-top:96px;background:#f7f7f0;color:#123e2b;font:16px/1.5 Sans,Arial,sans-serif}
+#projets.revue-home-projets--a *{box-sizing:border-box}
+#projets.revue-home-projets--a .container{width:100%;max-width:1440px;margin:auto;padding:0 36px}
+#projets.revue-home-projets--a .section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:44px}
+#projets.revue-home-projets--a .section-heading .pangram-kicker{margin:0 0 24px}
+#projets.revue-home-projets--a .section-heading h2{margin:0;font:400 56px/1.1 Heading,Georgia,serif;letter-spacing:-1.12px}
+#projets.revue-home-projets--a .catalog-link{display:inline-flex;align-items:center;gap:15px;min-height:44px;font-size:15px;line-height:23px;text-underline-offset:4px}
+#projets.revue-home-projets--a .revue-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+#projets.revue-home-projets--a .revue-project-card{min-width:0;display:flex;flex-direction:column;border:1px solid rgba(247,247,240,0.4);border-radius:7px;overflow:hidden;background:#ffffff}
+#projets.revue-home-projets--a .revue-project-visual{position:relative;aspect-ratio:1.7/1;min-height:160px;display:grid;place-items:center;overflow:hidden;background:#dde8d8;color:#f7f7f0;text-align:center}
+#projets.revue-home-projets--a .revue-project-visual::before,#projets.revue-home-projets--a .revue-project-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(to top right,transparent calc(50% - .5px),currentColor 50%,transparent calc(50% + .5px));opacity:.25}
+#projets.revue-home-projets--a .revue-project-visual::after{transform:scaleX(-1)}
+#projets.revue-home-projets--a .revue-project-visual span{position:relative;z-index:1;padding:7px 12px;background:inherit;font-size:13px}
+#projets.revue-home-projets--a .revue-project-copy{padding:24px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+#projets.revue-home-projets--a .revue-project-number{margin:0 0 12px;font:400 23px/1.1 Numbers,Georgia,serif}
+#projets.revue-home-projets--a .revue-project-category{margin:0 0 16px;font-size:12px;line-height:19px;color:#f7f7f0}
+#projets.revue-home-projets--a .revue-project-copy h3{margin:0 0 18px;font:400 clamp(28px,2.7vw,36px)/1.12 Heading,Georgia,serif;letter-spacing:-.5px;overflow-wrap:anywhere}
+#projets.revue-home-projets--a .revue-project-summary{margin:0 0 24px;font-size:15px;line-height:23px}
+#projets.revue-home-projets--a .revue-project-facts{grid-template-columns:repeat(2,minmax(0,1fr));width:100%;margin-bottom:22px}
+#projets.revue-home-projets--a .revue-project-beneficiaries{margin:0 0 24px;font-size:13px;line-height:21px;color:#f7f7f0}
+#projets.revue-home-projets--a .revue-project-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:46px;max-width:100%;margin-top:auto;padding:12px 16px;background:#123e2b;color:#fff;font-size:14px;line-height:21px;text-underline-offset:4px}
+#projets.revue-home-projets--a a:focus-visible{outline:3px solid #008840;outline-offset:4px}
+#projets.revue-home-projets--b .revue-project-facts{margin:0 0 25px}
+#projets.revue-home-projets--b .project-button{min-height:46px}
+#projets.revue-home-projets--b .project-dots{gap:0}
+#projets.revue-home-projets--b .project-dot{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,#dde8d8 5px,transparent 6px)}
+#projets.revue-home-projets--b .project-dot[aria-pressed=true]{background:radial-gradient(circle,#123e2b 5px,transparent 6px)}
+@media(max-width:1049px){
+  #projets.revue-home-projets--a{padding:64px 0}
+  #projets.revue-home-projets--a .section-heading h2{font-size:48px}
+  #projets.revue-home-projets--a .revue-project-grid{gap:18px}
+  #projets.revue-home-projets--a .revue-project-copy{padding:20px}
+  #projets.revue-home-projets--a .revue-project-facts{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:700px){
+  #projets.revue-home-projets--a{padding:56px 0}
+  #projets.revue-home-projets--a .container{padding:0 20px}
+  #projets.revue-home-projets--a .section-heading{display:block;margin-bottom:28px}
+  #projets.revue-home-projets--a .section-heading .pangram-kicker{margin-bottom:20px}
+  #projets.revue-home-projets--a .section-heading h2{font-size:clamp(36px,10vw,44px);letter-spacing:-.72px}
+  #projets.revue-home-projets--a .catalog-link{margin-top:18px;font-size:14px}
+  #projets.revue-home-projets--a .revue-project-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+  #projets.revue-home-projets--a .revue-project-visual{aspect-ratio:1.55/1}
+  #projets.revue-home-projets--a .revue-project-copy{padding:24px}
+  #projets.revue-home-projets--a .revue-project-copy h3{font-size:31px}
+  #projets.revue-home-projets--a .revue-project-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #projets.revue-home-projets--b .revue-project-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:22px;font-size:13px;line-height:20px}
+  #projets.revue-home-projets--b .project-controls{flex-wrap:wrap;gap:8px 12px}
+  #projets.revue-home-projets--b .arrow-controls button{width:44px;height:44px}
+  #projets.revue-home-projets--b .project-counter{font-size:11px}
+}

@@ -1,0 +1,127 @@
+/* Présentation wireframe complète. Compositions et comportements conservés. */
+body.page-wireframe { --wf-ink:#222; --wf-secondary:#555; --wf-image:#dedede; }
+.page-wireframe .pangram-kicker::before { background:#777; }
+.page-wireframe .pangram-kicker > span,
+.page-wireframe .pangram-kicker--pink > span { background:#e6e6e6; color:#444; }
+.page-wireframe :focus-visible { outline-color:#444 !important; }
+.page-wireframe .wf-image {
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  overflow:hidden; color:#666;
+  background:
+    linear-gradient(to top right,transparent calc(50% - .6px),#b9b9b9 50%,transparent calc(50% + .6px)),
+    linear-gradient(to bottom right,transparent calc(50% - .6px),#b9b9b9 50%,transparent calc(50% + .6px)),#dedede;
+  font:400 14px/1.5 Sans,Arial,sans-serif; text-align:center;
+}
+.page-wireframe .wf-image > span { position:relative; max-width:90%; padding:7px 12px; background:#dedede; }
+.page-wireframe #presentation .about-media,
+.page-wireframe #domaines .panel-photo { position:relative; }
+
+.page-wireframe #presidente.president-letter {
+  --letter-green:#e8e8e8; --letter-yellow:#ccc; --letter-cream:#fff;
+  color:#222;
+}
+.page-wireframe #presidente.president-letter h2,
+.page-wireframe #presidente.president-letter h2 > span,
+.page-wireframe #presidente.president-letter .letter-open { color:#222; }
+.page-wireframe #presidente.president-letter .letter-chevron { background:#666; }
+.page-wireframe #presidente.president-letter .letter-preview,
+.page-wireframe #presidente.president-letter .letter-dialog { color:#222; box-shadow:0 8px 30px #00000012; border:1px solid #ccc; }
+.page-wireframe #presidente.president-letter .letter-lines i { background:#ddd; }
+.page-wireframe #presidente.president-letter .letter-dialog::backdrop { background:#0008; }
+.page-wireframe #presidente.president-letter .letter-full h3,
+.page-wireframe #presidente.president-letter .letter-close { color:#222; }
+.page-wireframe #presidente.president-letter .letter-close { border-color:#bbb; }
+.page-wireframe #presidente.president-letter .letter-close:hover { background:#eee; }
+.page-wireframe #presidente.president-letter .letter-signature-photo {
+  border-color:#bbb; color:#666;
+  background:linear-gradient(to top right,transparent calc(50% - .5px),#bbb 50%,transparent calc(50% + .5px)),linear-gradient(to bottom right,transparent calc(50% - .5px),#bbb 50%,transparent calc(50% + .5px)),#ddd;
+}
+.page-wireframe #presidente.president-letter .letter-signature-photo > span { background:#ddd; }
+
+.page-wireframe #domaines.actions-panneaux { background:#eee; color:#222; }
+.page-wireframe #domaines.actions-panneaux .action-panel,
+.page-wireframe #domaines.actions-panneaux .panel-rail { background:#fafafa; color:#222; }
+.page-wireframe #domaines.actions-panneaux .action-panel.is-active { background:transparent; }
+.page-wireframe #domaines.actions-panneaux .rail-symbol,
+.page-wireframe #domaines.actions-panneaux .rail-number,
+.page-wireframe #domaines.actions-panneaux .panel-number { color:#666; }
+.page-wireframe #domaines.actions-panneaux .panel-photo { background:#dedede; }
+.page-wireframe #domaines.actions-panneaux .panel-next { background:#333; color:#fff; }
+.page-wireframe #domaines.actions-panneaux .panel-next span { background:#eee; color:#333; }
+.page-wireframe #domaines.actions-panneaux .paper-art { background:#ddd; }
+.page-wireframe #domaines.actions-panneaux .paper-art::after { background:#bbb; }
+
+.page-wireframe #structures.structures-editorial { background:#f6f6f6; color:#222; }
+.page-wireframe #structures.structures-editorial .editorial-copy { background:#fff; }
+.page-wireframe #structures.structures-editorial .structure-index { color:#666; }
+.page-wireframe #structures.structures-editorial .editorial-visual { background:#e4e4e4; color:#777; }
+.page-wireframe #structures.structures-editorial .editorial-visual .visual-placeholder { background:#dedede; border-color:#bbb; }
+.page-wireframe #structures.structures-editorial .editorial-copy .structure-link { background:#e6e6e6; color:#333; }
+
+.page-wireframe #projets.projects-pinpoint { background:#eee; color:#222; }
+.page-wireframe #projets.projects-pinpoint .project-slide { background:#fff; }
+.page-wireframe #projets.projects-pinpoint .fact-list,
+.page-wireframe #projets.projects-pinpoint .project-category,
+.page-wireframe #projets.projects-pinpoint .project-counter { color:#666; }
+.page-wireframe #projets.projects-pinpoint .project-button,
+.page-wireframe #projets.projects-pinpoint .arrow-controls button { background:#333; color:#fff; }
+.page-wireframe #projets.projects-pinpoint .arrow-controls button:disabled { background:#bbb; }
+.page-wireframe #projets.projects-pinpoint .project-dot { background:#bbb; }
+.page-wireframe #projets.projects-pinpoint .project-dot[aria-pressed=true] { background:#444; }
+.page-wireframe #projets.projects-pinpoint .slide-art,
+.page-wireframe #projets.projects-pinpoint .slide-art .project-visual { background:#dedede; color:#666; }
+
+.page-wireframe #impact.impact-teachers { color:#222; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card { background:#e5e5e5; color:#222; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card-2 { background:#d5d5d5; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card-3 { background:#eee; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card-4 { background:#ddd; }
+.page-wireframe #impact.impact-teachers .teachers-grid .stat-card-1 p,
+.page-wireframe #impact.impact-teachers .stats-context { color:#444; }
+
+.page-wireframe #ressources.resources-cards { color:#222; }
+.page-wireframe #ressources.resources-cards .document-card { background:#f3f3f3; }
+.page-wireframe #ressources.resources-cards .document-card:hover { background:#e9e9e9; }
+.page-wireframe #ressources.resources-cards .document-icon,
+.page-wireframe #ressources.resources-cards .document-arrow,
+.page-wireframe #ressources.resources-cards .document-card:hover .document-arrow { color:#555; }
+.page-wireframe #ressources.resources-cards .document-category,
+.page-wireframe #ressources.resources-cards .document-summary { color:#666; }
+
+.page-wireframe #actualites.news-pangram { background:#fafafa; color:#222; }
+.page-wireframe #actualites.news-pangram .editorial-visual { background:#dedede; color:#666; border-color:#bbb; }
+.page-wireframe #actualites.news-pangram .editorial-date { border-color:#ccc; color:#666; }
+.page-wireframe #actualites.news-pangram .editorial-summary { color:#555; }
+.page-wireframe #actualites.news-pangram .editorial-category { border-color:#333; }
+.page-wireframe #opportunites.opportunities-list { background:#f3f3f3; color:#222; }
+.page-wireframe #opportunites.opportunities-list .opportunity-list { border-color:#ccc; }
+.page-wireframe #opportunites.opportunities-list .opportunity-intro,
+.page-wireframe #opportunites.opportunities-list .opportunity-meta { color:#555; }
+.page-wireframe #opportunites.opportunities-list .opportunity-read span { color:#555; }
+
+.page-wireframe #partenaires.partners-centered { background:#e8e8e8; color:#222; }
+.page-wireframe #partenaires.partners-centered .partner-intro { color:#555; }
+.page-wireframe #partenaires.partners-centered .partner-logo {
+  color:#666; border-color:#bbb;
+  background:linear-gradient(to top right,transparent calc(50% - .4px),#ccc 50%,transparent calc(50% + .4px)),linear-gradient(to bottom right,transparent calc(50% - .4px),#ccc 50%,transparent calc(50% + .4px)),#e8e8e8;
+}
+.page-wireframe #partenaires.partners-centered .partner-logo span { background:#e8e8e8; padding:4px 8px; }
+
+.page-wireframe #contact.contact-photo-background { background:#f5f5f5; color:#222; }
+.page-wireframe #contact.contact-photo-background .contact-panel { background:#dedede; color:#222; }
+.page-wireframe #contact.contact-photo-background .contact-panel::before { background:none; }
+.page-wireframe #contact.contact-photo-background .wf-image > span { position:absolute; right:16px; bottom:12px; font-size:12px; }
+.page-wireframe #contact.contact-photo-background .contact-copy { text-shadow:none; }
+.page-wireframe #contact.contact-photo-background .contact-intro { color:#444; }
+.page-wireframe #contact.contact-photo-background .contact-button { background:#333; color:#fff; }
+.page-wireframe #contact.contact-photo-background .contact-arrow { background:#eee; color:#333; }
+
+.page-wireframe #footer.apader-footer { background:#ddd; color:#555; }
+.page-wireframe #footer.apader-footer .af-shape-blue { background:#bbb; }
+.page-wireframe #footer.apader-footer .af-shape-yellow { background:#eee; }
+.page-wireframe #footer.apader-footer .af-panel { background:#fff; }
+.page-wireframe #footer.apader-footer .af-group-summary,
+.page-wireframe #footer.apader-footer .af-brand { color:#333; }
+.page-wireframe #footer.apader-footer .af-contact-fields p,
+.page-wireframe #footer.apader-footer .af-legal li,
+.page-wireframe #footer.apader-footer .af-language { color:#666; }

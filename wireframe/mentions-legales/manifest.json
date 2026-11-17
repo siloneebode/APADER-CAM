@@ -1,0 +1,16 @@
+{
+  "page": "Mentions légales",
+  "route": "/mentions-legales/",
+  "status": "Modèle de wireframe, contenu à renseigner et valider",
+  "template": "pages-legales",
+  "config": "mentions-legales.json",
+  "sections": [
+    "editeur",
+    "publication",
+    "hebergement",
+    "contenus-et-credits",
+    "donnees-personnelles",
+    "contact"
+  ],
+  "scope": "Modèle légal partagé par les mentions légales, la confidentialité, les cookies et les conditions générales d’utilisation."
+}

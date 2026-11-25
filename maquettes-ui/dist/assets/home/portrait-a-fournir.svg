@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Portrait provisoire">
+  <!-- Portrait provisoire de la coordonnatrice : silhouette neutre en attendant
+       la photographie fournie par l'APADER. Sauge et forêt du moodboard. -->
+  <rect width="64" height="64" fill="#dde8d8"/>
+  <g fill="#123e2b" fill-opacity=".28">
+    <circle cx="32" cy="25" r="11"/>
+    <path d="M10 64c0-13.3 9.9-23 22-23s22 9.7 22 23Z"/>
+  </g>
+</svg>

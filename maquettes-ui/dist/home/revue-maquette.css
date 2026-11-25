@@ -1,0 +1,5 @@
+/* Panneau de comparaison, maquette uniquement (la feuille du moteur reste
+   partagée avec le wireframe) : la version affichée passe en vert forêt du
+   moodboard au lieu du gris-noir. */
+.ap-review-panel .ap-review-option[aria-current] { background:var(--forest, #123e2b); border-color:var(--forest, #123e2b); color:var(--paper, #f7f7f0); }
+.ap-review-panel .ap-review-option:hover:not([aria-current]) { border-color:var(--forest, #123e2b); }

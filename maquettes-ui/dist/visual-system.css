@@ -13,7 +13,7 @@ body.content-integrated main * { font-family:inherit !important; }
 body.content-integrated main :is(h1,h2,h3,h4,blockquote) {
   font-family:var(--font-display) !important; font-weight:400;
 }
-body.content-integrated main :is(.action-hero-stats dd,.ih-stats dd,.stat-card strong,.revue-domain-number,.structure-index,.project-number) {
+body.content-integrated main :is(.action-hero-stats dd,.ih-stats dd,.stat-card strong,.project-result-value strong,.revue-domain-number,.structure-index,.project-number) {
   font-family:var(--font-display) !important;
 }
 body.content-integrated :is(button,input,select,textarea) { font-family:var(--font-body); }

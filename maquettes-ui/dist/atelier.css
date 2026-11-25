@@ -1,7 +1,42 @@
+/* PP Eiko (titres et citations, moodboard APADER). Fichiers locaux non publiés
+   dans le dépôt public ; Fraunces reste la police de secours si absents. */
 @font-face {
   font-family: 'PP Eiko';
-  src: url('/assets/fonts/fraunces-latin.woff2') format('woff2');
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2');
   font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Light-300.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Light-300-Italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Medium-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('/assets/fonts/pp-eiko/PP-Eiko-Medium-500-Italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
   font-display: swap;
 }
 

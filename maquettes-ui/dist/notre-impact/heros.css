@@ -1,4 +1,4 @@
-@font-face{font-family:IHHeading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-display:swap}
+@font-face{font-family:IHHeading;src:url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-display:swap}
 @font-face{font-family:IHSans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
 .ih-hero,.ih-hero *{box-sizing:border-box}
 .ih-hero{color:#1c2921;font:400 17px/1.6 IHSans,Arial,sans-serif;overflow:hidden;position:relative}

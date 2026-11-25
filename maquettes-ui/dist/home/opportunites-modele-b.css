@@ -1,0 +1,106 @@
+/* Accueil — Opportunités, modèle B « Opportunité à la une » (?vue-opportunites=b).
+   Même contenu que le modèle A (catégorie, intitulé, lieu, public, échéance,
+   statut, « Consulter »), plus un résumé et une photographie : retour APADER
+   « prévoir un visuel et une description ». Moodboard : grande carte vert forêt
+   de 24 px pour le temps fort (cartouche jaune, repère ivoire, bouton jaune),
+   cartes ivoire de 12 px (cartouche sauge, repère vert), H3 en PP Eiko. */
+
+/* Éléments propres au modèle B, masqués dans le modèle A. */
+.content-home #contenu #opportunites .opportunity-visual,
+.content-home #contenu #opportunites p.opportunity-summary { display:none; }
+
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-list {
+  display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:24px; border-top:0;
+}
+
+/* Cartes ivoire : les deux opportunités suivantes. */
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row {
+  display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-rows:1fr auto;
+  grid-template-areas:"main main" "deadline action"; align-items:end; gap:20px 24px;
+  padding:28px; border:0; border-radius:12px; background:var(--paper);
+  transition:box-shadow 260ms ease;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-main { align-self:start; }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row .pangram-kicker > span { background:var(--sage); color:var(--forest); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row .pangram-kicker::before { background:var(--brand); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row h3 { margin-bottom:12px; font-size:24px; }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] p.opportunity-summary {
+  display:block; margin:0 0 16px; color:var(--muted); font:400 16px/1.6 var(--font-body);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:not(:first-child) .opportunity-main {
+  padding-bottom:20px; border-bottom:1px solid var(--line);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row .opportunity-deadline {
+  gap:2px; padding:0; border:0; border-radius:0; background:none;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row p.opportunity-status { margin-top:6px; padding-top:0; border-top:0; }
+
+/* Opportunité à la une : grande carte vert forêt avec photographie. */
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child {
+  grid-row:1 / span 2; grid-template-rows:minmax(280px,1fr) auto auto;
+  grid-template-areas:"visual visual" "main main" "deadline action";
+  gap:24px; padding:0 0 32px; overflow:hidden; border-radius:24px;
+  background:var(--forest); color:var(--paper);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-visual {
+  grid-area:visual; align-self:stretch; position:relative; display:block; height:auto; min-height:280px; margin:0; overflow:hidden; background:var(--sage);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-visual img {
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 45%;
+  transition:transform 600ms cubic-bezier(.22,1,.36,1);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-main { padding:8px 32px 0; }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .pangram-kicker > span { background:var(--yellow); color:var(--forest); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .pangram-kicker::before { background:var(--paper); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child h3 {
+  margin-bottom:16px; color:var(--paper); font-size:36px; line-height:1.1;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child p.opportunity-summary { max-width:52ch; color:rgba(247,247,240,.82); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child dl.opportunity-meta { color:rgba(247,247,240,.78); }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-deadline {
+  margin-left:32px; padding:16px 20px; border:0; border-radius:12px; background:var(--paper); color:var(--forest);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child p.opportunity-status { margin-top:8px; padding-top:8px; border-top:1px solid var(--line); }
+
+/* Bouton jaune du moodboard pour l'opportunité à la une. */
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child a.opportunity-read {
+  margin-right:32px; padding:8px 8px 8px 16px; border-radius:8px;
+  background:var(--yellow); color:var(--forest); transition:background-color 200ms ease;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child a.opportunity-read > span.opportunity-read-label { text-decoration-color:transparent; }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child:hover a.opportunity-read { background:#fff981; }
+.content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child a.opportunity-read:focus-visible { outline-color:var(--yellow); }
+
+@media(hover:hover) {
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child:hover .opportunity-visual img { transform:scale(1.03); }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:not(:first-child):hover { box-shadow:0 12px 24px rgba(18,62,43,.08); }
+}
+
+/* Tablette : la carte à la une sur toute la largeur, les deux autres côte à côte. */
+@media(max-width:1049px) {
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row { padding:24px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child { grid-column:1 / -1; grid-row:auto; grid-template-rows:280px auto auto; padding:0 0 28px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-visual { min-height:0; }
+}
+
+/* Mobile : cartes empilées, l'opportunité à la une en premier. */
+@media(max-width:700px) {
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-list { grid-template-columns:minmax(0,1fr); }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row {
+    grid-template-columns:minmax(0,1fr); grid-template-rows:auto; grid-template-areas:"main" "deadline" "action";
+    gap:16px; padding:24px 20px;
+  }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child {
+    grid-template-rows:200px auto auto auto; grid-template-areas:"visual" "main" "deadline" "action";
+    padding:0 0 24px; border-radius:16px;
+  }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-main { padding:4px 20px 0; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child h3 { font-size:28px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child .opportunity-deadline { margin:0 20px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] .opportunity-row:first-child a.opportunity-read { margin:0 20px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #opportunites[data-ap-review-variant="b"] :is(.opportunity-row,.opportunity-visual img,a.opportunity-read) { transition:none; }
+}

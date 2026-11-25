@@ -1,0 +1,276 @@
+/* Accueil — Des projets sur le terrain : composants du moodboard.
+   Retours APADER : trois projets représentatifs avec titre, domaine,
+   territoire, statut et résultat clé ; renforcer la visibilité des
+   réalisations ; domaines et projets clairement reliés.
+   Typographie : titre de carte 28/24 px, texte 16 px, libellés 14 px.
+   Statut : composant « Statut du projet » (icône + texte, sans pastille).
+   Commandes : « commande compacte » (icon-button) et bouton secondaire.
+   A = carrousel, carte vert forêt (par défaut) ; B = carrousel, carte blanche
+   (?vue-projets=b) ; C = trois cartes visibles (?vue-projets=c). */
+
+.content-home #contenu #projets .revue-visually-hidden {
+  position:absolute; width:1px; height:1px; margin:-1px; padding:0;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+
+/* Carte : fond blanc sur ivoire, sans contour ni ombre permanente (comme Pangram). */
+.content-home #contenu #projets .project-slide {
+  background:#ffffff;
+  border:0;
+  border-radius:12px;
+  box-shadow:none;
+}
+
+/* ---------- Fiche du projet (communs A et B) ---------- */
+.content-home #contenu #projets .slide-facts .project-number {
+  margin-bottom:20px;
+  color:var(--brand);
+  font:400 16px/1.4 var(--font-display);
+}
+/* Statut + période. */
+.content-home #contenu #projets .project-meta {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:4px 16px;
+  margin:0 0 20px;
+}
+.content-home #contenu #projets .project-period { color:var(--muted); font:400 14px/20px var(--font-body); }
+.content-home #contenu #projets .project-status {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--forest);
+  font:500 13px/20px var(--font-body);
+}
+.content-home #contenu #projets .project-status--complete { color:var(--ink); }
+.content-home #contenu #projets .project-status svg {
+  width:16px; height:16px; flex:0 0 16px;
+  fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
+}
+/* Domaine et territoire. */
+.content-home #contenu #projets dl.fact-list {
+  display:grid;
+  gap:14px;
+  margin:0 0 24px;
+  color:var(--forest);
+}
+.content-home #contenu #projets dl.fact-list > div { display:grid; gap:2px; }
+.content-home #contenu #projets dl.fact-list dt { margin:0; color:var(--muted); font:400 14px/1.5 var(--font-body); }
+.content-home #contenu #projets dl.fact-list dd { margin:0; color:var(--forest); font:500 16px/1.4 var(--font-body); }
+.content-home #contenu #projets a.fact-domain-link {
+  position:relative;
+  z-index:2;
+  color:var(--forest);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+.content-home #contenu #projets a.fact-domain-link:hover { color:var(--brand); }
+/* Résultat clé, mis en avant comme les chiffres clés. */
+.content-home #contenu #projets .project-result {
+  align-self:stretch;
+  margin:0 0 24px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+}
+.content-home #contenu #projets .project-result-label { margin:0 0 6px; color:var(--muted); font:400 14px/1.5 var(--font-body); }
+.content-home #contenu #projets .project-result-value { margin:0; color:var(--forest); font:500 16px/1.4 var(--font-body); }
+.content-home #contenu #projets .project-result-value strong {
+  display:block;
+  margin-bottom:2px;
+  color:var(--forest);
+  font:400 44px/1 var(--font-display);
+  letter-spacing:-.02em;
+}
+.content-home #contenu #projets .project-result--pending .project-result-value { color:var(--muted); font-weight:400; }
+/* Même hauteur que « chiffre + libellé » pour aligner les cartes. */
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-result--pending .project-result-value {
+  display:flex; align-items:flex-end; min-height:68px;
+}
+
+/* ---------- Récit (A) ---------- */
+.content-home #contenu #projets .project-category { color:var(--muted); font:400 14px/1.5 var(--font-body); }
+.content-home #contenu #projets .slide-story h3 { font-size:28px; line-height:1.15; letter-spacing:-.02em; }
+.content-home #contenu #projets .project-summary { color:var(--ink); font-size:16px; line-height:1.65; }
+.content-home #contenu #projets .project-beneficiaries { color:var(--muted); font-size:14px; line-height:1.5; }
+
+/* Bouton principal : flèche #action-arrow du moodboard, pivot de 45°. */
+.content-home #contenu #projets .project-button > span[aria-hidden]::before { content:none; }
+.content-home #contenu #projets .project-button .button-icon svg {
+  display:block; width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #projets .project-button:hover .button-icon svg { transform:rotate(45deg); }
+
+/* « Voir tous les projets » : bouton secondaire du moodboard. */
+.content-home #contenu #projets a.catalog-link.button.button-secondary {
+  display:inline-flex; align-items:center; gap:12px; min-height:48px; margin:0;
+  padding:8px 8px 8px 16px; border:0; border-radius:8px; background:transparent;
+  color:var(--forest); box-shadow:inset 0 0 0 1px var(--forest);
+  font:500 16px/1.4 var(--font-body); text-decoration:none; white-space:nowrap;
+}
+.content-home #contenu #projets a.catalog-link .button-icon {
+  display:grid; place-items:center; flex:0 0 32px; width:32px; height:32px;
+  border-radius:6px; background:var(--forest); color:var(--yellow);
+}
+.content-home #contenu #projets a.catalog-link .button-icon svg {
+  width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #projets a.catalog-link:hover { background:var(--sage); text-decoration:none; }
+.content-home #contenu #projets a.catalog-link:hover .button-icon svg { transform:rotate(45deg); }
+
+/* Flèches du carrousel : commande compacte du moodboard. */
+.content-home #contenu #projets .arrow-controls { gap:12px; }
+.content-home #contenu #projets .arrow-controls button.icon-button {
+  display:inline-grid; place-items:center; width:48px; height:48px; padding:0;
+  border:1px solid var(--line); border-radius:100%; background:var(--paper); color:var(--forest);
+  cursor:pointer; transition:background-color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.content-home #contenu #projets .arrow-controls button.icon-button svg {
+  width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round; transition:transform 220ms ease;
+}
+.content-home #contenu #projets .arrow-controls button.icon-button svg.reverse { transform:rotate(180deg); }
+.content-home #contenu #projets .arrow-controls button.icon-button:hover:not(:disabled) { background:var(--yellow); border-color:var(--yellow); }
+.content-home #contenu #projets .arrow-controls button.icon-button:hover:not(:disabled) svg { transform:translateX(2px); }
+.content-home #contenu #projets .arrow-controls button.icon-button:hover:not(:disabled) svg.reverse { transform:translateX(-2px) rotate(180deg); }
+.content-home #contenu #projets .arrow-controls button.icon-button:active:not(:disabled) { transform:scale(.96); }
+.content-home #contenu #projets .arrow-controls button.icon-button:disabled {
+  opacity:.35; background:transparent; border-color:var(--line); color:var(--forest); cursor:default;
+}
+.content-home #contenu #projets .project-counter { color:var(--muted); font:400 14px/1.5 var(--font-body); }
+
+@media(max-width:700px) {
+  .content-home #contenu #projets dl.fact-list { grid-template-columns:1fr 1fr; gap:14px 16px; width:100%; }
+  .content-home #contenu #projets .project-result { width:100%; }
+  .content-home #contenu #projets .slide-story h3 { font-size:24px; }
+  .content-home #contenu #projets .project-result-value strong { font-size:40px; }
+  .content-home #contenu #projets a.catalog-link.button.button-secondary { margin-top:20px; }
+}
+
+/* =====================================================================
+   Version C — Trois cartes visibles (?vue-projets=c).
+   Lecture : photo → statut et période → domaine → titre → résumé →
+   territoire → résultat clé → bouton. Carte entièrement cliquable.
+   ===================================================================== */
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-window {
+  max-width:1440px; margin:0 auto; padding:0 36px; overflow:visible;
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-strip {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; transform:none;
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-slide {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  overflow:hidden;
+  transition:box-shadow 300ms ease;
+}
+/* Les blocs internes deviennent des éléments de la carte, réordonnés. */
+.content-home #contenu #projets[data-ap-review-variant="c"] :is(.slide-story,.slide-facts,dl.fact-list) { display:contents; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-slide > :is(.slide-story,.slide-facts) > *,
+.content-home #contenu #projets[data-ap-review-variant="c"] dl.fact-list > div { margin-inline:28px; }
+
+.content-home #contenu #projets[data-ap-review-variant="c"] .slide-art {
+  order:1; position:relative; flex:none; height:240px; overflow:hidden; background:var(--sage);
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .art-circle { display:none; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .slide-art .project-visual {
+  position:absolute; inset:0; width:100%; height:100%; border-radius:0;
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .slide-art img {
+  transform:scale(1); transition:transform 600ms cubic-bezier(.22,1,.36,1);
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-meta { order:2; margin-top:24px; margin-bottom:12px; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-domain { order:3; margin-bottom:8px; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-domain dt { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-domain dd { font:400 14px/1.5 var(--font-body); }
+.content-home #contenu #projets[data-ap-review-variant="c"] .slide-story h3 { order:4; margin-top:0; margin-bottom:12px; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-summary {
+  order:5; margin-bottom:16px;
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; line-clamp:3; overflow:hidden;
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-territory {
+  order:6; display:flex; gap:6px; flex-wrap:wrap; margin-bottom:20px;
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-territory :is(dt,dd) { font-size:14px; line-height:1.5; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .fact-territory dt::after { content:" :"; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-result { order:7; margin-top:auto; margin-bottom:24px; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-button { order:8; align-self:flex-start; margin-top:0; margin-bottom:28px; }
+.content-home #contenu #projets[data-ap-review-variant="c"] :is(.project-category,.project-beneficiaries,.project-number) { display:none; }
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-controls { display:none; }
+
+/* Carte entièrement cliquable : le bouton couvre la carte ; le lien du domaine reste au-dessus. */
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-button::after {
+  content:""; position:absolute; inset:0; z-index:1; border-radius:12px;
+}
+@media(hover:hover) {
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:hover {
+    box-shadow:0 14px 32px rgba(18,62,43,.10);
+  }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:hover .slide-art img { transform:scale(1.04); }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:hover .project-button { background:var(--brand); }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:hover .project-button .button-icon svg { transform:rotate(45deg); }
+}
+.content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:has(.project-button:focus-visible) {
+  outline:2px solid var(--forest);
+  outline-offset:3px;
+}
+
+@media(max-width:1099px) {
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-window { padding:0 28px; }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-strip { grid-template-columns:minmax(0,1fr); gap:20px; }
+}
+@media(max-width:700px) {
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-window { padding:0 20px; }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .slide-art { height:200px; }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide > :is(.slide-story,.slide-facts) > *,
+  .content-home #contenu #projets[data-ap-review-variant="c"] dl.fact-list > div { margin-inline:24px; }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-button { margin-bottom:24px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #projets :is(.arrow-controls button.icon-button, .arrow-controls button.icon-button svg, a.catalog-link .button-icon svg, .project-button .button-icon svg, .project-slide, .slide-art img) { transition:none; }
+  .content-home #contenu #projets[data-ap-review-variant="c"] .project-slide:hover .slide-art img { transform:none; }
+}
+
+/* =====================================================================
+   Version A — Carrousel, carte vert forêt (par défaut).
+   Même carrousel que la version B ; seule la carte change de couleur.
+   Paires du moodboard : ivoire sur forêt pour les textes, jaune sur forêt
+   pour le numéro et le résultat clé ; libellés secondaires en sauge clair
+   (#d4e1d6, 8,9:1). Bouton jaune du moodboard (tuile forêt, survol #fff981).
+   ===================================================================== */
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-slide {
+  background:var(--forest); color:var(--paper);
+}
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .slide-facts .project-number { color:var(--yellow); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-period { color:#d4e1d6; }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) :is(.project-status,.project-status--complete) { color:var(--paper); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) dl.fact-list dt { color:#d4e1d6; }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) dl.fact-list dd { color:var(--paper); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) a.fact-domain-link { color:var(--paper); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) a.fact-domain-link:hover { color:var(--yellow); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-result { border-top-color:rgba(247,247,240,.24); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-result-label { color:#d4e1d6; }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-result-value { color:var(--paper); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-result-value strong { color:var(--yellow); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-result--pending .project-result-value { color:#d4e1d6; }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) :is(.project-category,.project-beneficiaries) { color:#d4e1d6; }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .slide-story h3 { color:var(--paper); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-summary { color:var(--paper); }
+
+/* « Découvrir le projet » : bouton jaune du moodboard sur forêt. */
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-button {
+  background:var(--yellow); color:var(--forest); transition:background-color 200ms ease;
+}
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-button > span[aria-hidden] { background:var(--forest); color:var(--yellow); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-button:hover { background:#fff981; color:var(--forest); }
+.content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-slide :is(a,button):focus-visible { outline-color:var(--yellow); }
+
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #projets:not([data-ap-review-variant="b"],[data-ap-review-variant="c"]) .project-button { transition:none; }
+}

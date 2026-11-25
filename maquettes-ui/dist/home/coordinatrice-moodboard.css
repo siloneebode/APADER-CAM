@@ -1,0 +1,109 @@
+/* Accueil — « Le mot de la coordonnatrice », modèle A du wireframe
+   (enveloppe ouverte). Retour APADER : « Portrait, extrait du message et
+   accès à la version complète ». Moodboard : cartouche jaune sur forêt,
+   H2 56/48/36, H3 28, corps 16/1.7, bouton jaune avec #action-arrow pour
+   l'accès au mot complet, bouton secondaire pour fermer. */
+
+/* Rythme vertical des autres sections. */
+.content-home #contenu #presidente.president-letter .letter-intro { padding-top:96px; }
+
+/* Cartouche sur fond forêt : jaune, repère ivoire (comme l'appel final). */
+.content-home #contenu #presidente.president-letter .letter-kicker {
+  --kicker-background:var(--yellow); --kicker-color:var(--forest); --kicker-mark:var(--paper);
+  margin:0 auto 24px;
+}
+.content-home #contenu #presidente.president-letter .letter-kicker::before { background:var(--paper); }
+.content-home #contenu #presidente.president-letter .letter-kicker > span { background:transparent; color:var(--forest); }
+.content-home #contenu #presidente.president-letter .letter-kicker > span::before { background:var(--yellow); }
+
+/* H2 du moodboard ; la seconde ligne garde l'accent jaune. */
+.content-home #contenu #presidente.president-letter h2 { font:400 56px/1.1 var(--font-display); letter-spacing:-.025em; }
+.content-home #contenu #presidente.president-letter h2 > span { margin-top:0; }
+
+/* « Lire le mot complet » : bouton jaune du moodboard. */
+.content-home #contenu #presidente.president-letter button.letter-open.button.button-yellow {
+  display:inline-flex; align-items:center; justify-content:space-between; gap:12px;
+  min-height:48px; margin:32px 0 0; padding:8px 8px 8px 16px; border:0; border-radius:8px;
+  background:var(--yellow); color:var(--forest);
+  font:500 16px/1.4 var(--font-body); white-space:nowrap; cursor:pointer;
+  transition:background-color 200ms ease;
+}
+.content-home #contenu #presidente.president-letter button.letter-open > .button-label { padding:0; }
+.content-home #contenu #presidente.president-letter button.letter-open > .button-icon {
+  display:grid; place-items:center; flex:0 0 32px; width:32px; height:32px; padding:0;
+  border:0; border-radius:6px; background:var(--forest); color:var(--yellow); font-size:0;
+}
+.content-home #contenu #presidente.president-letter button.letter-open > .button-icon::before { content:none; }
+.content-home #contenu #presidente.president-letter button.letter-open .button-icon svg {
+  display:block; width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #presidente.president-letter button.letter-open.button.button-yellow:hover { background:#fff981; color:var(--forest); }
+.content-home #contenu #presidente.president-letter button.letter-open:hover .button-icon svg { transform:rotate(45deg); }
+.content-home #contenu #presidente.president-letter button.letter-open:focus-visible { outline:3px solid var(--yellow); outline-offset:4px; }
+
+/* Lettre : titre H3, extrait en corps de texte, signature avec portrait. */
+.content-home #contenu #presidente.president-letter .letter-preview { width:min(760px, calc(100% - 80px)); margin-top:48px; padding:40px 40px 52px; }
+.content-home #contenu #presidente.president-letter .letter-preview-title {
+  margin:0 0 16px; color:var(--forest); font:400 28px/1.2 var(--font-display); letter-spacing:-.02em;
+}
+.content-home #contenu #presidente.president-letter .letter-placeholder { color:var(--ink); font:400 16px/1.7 var(--font-body); }
+.content-home #contenu #presidente.president-letter .letter-preview .mot-demo-note { margin-top:12px; font:400 13px/20px var(--font-body); }
+.content-home #contenu #presidente.president-letter .letter-preview-signature {
+  margin-top:24px; color:var(--forest); font:400 20px/1.3 var(--font-display); text-align:left;
+}
+.content-home #contenu #presidente.president-letter .letter-preview-signature .letter-signature-role {
+  margin-top:4px; color:var(--muted); font:400 14px/1.5 var(--font-body) !important;
+}
+
+/* Mot complet : bouton secondaire pour fermer, titre 36, lecture en 20/1.55. */
+.content-home #contenu #presidente.president-letter .letter-close {
+  gap:12px; min-height:44px; padding:8px 12px 8px 16px; border:0; border-radius:8px;
+  background:transparent; color:var(--forest); box-shadow:inset 0 0 0 1px var(--forest);
+  font:500 16px/1.4 var(--font-body); transition:background-color 200ms ease;
+}
+.content-home #contenu #presidente.president-letter .letter-close > span:last-child { font:400 24px/1 var(--font-body); }
+.content-home #contenu #presidente.president-letter .letter-close:hover { background:var(--sage); }
+.content-home #contenu #presidente.president-letter .letter-full { font:400 20px/1.55 var(--font-body); }
+.content-home #contenu #presidente.president-letter .letter-full h3 {
+  margin:0 0 24px; color:var(--forest); font:400 36px/1.15 var(--font-display); letter-spacing:-.02em;
+}
+.content-home #contenu #presidente.president-letter .mot-letter-body { max-width:64ch; color:var(--ink); }
+.content-home #contenu #presidente.president-letter .letter-full .mot-letter-body > p + p { margin-top:1em; }
+.content-home #contenu #presidente.president-letter .letter-signature { color:var(--forest); font:400 24px/1.3 var(--font-display); }
+.content-home #contenu #presidente.president-letter .letter-signature .letter-signature-role {
+  color:var(--muted); font:400 14px/1.5 var(--font-body) !important;
+}
+
+@media(max-width:1049px) {
+  .content-home #contenu #presidente.president-letter .letter-intro { padding-top:80px; }
+  .content-home #contenu #presidente.president-letter h2 { font-size:48px; }
+  .content-home #contenu #presidente.president-letter .letter-preview { width:min(640px, calc(100% - 64px)); padding:32px 32px 52px; }
+}
+/* Tablette : l'enveloppe se resserre ; comme sur mobile, son pli est ancré en
+   bas de section pour passer sous la signature sans couper la fonction. */
+@media(min-width:601px) and (max-width:1049px) {
+  .content-home #contenu #presidente.president-letter { padding-bottom:80px; }
+  .content-home #contenu #presidente.president-letter .letter-preview { margin-bottom:0; }
+  .content-home #contenu #presidente.president-letter .letter-envelope { top:auto; height:260px; }
+}
+@media(max-width:700px) {
+  .content-home #contenu #presidente.president-letter .letter-intro { padding-top:64px; }
+  .content-home #contenu #presidente.president-letter h2 { font-size:36px; line-height:1.1; }
+  .content-home #contenu #presidente.president-letter button.letter-open.button.button-yellow { margin-top:28px; }
+  .content-home #contenu #presidente.president-letter .letter-preview { width:calc(100% - 32px); margin-top:40px; padding:24px 24px 44px; }
+  .content-home #contenu #presidente.president-letter .letter-preview-title { font-size:24px; }
+  .content-home #contenu #presidente.president-letter .letter-full { font-size:18px; }
+  .content-home #contenu #presidente.president-letter .letter-full h3 { font-size:28px; }
+  .content-home #contenu #presidente.president-letter .letter-signature { font-size:20px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #presidente.president-letter :is(button.letter-open, button.letter-open .button-icon svg, .letter-close) { transition:none; }
+}
+
+/* Portrait de la signature : image recadrée dans le cercle sauge.
+   Portrait provisoire (silhouette) tant que l'APADER n'a pas fourni la photo. */
+.content-home #contenu #presidente.president-letter .letter-signature-photo { overflow:hidden; padding:0; }
+.content-home #contenu #presidente.president-letter .letter-signature-photo > img {
+  display:block; width:100%; height:100%; object-fit:cover; object-position:center 30%;
+}

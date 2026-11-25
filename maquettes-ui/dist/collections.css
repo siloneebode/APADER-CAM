@@ -1,5 +1,5 @@
 /* Fondations du moodboard appliquées aux structures des wireframes. */
-@font-face { font-family: Heading; src: url('/assets/fonts/fraunces-latin.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: Heading; src: url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 @font-face { font-family: Sans; src: url('/assets/fonts/ibm-plex-sans-latin.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
 :root { --white: #fff; --ease: cubic-bezier(.22,1,.36,1); --speed: 1; }
 .ui-symbols { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }

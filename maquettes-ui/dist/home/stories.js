@@ -5,7 +5,16 @@
 
   const cards = [...root.querySelectorAll('.impact-story')];
   const dots = [...root.querySelectorAll('.story-dot')];
-  const positions = ['current', 'near-right', 'near-left'];
+  const positions = ['current', 'near-right', 'far-right', 'far-left', 'near-left', 'story-hidden'];
+  // Positions du wireframe : carte centrale, deux aperçus de chaque côté.
+  function positionFor(offset, total) {
+    if (offset === 0) return 'current';
+    if (offset === 1) return 'near-right';
+    if (offset === total - 1) return 'near-left';
+    if (offset === 2) return 'far-right';
+    if (offset === total - 2) return 'far-left';
+    return 'story-hidden';
+  }
   const stage = root.querySelector('.carousel-stage');
   const live = root.querySelector('#story-live');
   let current = 0;
@@ -33,7 +42,7 @@
     cards.forEach((card, i) => {
       const offset = (i - current + cards.length) % cards.length;
       card.classList.remove(...positions);
-      card.classList.add(positions[offset] || 'far-right');
+      card.classList.add(positionFor(offset, cards.length));
       card.classList.toggle('peek', offset !== 0);
 
       const link = card.querySelector('.story-read-link');
@@ -46,7 +55,7 @@
     });
 
     dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
-    if (live) live.textContent = 'Récit ' + (current + 1) + ' sur ' + cards.length;
+    if (live) live.textContent = 'Témoignage ' + (current + 1) + ' sur ' + cards.length;
     scheduleHeight();
     if (moveFocus) {
       cards[current].querySelector('.story-read-link')?.focus({ preventScroll: true });

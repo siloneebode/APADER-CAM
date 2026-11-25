@@ -1,0 +1,64 @@
+/* Accueil — « Des partenaires à nos côtés ».
+   Structure du wireframe : en-tête centré, bandeau de six logos séparés par
+   des filets verticaux, lien vers la page des partenaires. Retour APADER :
+   « présenter les logos sobrement ». Moodboard : fond ivoire, filets de 1 px,
+   logos en un seul ton sur une même hauteur (couleur au survol), bouton
+   secondaire avec #action-arrow. */
+
+.content-home #contenu #partenaires { padding:96px 0; background:var(--paper); color:var(--forest); }
+.content-home #contenu #partenaires .partner-heading { margin-bottom:48px; }
+.content-home #contenu #partenaires p.partner-intro {
+  max-width:64ch; color:var(--muted); font:400 16px/1.7 var(--font-body);
+}
+
+/* Bandeau : cases sans fond, filets verticaux de 1 px. */
+.content-home #contenu #partenaires .partner-logos { max-width:1250px; margin:0 auto; }
+.content-home #contenu #partenaires .partner-logos > .partner-logo {
+  min-height:120px; padding:24px 20px; background:none; border-color:var(--line);
+}
+/* Logos sobres : un seul ton, même hauteur ; le fond blanc des fichiers se fond dans l'ivoire. */
+.content-home #contenu #partenaires .partner-logos > .partner-logo img {
+  position:static; inset:auto; display:block; width:auto; max-width:100%; height:56px; padding:0; border-radius:0;
+  background:none; object-fit:contain; mix-blend-mode:multiply;
+  filter:grayscale(1) contrast(1.05); opacity:.82;
+  transition:filter 240ms ease, opacity 240ms ease;
+}
+@media(hover:hover) {
+  .content-home #contenu #partenaires .partner-logos > .partner-logo:hover img { filter:none; opacity:1; }
+}
+
+/* « Découvrir nos partenaires » : bouton secondaire du moodboard. */
+.content-home #contenu #partenaires a.partner-link.button.button-secondary {
+  display:flex; align-items:center; gap:12px; width:max-content; min-height:48px; margin:48px auto 0;
+  padding:8px 8px 8px 16px; border:0; border-radius:8px; background:transparent;
+  color:var(--forest); box-shadow:inset 0 0 0 1px var(--forest);
+  font:500 16px/1.4 var(--font-body); text-decoration:none; white-space:nowrap;
+  transition:background-color 200ms ease;
+}
+.content-home #contenu #partenaires a.partner-link .button-label { padding:0; font:inherit; text-decoration:none; }
+.content-home #contenu #partenaires a.partner-link > .button-icon {
+  display:grid; place-items:center; flex:0 0 32px; width:32px; height:32px; padding:0;
+  border-radius:6px; background:var(--forest); color:var(--yellow); font-size:0;
+}
+.content-home #contenu #partenaires a.partner-link > .button-icon::before { content:none; }
+.content-home #contenu #partenaires a.partner-link .button-icon svg {
+  display:block; width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #partenaires a.partner-link.button.button-secondary:hover { background:var(--sage); color:var(--forest); text-decoration:none; }
+.content-home #contenu #partenaires a.partner-link:hover .button-icon svg { transform:rotate(45deg); }
+
+@media(max-width:1049px) {
+  .content-home #contenu #partenaires { padding:80px 0; }
+  .content-home #contenu #partenaires .partner-logos > .partner-logo { min-height:112px; }
+}
+@media(max-width:700px) {
+  .content-home #contenu #partenaires { padding:64px 0; }
+  .content-home #contenu #partenaires .partner-heading { margin-bottom:32px; }
+  .content-home #contenu #partenaires .partner-logos > .partner-logo { min-height:100px; padding:20px 16px; }
+  .content-home #contenu #partenaires .partner-logos > .partner-logo img { height:48px; }
+  .content-home #contenu #partenaires a.partner-link.button.button-secondary { margin-top:32px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #partenaires :is(.partner-logo img,a.partner-link,a.partner-link .button-icon svg) { transition:none; }
+}

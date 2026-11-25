@@ -7,14 +7,59 @@
   scroll-margin-top: var(--apader-header-offset, 112px);
 }
 
-/* Les styles monochromes des anciens wireframes ne doivent pas recolorer le footer validé. */
-body.ui-collection #footer.apader-footer { background: var(--forest); color: var(--footer-muted); }
-body.ui-collection #footer.apader-footer .af-panel { background: var(--pans-surface); color: var(--footer-ink); }
-body.ui-collection #footer.apader-footer .af-group-summary,
-body.ui-collection #footer.apader-footer .af-brand { color: var(--footer-ink); }
-body.ui-collection #footer.apader-footer .af-contact-fields p,
-body.ui-collection #footer.apader-footer .af-legal li,
-body.ui-collection #footer.apader-footer .af-language { color: var(--footer-muted); }
+/* Les styles monochromes des anciens wireframes ne doivent pas recolorer le footer validé
+   (accueil-wireframe.css repeint sinon le cadre en sauge et le panneau en blanc). */
+body:is(.ui-collection,.content-integrated) #footer.apader-footer { background: var(--forest); color: var(--footer-muted); }
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-panel { background: var(--pans-surface); color: var(--footer-ink); }
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-group-summary,
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-brand { color: var(--footer-ink); }
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-contact-fields p,
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-legal li,
+body:is(.ui-collection,.content-integrated) #footer.apader-footer .af-language { color: var(--footer-muted); }
+
+/* Version B du panneau de revue (?vue-footer=b) : panneau « Lumière » du
+   moodboard (pans-colours.css, data-pans-colour=lumiere). Le jaune remplace
+   l'ivoire ; textes forêt, secondaires #40502c, filets #a6aa4b. */
+#footer.apader-footer[data-ap-review-variant="b"] {
+  --pans-surface: #f3ee54;
+  --pans-muted: #40502c;
+  --pans-line: #a6aa4b;
+}
+/* Réseaux sociaux sur le jaune : paire forêt/jaune du moodboard (tuile forêt
+   et pictogramme jaune, comme la tuile du bouton jaune) ; survol vert APADER. */
+#footer.apader-footer[data-ap-review-variant="b"] ul.af-social a {
+  border-color: var(--forest); background: var(--forest); color: var(--yellow);
+}
+#footer.apader-footer[data-ap-review-variant="b"] ul.af-social a:hover {
+  border-color: var(--brand); background: var(--brand); color: var(--yellow);
+}
+#footer.apader-footer[data-ap-review-variant="b"] ul.af-social a:focus-visible { outline-color: var(--forest); }
+
+/* Coordonnées (wireframe) : courriel et téléphone soulignés au survol. */
+#footer.apader-footer .af-contact-fields a { text-decoration: none; }
+#footer.apader-footer .af-contact-fields a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Réseaux sociaux : bouton-icône du moodboard (48 px, rayon 8, filet,
+   fond sauge et contour forêt au survol). */
+#footer.apader-footer ul.af-social {
+  display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none;
+}
+#footer.apader-footer ul.af-social > li { margin: 0; padding: 0; }
+#footer.apader-footer ul.af-social a {
+  display: grid; place-items: center; width: 48px; height: 48px;
+  border: 1px solid var(--pans-line, #cad5c7); border-radius: 8px;
+  background: var(--pans-surface, #f7f7f0); color: var(--forest);
+  transition: background-color 150ms cubic-bezier(.4,0,.2,1), border-color 150ms cubic-bezier(.4,0,.2,1);
+}
+#footer.apader-footer ul.af-social a:hover { background: var(--sage); border-color: var(--forest); text-decoration: none; }
+#footer.apader-footer ul.af-social a:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+#footer.apader-footer ul.af-social svg { display: block; width: 20px; height: 20px; }
+#footer.apader-footer p.af-social-note {
+  max-width: 30ch; margin: 12px 0 0; color: var(--footer-muted); font: 400 12px/20px var(--font-body);
+}
+@media (prefers-reduced-motion: reduce) {
+  #footer.apader-footer ul.af-social a { transition: none; }
+}
 
 #footer.apader-footer .af-artwork {
   display: none;

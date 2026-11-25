@@ -1,4 +1,4 @@
-@font-face{font-family:AACHeading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:AACHeading;src:url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:AACSans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 700;font-style:normal;font-display:swap}
 @font-face{font-family:AACNumbers;src:url('/assets/imbue-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
 .aac-section,.aac-section *,.aac-section *:before,.aac-section *:after,.aac-review,.aac-review *{box-sizing:border-box}

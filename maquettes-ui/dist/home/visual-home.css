@@ -285,3 +285,114 @@
   .content-home #contenu :is(a,button,span)::before { transition:none; }
   .content-home #contenu :is(a,button) { transition:none; }
 }
+
+/* Héros — deux appels à l'action du moodboard.
+   Principal : fond forêt, carré jaune. Secondaire : traitement du moodboard
+   adapté au fond photographique (contour et texte ivoire, carré ivoire).
+   La flèche est celle du moodboard (#action-arrow), pivot de 45° au survol. */
+.content-home #contenu #introduction .hero-actions { gap:12px 16px; }
+.content-home #contenu #introduction .button > span[aria-hidden]::before { content:none; }
+.content-home #contenu #introduction .button .button-icon svg {
+  display:block; width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #introduction .button:hover .button-icon svg { transform:rotate(45deg); }
+.content-home #contenu #introduction .button.button-secondary {
+  background:transparent; color:var(--paper); box-shadow:inset 0 0 0 1px var(--paper);
+}
+.content-home #contenu #introduction .button.button-secondary > span[aria-hidden] { background:var(--paper); color:var(--forest); }
+.content-home #contenu #introduction .button.button-secondary:hover { background:rgba(247,247,240,.14); color:var(--paper); }
+@media(max-width:700px) {
+  /* Mobile : le texte occupe toute la largeur, le voile devient uniforme et plus dense en bas. */
+  .content-home #contenu #introduction .hero-veil {
+    background:linear-gradient(0deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.5) 45%,rgba(0,0,0,.34) 75%,rgba(0,0,0,.22) 100%);
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #introduction .button .button-icon svg { transition:none; }
+}
+
+/* Héros — typographie alignée sur l'échelle du moodboard (section Typographies).
+   Grand titre : 62 px / 1,1 / −0,02 em (mobile 44 px).
+   Texte d'introduction : 20 px / 1,55 (mobile 18 px). */
+.content-home #contenu #introduction .hero-carousel-title { letter-spacing:-.02em; }
+.content-home #contenu #introduction .hero-description { font-size:20px; line-height:1.55; }
+@media(max-width:700px) {
+  .content-home #contenu #introduction .hero-carousel-title { font-size:44px; line-height:1.1; }
+  .content-home #contenu #introduction .hero-description { font-size:18px; line-height:1.55; }
+}
+
+/* =====================================================================
+   Rythme des fonds de l'accueil — rôles du moodboard (section Palette) :
+   ivoire = fond principal ; sauge = fonds secondaires ; forêt = temps forts ;
+   jaune = appel à agir ; blanc = surface d'interface, pas un fond de section.
+   Héros (photo) → ivoire → forêt+jaune (mot) → domaines → sauge (structures)
+   → ivoire (projets) → forêt (chiffres) → sauge (témoignages) → ivoire
+   (ressources, actualités) → sauge (opportunités) → ivoire (partenaires)
+   → panneau forêt (contact) → pied de page sauge.
+   Les changements de fond séparent les sections : pas de trait entre elles.
+   ===================================================================== */
+.content-home #contenu > section { border-top:0; border-bottom:0; }
+
+/* Cartouche adapté au fond (variantes du moodboard). */
+.content-home #contenu :is(#structures,#opportunites) .pangram-kicker > span { background:var(--paper); color:var(--forest); }
+.content-home #contenu :is(#structures,#opportunites) .pangram-kicker::before { background:var(--yellow); }
+.content-home #contenu #partenaires .pangram-kicker > span { background:var(--sage); color:var(--forest); }
+.content-home #contenu #partenaires .pangram-kicker::before { background:var(--brand); }
+.content-home #contenu #impact .stats .pangram-kicker > span { background:var(--yellow); color:var(--forest); }
+.content-home #contenu #impact .stats .pangram-kicker::before { background:var(--paper); }
+
+/* Structures : fond secondaire sauge, panneaux ivoire. */
+.content-home #contenu #structures { background:var(--sage); color:var(--forest); }
+.content-home #contenu #structures :is(.section-heading,h2) { color:var(--forest); }
+
+/* Notre impact — chiffres : temps fort sur forêt. */
+.content-home #contenu #impact { background:var(--forest); }
+.content-home #contenu #impact .stats { background:var(--forest); color:var(--paper); }
+.content-home #contenu #impact .stats-heading h2 { color:var(--paper); }
+.content-home #contenu #impact .stats .results-link { color:var(--paper); }
+.content-home #contenu #impact .stat-card-2 { background:var(--brand); color:#ffffff; }
+.content-home #contenu #impact .stats-context,
+.content-home #contenu #impact .stats-context p { color:#d4e1d6; }
+/* Témoignages : bande sauge, inchangée. */
+
+/* Ressources : ivoire au lieu du blanc. */
+.content-home #contenu #ressources { background:var(--paper); }
+.content-home #contenu #ressources .document-card { background:#ffffff; }
+
+/* Partenaires : ivoire, logos sobres sur surfaces claires. */
+.content-home #contenu #partenaires { background:var(--paper); color:var(--forest); }
+.content-home #contenu #partenaires h2 { color:var(--forest); }
+.content-home #contenu #partenaires .partner-intro { color:var(--muted); }
+.content-home #contenu #partenaires .partner-link { color:var(--forest); }
+.content-home #contenu #partenaires .partner-logo { background:#ffffff; border-color:var(--line); color:var(--forest); }
+.content-home #contenu #partenaires :is(a,button):focus-visible { outline-color:var(--brand); }
+
+/* Cartes sans contour, comme sur Pangram : fond blanc sur ivoire,
+   coins de 12 px, pas d'ombre permanente. Les contours restent réservés
+   aux champs de formulaire. */
+.content-home #contenu #ressources .document-card { border:0; }
+.content-home #contenu #actualites .editorial-visual { border:0; }
+
+/* Héros — flou progressif derrière le texte (lisibilité).
+   La photo est floutée sous la colonne de texte puis redevient nette vers la
+   droite : authenticité de la photographie (retours APADER) et voile léger
+   conservés. Le calque de flou se place entre les photos et le texte. */
+.content-home #contenu #introduction .hero-veil::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  -webkit-backdrop-filter:blur(10px) saturate(1.05);
+  backdrop-filter:blur(10px) saturate(1.05);
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,#000 40%,rgba(0,0,0,.82) 50%,rgba(0,0,0,.5) 60%,rgba(0,0,0,.2) 70%,transparent 82%);
+  mask-image:linear-gradient(90deg,#000 0%,#000 40%,rgba(0,0,0,.82) 50%,rgba(0,0,0,.5) 60%,rgba(0,0,0,.2) 70%,transparent 82%);
+}
+@media(max-width:700px) {
+  /* Mobile : le texte occupe toute la largeur ; le flou monte depuis le bas
+     et laisse nette la partie haute de la photographie. */
+  .content-home #contenu #introduction .hero-veil::before {
+    -webkit-mask-image:linear-gradient(0deg,#000 0%,#000 62%,rgba(0,0,0,.55) 72%,transparent 84%);
+    mask-image:linear-gradient(0deg,#000 0%,#000 62%,rgba(0,0,0,.55) 72%,transparent 84%);
+  }
+}

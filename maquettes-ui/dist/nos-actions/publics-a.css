@@ -1,4 +1,4 @@
-@font-face{font-family:PUHeading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:PUHeading;src:url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:PUSans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
 .puv-section,.puv-section *,.puv-section *:before,.puv-section *:after{box-sizing:border-box}
 .puv-section{background:#fff;color:#1c2921;padding:80px 0 86px;font:400 16px/1.65 PUSans,Arial,sans-serif;scroll-margin-top:24px}

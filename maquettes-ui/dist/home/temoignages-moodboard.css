@@ -1,0 +1,163 @@
+/* Accueil — « Témoignages et récits d'impact ».
+   Structure du wireframe : carrousel de 5 récits, carte centrale et aperçus
+   de chaque côté, changement documenté, extrait, prénom et localité, photo,
+   « Lire le récit ». Retour APADER : témoignages authentiques et histoires de
+   changement documentées (extraits du catalogue des 30 ans, 2024).
+   Moodboard : fond sauge uni, carte ivoire 24 px, photo 12 px, citation en
+   PP Eiko 28/24, signature 14/13, bouton principal avec #action-arrow. */
+
+.content-home #contenu #impact #recits-impact {
+  padding:96px 0 80px; background:var(--sage); color:var(--forest);
+}
+
+/* En-tête : cartouche ivoire à repère jaune (variante sur sauge) + H2. */
+.content-home #contenu #impact #recits-impact .story-heading .pangram-kicker { margin:0 0 24px; }
+.content-home #contenu #impact #recits-impact .story-heading .pangram-kicker > span { background:var(--paper); color:var(--forest); }
+.content-home #contenu #impact #recits-impact .story-heading .pangram-kicker::before { background:var(--yellow); }
+.content-home #contenu #impact #recits-impact .story-heading h2 { margin:0 0 48px; color:var(--forest); }
+
+/* Scène : fond uni, sans dégradé. */
+.content-home #contenu #impact #recits-impact .carousel-stage { background:none; }
+
+/* Carte : panneau ivoire, arrondi 24, photo concentrique à 12. */
+.content-home #contenu #impact #recits-impact .impact-story {
+  gap:12px; padding:12px; border-radius:24px;
+  background:var(--paper); color:var(--forest);
+  box-shadow:0 12px 32px rgba(18,62,43,.08);
+}
+.content-home #contenu #impact #recits-impact .impact-story.peek { padding:8px; border-radius:16px; }
+.content-home #contenu #impact #recits-impact .impact-story.story-hidden { opacity:0; pointer-events:none; }
+
+.content-home #contenu #impact #recits-impact .story-thumbnail {
+  position:relative; overflow:hidden; border-radius:12px; background:var(--forest);
+}
+.content-home #contenu #impact #recits-impact .peek .story-thumbnail { border-radius:8px; }
+.content-home #contenu #impact #recits-impact .story-thumbnail img {
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:none;
+  transition:transform 600ms cubic-bezier(.22,1,.36,1);
+}
+@media(hover:hover) {
+  .content-home #contenu #impact #recits-impact .impact-story.current:hover .story-thumbnail img { transform:scale(1.03); }
+}
+
+/* Aperçus latéraux : la photo seule (wireframe). */
+.content-home #contenu #impact #recits-impact .peek .story-copy { display:none; }
+.content-home #contenu #impact #recits-impact .peek .story-thumbnail { height:100%; min-height:0; }
+
+/* Géométrie du wireframe : deux aperçus de chaque côté. À 1440 px, carte de
+   800, aperçu proche de 110 × 365, aperçu lointain de 76 × 218, écarts de 20.
+   En dessous, aperçus et écarts se resserrent avec l'écran, et la carte
+   centrale cède juste la place nécessaire : les quatre aperçus restent visibles. */
+@media(min-width:701px) {
+  .content-home #contenu #impact #recits-impact .carousel-stage {
+    --story-near:clamp(44px, 9.82vw - 31px, 110px);
+    --story-far:clamp(28px, 7.14vw - 27px, 76px);
+    --story-gap:clamp(8px, 1.79vw - 6px, 20px);
+    --story-edge:clamp(12px, 2.98vw - 11px, 32px);
+    --story-width:min(800px, 100% - 2 * (var(--story-edge) + var(--story-far) + var(--story-near) + 2 * var(--story-gap)));
+  }
+  .content-home #contenu #impact #recits-impact .impact-story.current { width:var(--story-width); }
+  .content-home #contenu #impact #recits-impact .impact-story.near-left {
+    left:calc(50% - var(--story-width) / 2 - var(--story-gap) - var(--story-near) / 2); width:var(--story-near);
+  }
+  .content-home #contenu #impact #recits-impact .impact-story.near-right {
+    left:calc(50% + var(--story-width) / 2 + var(--story-gap) + var(--story-near) / 2); width:var(--story-near);
+  }
+  .content-home #contenu #impact #recits-impact .impact-story.far-left {
+    left:calc(50% - var(--story-width) / 2 - 2 * var(--story-gap) - var(--story-near) - var(--story-far) / 2); width:var(--story-far);
+  }
+  .content-home #contenu #impact #recits-impact .impact-story.far-right {
+    left:calc(50% + var(--story-width) / 2 + 2 * var(--story-gap) + var(--story-near) + var(--story-far) / 2); width:var(--story-far);
+  }
+  .content-home #contenu #impact #recits-impact .impact-story:is(.far-left,.far-right) { padding:6px; border-radius:12px; }
+  .content-home #contenu #impact #recits-impact :is(.far-left,.far-right) .story-thumbnail { border-radius:6px; }
+}
+
+/* Texte : changement documenté (Plex 20), citation (PP Eiko 28), signature. */
+.content-home #contenu #impact #recits-impact .story-copy {
+  display:flex; flex-direction:column; justify-content:space-between; gap:24px;
+  padding:28px 16px 16px 24px;
+}
+.content-home #contenu #impact #recits-impact .story-copy h3 {
+  max-width:28ch; margin:0; color:var(--forest);
+  font:500 20px/1.4 var(--font-body) !important; letter-spacing:0;
+}
+.content-home #contenu #impact #recits-impact .story-words { margin:0; }
+.content-home #contenu #impact #recits-impact .story-quote-mark {
+  display:block; height:46px; color:var(--muted);
+  font:400 70px/1 var(--font-display) !important;
+}
+.content-home #contenu #impact #recits-impact .story-words blockquote {
+  margin:8px 0 0; color:var(--forest);
+  font:400 28px/1.2 var(--font-display) !important; letter-spacing:-.02em;
+}
+.content-home #contenu #impact #recits-impact .story-words blockquote p { margin:0; font:inherit !important; color:inherit; }
+.content-home #contenu #impact #recits-impact .story-byline {
+  display:flex; flex-direction:column; gap:0; margin:24px 0 0;
+}
+.content-home #contenu #impact #recits-impact .story-byline span { padding:0; border-radius:0; background:none; }
+.content-home #contenu #impact #recits-impact .story-byline .story-name { color:var(--forest); font:500 14px/1.6 var(--font-body); }
+.content-home #contenu #impact #recits-impact .story-byline .story-role { color:var(--muted); font:400 13px/1.6 var(--font-body); }
+
+/* « Lire le récit » : bouton principal du moodboard sur toute la largeur de la
+   photo (wireframe), libellé à gauche et tuile flèche à droite. */
+.content-home #contenu #impact #recits-impact .story-thumbnail > a.story-read-link.button.button-primary {
+  position:absolute; z-index:1; left:16px; right:16px; bottom:16px;
+  display:flex; align-items:center; justify-content:space-between; gap:12px; width:auto; min-height:48px;
+  padding:8px 8px 8px 16px; border:0; border-radius:8px;
+  background:var(--forest); color:var(--paper);
+  font:500 16px/1.4 var(--font-body); text-decoration:none; white-space:nowrap;
+  transition:background-color 200ms ease;
+}
+.content-home #contenu #impact #recits-impact .story-read-link .button-label { padding:0; }
+.content-home #contenu #impact #recits-impact .story-read-link > .button-icon {
+  display:grid; place-items:center; flex:0 0 32px; width:32px; height:32px; padding:0;
+  border-radius:6px; background:var(--yellow); color:var(--forest); font-size:0;
+}
+.content-home #contenu #impact #recits-impact .story-read-link > .button-icon::before { content:none; }
+.content-home #contenu #impact #recits-impact .story-read-link .button-icon svg {
+  display:block; width:23px; height:23px; fill:currentColor; stroke:none;
+  transform:rotate(0deg); transition:transform 300ms cubic-bezier(.4,0,.2,1);
+}
+.content-home #contenu #impact #recits-impact .story-thumbnail > a.story-read-link.button.button-primary:hover { background:var(--brand); color:var(--paper); text-decoration:none; }
+.content-home #contenu #impact #recits-impact .story-read-link:hover .button-icon svg { transform:rotate(45deg); }
+.content-home #contenu #impact #recits-impact .story-read-link:focus-visible { outline:2px solid var(--yellow); outline-offset:3px; }
+.content-home #contenu #impact #recits-impact .peek .story-thumbnail > a.story-read-link.button.button-primary { display:none; }
+
+/* Pagination et source. */
+.content-home #contenu #impact #recits-impact .story-pagination { gap:4px; margin-top:24px; }
+.content-home #contenu #impact #recits-impact .story-dot { width:44px; height:44px; }
+.content-home #contenu #impact #recits-impact .story-dot::before {
+  width:8px; height:8px; background:rgba(18,62,43,.28); transition:background-color 200ms ease, transform 200ms ease;
+}
+.content-home #contenu #impact #recits-impact .story-dot[aria-pressed="true"]::before { background:var(--forest); transform:scale(1.25); }
+.content-home #contenu #impact #recits-impact :is(.story-dot,.peek-target,.carousel-stage):focus-visible { outline:2px solid var(--forest); outline-offset:2px; }
+.content-home #contenu #impact #recits-impact .story-source {
+  max-width:64ch; margin:16px auto 0; padding:0 20px; text-align:center;
+  color:var(--forest); font:400 14px/1.5 var(--font-body);
+}
+
+/* Texte réservé aux lecteurs d'écran. */
+.content-home #contenu #impact #recits-impact .revue-visually-hidden {
+  position:absolute; width:1px; height:1px; margin:-1px; padding:0;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+
+@media(max-width:1049px) {
+  .content-home #contenu #impact #recits-impact .story-copy { padding:20px 12px 12px 16px; }
+  .content-home #contenu #impact #recits-impact .story-words blockquote { font-size:24px !important; }
+  .content-home #contenu #impact #recits-impact .story-thumbnail > a.story-read-link.button.button-primary { left:12px; right:12px; bottom:12px; }
+}
+@media(max-width:700px) {
+  .content-home #contenu #impact #recits-impact { padding:64px 0 48px; }
+  .content-home #contenu #impact #recits-impact .story-heading h2 { margin-bottom:32px; }
+  .content-home #contenu #impact #recits-impact .impact-story.current { padding:8px; border-radius:16px; }
+  .content-home #contenu #impact #recits-impact .impact-story.current .story-thumbnail { height:220px; min-height:220px; border-radius:8px; }
+  .content-home #contenu #impact #recits-impact .story-copy { gap:20px; padding:16px 8px 8px; }
+  .content-home #contenu #impact #recits-impact .story-copy h3 { font-size:18px !important; }
+  .content-home #contenu #impact #recits-impact .story-quote-mark { height:36px; font-size:56px !important; }
+  .content-home #contenu #impact #recits-impact .story-byline { margin-top:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #impact #recits-impact :is(.story-thumbnail img,.story-read-link,.story-read-link .button-icon svg,.story-dot::before) { transition:none; }
+}

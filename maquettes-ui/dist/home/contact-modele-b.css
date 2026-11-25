@@ -1,0 +1,48 @@
+/* Accueil — Appel à l'action final, modèle B « Panneau à halo » (?vue-contact=b).
+   Composition des appels à l'action de Pangram : panneau vert uni arrondi,
+   texte centré, deux boutons. Décor : effet Halo du moodboard, retenu par
+   l'APADER. Retour APADER : accès au contact, au partenariat et au soutien
+   aux actions (troisième accès en lien). */
+
+/* Panneau uni : sans photographie ni voile. */
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-panel { background-color:var(--forest); background-image:none; }
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-panel > .wf-image,
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-panel::before { display:none; }
+/* Effet Halo du moodboard (appel à l'action) : arcs sur le bord droit,
+   28 % de la largeur, opacité 24 %, la lecture reste dégagée. Un fondu sur
+   le bord gauche de la zone évite une coupure nette des arcs. */
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-panel::after {
+  content:""; top:0; right:0; bottom:0; left:auto; width:28%; height:100%; aspect-ratio:auto;
+  z-index:0; opacity:.24; background:url('/assets/patterns/halo.svg') 28% center / cover no-repeat;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 35%); mask-image:linear-gradient(90deg, transparent 0, #000 35%);
+}
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-copy { text-shadow:none; }
+
+/* Deux boutons, puis le troisième accès en lien souligné sur sa propre ligne. */
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions::after { content:""; order:2; flex-basis:100%; height:0; }
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(2) {
+  order:1; background:var(--paper); color:var(--forest); box-shadow:none;
+}
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(2) > .button-icon { background:var(--forest); color:var(--yellow); }
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(2):hover { background:var(--sage); color:var(--forest); }
+
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3) {
+  order:3; min-height:44px; margin-top:4px; padding:0; background:none; box-shadow:none; color:var(--paper);
+}
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3) > .button-label {
+  text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:5px;
+  text-decoration-color:rgba(247,247,240,.5); transition:text-decoration-color 200ms ease;
+}
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3) > .button-icon { display:none; }
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3):hover { background:none; }
+.content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3):hover > .button-label { text-decoration-color:currentColor; }
+
+@media(max-width:700px) {
+  /* Mobile : le halo occupe 60 % du bord droit, comme dans le moodboard. */
+  .content-home #contenu #contact[data-ap-review-variant="b"] .contact-panel::after { width:60%; }
+  .content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions::after { display:none; }
+  .content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a.contact-secondary.button.button-secondary:nth-child(3) { width:auto; align-self:center; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #contact[data-ap-review-variant="b"] .contact-actions > a > .button-label { transition:none; }
+}

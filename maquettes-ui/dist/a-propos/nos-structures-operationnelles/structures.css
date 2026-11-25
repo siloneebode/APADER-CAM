@@ -1,4 +1,4 @@
-@font-face{font-family:ASHeading;src:url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:ASHeading;src:url('/assets/fonts/pp-eiko/PP-Eiko-Regular-400.woff2') format('woff2'), url('/assets/fonts/fraunces-latin.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:ASSans;src:url('/assets/ibm-plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
 .as-hero,.as-structures,.as-hero *,.as-structures *{box-sizing:border-box}
 .as-hero,.as-structures{color:#1c2921;font:400 16px/1.6 ASSans,Arial,sans-serif}

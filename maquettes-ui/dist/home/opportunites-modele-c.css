@@ -1,0 +1,113 @@
+/* Accueil — Opportunités, modèle C « Carrousel » (?vue-opportunites=c).
+   Les cinq parcours en cours défilent sur des cartes ivoire de 12 px, sans
+   photographie : cartouche sauge (repère vert), titre en PP Eiko 24, résumé, lieu, public,
+   échéance et statut sous un filet, « Consulter » avec la tuile #action-arrow.
+   Flèches rondes reprises du carrousel des Projets, compteur et barre de
+   progression. Retours APADER : échéances, profils, visuel et description. */
+
+/* Éléments propres au modèle C, masqués dans A et B. */
+.content-home #contenu #opportunites .opportunity-controls { display:none; }
+.content-home #contenu #opportunites:not([data-ap-review-variant="c"]) .opportunity-row--extra { display:none; }
+
+/* Piste du carrousel : défilement horizontal aimanté, sans barre visible. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list {
+  --opportunity-gap:24px; --opportunity-visible:3.2;
+  display:flex; gap:var(--opportunity-gap); margin:-8px 0 -24px; padding:8px 0 24px;
+  overflow-x:auto; overflow-y:hidden; border-top:0;
+  scroll-snap-type:x mandatory; scroll-behavior:smooth; overscroll-behavior-x:contain; scrollbar-width:none;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list::-webkit-scrollbar { display:none; }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list:focus-visible { outline:3px solid var(--brand); outline-offset:4px; }
+
+/* Cartes ivoire compactes : contenu, puis échéance et flèche sur une même ligne. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row {
+  position:relative; display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-rows:1fr auto;
+  grid-template-areas:"main main" "deadline action"; align-items:end; gap:16px;
+  flex:0 0 calc((100% - var(--opportunity-gap) * (var(--opportunity-visible) - .2)) / var(--opportunity-visible));
+  min-width:0; padding:24px; overflow:hidden; border:0; border-radius:12px; background:var(--paper);
+  scroll-snap-align:start; transition:box-shadow 260ms ease;
+}
+/* Pas d'animation d'entrée pendant le défilement horizontal. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row.home-motion-entering { animation:none; }
+
+/* Sans photographie ni résumé (la photo et les résumés servent au modèle B). */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] :is(.opportunity-visual,p.opportunity-summary) { display:none; }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-main {
+  align-self:stretch; padding:0 0 16px; border-bottom:1px solid var(--line);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row .pangram-kicker > span { background:var(--sage); color:var(--forest); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row .pangram-kicker::before { background:var(--brand); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row h3 { margin-bottom:12px; font-size:24px; }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] dl.opportunity-meta { flex-direction:column; gap:4px; }
+
+/* Statut en haut à droite, au niveau du cartouche. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] p.opportunity-status {
+  position:absolute; top:28px; right:24px; margin:0; padding:0; border:0;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-deadline {
+  gap:2px; margin:0; padding:0; border:0; border-radius:0; background:none;
+}
+
+/* « Consulter » : la tuile flèche seule, le libellé reste lu par les lecteurs d'écran. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row a.opportunity-read { align-self:end; min-height:32px; margin:0; }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] a.opportunity-read > span.opportunity-read-label {
+  position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;
+}
+
+@media(hover:hover) {
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row:hover { box-shadow:0 12px 24px rgba(18,62,43,.08); }
+}
+
+/* Commandes : barre de progression, compteur, flèches rondes des Projets. */
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-controls {
+  display:flex; align-items:center; gap:24px; margin-top:32px;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-progress {
+  position:relative; flex:1; max-width:320px; height:2px; overflow:hidden; background:rgba(18,62,43,.16);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-progress > span {
+  position:absolute; inset:0 auto 0 0; width:60%; background:var(--forest); transition:transform 120ms linear;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] p.opportunity-counter {
+  margin:0 0 0 auto; color:var(--forest); font:400 14px/1.5 var(--font-body);
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls { display:flex; gap:12px; }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button {
+  display:inline-grid; place-items:center; width:48px; height:48px; padding:0;
+  border:1px solid var(--line); border-radius:100%; background:var(--paper); color:var(--forest);
+  cursor:pointer; transition:background-color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button svg {
+  width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round; transition:transform 220ms ease;
+}
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button svg.reverse { transform:rotate(180deg); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button:hover:not(:disabled) { background:var(--yellow); border-color:var(--yellow); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button:hover:not(:disabled) svg { transform:translateX(2px); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button:hover:not(:disabled) svg.reverse { transform:translateX(-2px) rotate(180deg); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button:active:not(:disabled) { transform:scale(.96); }
+.content-home #contenu #opportunites[data-ap-review-variant="c"] .arrow-controls button.icon-button:disabled {
+  opacity:.35; background:transparent; cursor:default;
+}
+
+/* Tablette : deux cartes et le début de la troisième. */
+@media(max-width:1049px) {
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list { --opportunity-gap:16px; --opportunity-visible:2.2; }
+  /* Cartes plus étroites : le statut revient sous l'échéance. */
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] p.opportunity-status { position:static; margin-top:4px; }
+}
+
+/* Mobile : une carte et le bord de la suivante. */
+@media(max-width:700px) {
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list { --opportunity-visible:1.1; }
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-row { padding:20px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-controls { gap:16px; margin-top:24px; }
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] p.opportunity-counter {
+    position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] .opportunity-list { scroll-behavior:auto; }
+  .content-home #contenu #opportunites[data-ap-review-variant="c"] :is(.opportunity-row,.opportunity-progress > span,.arrow-controls button.icon-button,.arrow-controls button.icon-button svg) { transition:none; }
+}

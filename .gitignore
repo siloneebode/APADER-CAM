@@ -9,3 +9,6 @@ __pycache__/
 *.zip
 *.tar.gz
 /maquettes-ui/dist/documents/
+
+# PP Eiko : police commerciale (licence à confirmer), non publiée dans le dépôt public
+/maquettes-ui/dist/assets/fonts/pp-eiko/

@@ -22,6 +22,7 @@
   register('#contenu #introduction .hero-editorial');
   // These labels already have their own entrance: target their siblings only.
   register('#contenu #presentation .about-title, #contenu #presentation .about-body, #contenu #presentation .about-media');
+  register('#contenu #presentation .about-facts > div');
   register('#contenu #presidente .letter-intro > h2');
   register('#contenu #presidente .letter-open, #contenu #presidente .letter-preview', 'fade', 80);
   register('#contenu #domaines #actions-heading');
